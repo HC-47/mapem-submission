@@ -1,0 +1,54 @@
+name: Validate submission contract
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - "submissions/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: submission-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: submission-contract
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out trusted validator and pinned contracts
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          fetch-depth: 0
+          path: validator
+          persist-credentials: false
+      - name: Check out untrusted candidate data
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          path: candidate
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: validator/requirements.lock
+      - run: pip install -r validator/requirements.lock
+      - name: Validate path, schemas and observations
+        run: |
+          python validator/scripts/validate_submission.py \
+            --base-sha "${{ github.event.pull_request.base.sha }}" \
+            --head-sha "${{ github.event.pull_request.head.sha }}" \
+            --pr-number "${{ github.event.pull_request.number }}" \
+            --repository candidate \
+            --report validation-report.json
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: submission-validation
+          path: validation-report.json
+          if-no-files-found: error

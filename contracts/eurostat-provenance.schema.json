@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opengeomap.example/schema/eurostat-provenance-1.0.json",
+  "title": "Open Geo Data Map Eurostat provenance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "provider",
+    "dataset_code",
+    "query_url",
+    "imported_at",
+    "response_sha256",
+    "observations_sha256",
+    "normalisation"
+  ],
+  "properties": {
+    "provider": { "const": "Eurostat" },
+    "dataset_code": { "type": "string", "minLength": 2 },
+    "query_url": { "type": "string", "format": "uri" },
+    "imported_at": { "type": "string", "format": "date-time" },
+    "response_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "observations_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "upstream_updated_at": { "type": ["string", "null"] },
+    "upstream_label": { "type": ["string", "null"] },
+    "normalisation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["geography", "missing_values", "flags"],
+      "properties": {
+        "geography": { "type": "string", "minLength": 10 },
+        "missing_values": { "type": "string", "minLength": 10 },
+        "flags": { "type": "string", "minLength": 10 }
+      }
+    }
+  }
+}

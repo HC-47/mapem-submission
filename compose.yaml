@@ -1,0 +1,9 @@
+name: mapem-submission
+
+services:
+  validator:
+    image: mapem/submission-validator:local
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: "no"

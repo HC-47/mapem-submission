@@ -1,0 +1,346 @@
+[
+  {
+    "id": "eurostat-population-density-nuts3",
+    "title": "Population density by NUTS 3 region",
+    "description": "Population density across EU NUTS 3 regions, expressed as inhabitants per square kilometre.",
+    "category": "Demography",
+    "publisher": "Eurostat",
+    "source": "Eurostat demo_r_d3dens",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/demo_r_d3dens/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (demo_r_d3dens)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat demo_r_d3dens. Population density is population divided by regional area. The normaliser keeps only EU27 NUTS 3 codes compatible with NUTS 2024.",
+    "geography": { "scheme": "NUTS", "version": "2024", "level": 3 },
+    "geographic_coverage": ["EU27"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": ["densita di popolazione", "population concentration"],
+      "topics": ["demography", "population", "urbanisation"],
+      "example_questions": ["Quali regioni europee hanno la densita di popolazione piu alta?"],
+      "caveats": ["Annual regional density is not a real-time population count."]
+    },
+    "created_at": "2026-08-16",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "demo_r_d3dens",
+    "filters": { "freq": "A", "unit": "PER_KM2" },
+    "period_start": "2020",
+    "period_end": "latest",
+    "indicator": {
+      "id": "population-density",
+      "name": "Population density",
+      "description": "Annual population density of the region.",
+      "unit": "inhabitants/km²",
+      "statistic": "annual_value",
+      "aggregation": "population divided by area",
+      "definition": {
+        "upstream_unit": "PER_KM2",
+        "population_basis": "annual population used by Eurostat"
+      }
+    }
+  },
+  {
+    "id": "eurostat-median-age-nuts3",
+    "title": "Median age of population by NUTS 3 region",
+    "description": "Median age of the resident population across EU NUTS 3 regions.",
+    "category": "Demography",
+    "publisher": "Eurostat",
+    "source": "Eurostat demo_r_pjanind3",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/demo_r_pjanind3/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (demo_r_pjanind3)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat demo_r_pjanind3 with demographic indicator MEDAGEPOP and unit YR. The normaliser keeps only EU27 NUTS 3 codes compatible with NUTS 2024.",
+    "geography": { "scheme": "NUTS", "version": "2024", "level": 3 },
+    "geographic_coverage": ["EU27"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": ["eta mediana", "median population age"],
+      "topics": ["demography", "ageing", "population structure"],
+      "example_questions": ["Quali regioni europee hanno la popolazione piu anziana?"],
+      "caveats": ["Median age is not the arithmetic mean age."]
+    },
+    "created_at": "2026-08-16",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "demo_r_pjanind3",
+    "filters": { "freq": "A", "indic_de": "MEDAGEPOP", "unit": "YR" },
+    "period_start": "2020",
+    "period_end": "latest",
+    "indicator": {
+      "id": "median-age",
+      "name": "Median age of population",
+      "description": "Age that divides the population into two numerically equal groups.",
+      "unit": "years",
+      "statistic": "annual_value",
+      "aggregation": "Eurostat demographic indicator",
+      "definition": { "indicator_code": "MEDAGEPOP", "upstream_unit": "YR" }
+    }
+  },
+  {
+    "id": "eurostat-gdp-per-capita-pps-nuts2",
+    "title": "GDP per capita in PPS relative to the EU average",
+    "description": "Regional GDP per capita in purchasing power standards, expressed as a percentage of the EU27 average.",
+    "category": "Economy",
+    "publisher": "Eurostat",
+    "source": "Eurostat nama_10r_2gdp",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10r_2gdp/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (nama_10r_2gdp)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat nama_10r_2gdp using unit PPS_HAB_EU27_2020. This table already represents GDP and does not expose an na_item dimension. The normaliser keeps EU27 NUTS 2 codes compatible with NUTS 2024.",
+    "geography": { "scheme": "NUTS", "version": "2024", "level": 2 },
+    "geographic_coverage": ["EU27"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": ["PIL pro capite", "regional GDP purchasing power"],
+      "topics": ["economy", "regional wealth", "purchasing power"],
+      "example_questions": ["Quali regioni hanno il PIL pro capite piu alto rispetto alla media UE?"],
+      "caveats": ["Values are an index where the EU27 average equals 100, not currency amounts."]
+    },
+    "created_at": "2026-08-16",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "nama_10r_2gdp",
+    "filters": { "freq": "A", "unit": "PPS_HAB_EU27_2020" },
+    "period_start": "2020",
+    "period_end": "latest",
+    "indicator": {
+      "id": "gdp-per-capita-pps-eu-average",
+      "name": "GDP per capita in PPS",
+      "description": "GDP per inhabitant in PPS relative to the EU27 average (EU=100).",
+      "unit": "% of EU27 average",
+      "statistic": "annual_value",
+      "aggregation": "regional accounts",
+      "definition": {
+        "upstream_unit": "PPS_HAB_EU27_2020",
+        "reference": "EU27_2020 = 100"
+      }
+    }
+  },
+  {
+    "id": "eurostat-unemployment-rate-nuts2",
+    "title": "Unemployment rate by NUTS 2 region",
+    "description": "Annual unemployment rate for people aged 15–74 across EU NUTS 2 regions.",
+    "category": "Labour market",
+    "publisher": "Eurostat",
+    "source": "Eurostat tgs00010",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/tgs00010/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (tgs00010)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat tgs00010 selecting all education levels, total sex, age 15–74 and percentage unit. The normaliser keeps EU27 NUTS 2 codes compatible with NUTS 2024.",
+    "geography": { "scheme": "NUTS", "version": "2024", "level": 2 },
+    "geographic_coverage": ["EU27"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": ["tasso di disoccupazione", "regional joblessness"],
+      "topics": ["labour market", "employment", "unemployment"],
+      "example_questions": ["Dove e piu alta la disoccupazione regionale in Europa?"],
+      "caveats": ["The rate covers people aged 15-74 and is an annual survey estimate."]
+    },
+    "created_at": "2026-08-16",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "tgs00010",
+    "filters": {
+      "freq": "A",
+      "isced11": "TOTAL",
+      "sex": "T",
+      "age": "Y15-74",
+      "unit": "PC"
+    },
+    "period_start": "2020",
+    "period_end": "latest",
+    "indicator": {
+      "id": "unemployment-rate",
+      "name": "Unemployment rate",
+      "description": "Unemployed people as a percentage of the labour force, age 15–74.",
+      "unit": "%",
+      "statistic": "annual_average",
+      "aggregation": "labour force survey estimate",
+      "definition": {
+        "age": "Y15-74",
+        "sex": "T",
+        "education": "TOTAL",
+        "upstream_unit": "PC"
+      }
+    }
+  },
+  {
+    "id": "eurostat-population-change-nuts2",
+    "title": "Crude rate of total population change by NUTS 2 region",
+    "description": "Annual total population change relative to average population, expressed per 1,000 inhabitants.",
+    "category": "Demography",
+    "publisher": "Eurostat",
+    "source": "Eurostat tgs00099",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/tgs00099/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (tgs00099)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat tgs00099 using indicator GROWRT: total population change divided by average population, multiplied by 1,000. The normaliser keeps EU27 NUTS 2 codes compatible with NUTS 2024.",
+    "geography": { "scheme": "NUTS", "version": "2024", "level": 2 },
+    "geographic_coverage": ["EU27"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": ["variazione della popolazione", "population growth or decline"],
+      "topics": ["demography", "population growth", "depopulation"],
+      "example_questions": ["Quali regioni europee stanno perdendo popolazione?"],
+      "caveats": ["The value is a crude annual rate per 1,000 inhabitants, not an absolute count."]
+    },
+    "created_at": "2026-08-16",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "tgs00099",
+    "filters": { "freq": "A", "indic_de": "GROWRT" },
+    "period_start": "2020",
+    "period_end": "latest",
+    "indicator": {
+      "id": "population-change-rate",
+      "name": "Crude rate of total population change",
+      "description": "Total population change during the year per 1,000 inhabitants.",
+      "unit": "per 1,000 inhabitants",
+      "statistic": "annual_rate",
+      "aggregation": "Eurostat demographic balance",
+      "definition": { "indicator_code": "GROWRT", "denominator": "average population" }
+    }
+  },
+  {
+    "id": "eurostat-tourism-nights-nuts3",
+    "title": "Nights spent in tourist accommodation by NUTS 3 region",
+    "description": "Annual nights spent by domestic and foreign guests in tourist accommodation establishments across EU NUTS 3 regions.",
+    "category": "Tourism",
+    "publisher": "Eurostat",
+    "source": "Eurostat tour_occ_nin2",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/tour_occ_nin2/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (tour_occ_nin2)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat tour_occ_nin2 selecting total guest residence, number unit and NACE group I551-I553. The normaliser keeps EU27 NUTS 3 codes compatible with NUTS 2024.",
+    "geography": { "scheme": "NUTS", "version": "2024", "level": 3 },
+    "geographic_coverage": ["EU27"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": ["notti turistiche", "tourism overnight stays"],
+      "topics": ["tourism", "hospitality", "overnight stays"],
+      "example_questions": ["Quali regioni europee registrano piu notti turistiche?"],
+      "caveats": ["Counts cover reported tourist accommodation establishments, not all visitor nights."]
+    },
+    "created_at": "2026-08-16",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "tour_occ_nin2",
+    "filters": {
+      "freq": "A",
+      "c_resid": "TOTAL",
+      "unit": "NR",
+      "nace_r2": "I551-I553"
+    },
+    "period_start": "2020",
+    "period_end": "latest",
+    "indicator": {
+      "id": "tourism-nights",
+      "name": "Nights spent",
+      "description": "Total nights spent in hotels, short-stay accommodation and camping.",
+      "unit": "nights",
+      "statistic": "annual_total",
+      "aggregation": "sum of reported nights",
+      "definition": {
+        "country_of_residence": "TOTAL",
+        "accommodation": "I551-I553",
+        "upstream_unit": "NR"
+      }
+    }
+  }
+]

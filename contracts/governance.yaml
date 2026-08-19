@@ -1,0 +1,28 @@
+schema_version: "1.0"
+
+voting:
+  window_days: 7
+  minimum_eligible_votes: 5
+  minimum_reviewer_approvals: 2
+  minimum_maintainer_approvals: 1
+  eligible_author_associations:
+    - OWNER
+    - MEMBER
+    - COLLABORATOR
+    - CONTRIBUTOR
+  block_on_changes_requested: true
+  reset_on_new_commit: true
+  automatic_merge: false
+
+limits:
+  maximum_observations: 250000
+  maximum_observations_bytes: 26214400
+  maximum_metadata_bytes: 262144
+  maximum_provenance_bytes: 262144
+
+managed_batches:
+  provider: Eurostat
+  channel: managed_public
+  maximum_datasets: 20
+  maximum_total_observations: 2000000
+  maximum_total_bytes: 104857600

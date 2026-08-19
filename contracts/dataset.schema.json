@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opengeomap.example/schema/dataset-1.0.json",
+  "title": "Open Geo Data Map dataset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "description",
+    "category",
+    "publisher",
+    "source",
+    "source_url",
+    "source_type",
+    "status",
+    "licence",
+    "methodology",
+    "geography",
+    "geographic_coverage",
+    "temporal_frequency",
+    "temporal_coverage",
+    "indicators",
+    "quality",
+    "versions",
+    "created_at",
+    "updated_at",
+    "upstream"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "title": { "type": "string", "minLength": 3 },
+    "description": { "type": "string", "minLength": 10 },
+    "category": { "type": "string", "minLength": 2 },
+    "publisher": { "type": "string", "minLength": 2 },
+    "source": { "type": "string", "minLength": 2 },
+    "source_url": { "type": "string", "format": "uri" },
+    "source_type": { "enum": ["official", "community", "research", "commercial"] },
+    "status": {
+      "enum": ["experimental", "community", "verified", "community_canonical", "official_source"]
+    },
+    "licence": { "$ref": "#/$defs/licence" },
+    "methodology": { "type": "string", "minLength": 20 },
+    "geography": { "$ref": "#/$defs/geography" },
+    "geographic_coverage": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "temporal_frequency": { "enum": ["annual", "quarterly", "monthly", "daily"] },
+    "temporal_coverage": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "semantic_hints": { "$ref": "#/$defs/semantic_hints" },
+    "indicators": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/indicator" }
+    },
+    "quality": { "$ref": "#/$defs/quality" },
+    "versions": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/version" }
+    },
+    "created_at": { "type": "string", "format": "date" },
+    "updated_at": { "type": "string", "format": "date" },
+    "upstream": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider"],
+      "properties": {
+        "provider": { "type": "string" },
+        "dataset_code": { "type": "string" },
+        "api_base_url": { "type": "string", "format": "uri" },
+        "reference_url": { "type": "string", "format": "uri" },
+        "filters": {
+          "type": "object",
+          "additionalProperties": { "type": ["string", "number", "boolean"] }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "licence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "url",
+        "attribution",
+        "commercial_use",
+        "attribution_required",
+        "share_alike",
+        "redistribution"
+      ],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "summary": { "type": "string" },
+        "attribution": { "type": "string" },
+        "commercial_use": { "type": "boolean" },
+        "attribution_required": { "type": "boolean" },
+        "share_alike": { "type": "boolean" },
+        "redistribution": { "type": "boolean" }
+      }
+    },
+    "geography": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scheme", "version", "level"],
+      "properties": {
+        "scheme": { "enum": ["NUTS", "LAU", "POSTCODE", "H3", "CUSTOM"] },
+        "version": { "type": "string" },
+        "level": { "type": "integer", "minimum": 0, "maximum": 15 }
+      }
+    },
+    "indicator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "unit", "statistic"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "unit": { "type": "string" },
+        "statistic": { "type": "string" },
+        "aggregation": { "type": "string" },
+        "definition": {
+          "type": "object",
+          "additionalProperties": { "type": ["string", "number", "boolean"] }
+        },
+        "aliases": {
+          "type": "array",
+          "maxItems": 20,
+          "items": { "type": "string", "minLength": 2, "maxLength": 100 },
+          "uniqueItems": true
+        },
+        "example_questions": {
+          "type": "array",
+          "maxItems": 10,
+          "items": { "type": "string", "minLength": 5, "maxLength": 300 },
+          "uniqueItems": true
+        }
+      }
+    },
+    "semantic_hints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "aliases": {
+          "type": "array",
+          "maxItems": 30,
+          "items": { "type": "string", "minLength": 2, "maxLength": 100 },
+          "uniqueItems": true
+        },
+        "topics": {
+          "type": "array",
+          "maxItems": 30,
+          "items": { "type": "string", "minLength": 2, "maxLength": 100 },
+          "uniqueItems": true
+        },
+        "example_questions": {
+          "type": "array",
+          "maxItems": 20,
+          "items": { "type": "string", "minLength": 5, "maxLength": 300 },
+          "uniqueItems": true
+        },
+        "caveats": {
+          "type": "array",
+          "maxItems": 20,
+          "items": { "type": "string", "minLength": 5, "maxLength": 500 },
+          "uniqueItems": true
+        }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "score",
+        "coverage",
+        "observations",
+        "geographies",
+        "methodology_documented",
+        "source_documented",
+        "reproducible",
+        "peer_reviews",
+        "community_votes",
+        "last_update"
+      ],
+      "properties": {
+        "score": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "coverage": { "type": "number", "minimum": 0, "maximum": 1 },
+        "observations": { "type": "integer", "minimum": 0 },
+        "geographies": { "type": "integer", "minimum": 0 },
+        "sample_size": { "type": "integer", "minimum": 0 },
+        "methodology_documented": { "type": "boolean" },
+        "source_documented": { "type": "boolean" },
+        "reproducible": { "type": "boolean" },
+        "peer_reviews": { "type": "integer", "minimum": 0 },
+        "community_votes": { "type": "integer", "minimum": 0 },
+        "last_update": { "type": "string", "format": "date" }
+      }
+    },
+    "version": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "published_at", "notes", "immutable"],
+      "properties": {
+        "version": { "type": "string" },
+        "published_at": { "type": "string", "format": "date" },
+        "notes": { "type": "string" },
+        "immutable": { "type": "boolean" }
+      }
+    }
+  }
+}

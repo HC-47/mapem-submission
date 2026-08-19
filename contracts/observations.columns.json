@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "columns": [
+    "dataset_id",
+    "indicator_id",
+    "geo_scheme",
+    "geo_version",
+    "geo_level",
+    "geo_code",
+    "period",
+    "value",
+    "unit",
+    "statistic",
+    "sample_size",
+    "quality_flags"
+  ]
+}
