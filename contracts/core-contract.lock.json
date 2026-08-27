@@ -21,7 +21,7 @@
   "eurostat_provenance_contract": {
     "path": "contracts/eurostat-provenance.schema.json",
     "upstream_path": "data/schema/eurostat-provenance.schema.json",
-    "sha256": "3f6c09d0ac9423fa2e578273110cc16b3dc4f855a95fd05d1420ac7e0a95af7c"
+    "sha256": "6a0eb7671b108f5934bab6f1640a7832336f885f51fbf0ee3acd0c3fab307fc1"
   },
   "eurostat_config_contract": {
     "path": "contracts/eurostat-datasets.json",

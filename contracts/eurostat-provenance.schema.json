@@ -22,6 +22,8 @@
     "observations_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
     "upstream_updated_at": { "type": ["string", "null"] },
     "upstream_label": { "type": ["string", "null"] },
+    "reference_metadata_html_url": { "type": ["string", "null"], "format": "uri" },
+    "reference_metadata_sdmx_url": { "type": ["string", "null"], "format": "uri" },
     "normalisation": {
       "type": "object",
       "additionalProperties": false,
