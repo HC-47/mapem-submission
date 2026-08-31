@@ -19,9 +19,9 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat demo_r_d3dens. Population density is population divided by regional area. The normaliser keeps only EU27 NUTS 3 codes compatible with NUTS 2024.",
+    "methodology": "Direct extract from Eurostat demo_r_d3dens. Population density is population divided by regional area. The normaliser keeps every NUTS 3 code listed in the NUTS 2024 geography contract, so coverage follows that contract and upstream availability rather than a fixed country list.",
     "geography": { "scheme": "NUTS", "version": "2024", "level": 3 },
-    "geographic_coverage": ["EU27"],
+    "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": ["densita di popolazione", "population concentration"],
@@ -75,9 +75,9 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat demo_r_pjanind3 with demographic indicator MEDAGEPOP and unit YR. The normaliser keeps only EU27 NUTS 3 codes compatible with NUTS 2024.",
+    "methodology": "Direct extract from Eurostat demo_r_pjanind3 with demographic indicator MEDAGEPOP and unit YR. The normaliser keeps every NUTS 3 code listed in the NUTS 2024 geography contract, so coverage follows that contract and upstream availability rather than a fixed country list.",
     "geography": { "scheme": "NUTS", "version": "2024", "level": 3 },
-    "geographic_coverage": ["EU27"],
+    "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": ["eta mediana", "median population age"],
@@ -128,9 +128,9 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat nama_10r_2gdp using unit PPS_HAB_EU27_2020. This table already represents GDP and does not expose an na_item dimension. The normaliser keeps EU27 NUTS 2 codes compatible with NUTS 2024.",
+    "methodology": "Direct extract from Eurostat nama_10r_2gdp using unit PPS_HAB_EU27_2020. This table already represents GDP and does not expose an na_item dimension. The normaliser keeps every NUTS 2 code listed in the NUTS 2024 geography contract, so coverage follows that contract and upstream availability rather than a fixed country list.",
     "geography": { "scheme": "NUTS", "version": "2024", "level": 2 },
-    "geographic_coverage": ["EU27"],
+    "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": ["PIL pro capite", "regional GDP purchasing power"],
@@ -184,9 +184,9 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tgs00010 selecting all education levels, total sex, age 15–74 and percentage unit. The normaliser keeps EU27 NUTS 2 codes compatible with NUTS 2024.",
+    "methodology": "Direct extract from Eurostat tgs00010 selecting all education levels, total sex, age 15–74 and percentage unit. The normaliser keeps every NUTS 2 code listed in the NUTS 2024 geography contract, so coverage follows that contract and upstream availability rather than a fixed country list.",
     "geography": { "scheme": "NUTS", "version": "2024", "level": 2 },
-    "geographic_coverage": ["EU27"],
+    "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": ["tasso di disoccupazione", "regional joblessness"],
@@ -248,9 +248,9 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tgs00099 using indicator GROWRT: total population change divided by average population, multiplied by 1,000. The normaliser keeps EU27 NUTS 2 codes compatible with NUTS 2024.",
+    "methodology": "Direct extract from Eurostat tgs00099 using indicator GROWRT: total population change divided by average population, multiplied by 1,000. The normaliser keeps every NUTS 2 code listed in the NUTS 2024 geography contract, so coverage follows that contract and upstream availability rather than a fixed country list.",
     "geography": { "scheme": "NUTS", "version": "2024", "level": 2 },
-    "geographic_coverage": ["EU27"],
+    "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": ["variazione della popolazione", "population growth or decline"],
@@ -301,9 +301,9 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2 selecting total guest residence, number unit and NACE group I551-I553. The normaliser keeps EU27 NUTS 3 codes compatible with NUTS 2024.",
+    "methodology": "Direct extract from Eurostat tour_occ_nin2 selecting total guest residence, number unit and NACE group I551-I553. The normaliser keeps every NUTS 3 code listed in the NUTS 2024 geography contract, so coverage follows that contract and upstream availability rather than a fixed country list.",
     "geography": { "scheme": "NUTS", "version": "2024", "level": 3 },
-    "geographic_coverage": ["EU27"],
+    "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": ["notti turistiche", "tourism overnight stays"],
