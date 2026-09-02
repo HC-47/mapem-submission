@@ -4,14 +4,14 @@
   "dataset_contract": {
     "path": "contracts/dataset.schema.json",
     "upstream_path": "data/schema/dataset.schema.json",
-    "sha256": "ea020d801e0e9ac1d6f2de53a8583d516e9522ca4c7466330ea5fd9488e3705c"
+    "sha256": "6ecf5d53b87da128ea316cb6ea063d0e1ab9271d1f17c9c586f909dbfd851434"
   },
   "geography_contract": {
     "scheme": "NUTS",
     "version": "2024",
     "path": "contracts/nuts-2024.csv",
     "upstream_path": "data/geographies/nuts/2024/units.csv",
-    "sha256": "d816c7f27d471f77d1beccbbab4ac3b61c32fca2326d1636852d88c7fcd43b81"
+    "sha256": "b75084507b80c2c62612e6cc20a3ee30d5000b5e226763078db53e525eb8f795"
   },
   "managed_batch_contract": {
     "path": "contracts/managed-batch.schema.json",
@@ -21,11 +21,11 @@
   "eurostat_provenance_contract": {
     "path": "contracts/eurostat-provenance.schema.json",
     "upstream_path": "data/schema/eurostat-provenance.schema.json",
-    "sha256": "6a0eb7671b108f5934bab6f1640a7832336f885f51fbf0ee3acd0c3fab307fc1"
+    "sha256": "4880c71b9e766849c0d36d912d40d2e6763063d06c664f17f521bb5b80441faa"
   },
   "eurostat_config_contract": {
     "path": "contracts/eurostat-datasets.json",
     "upstream_path": "data/provider-contracts/eurostat.json",
-    "sha256": "dbf945b53b42bb98bf2278ca2856b53d2bead3eb1864933c7a1f69112237874e"
+    "sha256": "67646b07308bf3b219d69c8bfcbf86eda9aab726bac98e08d04dbab07513069e"
   }
 }

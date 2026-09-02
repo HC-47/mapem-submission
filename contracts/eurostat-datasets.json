@@ -1,8 +1,8 @@
 [
   {
-    "id": "eurostat-population-density-nuts3",
-    "title": "Population density by NUTS 3 region",
-    "description": "Population density across EU NUTS 3 regions, expressed as inhabitants per square kilometre.",
+    "id": "eurostat-population-density",
+    "title": "Population density",
+    "description": "Population density across European regions, expressed as inhabitants per square kilometre.",
     "category": "Demography",
     "publisher": "Eurostat",
     "source": "Eurostat demo_r_d3dens",
@@ -19,9 +19,13 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat demo_r_d3dens. Population density is population divided by regional area. The normaliser keeps only EU27 NUTS 3 codes compatible with NUTS 2024.",
-    "geography": { "scheme": "NUTS", "version": "2024", "level": 3 },
-    "geographic_coverage": ["EU27"],
+    "methodology": "Direct extract from Eurostat demo_r_d3dens. Population density is population divided by regional area. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Coverage follows the contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [2, 3]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": ["densita di popolazione", "population concentration"],
@@ -39,7 +43,10 @@
       "community_votes": 0
     },
     "dataset_code": "demo_r_d3dens",
-    "filters": { "freq": "A", "unit": "PER_KM2" },
+    "filters": {
+      "freq": "A",
+      "unit": "PER_KM2"
+    },
     "period_start": "2020",
     "period_end": "latest",
     "indicator": {
@@ -56,9 +63,9 @@
     }
   },
   {
-    "id": "eurostat-median-age-nuts3",
-    "title": "Median age of population by NUTS 3 region",
-    "description": "Median age of the resident population across EU NUTS 3 regions.",
+    "id": "eurostat-median-age",
+    "title": "Median age of population",
+    "description": "Median age of the resident population across European regions.",
     "category": "Demography",
     "publisher": "Eurostat",
     "source": "Eurostat demo_r_pjanind3",
@@ -75,9 +82,13 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat demo_r_pjanind3 with demographic indicator MEDAGEPOP and unit YR. The normaliser keeps only EU27 NUTS 3 codes compatible with NUTS 2024.",
-    "geography": { "scheme": "NUTS", "version": "2024", "level": 3 },
-    "geographic_coverage": ["EU27"],
+    "methodology": "Direct extract from Eurostat demo_r_pjanind3 with demographic indicator MEDAGEPOP and unit YR. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level — which matters here, because a median cannot be aggregated from its parts. Coverage follows the contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [2, 3]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": ["eta mediana", "median population age"],
@@ -95,7 +106,11 @@
       "community_votes": 0
     },
     "dataset_code": "demo_r_pjanind3",
-    "filters": { "freq": "A", "indic_de": "MEDAGEPOP", "unit": "YR" },
+    "filters": {
+      "freq": "A",
+      "indic_de": "MEDAGEPOP",
+      "unit": "YR"
+    },
     "period_start": "2020",
     "period_end": "latest",
     "indicator": {
@@ -105,11 +120,14 @@
       "unit": "years",
       "statistic": "annual_value",
       "aggregation": "Eurostat demographic indicator",
-      "definition": { "indicator_code": "MEDAGEPOP", "upstream_unit": "YR" }
+      "definition": {
+        "indicator_code": "MEDAGEPOP",
+        "upstream_unit": "YR"
+      }
     }
   },
   {
-    "id": "eurostat-gdp-per-capita-pps-nuts2",
+    "id": "eurostat-gdp-per-capita-pps",
     "title": "GDP per capita in PPS relative to the EU average",
     "description": "Regional GDP per capita in purchasing power standards, expressed as a percentage of the EU27 average.",
     "category": "Economy",
@@ -128,14 +146,20 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat nama_10r_2gdp using unit PPS_HAB_EU27_2020. This table already represents GDP and does not expose an na_item dimension. The normaliser keeps EU27 NUTS 2 codes compatible with NUTS 2024.",
-    "geography": { "scheme": "NUTS", "version": "2024", "level": 2 },
-    "geographic_coverage": ["EU27"],
+    "methodology": "Direct extract from Eurostat nama_10r_2gdp using unit PPS_HAB_EU27_2020. This table already represents GDP and does not expose an na_item dimension. It publishes no NUTS 3, so the dataset declares NUTS 2 alone; the normaliser keeps every NUTS 2 code of the NUTS 2024 geography contract. Coverage follows the contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": ["PIL pro capite", "regional GDP purchasing power"],
       "topics": ["economy", "regional wealth", "purchasing power"],
-      "example_questions": ["Quali regioni hanno il PIL pro capite piu alto rispetto alla media UE?"],
+      "example_questions": [
+        "Quali regioni hanno il PIL pro capite piu alto rispetto alla media UE?"
+      ],
       "caveats": ["Values are an index where the EU27 average equals 100, not currency amounts."]
     },
     "created_at": "2026-08-16",
@@ -148,7 +172,10 @@
       "community_votes": 0
     },
     "dataset_code": "nama_10r_2gdp",
-    "filters": { "freq": "A", "unit": "PPS_HAB_EU27_2020" },
+    "filters": {
+      "freq": "A",
+      "unit": "PPS_HAB_EU27_2020"
+    },
     "period_start": "2020",
     "period_end": "latest",
     "indicator": {
@@ -165,9 +192,9 @@
     }
   },
   {
-    "id": "eurostat-unemployment-rate-nuts2",
-    "title": "Unemployment rate by NUTS 2 region",
-    "description": "Annual unemployment rate for people aged 15–74 across EU NUTS 2 regions.",
+    "id": "eurostat-unemployment-rate",
+    "title": "Unemployment rate",
+    "description": "Annual unemployment rate for people aged 15–74 across European regions.",
     "category": "Labour market",
     "publisher": "Eurostat",
     "source": "Eurostat tgs00010",
@@ -184,9 +211,13 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tgs00010 selecting all education levels, total sex, age 15–74 and percentage unit. The normaliser keeps EU27 NUTS 2 codes compatible with NUTS 2024.",
-    "geography": { "scheme": "NUTS", "version": "2024", "level": 2 },
-    "geographic_coverage": ["EU27"],
+    "methodology": "Direct extract from Eurostat tgs00010 selecting all education levels, total sex, age 15–74 and percentage unit. This is a Eurostat regional aggregate published at NUTS 2 only, so the dataset declares NUTS 2 alone; the normaliser keeps every NUTS 2 code of the NUTS 2024 geography contract. Coverage follows the contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": ["tasso di disoccupazione", "regional joblessness"],
@@ -229,8 +260,8 @@
     }
   },
   {
-    "id": "eurostat-population-change-nuts2",
-    "title": "Crude rate of total population change by NUTS 2 region",
+    "id": "eurostat-population-change",
+    "title": "Crude rate of total population change",
     "description": "Annual total population change relative to average population, expressed per 1,000 inhabitants.",
     "category": "Demography",
     "publisher": "Eurostat",
@@ -248,9 +279,13 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tgs00099 using indicator GROWRT: total population change divided by average population, multiplied by 1,000. The normaliser keeps EU27 NUTS 2 codes compatible with NUTS 2024.",
-    "geography": { "scheme": "NUTS", "version": "2024", "level": 2 },
-    "geographic_coverage": ["EU27"],
+    "methodology": "Direct extract from Eurostat tgs00099 using indicator GROWRT: total population change divided by average population, multiplied by 1,000. This is a Eurostat regional aggregate published at NUTS 2 only, so the dataset declares NUTS 2 alone; the normaliser keeps every NUTS 2 code of the NUTS 2024 geography contract. Coverage follows the contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": ["variazione della popolazione", "population growth or decline"],
@@ -268,7 +303,10 @@
       "community_votes": 0
     },
     "dataset_code": "tgs00099",
-    "filters": { "freq": "A", "indic_de": "GROWRT" },
+    "filters": {
+      "freq": "A",
+      "indic_de": "GROWRT"
+    },
     "period_start": "2020",
     "period_end": "latest",
     "indicator": {
@@ -278,13 +316,16 @@
       "unit": "per 1,000 inhabitants",
       "statistic": "annual_rate",
       "aggregation": "Eurostat demographic balance",
-      "definition": { "indicator_code": "GROWRT", "denominator": "average population" }
+      "definition": {
+        "indicator_code": "GROWRT",
+        "denominator": "average population"
+      }
     }
   },
   {
-    "id": "eurostat-tourism-nights-nuts3",
-    "title": "Nights spent in tourist accommodation by NUTS 3 region",
-    "description": "Annual nights spent by domestic and foreign guests in tourist accommodation establishments across EU NUTS 3 regions.",
+    "id": "eurostat-tourism-nights",
+    "title": "Nights spent in tourist accommodation",
+    "description": "Annual nights spent by domestic and foreign guests in tourist accommodation establishments across European regions.",
     "category": "Tourism",
     "publisher": "Eurostat",
     "source": "Eurostat tour_occ_nin2",
@@ -301,15 +342,21 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2 selecting total guest residence, number unit and NACE group I551-I553. The normaliser keeps EU27 NUTS 3 codes compatible with NUTS 2024.",
-    "geography": { "scheme": "NUTS", "version": "2024", "level": 3 },
-    "geographic_coverage": ["EU27"],
+    "methodology": "Direct extract from Eurostat tour_occ_nin2 selecting total guest residence, number unit and NACE group I551-I553. The table is titled by NUTS 2 region and its response carries NUTS 3 as well; the normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, each with the values Eurostat publishes for it. Coverage follows the contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [2, 3]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": ["notti turistiche", "tourism overnight stays"],
       "topics": ["tourism", "hospitality", "overnight stays"],
       "example_questions": ["Quali regioni europee registrano piu notti turistiche?"],
-      "caveats": ["Counts cover reported tourist accommodation establishments, not all visitor nights."]
+      "caveats": [
+        "Counts cover reported tourist accommodation establishments, not all visitor nights."
+      ]
     },
     "created_at": "2026-08-16",
     "quality": {

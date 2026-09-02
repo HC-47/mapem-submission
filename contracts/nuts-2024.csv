@@ -1,4 +1,20 @@
 geo_scheme,geo_version,geo_level,geo_code,name,country_code,parent_code
+NUTS,2024,1,AL0,Shqipëria,AL,AL
+NUTS,2024,2,AL01,Veri,AL,AL0
+NUTS,2024,3,AL011,Dibër,AL,AL01
+NUTS,2024,3,AL012,Durrës,AL,AL01
+NUTS,2024,3,AL013,Kukës,AL,AL01
+NUTS,2024,3,AL014,Lezhë,AL,AL01
+NUTS,2024,3,AL015,Shkodër,AL,AL01
+NUTS,2024,2,AL02,Qender,AL,AL0
+NUTS,2024,3,AL021,Elbasan,AL,AL02
+NUTS,2024,3,AL022,Tiranë,AL,AL02
+NUTS,2024,2,AL03,Jug,AL,AL0
+NUTS,2024,3,AL031,Berat,AL,AL03
+NUTS,2024,3,AL032,Fier,AL,AL03
+NUTS,2024,3,AL033,Gjirokastër,AL,AL03
+NUTS,2024,3,AL034,Korcë,AL,AL03
+NUTS,2024,3,AL035,Vlorë,AL,AL03
 NUTS,2024,1,AT1,Ostösterreich,AT,AT
 NUTS,2024,2,AT11,Burgenland,AT,AT1
 NUTS,2024,3,AT111,Mittelburgenland,AT,AT11
@@ -46,6 +62,10 @@ NUTS,2024,3,AT335,Tiroler Unterland,AT,AT33
 NUTS,2024,2,AT34,Vorarlberg,AT,AT3
 NUTS,2024,3,AT341,Bludenz-Bregenzer Wald,AT,AT34
 NUTS,2024,3,AT342,Rheintal-Bodenseegebiet,AT,AT34
+NUTS,2024,1,BA0,Bosna I Hercegovina,BA,BA
+NUTS,2024,2,BA01,Federacija Bosne i Hercegovine,BA,BA0
+NUTS,2024,2,BA02,Republika Srpska,BA,BA0
+NUTS,2024,2,BA03,Brčko District BiH,BA,BA0
 NUTS,2024,1,BE1,Région de Bruxelles-Capitale/Brussels Hoofdstedelijk Gewest,BE,BE
 NUTS,2024,2,BE10,Région de Bruxelles-Capitale/ Brussels Hoofdstedelijk Gewest,BE,BE1
 NUTS,2024,3,BE100,Arr. de Bruxelles-Capitale/Arr. Brussel-Hoofdstad,BE,BE10
@@ -140,6 +160,40 @@ NUTS,2024,3,BG422,Haskovo,BG,BG42
 NUTS,2024,3,BG423,Pazardzhik,BG,BG42
 NUTS,2024,3,BG424,Smolyan,BG,BG42
 NUTS,2024,3,BG425,Kardzhali,BG,BG42
+NUTS,2024,1,CH0,Schweiz/Suisse/Svizzera,CH,CH
+NUTS,2024,2,CH01,Région lémanique,CH,CH0
+NUTS,2024,3,CH011,Vaud,CH,CH01
+NUTS,2024,3,CH012,Valais / Wallis,CH,CH01
+NUTS,2024,3,CH013,Genève,CH,CH01
+NUTS,2024,2,CH02,Espace Mittelland,CH,CH0
+NUTS,2024,3,CH021,Bern / Berne,CH,CH02
+NUTS,2024,3,CH022,Fribourg / Freiburg,CH,CH02
+NUTS,2024,3,CH023,Solothurn,CH,CH02
+NUTS,2024,3,CH024,Neuchâtel,CH,CH02
+NUTS,2024,3,CH025,Jura,CH,CH02
+NUTS,2024,2,CH03,Nordwestschweiz,CH,CH0
+NUTS,2024,3,CH031,Basel-Stadt,CH,CH03
+NUTS,2024,3,CH032,Basel-Landschaft,CH,CH03
+NUTS,2024,3,CH033,Aargau,CH,CH03
+NUTS,2024,2,CH04,Zürich,CH,CH0
+NUTS,2024,3,CH040,Zürich,CH,CH04
+NUTS,2024,2,CH05,Ostschweiz,CH,CH0
+NUTS,2024,3,CH051,Glarus,CH,CH05
+NUTS,2024,3,CH052,Schaffhausen,CH,CH05
+NUTS,2024,3,CH053,Appenzell Ausserrhoden,CH,CH05
+NUTS,2024,3,CH054,Appenzell Innerrhoden,CH,CH05
+NUTS,2024,3,CH055,St. Gallen,CH,CH05
+NUTS,2024,3,CH056,Graubünden / Grigioni / Grischun,CH,CH05
+NUTS,2024,3,CH057,Thurgau,CH,CH05
+NUTS,2024,2,CH06,Zentralschweiz,CH,CH0
+NUTS,2024,3,CH061,Luzern,CH,CH06
+NUTS,2024,3,CH062,Uri,CH,CH06
+NUTS,2024,3,CH063,Schwyz,CH,CH06
+NUTS,2024,3,CH064,Obwalden,CH,CH06
+NUTS,2024,3,CH065,Nidwalden,CH,CH06
+NUTS,2024,3,CH066,Zug,CH,CH06
+NUTS,2024,2,CH07,Ticino,CH,CH0
+NUTS,2024,3,CH070,Ticino,CH,CH07
 NUTS,2024,1,CY0,Kýpros,CY,CY
 NUTS,2024,2,CY00,Kýpros,CY,CY0
 NUTS,2024,3,CY000,Kýpros,CY,CY00
@@ -1035,6 +1089,10 @@ NUTS,2024,2,IE06,Eastern and Midland,IE,IE0
 NUTS,2024,3,IE061,Dublin,IE,IE06
 NUTS,2024,3,IE062,Mid-East,IE,IE06
 NUTS,2024,3,IE063,Midland,IE,IE06
+NUTS,2024,1,IS0,Ísland,IS,IS
+NUTS,2024,2,IS00,Ísland,IS,IS0
+NUTS,2024,3,IS001,Höfuðborgarsvæði,IS,IS00
+NUTS,2024,3,IS002,Landsbyggð,IS,IS00
 NUTS,2024,1,ITC,Nord-Ovest,IT,IT
 NUTS,2024,2,ITC1,Piemonte,IT,ITC
 NUTS,2024,3,ITC11,Torino,IT,ITC1
@@ -1168,6 +1226,9 @@ NUTS,2024,3,ITI42,Rieti,IT,ITI4
 NUTS,2024,3,ITI43,Roma,IT,ITI4
 NUTS,2024,3,ITI44,Latina,IT,ITI4
 NUTS,2024,3,ITI45,Frosinone,IT,ITI4
+NUTS,2024,1,LI0,Liechtenstein,LI,LI
+NUTS,2024,2,LI00,Liechtenstein,LI,LI0
+NUTS,2024,3,LI000,Liechtenstein,LI,LI00
 NUTS,2024,1,LT0,Lietuva,LT,LT
 NUTS,2024,2,LT01,Sostinės regionas,LT,LT0
 NUTS,2024,3,LT011,Vilniaus apskritis,LT,LT01
@@ -1191,6 +1252,19 @@ NUTS,2024,3,LV009,Zemgale,LV,LV00
 NUTS,2024,3,LV00A,Rīga,LV,LV00
 NUTS,2024,3,LV00B,Kurzeme,LV,LV00
 NUTS,2024,3,LV00C,Vidzeme,LV,LV00
+NUTS,2024,1,ME0,Crna Gora,ME,ME
+NUTS,2024,2,ME00,Crna Gora,ME,ME0
+NUTS,2024,3,ME000,Crna Gora,ME,ME00
+NUTS,2024,1,MK0,Severna Makedonija,MK,MK
+NUTS,2024,2,MK00,Severna Makedonija,MK,MK0
+NUTS,2024,3,MK001,Vardarski,MK,MK00
+NUTS,2024,3,MK002,Istočen,MK,MK00
+NUTS,2024,3,MK003,Jugozapaden,MK,MK00
+NUTS,2024,3,MK004,Jugoistočen,MK,MK00
+NUTS,2024,3,MK005,Pelagoniski,MK,MK00
+NUTS,2024,3,MK006,Pološki,MK,MK00
+NUTS,2024,3,MK007,Severoistočen,MK,MK00
+NUTS,2024,3,MK008,Skopski,MK,MK00
 NUTS,2024,1,MT0,Malta,MT,MT
 NUTS,2024,2,MT00,Malta,MT,MT0
 NUTS,2024,3,MT001,Malta,MT,MT00
@@ -1251,6 +1325,31 @@ NUTS,2024,2,NL42,Limburg (NL),NL,NL4
 NUTS,2024,3,NL421,Noord-Limburg,NL,NL42
 NUTS,2024,3,NL422,Midden-Limburg,NL,NL42
 NUTS,2024,3,NL423,Zuid-Limburg,NL,NL42
+NUTS,2024,1,NO0,Norge,NO,NO
+NUTS,2024,2,NO02,Innlandet,NO,NO0
+NUTS,2024,3,NO020,Innlandet,NO,NO02
+NUTS,2024,2,NO06,Trøndelag/Trööndelage,NO,NO0
+NUTS,2024,3,NO060,Trøndelag/Trööndelage,NO,NO06
+NUTS,2024,2,NO07,Nord-Norge,NO,NO0
+NUTS,2024,3,NO071,Nordland/Nordlánnda,NO,NO07
+NUTS,2024,3,NO072,Troms/Romsa/Tromssa,NO,NO07
+NUTS,2024,3,NO073,Finnmark/Finnmárku/Finmarkku,NO,NO07
+NUTS,2024,2,NO08,Oslo og Viken,NO,NO0
+NUTS,2024,3,NO081,Oslo,NO,NO08
+NUTS,2024,3,NO083,Østfold,NO,NO08
+NUTS,2024,3,NO084,Akershus,NO,NO08
+NUTS,2024,3,NO085,Buskerud,NO,NO08
+NUTS,2024,2,NO09,Agder og Sør-Østlandet,NO,NO0
+NUTS,2024,3,NO092,Agder,NO,NO09
+NUTS,2024,3,NO093,Vestfold,NO,NO09
+NUTS,2024,3,NO094,Telemark,NO,NO09
+NUTS,2024,2,NO0A,Vestlandet,NO,NO0
+NUTS,2024,3,NO0A1,Rogaland,NO,NO0A
+NUTS,2024,3,NO0A2,Vestland,NO,NO0A
+NUTS,2024,3,NO0A3,Møre og Romsdal,NO,NO0A
+NUTS,2024,2,NO0B,Svalbard og Jan Mayen,NO,NO0
+NUTS,2024,3,NO0B1,Jan Mayen,NO,NO0B
+NUTS,2024,3,NO0B2,Svalbard,NO,NO0B
 NUTS,2024,1,PL2,Makroregion południowy,PL,PL
 NUTS,2024,2,PL21,Małopolskie,PL,PL2
 NUTS,2024,3,PL213,Miasto Kraków,PL,PL21
@@ -1440,6 +1539,37 @@ NUTS,2024,3,RO421,Arad,RO,RO42
 NUTS,2024,3,RO422,Caraş-Severin,RO,RO42
 NUTS,2024,3,RO423,Hunedoara,RO,RO42
 NUTS,2024,3,RO424,Timiş,RO,RO42
+NUTS,2024,1,RS1,Serbia - sever,RS,RS
+NUTS,2024,2,RS11,City of Belgrade,RS,RS1
+NUTS,2024,3,RS110,City of Belgrade,RS,RS11
+NUTS,2024,2,RS12,Autonomous Province of Vojvodina,RS,RS1
+NUTS,2024,3,RS121,Zapadnobačka oblast,RS,RS12
+NUTS,2024,3,RS122,Južnobanatska oblast,RS,RS12
+NUTS,2024,3,RS123,Južnobačka oblast,RS,RS12
+NUTS,2024,3,RS124,Severnobanatska oblast,RS,RS12
+NUTS,2024,3,RS125,Severnobačka oblast,RS,RS12
+NUTS,2024,3,RS126,Srednjobanatska oblast,RS,RS12
+NUTS,2024,3,RS127,Sremska oblast,RS,RS12
+NUTS,2024,1,RS2,Serbia - jug,RS,RS
+NUTS,2024,2,RS21,Region Šumadije i Zapadne Srbije,RS,RS2
+NUTS,2024,3,RS211,Zlatiborska oblast,RS,RS21
+NUTS,2024,3,RS212,Kolubarska oblast,RS,RS21
+NUTS,2024,3,RS213,Mačvanska oblast,RS,RS21
+NUTS,2024,3,RS214,Moravička oblast,RS,RS21
+NUTS,2024,3,RS215,Pomoravska oblast,RS,RS21
+NUTS,2024,3,RS216,Rasinska oblast,RS,RS21
+NUTS,2024,3,RS217,Raška oblast,RS,RS21
+NUTS,2024,3,RS218,Šumadijska oblast,RS,RS21
+NUTS,2024,2,RS22,Region Južne i Istočne Srbije,RS,RS2
+NUTS,2024,3,RS221,Borska oblast,RS,RS22
+NUTS,2024,3,RS222,Braničevska oblast,RS,RS22
+NUTS,2024,3,RS223,Zaječarska oblast,RS,RS22
+NUTS,2024,3,RS224,Jablanička oblast,RS,RS22
+NUTS,2024,3,RS225,Nišavska oblast,RS,RS22
+NUTS,2024,3,RS226,Pirotska oblast,RS,RS22
+NUTS,2024,3,RS227,Podunavska oblast,RS,RS22
+NUTS,2024,3,RS228,Pčinjska oblast,RS,RS22
+NUTS,2024,3,RS229,Toplička oblast,RS,RS22
 NUTS,2024,1,SE1,Östra Sverige,SE,SE
 NUTS,2024,2,SE11,Stockholm,SE,SE1
 NUTS,2024,3,SE110,Stockholms län,SE,SE11
@@ -1500,3 +1630,536 @@ NUTS,2024,3,SK032,Banskobystrický kraj,SK,SK03
 NUTS,2024,2,SK04,Východné Slovensko,SK,SK0
 NUTS,2024,3,SK041,Prešovský kraj,SK,SK04
 NUTS,2024,3,SK042,Košický kraj,SK,SK04
+NUTS,2024,1,TR1,İstanbul,TR,TR
+NUTS,2024,2,TR10,İstanbul,TR,TR1
+NUTS,2024,3,TR100,İstanbul,TR,TR10
+NUTS,2024,1,TR2,Batı Marmara,TR,TR
+NUTS,2024,2,TR21,"Tekirdağ, Edirne, Kırklareli",TR,TR2
+NUTS,2024,3,TR211,Tekirdağ,TR,TR21
+NUTS,2024,3,TR212,Edirne,TR,TR21
+NUTS,2024,3,TR213,Kırklareli,TR,TR21
+NUTS,2024,2,TR22,"Balıkesir, Çanakkale",TR,TR2
+NUTS,2024,3,TR221,Balıkesir,TR,TR22
+NUTS,2024,3,TR222,Çanakkale,TR,TR22
+NUTS,2024,1,TR3,Ege,TR,TR
+NUTS,2024,2,TR31,İzmir,TR,TR3
+NUTS,2024,3,TR310,İzmir,TR,TR31
+NUTS,2024,2,TR32,"Aydın, Denizli, Muğla",TR,TR3
+NUTS,2024,3,TR321,Aydın,TR,TR32
+NUTS,2024,3,TR322,Denizli,TR,TR32
+NUTS,2024,3,TR323,Muğla,TR,TR32
+NUTS,2024,2,TR33,"Manisa, Afyonkarahisar, Kütahya, Uşak",TR,TR3
+NUTS,2024,3,TR331,Manisa,TR,TR33
+NUTS,2024,3,TR332,Afyonkarahisar,TR,TR33
+NUTS,2024,3,TR333,Kütahya,TR,TR33
+NUTS,2024,3,TR334,Uşak,TR,TR33
+NUTS,2024,1,TR4,Doğu Marmara,TR,TR
+NUTS,2024,2,TR41,"Bursa, Eskişehir, Bilecik",TR,TR4
+NUTS,2024,3,TR411,Bursa,TR,TR41
+NUTS,2024,3,TR412,Eskişehir,TR,TR41
+NUTS,2024,3,TR413,Bilecik,TR,TR41
+NUTS,2024,2,TR42,"Kocaeli, Sakarya, Düzce, Bolu, Yalova",TR,TR4
+NUTS,2024,3,TR421,Kocaeli,TR,TR42
+NUTS,2024,3,TR422,Sakarya,TR,TR42
+NUTS,2024,3,TR423,Düzce,TR,TR42
+NUTS,2024,3,TR424,Bolu,TR,TR42
+NUTS,2024,3,TR425,Yalova,TR,TR42
+NUTS,2024,1,TR5,Batı Anadolu,TR,TR
+NUTS,2024,2,TR51,Ankara,TR,TR5
+NUTS,2024,3,TR510,Ankara,TR,TR51
+NUTS,2024,2,TR52,"Konya, Karaman",TR,TR5
+NUTS,2024,3,TR521,Konya,TR,TR52
+NUTS,2024,3,TR522,Karaman,TR,TR52
+NUTS,2024,1,TR6,Akdeniz,TR,TR
+NUTS,2024,2,TR61,"Antalya, Isparta, Burdur",TR,TR6
+NUTS,2024,3,TR611,Antalya,TR,TR61
+NUTS,2024,3,TR612,Isparta,TR,TR61
+NUTS,2024,3,TR613,Burdur,TR,TR61
+NUTS,2024,2,TR62,"Adana, Mersin",TR,TR6
+NUTS,2024,3,TR621,Adana,TR,TR62
+NUTS,2024,3,TR622,Mersin,TR,TR62
+NUTS,2024,2,TR63,"Hatay, Kahramanmaraş, Osmaniye",TR,TR6
+NUTS,2024,3,TR631,Hatay,TR,TR63
+NUTS,2024,3,TR632,Kahramanmaraş,TR,TR63
+NUTS,2024,3,TR633,Osmaniye,TR,TR63
+NUTS,2024,1,TR7,Orta Anadolu,TR,TR
+NUTS,2024,2,TR71,"Kırıkkale, Aksaray, Niğde, Nevşehir, Kırşehir",TR,TR7
+NUTS,2024,3,TR711,Kırıkkale,TR,TR71
+NUTS,2024,3,TR712,Aksaray,TR,TR71
+NUTS,2024,3,TR713,Niğde,TR,TR71
+NUTS,2024,3,TR714,Nevşehir,TR,TR71
+NUTS,2024,3,TR715,Kırşehir,TR,TR71
+NUTS,2024,2,TR72,"Kayseri, Sivas, Yozgat",TR,TR7
+NUTS,2024,3,TR721,Kayseri,TR,TR72
+NUTS,2024,3,TR722,Sivas,TR,TR72
+NUTS,2024,3,TR723,Yozgat,TR,TR72
+NUTS,2024,1,TR8,Batı Karadeniz,TR,TR
+NUTS,2024,2,TR81,"Zonguldak, Karabük, Bartın",TR,TR8
+NUTS,2024,3,TR811,Zonguldak,TR,TR81
+NUTS,2024,3,TR812,Karabük,TR,TR81
+NUTS,2024,3,TR813,Bartın,TR,TR81
+NUTS,2024,2,TR82,"Kastamonu, Çankırı, Sinop",TR,TR8
+NUTS,2024,3,TR821,Kastamonu,TR,TR82
+NUTS,2024,3,TR822,Çankırı,TR,TR82
+NUTS,2024,3,TR823,Sinop,TR,TR82
+NUTS,2024,2,TR83,"Samsun, Tokat, Çorum, Amasya",TR,TR8
+NUTS,2024,3,TR831,Samsun,TR,TR83
+NUTS,2024,3,TR832,Tokat,TR,TR83
+NUTS,2024,3,TR833,Çorum,TR,TR83
+NUTS,2024,3,TR834,Amasya,TR,TR83
+NUTS,2024,1,TR9,Doğu Karadeniz,TR,TR
+NUTS,2024,2,TR90,"Trabzon, Ordu, Giresun, Rize, Artvin, Gümüşhane",TR,TR9
+NUTS,2024,3,TR901,Trabzon,TR,TR90
+NUTS,2024,3,TR902,Ordu,TR,TR90
+NUTS,2024,3,TR903,Giresun,TR,TR90
+NUTS,2024,3,TR904,Rize,TR,TR90
+NUTS,2024,3,TR905,Artvin,TR,TR90
+NUTS,2024,3,TR906,Gümüşhane,TR,TR90
+NUTS,2024,1,TRA,Kuzeydoğu Anadolu,TR,TR
+NUTS,2024,2,TRA1,"Erzurum, Erzincan, Bayburt",TR,TRA
+NUTS,2024,3,TRA11,Erzurum,TR,TRA1
+NUTS,2024,3,TRA12,Erzincan,TR,TRA1
+NUTS,2024,3,TRA13,Bayburt,TR,TRA1
+NUTS,2024,2,TRA2,"Ağrı, Kars, Iğdır, Ardahan",TR,TRA
+NUTS,2024,3,TRA21,Ağrı,TR,TRA2
+NUTS,2024,3,TRA22,Kars,TR,TRA2
+NUTS,2024,3,TRA23,Iğdır,TR,TRA2
+NUTS,2024,3,TRA24,Ardahan,TR,TRA2
+NUTS,2024,1,TRB,Ortadoğu Anadolu,TR,TR
+NUTS,2024,2,TRB1,"Malatya, Elazığ, Bingöl, Tunceli",TR,TRB
+NUTS,2024,3,TRB11,Malatya,TR,TRB1
+NUTS,2024,3,TRB12,Elazığ,TR,TRB1
+NUTS,2024,3,TRB13,Bingöl,TR,TRB1
+NUTS,2024,3,TRB14,Tunceli,TR,TRB1
+NUTS,2024,2,TRB2,"Van, Muş, Bitlis, Hakkari",TR,TRB
+NUTS,2024,3,TRB21,Van,TR,TRB2
+NUTS,2024,3,TRB22,Muş,TR,TRB2
+NUTS,2024,3,TRB23,Bitlis,TR,TRB2
+NUTS,2024,3,TRB24,Hakkari,TR,TRB2
+NUTS,2024,1,TRC,Güneydoğu Anadolu,TR,TR
+NUTS,2024,2,TRC1,"Gaziantep, Adıyaman, Kilis",TR,TRC
+NUTS,2024,3,TRC11,Gaziantep,TR,TRC1
+NUTS,2024,3,TRC12,Adıyaman,TR,TRC1
+NUTS,2024,3,TRC13,Kilis,TR,TRC1
+NUTS,2024,2,TRC2,"Şanlıurfa, Diyarbakır",TR,TRC
+NUTS,2024,3,TRC21,Şanlıurfa,TR,TRC2
+NUTS,2024,3,TRC22,Diyarbakır,TR,TRC2
+NUTS,2024,2,TRC3,"Mardin, Batman, Şırnak, Siirt",TR,TRC
+NUTS,2024,3,TRC31,Mardin,TR,TRC3
+NUTS,2024,3,TRC32,Batman,TR,TRC3
+NUTS,2024,3,TRC33,Şırnak,TR,TRC3
+NUTS,2024,3,TRC34,Siirt,TR,TRC3
+NUTS,2024,1,UA1,Macroregion_01,UA,UA
+NUTS,2024,2,UA11,Poltavska Oblast,UA,UA1
+NUTS,2024,3,UA111,Kremenchutskyi Raion,UA,UA11
+NUTS,2024,3,UA112,Lubenskyi Raion,UA,UA11
+NUTS,2024,3,UA113,Myrhorodskyi Raion,UA,UA11
+NUTS,2024,3,UA114,Poltavskyi Raion,UA,UA11
+NUTS,2024,2,UA12,Sumska Oblast,UA,UA1
+NUTS,2024,3,UA121,Konotopskyi Raion,UA,UA12
+NUTS,2024,3,UA122,Okhtyrskyi Raion,UA,UA12
+NUTS,2024,3,UA123,Romenskyi Raion,UA,UA12
+NUTS,2024,3,UA124,Sumskyi Raion,UA,UA12
+NUTS,2024,3,UA125,Shostkynskyi Raion,UA,UA12
+NUTS,2024,2,UA13,Kharkivska Oblast,UA,UA1
+NUTS,2024,3,UA131,Bohodukhivskyi Raion,UA,UA13
+NUTS,2024,3,UA132,Iziumskyi Raion,UA,UA13
+NUTS,2024,3,UA133,Krasnohradskyi Raion,UA,UA13
+NUTS,2024,3,UA134,Kupianskyi Raion,UA,UA13
+NUTS,2024,3,UA135,Lozivskyi Raion,UA,UA13
+NUTS,2024,3,UA136,Kharkivskyi Raion,UA,UA13
+NUTS,2024,3,UA137,Chuhuivskyi Raion,UA,UA13
+NUTS,2024,2,UA14,Chernihivska Oblast,UA,UA1
+NUTS,2024,3,UA141,Koriukivskyi Raion,UA,UA14
+NUTS,2024,3,UA142,Nizhynskyi Raion,UA,UA14
+NUTS,2024,3,UA143,Novhorod-Siverskyi Raion,UA,UA14
+NUTS,2024,3,UA144,Prylutskyi Raion,UA,UA14
+NUTS,2024,3,UA145,Chernihivskyi Raion,UA,UA14
+NUTS,2024,1,UA2,Macroregion_02,UA,UA
+NUTS,2024,2,UA21,Donetska Oblast,UA,UA2
+NUTS,2024,3,UA211,Bakhmutskyi Raion,UA,UA21
+NUTS,2024,3,UA212,Volnovaskyi Raion,UA,UA21
+NUTS,2024,3,UA213,Horlivskyi Raion,UA,UA21
+NUTS,2024,3,UA214,Donetskyi Raion,UA,UA21
+NUTS,2024,3,UA215,Kalmiuskyi Raion,UA,UA21
+NUTS,2024,3,UA216,Kramatorskyi Raion,UA,UA21
+NUTS,2024,3,UA217,Mariupolskyi Raion,UA,UA21
+NUTS,2024,3,UA218,Pokrovskyi Raion,UA,UA21
+NUTS,2024,2,UA22,Luhanska Oblast,UA,UA2
+NUTS,2024,3,UA221,Alchevskyi Raion,UA,UA22
+NUTS,2024,3,UA222,Dovzhanskyi Raion,UA,UA22
+NUTS,2024,3,UA223,Luhanskyi Raion,UA,UA22
+NUTS,2024,3,UA224,Rovenkivskyi Raion,UA,UA22
+NUTS,2024,3,UA225,Svativskyi Raion,UA,UA22
+NUTS,2024,3,UA226,Sievierodonetskyi Raion,UA,UA22
+NUTS,2024,3,UA227,Starobilskyi Raion,UA,UA22
+NUTS,2024,3,UA228,Shchastynskyi Raion,UA,UA22
+NUTS,2024,1,UA3,Macroregion_03,UA,UA
+NUTS,2024,2,UA31,Dnipropetrovska Oblast,UA,UA3
+NUTS,2024,3,UA311,Dniprovskyi Raion,UA,UA31
+NUTS,2024,3,UA312,Kamianskyi Raion,UA,UA31
+NUTS,2024,3,UA313,Kryvorizkyi Raion,UA,UA31
+NUTS,2024,3,UA314,Nikopolskyi Raion,UA,UA31
+NUTS,2024,3,UA315,Novomoskovskyi Raion,UA,UA31
+NUTS,2024,3,UA316,Pavlohradskyi Raion,UA,UA31
+NUTS,2024,3,UA317,Synelnykivskyi Raion,UA,UA31
+NUTS,2024,2,UA32,Zaporizka Oblast,UA,UA3
+NUTS,2024,3,UA321,Berdianskyi Raion,UA,UA32
+NUTS,2024,3,UA322,Vasylivskyi Raion,UA,UA32
+NUTS,2024,3,UA323,Zaporizkyi Raion,UA,UA32
+NUTS,2024,3,UA324,Melitopolskyi Raion,UA,UA32
+NUTS,2024,3,UA325,Polohivskyi Raion,UA,UA32
+NUTS,2024,2,UA33,Kirovohradska Oblast,UA,UA3
+NUTS,2024,3,UA331,Holovanivskyi Raion,UA,UA33
+NUTS,2024,3,UA332,Kropyvnytskyi Raion,UA,UA33
+NUTS,2024,3,UA333,Novoukrainskyi Raion,UA,UA33
+NUTS,2024,3,UA334,Oleksandriiskyi Raion,UA,UA33
+NUTS,2024,1,UA4,Macroregion_04,UA,UA
+NUTS,2024,2,UA41,Mykolaivska Oblast,UA,UA4
+NUTS,2024,3,UA411,Bashtanskyi Raion,UA,UA41
+NUTS,2024,3,UA412,Voznesenskyi Raion,UA,UA41
+NUTS,2024,3,UA413,Mykolaivskyi Raion,UA,UA41
+NUTS,2024,3,UA414,Pervomaiskyi Raion,UA,UA41
+NUTS,2024,2,UA42,Odeska Oblast,UA,UA4
+NUTS,2024,3,UA421,Berezivskyi Raion,UA,UA42
+NUTS,2024,3,UA422,Bilhorod-Dnistrovskyi Raion,UA,UA42
+NUTS,2024,3,UA423,Bolhradskyi Raion,UA,UA42
+NUTS,2024,3,UA424,Izmailskyi Raion,UA,UA42
+NUTS,2024,3,UA425,Odeskyi Raion,UA,UA42
+NUTS,2024,3,UA426,Podilskyi Raion,UA,UA42
+NUTS,2024,3,UA427,Rozdilnianskyi Raion,UA,UA42
+NUTS,2024,2,UA43,Khersonska Oblast,UA,UA4
+NUTS,2024,3,UA431,Beryslavskyi Raion,UA,UA43
+NUTS,2024,3,UA432,Henicheskyi Raion,UA,UA43
+NUTS,2024,3,UA433,Kakhovskyi Raion,UA,UA43
+NUTS,2024,3,UA434,Skadovskyi Raion,UA,UA43
+NUTS,2024,3,UA435,Khersonskyi Raion,UA,UA43
+NUTS,2024,2,UA44,Avtonomna Respublika Krym,UA,UA4
+NUTS,2024,3,UA441,Bakhchysaraiskyi Raion,UA,UA44
+NUTS,2024,3,UA442,Bilohirskyi Raion,UA,UA44
+NUTS,2024,3,UA443,Dzhankoiskyi Raion,UA,UA44
+NUTS,2024,3,UA444,Ievpatoriiskyi Raion,UA,UA44
+NUTS,2024,3,UA445,Kerchenskyi Raion,UA,UA44
+NUTS,2024,3,UA446,Kurmanskyi Raion,UA,UA44
+NUTS,2024,3,UA447,Perekopskyi Raion,UA,UA44
+NUTS,2024,3,UA448,Simferopolskyi Raion,UA,UA44
+NUTS,2024,3,UA449,Feodosiiskyi Raion,UA,UA44
+NUTS,2024,3,UA44A,Ialtynskyi Raion,UA,UA44
+NUTS,2024,2,UA45,M. Sevastopol,UA,UA4
+NUTS,2024,3,UA450,M. Sevastopol,UA,UA45
+NUTS,2024,1,UA5,Macroregion_05,UA,UA
+NUTS,2024,2,UA51,Vinnytska Oblast,UA,UA5
+NUTS,2024,3,UA511,Vinnytskyi Raion,UA,UA51
+NUTS,2024,3,UA512,Haisynskyi Raion,UA,UA51
+NUTS,2024,3,UA513,Zhmerynskyi Raion,UA,UA51
+NUTS,2024,3,UA514,Mohyliv-Podilskyi Raion,UA,UA51
+NUTS,2024,3,UA515,Tulchynskyi Raion,UA,UA51
+NUTS,2024,3,UA516,Khmilnytskyi Raion,UA,UA51
+NUTS,2024,2,UA52,Ternopilska Oblast,UA,UA5
+NUTS,2024,3,UA521,Kremenetskyi Raion,UA,UA52
+NUTS,2024,3,UA522,Ternopilskyi Raion,UA,UA52
+NUTS,2024,3,UA523,Chortkivskyi Raion,UA,UA52
+NUTS,2024,2,UA53,Khmelnytska Oblast,UA,UA5
+NUTS,2024,3,UA531,Kamianets-Podilskyi Raion,UA,UA53
+NUTS,2024,3,UA532,Khmelnytskyi Raion,UA,UA53
+NUTS,2024,3,UA533,Shepetivskyi Raion,UA,UA53
+NUTS,2024,1,UA6,Macroregion_06,UA,UA
+NUTS,2024,2,UA61,Kyivska Oblast,UA,UA6
+NUTS,2024,3,UA611,Bilotserkivskyi Raion,UA,UA61
+NUTS,2024,3,UA612,Boryspilskyi Raion,UA,UA61
+NUTS,2024,3,UA613,Brovarskyi Raion,UA,UA61
+NUTS,2024,3,UA614,Buchanskyi Raion,UA,UA61
+NUTS,2024,3,UA615,Vyshhorodskyi Raion,UA,UA61
+NUTS,2024,3,UA616,Obukhivskyi Raion,UA,UA61
+NUTS,2024,3,UA617,Fastivskyi Raion,UA,UA61
+NUTS,2024,2,UA62,Cherkaska Oblast,UA,UA6
+NUTS,2024,3,UA621,Zvenyhorodskyi Raion,UA,UA62
+NUTS,2024,3,UA622,Zolotoniskyi Raion,UA,UA62
+NUTS,2024,3,UA623,Umanskyi Raion,UA,UA62
+NUTS,2024,3,UA624,Cherkaskyi Raion,UA,UA62
+NUTS,2024,2,UA63,M. Kyiv,UA,UA6
+NUTS,2024,3,UA630,M. Kyiv,UA,UA63
+NUTS,2024,1,UA7,Macroregion_07,UA,UA
+NUTS,2024,2,UA71,Zakarpatska Oblast,UA,UA7
+NUTS,2024,3,UA711,Berehivskyi Raion,UA,UA71
+NUTS,2024,3,UA712,Mukachivskyi Raion,UA,UA71
+NUTS,2024,3,UA713,Rakhivskyi Raion,UA,UA71
+NUTS,2024,3,UA714,Tiachivskyi Raion,UA,UA71
+NUTS,2024,3,UA715,Uzhhorodskyi Raion,UA,UA71
+NUTS,2024,3,UA716,Khustskyi Raion,UA,UA71
+NUTS,2024,2,UA72,Ivano-Frankivska Oblast,UA,UA7
+NUTS,2024,3,UA721,Verkhovynskyi Raion,UA,UA72
+NUTS,2024,3,UA722,Ivano-Frankivskyi Raion,UA,UA72
+NUTS,2024,3,UA723,Kaluskyi Raion,UA,UA72
+NUTS,2024,3,UA724,Kolomyiskyi Raion,UA,UA72
+NUTS,2024,3,UA725,Kosivskyi Raion,UA,UA72
+NUTS,2024,3,UA726,Nadvirnianskyi Raion,UA,UA72
+NUTS,2024,2,UA73,Lvivska Oblast,UA,UA7
+NUTS,2024,3,UA731,Drohobytskyi Raion,UA,UA73
+NUTS,2024,3,UA732,Zolochivskyi Raion,UA,UA73
+NUTS,2024,3,UA733,Lvivskyi Raion,UA,UA73
+NUTS,2024,3,UA734,Sambirskyi Raion,UA,UA73
+NUTS,2024,3,UA735,Stryiskyi Raion,UA,UA73
+NUTS,2024,3,UA736,Chervonohradskyi Raion,UA,UA73
+NUTS,2024,3,UA737,Iavorivskyi Raion,UA,UA73
+NUTS,2024,2,UA74,Chernivetska Oblast,UA,UA7
+NUTS,2024,3,UA741,Vyzhnytskyi Raion,UA,UA74
+NUTS,2024,3,UA742,Dnistrovskyi Raion,UA,UA74
+NUTS,2024,3,UA743,Chernivetskyi Raion,UA,UA74
+NUTS,2024,1,UA8,Macroregion_08,UA,UA
+NUTS,2024,2,UA81,Volynska Oblast,UA,UA8
+NUTS,2024,3,UA811,Volodymyrskyi Raion,UA,UA81
+NUTS,2024,3,UA812,Kamin-Kashyrskyi Raion,UA,UA81
+NUTS,2024,3,UA813,Kovelskyi Raion,UA,UA81
+NUTS,2024,3,UA814,Lutskyi Raion,UA,UA81
+NUTS,2024,2,UA82,Zhytomyrska Oblast,UA,UA8
+NUTS,2024,3,UA821,Berdychivskyi Raion,UA,UA82
+NUTS,2024,3,UA822,Zhytomyrskyi Raion,UA,UA82
+NUTS,2024,3,UA823,Korostenskyi Raion,UA,UA82
+NUTS,2024,3,UA824,Zviahelskyi Raion,UA,UA82
+NUTS,2024,2,UA83,Rivnenska Oblast,UA,UA8
+NUTS,2024,3,UA831,Varaskyi Raion,UA,UA83
+NUTS,2024,3,UA832,Dubenskyi Raion,UA,UA83
+NUTS,2024,3,UA833,Rivnenskyi Raion,UA,UA83
+NUTS,2024,3,UA834,Sarnenskyi Raion,UA,UA83
+NUTS,2024,1,UKC,North East (England),UK,UK
+NUTS,2024,2,UKC1,Tees Valley and Durham,UK,UKC
+NUTS,2024,3,UKC11,Hartlepool and Stockton-on-Tees,UK,UKC1
+NUTS,2024,3,UKC12,South Teesside,UK,UKC1
+NUTS,2024,3,UKC13,Darlington,UK,UKC1
+NUTS,2024,3,UKC14,Durham CC,UK,UKC1
+NUTS,2024,2,UKC2,Northumberland and Tyne and Wear,UK,UKC
+NUTS,2024,3,UKC21,Northumberland,UK,UKC2
+NUTS,2024,3,UKC22,Tyneside,UK,UKC2
+NUTS,2024,3,UKC23,Sunderland,UK,UKC2
+NUTS,2024,1,UKD,North West (England),UK,UK
+NUTS,2024,2,UKD1,Cumbria,UK,UKD
+NUTS,2024,3,UKD11,West Cumbria,UK,UKD1
+NUTS,2024,3,UKD12,East Cumbria,UK,UKD1
+NUTS,2024,2,UKD3,Greater Manchester,UK,UKD
+NUTS,2024,3,UKD33,Manchester,UK,UKD3
+NUTS,2024,3,UKD34,Greater Manchester South West,UK,UKD3
+NUTS,2024,3,UKD35,Greater Manchester South East,UK,UKD3
+NUTS,2024,3,UKD36,Greater Manchester North West,UK,UKD3
+NUTS,2024,3,UKD37,Greater Manchester North East,UK,UKD3
+NUTS,2024,2,UKD4,Lancashire,UK,UKD
+NUTS,2024,3,UKD41,Blackburn with Darwen,UK,UKD4
+NUTS,2024,3,UKD42,Blackpool,UK,UKD4
+NUTS,2024,3,UKD44,Lancaster and Wyre,UK,UKD4
+NUTS,2024,3,UKD45,Mid Lancashire,UK,UKD4
+NUTS,2024,3,UKD46,East Lancashire,UK,UKD4
+NUTS,2024,3,UKD47,Chorley and West Lancashire,UK,UKD4
+NUTS,2024,2,UKD6,Cheshire,UK,UKD
+NUTS,2024,3,UKD61,Warrington,UK,UKD6
+NUTS,2024,3,UKD62,Cheshire East,UK,UKD6
+NUTS,2024,3,UKD63,Cheshire West and Chester,UK,UKD6
+NUTS,2024,2,UKD7,Merseyside,UK,UKD
+NUTS,2024,3,UKD71,East Merseyside,UK,UKD7
+NUTS,2024,3,UKD72,Liverpool,UK,UKD7
+NUTS,2024,3,UKD73,Sefton,UK,UKD7
+NUTS,2024,3,UKD74,Wirral,UK,UKD7
+NUTS,2024,1,UKE,Yorkshire and the Humber,UK,UK
+NUTS,2024,2,UKE1,East Yorkshire and Northern Lincolnshire,UK,UKE
+NUTS,2024,3,UKE11,"Kingston upon Hull, City of",UK,UKE1
+NUTS,2024,3,UKE12,East Riding of Yorkshire,UK,UKE1
+NUTS,2024,3,UKE13,North and North East Lincolnshire,UK,UKE1
+NUTS,2024,2,UKE2,North Yorkshire,UK,UKE
+NUTS,2024,3,UKE21,York,UK,UKE2
+NUTS,2024,3,UKE22,North Yorkshire CC,UK,UKE2
+NUTS,2024,2,UKE3,South Yorkshire,UK,UKE
+NUTS,2024,3,UKE31,"Barnsley, Doncaster and Rotherham",UK,UKE3
+NUTS,2024,3,UKE32,Sheffield,UK,UKE3
+NUTS,2024,2,UKE4,West Yorkshire,UK,UKE
+NUTS,2024,3,UKE41,Bradford,UK,UKE4
+NUTS,2024,3,UKE42,Leeds,UK,UKE4
+NUTS,2024,3,UKE44,Calderdale and Kirklees,UK,UKE4
+NUTS,2024,3,UKE45,Wakefield,UK,UKE4
+NUTS,2024,1,UKF,East Midlands (England),UK,UK
+NUTS,2024,2,UKF1,Derbyshire and Nottinghamshire,UK,UKF
+NUTS,2024,3,UKF11,Derby,UK,UKF1
+NUTS,2024,3,UKF12,East Derbyshire,UK,UKF1
+NUTS,2024,3,UKF13,South and West Derbyshire,UK,UKF1
+NUTS,2024,3,UKF14,Nottingham,UK,UKF1
+NUTS,2024,3,UKF15,North Nottinghamshire,UK,UKF1
+NUTS,2024,3,UKF16,South Nottinghamshire,UK,UKF1
+NUTS,2024,2,UKF2,"Leicestershire, Rutland and Northamptonshire",UK,UKF
+NUTS,2024,3,UKF21,Leicester,UK,UKF2
+NUTS,2024,3,UKF22,Leicestershire CC and Rutland,UK,UKF2
+NUTS,2024,3,UKF24,West Northamptonshire,UK,UKF2
+NUTS,2024,3,UKF25,North Northamptonshire,UK,UKF2
+NUTS,2024,2,UKF3,Lincolnshire,UK,UKF
+NUTS,2024,3,UKF30,Lincolnshire,UK,UKF3
+NUTS,2024,1,UKG,West Midlands (England),UK,UK
+NUTS,2024,2,UKG1,"Herefordshire, Worcestershire and Warwickshire",UK,UKG
+NUTS,2024,3,UKG11,"Herefordshire, County of",UK,UKG1
+NUTS,2024,3,UKG12,Worcestershire,UK,UKG1
+NUTS,2024,3,UKG13,Warwickshire,UK,UKG1
+NUTS,2024,2,UKG2,Shropshire and Staffordshire,UK,UKG
+NUTS,2024,3,UKG21,Telford and Wrekin,UK,UKG2
+NUTS,2024,3,UKG22,Shropshire CC,UK,UKG2
+NUTS,2024,3,UKG23,Stoke-on-Trent,UK,UKG2
+NUTS,2024,3,UKG24,Staffordshire CC,UK,UKG2
+NUTS,2024,2,UKG3,West Midlands,UK,UKG
+NUTS,2024,3,UKG31,Birmingham,UK,UKG3
+NUTS,2024,3,UKG32,Solihull,UK,UKG3
+NUTS,2024,3,UKG33,Coventry,UK,UKG3
+NUTS,2024,3,UKG36,Dudley,UK,UKG3
+NUTS,2024,3,UKG37,Sandwell,UK,UKG3
+NUTS,2024,3,UKG38,Walsall,UK,UKG3
+NUTS,2024,3,UKG39,Wolverhampton,UK,UKG3
+NUTS,2024,1,UKH,East of England,UK,UK
+NUTS,2024,2,UKH1,East Anglia,UK,UKH
+NUTS,2024,3,UKH11,Peterborough,UK,UKH1
+NUTS,2024,3,UKH12,Cambridgeshire CC,UK,UKH1
+NUTS,2024,3,UKH14,Suffolk,UK,UKH1
+NUTS,2024,3,UKH15,Norwich and East Norfolk,UK,UKH1
+NUTS,2024,3,UKH16,North and West Norfolk,UK,UKH1
+NUTS,2024,3,UKH17,Breckland and South Norfolk,UK,UKH1
+NUTS,2024,2,UKH2,Bedfordshire and Hertfordshire,UK,UKH
+NUTS,2024,3,UKH21,Luton,UK,UKH2
+NUTS,2024,3,UKH23,Hertfordshire,UK,UKH2
+NUTS,2024,3,UKH24,Bedford,UK,UKH2
+NUTS,2024,3,UKH25,Central Bedfordshire,UK,UKH2
+NUTS,2024,2,UKH3,Essex,UK,UKH
+NUTS,2024,3,UKH31,Southend-on-Sea,UK,UKH3
+NUTS,2024,3,UKH32,Thurrock,UK,UKH3
+NUTS,2024,3,UKH34,Essex Haven Gateway,UK,UKH3
+NUTS,2024,3,UKH35,West Essex,UK,UKH3
+NUTS,2024,3,UKH36,Heart of Essex,UK,UKH3
+NUTS,2024,3,UKH37,Essex Thames Gateway,UK,UKH3
+NUTS,2024,1,UKI,London,UK,UK
+NUTS,2024,2,UKI3,Inner London — West,UK,UKI
+NUTS,2024,3,UKI31,Camden and City of London,UK,UKI3
+NUTS,2024,3,UKI32,Westminster,UK,UKI3
+NUTS,2024,3,UKI33,Kensington & Chelsea and Hammersmith & Fulham,UK,UKI3
+NUTS,2024,3,UKI34,Wandsworth,UK,UKI3
+NUTS,2024,2,UKI4,Inner London — East,UK,UKI
+NUTS,2024,3,UKI41,Hackney and Newham,UK,UKI4
+NUTS,2024,3,UKI42,Tower Hamlets,UK,UKI4
+NUTS,2024,3,UKI43,Haringey and Islington,UK,UKI4
+NUTS,2024,3,UKI44,Lewisham and Southwark,UK,UKI4
+NUTS,2024,3,UKI45,Lambeth,UK,UKI4
+NUTS,2024,2,UKI5,Outer London — East and North East,UK,UKI
+NUTS,2024,3,UKI51,Bexley and Greenwich,UK,UKI5
+NUTS,2024,3,UKI52,Barking & Dagenham and Havering,UK,UKI5
+NUTS,2024,3,UKI53,Redbridge and Waltham Forest,UK,UKI5
+NUTS,2024,3,UKI54,Enfield,UK,UKI5
+NUTS,2024,2,UKI6,Outer London — South,UK,UKI
+NUTS,2024,3,UKI61,Bromley,UK,UKI6
+NUTS,2024,3,UKI62,Croydon,UK,UKI6
+NUTS,2024,3,UKI63,"Merton, Kingston upon Thames and Sutton",UK,UKI6
+NUTS,2024,2,UKI7,Outer London — West and North West,UK,UKI
+NUTS,2024,3,UKI71,Barnet,UK,UKI7
+NUTS,2024,3,UKI72,Brent,UK,UKI7
+NUTS,2024,3,UKI73,Ealing,UK,UKI7
+NUTS,2024,3,UKI74,Harrow and Hillingdon,UK,UKI7
+NUTS,2024,3,UKI75,Hounslow and Richmond upon Thames,UK,UKI7
+NUTS,2024,1,UKJ,South East (England),UK,UK
+NUTS,2024,2,UKJ1,"Berkshire, Buckinghamshire and Oxfordshire",UK,UKJ
+NUTS,2024,3,UKJ11,Berkshire,UK,UKJ1
+NUTS,2024,3,UKJ12,Milton Keynes,UK,UKJ1
+NUTS,2024,3,UKJ13,Buckinghamshire CC,UK,UKJ1
+NUTS,2024,3,UKJ14,Oxfordshire,UK,UKJ1
+NUTS,2024,2,UKJ2,"Surrey, East and West Sussex",UK,UKJ
+NUTS,2024,3,UKJ21,Brighton and Hove,UK,UKJ2
+NUTS,2024,3,UKJ22,East Sussex CC,UK,UKJ2
+NUTS,2024,3,UKJ25,West Surrey,UK,UKJ2
+NUTS,2024,3,UKJ26,East Surrey,UK,UKJ2
+NUTS,2024,3,UKJ27,West Sussex (South West),UK,UKJ2
+NUTS,2024,3,UKJ28,West Sussex (North East),UK,UKJ2
+NUTS,2024,2,UKJ3,Hampshire and Isle of Wight,UK,UKJ
+NUTS,2024,3,UKJ31,Portsmouth,UK,UKJ3
+NUTS,2024,3,UKJ32,Southampton,UK,UKJ3
+NUTS,2024,3,UKJ34,Isle of Wight,UK,UKJ3
+NUTS,2024,3,UKJ35,South Hampshire,UK,UKJ3
+NUTS,2024,3,UKJ36,Central Hampshire,UK,UKJ3
+NUTS,2024,3,UKJ37,North Hampshire,UK,UKJ3
+NUTS,2024,2,UKJ4,Kent,UK,UKJ
+NUTS,2024,3,UKJ41,Medway,UK,UKJ4
+NUTS,2024,3,UKJ43,Kent Thames Gateway,UK,UKJ4
+NUTS,2024,3,UKJ44,East Kent,UK,UKJ4
+NUTS,2024,3,UKJ45,Mid Kent,UK,UKJ4
+NUTS,2024,3,UKJ46,West Kent,UK,UKJ4
+NUTS,2024,1,UKK,South West (England),UK,UK
+NUTS,2024,2,UKK1,"Gloucestershire, Wiltshire and Bristol/Bath area",UK,UKK
+NUTS,2024,3,UKK11,"Bristol, City of",UK,UKK1
+NUTS,2024,3,UKK12,"Bath and North East Somerset, North Somerset and South Gloucestershire",UK,UKK1
+NUTS,2024,3,UKK13,Gloucestershire,UK,UKK1
+NUTS,2024,3,UKK14,Swindon,UK,UKK1
+NUTS,2024,3,UKK15,Wiltshire CC,UK,UKK1
+NUTS,2024,2,UKK2,Dorset and Somerset,UK,UKK
+NUTS,2024,3,UKK23,Somerset,UK,UKK2
+NUTS,2024,3,UKK24,"Bournemouth, Christchurch and Poole",UK,UKK2
+NUTS,2024,3,UKK25,Dorset,UK,UKK2
+NUTS,2024,2,UKK3,Cornwall and Isles of Scilly,UK,UKK
+NUTS,2024,3,UKK30,Cornwall and Isles of Scilly,UK,UKK3
+NUTS,2024,2,UKK4,Devon,UK,UKK
+NUTS,2024,3,UKK41,Plymouth,UK,UKK4
+NUTS,2024,3,UKK42,Torbay,UK,UKK4
+NUTS,2024,3,UKK43,Devon CC,UK,UKK4
+NUTS,2024,1,UKL,Wales,UK,UK
+NUTS,2024,2,UKL1,West Wales and The Valleys,UK,UKL
+NUTS,2024,3,UKL11,Isle of Anglesey,UK,UKL1
+NUTS,2024,3,UKL12,Gwynedd,UK,UKL1
+NUTS,2024,3,UKL13,Conwy and Denbighshire,UK,UKL1
+NUTS,2024,3,UKL14,South West Wales,UK,UKL1
+NUTS,2024,3,UKL15,Central Valleys,UK,UKL1
+NUTS,2024,3,UKL16,Gwent Valleys,UK,UKL1
+NUTS,2024,3,UKL17,Bridgend and Neath Port Talbot,UK,UKL1
+NUTS,2024,3,UKL18,Swansea,UK,UKL1
+NUTS,2024,2,UKL2,East Wales,UK,UKL
+NUTS,2024,3,UKL21,Monmouthshire and Newport,UK,UKL2
+NUTS,2024,3,UKL22,Cardiff and Vale of Glamorgan,UK,UKL2
+NUTS,2024,3,UKL23,Flintshire and Wrexham,UK,UKL2
+NUTS,2024,3,UKL24,Powys,UK,UKL2
+NUTS,2024,1,UKM,Scotland,UK,UK
+NUTS,2024,2,UKM5,North Eastern Scotland,UK,UKM
+NUTS,2024,3,UKM50,Aberdeen City and Aberdeenshire,UK,UKM5
+NUTS,2024,2,UKM6,Highlands and Islands,UK,UKM
+NUTS,2024,3,UKM61,Caithness & Sutherland and Ross & Cromarty,UK,UKM6
+NUTS,2024,3,UKM62,"Inverness & Nairn and Moray, Badenoch & Strathspey",UK,UKM6
+NUTS,2024,3,UKM63,"Lochaber, Skye & Lochalsh, Arran & Cumbrae and Argyll & Bute",UK,UKM6
+NUTS,2024,3,UKM64,Na h-Eileanan Siar (Western Isles),UK,UKM6
+NUTS,2024,3,UKM65,Orkney Islands,UK,UKM6
+NUTS,2024,3,UKM66,Shetland Islands,UK,UKM6
+NUTS,2024,2,UKM7,Eastern Scotland,UK,UKM
+NUTS,2024,3,UKM71,Angus and Dundee City,UK,UKM7
+NUTS,2024,3,UKM72,Clackmannanshire and Fife,UK,UKM7
+NUTS,2024,3,UKM73,East Lothian and Midlothian,UK,UKM7
+NUTS,2024,3,UKM75,"Edinburgh, City of",UK,UKM7
+NUTS,2024,3,UKM76,Falkirk,UK,UKM7
+NUTS,2024,3,UKM77,Perth & Kinross and Stirling,UK,UKM7
+NUTS,2024,3,UKM78,West Lothian,UK,UKM7
+NUTS,2024,2,UKM8,West Central Scotland,UK,UKM
+NUTS,2024,3,UKM81,"East Dunbartonshire, West Dunbartonshire and Helensburgh & Lomond",UK,UKM8
+NUTS,2024,3,UKM82,Glasgow City,UK,UKM8
+NUTS,2024,3,UKM83,"Inverclyde, East Renfrewshire and Renfrewshire",UK,UKM8
+NUTS,2024,3,UKM84,North Lanarkshire,UK,UKM8
+NUTS,2024,2,UKM9,Southern Scotland,UK,UKM
+NUTS,2024,3,UKM91,Scottish Borders,UK,UKM9
+NUTS,2024,3,UKM92,Dumfries & Galloway,UK,UKM9
+NUTS,2024,3,UKM93,East Ayrshire and North Ayrshire mainland,UK,UKM9
+NUTS,2024,3,UKM94,South Ayrshire,UK,UKM9
+NUTS,2024,3,UKM95,South Lanarkshire,UK,UKM9
+NUTS,2024,1,UKN,Northern Ireland,UK,UK
+NUTS,2024,2,UKN0,Northern Ireland,UK,UKN
+NUTS,2024,3,UKN06,Belfast,UK,UKN0
+NUTS,2024,3,UKN07,"Armagh City, Banbridge and Craigavon",UK,UKN0
+NUTS,2024,3,UKN08,"Newry, Mourne and Down",UK,UKN0
+NUTS,2024,3,UKN09,Ards and North Down,UK,UKN0
+NUTS,2024,3,UKN0A,Derry City and Strabane,UK,UKN0
+NUTS,2024,3,UKN0B,Mid Ulster,UK,UKN0
+NUTS,2024,3,UKN0C,Causeway Coast and Glens,UK,UKN0
+NUTS,2024,3,UKN0D,Antrim and Newtownabbey,UK,UKN0
+NUTS,2024,3,UKN0E,Lisburn and Castlereagh,UK,UKN0
+NUTS,2024,3,UKN0F,Mid and East Antrim,UK,UKN0
+NUTS,2024,3,UKN0G,Fermanagh and Omagh,UK,UKN0
+NUTS,2024,1,XK0,Kosovo,XK,XK
+NUTS,2024,2,XK00,Kosovo,XK,XK0
+NUTS,2024,3,XK001,Prishtinë,XK,XK00
+NUTS,2024,3,XK002,Mitrovicë,XK,XK00
+NUTS,2024,3,XK003,Pejë,XK,XK00
+NUTS,2024,3,XK004,Prizren,XK,XK00
+NUTS,2024,3,XK005,Ferizaj,XK,XK00
+NUTS,2024,3,XK006,Gjilan,XK,XK00
+NUTS,2024,3,XK007,Gjakovë,XK,XK00
