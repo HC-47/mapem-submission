@@ -22,7 +22,7 @@ class ManagedBatchContractTests(unittest.TestCase):
     def setUp(self) -> None:
         self.temporary = tempfile.TemporaryDirectory()
         self.batch_id = "eurostat-managed-test"
-        self.dataset_id = "eurostat-population-density-nuts3"
+        self.dataset_id = "eurostat-population-density"
         self.version = "2099.01.01-test"
         self.batch = Path(self.temporary.name) / "managed-batches" / self.batch_id
         self.release = self.batch / "datasets" / self.dataset_id / self.version
@@ -53,7 +53,7 @@ class ManagedBatchContractTests(unittest.TestCase):
                 "redistribution": True,
             },
             "methodology": "Synthetic test of the pinned managed Eurostat normalisation contract.",
-            "geography": {"scheme": "NUTS", "version": "2024", "level": 3},
+            "geography": {"scheme": "NUTS", "version": "2024", "levels": [3]},
             "geographic_coverage": ["IT"],
             "temporal_frequency": "annual",
             "temporal_coverage": ["2024"],
@@ -68,8 +68,12 @@ class ManagedBatchContractTests(unittest.TestCase):
             "quality": {
                 "score": 95,
                 "coverage": 1,
+                "coverage_by_level": {"3": 1},
+                "countries_covered": 1,
+                "countries_in_contract": 1,
                 "observations": 1,
                 "geographies": 1,
+                "geographies_by_level": {"3": 1},
                 "methodology_documented": True,
                 "source_documented": True,
                 "reproducible": True,
@@ -131,8 +135,9 @@ class ManagedBatchContractTests(unittest.TestCase):
             "observations_sha256": observations_digest,
             "upstream_updated_at": "2099-01-01T00:00:00Z",
             "upstream_label": "Synthetic Eurostat response",
+            "geography_levels": {"declared": [3], "available_upstream": [2, 3]},
             "normalisation": {
-                "geography": "Only NUTS 2024 units are retained.",
+                "geography": "Only NUTS 2024 units are retained, at the declared levels.",
                 "missing_values": "Missing upstream values remain absent.",
                 "flags": "Upstream quality flags remain available.",
             },

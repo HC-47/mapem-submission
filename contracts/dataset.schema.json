@@ -116,11 +116,17 @@
     "geography": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["scheme", "version", "level"],
+      "required": ["scheme", "version", "levels"],
       "properties": {
         "scheme": { "enum": ["NUTS", "LAU", "POSTCODE", "H3", "CUSTOM"] },
         "version": { "type": "string" },
-        "level": { "type": "integer", "minimum": 0, "maximum": 15 }
+        "levels": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 16,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 0, "maximum": 15 }
+        }
       }
     },
     "indicator": {
@@ -188,8 +194,12 @@
       "required": [
         "score",
         "coverage",
+        "coverage_by_level",
+        "countries_covered",
+        "countries_in_contract",
         "observations",
         "geographies",
+        "geographies_by_level",
         "methodology_documented",
         "source_documented",
         "reproducible",
@@ -200,8 +210,22 @@
       "properties": {
         "score": { "type": "integer", "minimum": 0, "maximum": 100 },
         "coverage": { "type": "number", "minimum": 0, "maximum": 1 },
+        "coverage_by_level": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": { "pattern": "^(?:[0-9]|1[0-5])$" },
+          "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+        },
+        "countries_covered": { "type": "integer", "minimum": 0 },
+        "countries_in_contract": { "type": "integer", "minimum": 1 },
         "observations": { "type": "integer", "minimum": 0 },
         "geographies": { "type": "integer", "minimum": 0 },
+        "geographies_by_level": {
+          "type": "object",
+          "minProperties": 1,
+          "propertyNames": { "pattern": "^(?:[0-9]|1[0-5])$" },
+          "additionalProperties": { "type": "integer", "minimum": 0 }
+        },
         "sample_size": { "type": "integer", "minimum": 0 },
         "methodology_documented": { "type": "boolean" },
         "source_documented": { "type": "boolean" },

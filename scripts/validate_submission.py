@@ -245,10 +245,14 @@ def validate_observations(
                 errors.append(f"{prefix}: undeclared indicator {row['indicator_id']}")
             if geography.get("scheme") != "NUTS" or geography.get("version") != "2024":
                 errors.append("dataset.yaml: community geography must use the pinned NUTS 2024 contract")
+            # `levels` is a list: a dataset carries every level its source
+            # publishes it at, so a row belongs to the release when its level is
+            # one of them — not when it equals a single declared level.
+            declared_levels = {str(level) for level in geography.get("levels", [])}
             if (
                 row["geo_scheme"] != geography.get("scheme")
                 or row["geo_version"] != str(geography.get("version"))
-                or row["geo_level"] != str(geography.get("level"))
+                or row["geo_level"] not in declared_levels
             ):
                 errors.append(f"{prefix}: geography does not match dataset.yaml")
             unit = nuts.get(row["geo_code"])

@@ -11,6 +11,7 @@
     "imported_at",
     "response_sha256",
     "observations_sha256",
+    "geography_levels",
     "normalisation"
   ],
   "properties": {
@@ -24,6 +25,24 @@
     "upstream_label": { "type": ["string", "null"] },
     "reference_metadata_html_url": { "type": ["string", "null"], "format": "uri" },
     "reference_metadata_sdmx_url": { "type": ["string", "null"], "format": "uri" },
+    "geography_levels": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["declared", "available_upstream"],
+      "properties": {
+        "declared": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 0, "maximum": 15 }
+        },
+        "available_upstream": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 0, "maximum": 15 }
+        }
+      }
+    },
     "normalisation": {
       "type": "object",
       "additionalProperties": false,
