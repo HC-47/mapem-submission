@@ -33,5 +33,21 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
+          # Senza questa riga il job non parte proprio. `cache: pip` cerca da sé
+          # `**/requirements.txt` o `**/pyproject.toml`, e questo repository non
+          # ha né l'uno né l'altro: le dipendenze stanno in `requirements.lock`,
+          # che quel glob non nomina. `setup-python` non degrada — esce con
+          # «No file ... matched», e il job muore prima di installare qualsiasi
+          # cosa.
+          #
+          # Il risultato è che questa pipeline non ha **mai** eseguito un test:
+          # rossa a ogni push su `main` dal 19 agosto 2026, quando è stata
+          # scritta. È la suite che difende `/contracts/`, `/scripts/` e
+          # `/tests/`, cioè le tre directory che `CODEOWNERS` protegge.
+          #
+          # Gli altri due workflow lo dichiaravano già, con il percorso dentro
+          # `validator/` perché là il checkout fidato va in quella directory. Qui
+          # il checkout è alla radice, quindi il percorso è quello.
+          cache-dependency-path: requirements.lock
       - run: pip install -r requirements.lock
       - run: python -m unittest discover -s tests -p 'test_*.py'
