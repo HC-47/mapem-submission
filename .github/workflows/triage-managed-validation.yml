@@ -16,17 +16,59 @@ jobs:
     if: github.event.workflow_run.event == 'pull_request'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           name: managed-batch-validation
           path: validation
           run-id: ${{ github.event.workflow_run.id }}
           github-token: ${{ github.token }}
-      - uses: actions/github-script@v7
+      - uses: actions/github-script@f28e40c7f34bde8b3046d885e986cb6290c5673b # v7.1.0
         with:
           script: |
             const fs = require('fs');
+
+            // Su quale pull request si scrive lo dice GitHub, non l'artifact.
+            //
+            // Questo job gira su `workflow_run`, quindi con un token che sa
+            // scrivere etichette e commenti, e leggeva il numero della PR da un
+            // file prodotto dal job precedente. Oggi quel file lo scrive il
+            // validatore fidato — quello del commit base — a partire
+            // dall'evento, quindi il valore è affidabile: è una proprietà di due
+            // file che devono restare d'accordo, non un vincolo. Un domani in
+            // cui l'artifact fosse scritto da codice della PR, un numero
+            // qualsiasi lì dentro diventerebbe etichette e commenti su una PR
+            // qualsiasi.
+            //
+            // `pull_requests` sull'evento è vuoto per le PR che arrivano da un
+            // fork — cioè quasi tutte, qui — quindi la PR si risolve dal commit,
+            // che è la strada che funziona in entrambi i casi.
+            const associate = await github.rest.repos.listPullRequestsAssociatedWithCommit({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              commit_sha: context.payload.workflow_run.head_sha,
+            });
+            const aperte = associate.data.filter((pull) => pull.state === 'open');
+            const pullRequest = (aperte[0] ?? associate.data[0])?.number;
+            if (!pullRequest) {
+              core.setFailed(
+                `Nessuna pull request associata a ${context.payload.workflow_run.head_sha}: ` +
+                'niente da etichettare, e niente su cui indovinare.',
+              );
+              return;
+            }
             const report = JSON.parse(fs.readFileSync('validation/managed-validation-report.json', 'utf8'));
+
+            // L'artifact resta la fonte dell'esito, e qui dice anche se è
+            // d'accordo su di chi stia parlando. Un disaccordo non si concilia:
+            // significa che una delle due strade è sbagliata, e scrivere su una
+            // delle due PR sarebbe scrivere sulla sbagliata nel caso peggiore.
+            if (report.pull_request && report.pull_request !== pullRequest) {
+              core.setFailed(
+                `Il rapporto nomina la PR #${report.pull_request}, il commit ` +
+                `${context.payload.workflow_run.head_sha} ne nomina #${pullRequest}.`,
+              );
+              return;
+            }
             const validLabel = 'managed:valid';
             const invalidLabel = 'managed:invalid';
             for (const label of [
@@ -44,14 +86,14 @@ jobs:
             await github.rest.issues.addLabels({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: report.pull_request,
+              issue_number: pullRequest,
               labels: [add],
             });
             try {
               await github.rest.issues.removeLabel({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                issue_number: report.pull_request,
+                issue_number: pullRequest,
                 name: remove,
               });
             } catch (error) {
@@ -72,7 +114,7 @@ jobs:
             const comments = await github.paginate(github.rest.issues.listComments, {
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: report.pull_request,
+              issue_number: pullRequest,
             });
             const previous = comments.find((comment) => comment.user?.type === 'Bot' && comment.body?.includes(marker));
             if (previous) {
@@ -86,7 +128,7 @@ jobs:
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                issue_number: report.pull_request,
+                issue_number: pullRequest,
                 body: lines.join('\n'),
               });
             }
