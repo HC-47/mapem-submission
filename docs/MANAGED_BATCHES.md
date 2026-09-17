@@ -47,6 +47,12 @@ The manifest validates against `contracts/managed-batch.schema.json` and declare
 - regression counts, coverage loss, removal fraction and an empty failure list;
 - configured datasets checked in the same run whose observations were unchanged.
 
+A dataset's **first release** declares `previous_version: null` and `regression.first_release: true`. The
+schema ties the two together: a null predecessor must be a first release, and a first release has no
+previous observations, nothing removed or changed, and no coverage loss. Only datasets already registered in
+the core — a provider contract entry and a publication profile — can be proposed this way; the core refuses
+the claim for any dataset that is published or already has releases on disk.
+
 The `source_config_sha256` prevents a fork from silently changing Eurostat codes or filters. Configuration
 changes must first be reviewed in the core and then copied/pinned here by maintainers.
 

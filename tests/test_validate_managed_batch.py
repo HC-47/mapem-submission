@@ -209,6 +209,51 @@ class ManagedBatchContractTests(unittest.TestCase):
         report = self._validate()
         self.assertTrue(any("artifact checksums" in item for item in report.errors))
 
+    def _rewrite_entry(self, **changes: object) -> None:
+        manifest_path = self.batch / "batch.yaml"
+        manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
+        entry = manifest["datasets"][0]
+        regression = changes.pop("regression", {})
+        entry.update(changes)
+        entry["regression"].update(regression)
+        manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False), encoding="utf-8")
+
+    def _first_release(self, **regression: object) -> dict[str, object]:
+        return {
+            "first_release": True,
+            "previous_observations": 0,
+            "current_observations": 1,
+            "added": 1,
+            "removed": 0,
+            "changed": 0,
+            **regression,
+        }
+
+    def test_a_first_release_passes_with_a_null_predecessor(self) -> None:
+        """A dataset registered in the core and never published enters here.
+
+        The contract used to require `previous_version` as a string, so the
+        managed channel could refresh a dataset but never publish its first
+        release: the only way in was around the channel.
+        """
+        self._rewrite_entry(previous_version=None, regression=self._first_release())
+        report = self._validate()
+        self.assertTrue(report.valid, report.errors)
+
+    def test_a_null_predecessor_must_declare_a_first_release(self) -> None:
+        self._rewrite_entry(
+            previous_version=None, regression=self._first_release(first_release=False)
+        )
+        self.assertFalse(self._validate().valid)
+
+    def test_a_first_release_has_nothing_to_remove(self) -> None:
+        self._rewrite_entry(previous_version=None, regression=self._first_release(removed=1))
+        self.assertFalse(self._validate().valid)
+
+    def test_a_release_with_a_predecessor_cannot_claim_to_be_first(self) -> None:
+        self._rewrite_entry(regression={"first_release": True})
+        self.assertFalse(self._validate().valid)
+
 
 if __name__ == "__main__":
     unittest.main()
