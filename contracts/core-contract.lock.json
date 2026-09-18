@@ -16,7 +16,7 @@
   "managed_batch_contract": {
     "path": "contracts/managed-batch.schema.json",
     "upstream_path": "data/schema/managed-batch.schema.json",
-    "sha256": "7410ed15b6cd16915fd9a9e0ea59627c6a48a6663b3373b469d05c8b933554ba"
+    "sha256": "732b4ac24ac71588ccca9922db4b59407ec26aea6ccd2a5526faef1dc2997071"
   },
   "eurostat_provenance_contract": {
     "path": "contracts/eurostat-provenance.schema.json",

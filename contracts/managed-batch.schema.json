@@ -64,7 +64,10 @@
       "properties": {
         "dataset_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
         "version": { "type": "string", "pattern": "^[0-9A-Za-z][0-9A-Za-z._-]*$" },
-        "previous_version": { "type": "string", "pattern": "^[0-9A-Za-z][0-9A-Za-z._-]*$" },
+        "previous_version": {
+          "type": ["string", "null"],
+          "pattern": "^[0-9A-Za-z][0-9A-Za-z._-]*$"
+        },
         "path": { "type": "string", "pattern": "^managed-batches/[^/]+/datasets/[^/]+/[^/]+$" },
         "observations": { "type": "integer", "minimum": 1 },
         "artifact_sha256": {
@@ -90,6 +93,7 @@
             "failures"
           ],
           "properties": {
+            "first_release": { "type": "boolean" },
             "previous_observations": { "type": "integer", "minimum": 0 },
             "current_observations": { "type": "integer", "minimum": 1 },
             "added": { "type": "integer", "minimum": 0 },
@@ -99,6 +103,30 @@
             "removed_observation_fraction": { "type": "number", "minimum": 0, "maximum": 1 },
             "failures": { "type": "array", "items": { "type": "string" }, "maxItems": 0 }
           }
+        }
+      },
+      "if": {
+        "required": ["previous_version"],
+        "properties": { "previous_version": { "type": "null" } }
+      },
+      "then": {
+        "properties": {
+          "regression": {
+            "required": ["first_release"],
+            "properties": {
+              "first_release": { "const": true },
+              "previous_observations": { "const": 0 },
+              "removed": { "const": 0 },
+              "changed": { "const": 0 },
+              "coverage_drop": { "const": 0 },
+              "removed_observation_fraction": { "const": 0 }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "regression": { "properties": { "first_release": { "const": false } } }
         }
       }
     }

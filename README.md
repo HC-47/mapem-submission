@@ -41,7 +41,8 @@ Full contributor and governance documentation is in
 ## Managed Eurostat intake
 
 Managed refresh PRs add `managed-batches/<batch-id>/batch.yaml` plus the standard three-file release for
-every changed dataset. They are accepted only from the configured technical fork, use the protected
+every changed dataset — including the first release of a dataset newly registered in the core, which can
+enter no other way. They are accepted only from the configured technical fork, use the protected
 `managed-batch-contract` check and do not enter community voting. Full contract, security and operational
 documentation is in [`docs/MANAGED_BATCHES.md`](docs/MANAGED_BATCHES.md).
 
