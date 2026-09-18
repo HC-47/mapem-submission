@@ -140,6 +140,8 @@
         "unit": { "type": "string" },
         "statistic": { "type": "string" },
         "aggregation": { "type": "string" },
+        "parent": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "primary": { "type": "boolean" },
         "definition": {
           "type": "object",
           "additionalProperties": { "type": ["string", "number", "boolean"] }
@@ -215,6 +217,18 @@
           "minProperties": 1,
           "propertyNames": { "pattern": "^(?:[0-9]|1[0-5])$" },
           "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+        },
+        "coverage_by_indicator": {
+          "type": "object",
+          "minProperties": 2,
+          "propertyNames": { "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }
+        },
+        "countries_by_indicator": {
+          "type": "object",
+          "minProperties": 2,
+          "propertyNames": { "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "additionalProperties": { "type": "integer", "minimum": 0 }
         },
         "countries_covered": { "type": "integer", "minimum": 0 },
         "countries_in_contract": { "type": "integer", "minimum": 1 },

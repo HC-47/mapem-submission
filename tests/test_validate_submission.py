@@ -169,6 +169,37 @@ class SubmissionContractTests(unittest.TestCase):
         report = self._validate()
         self.assertTrue(report.valid, report.errors)
 
+    def test_an_indicator_may_declare_its_parent_and_whether_it_is_primary(self) -> None:
+        """The pinned contract has to admit what a multi-indicator release carries.
+
+        One table can publish a whole ICD-10 tree: the hierarchy is what lets a
+        reader drill into it, and `primary` is what the coverage figures and the
+        countries gate describe. A contract that refused either would keep the
+        release out of this repository entirely.
+        """
+        metadata_path = self.release / "dataset.yaml"
+        metadata = yaml.safe_load(metadata_path.read_text(encoding="utf-8"))
+        metadata["indicators"][0]["primary"] = True
+        metadata["indicators"].append(
+            {
+                **metadata["indicators"][0],
+                "id": "synthetic-detail",
+                "parent": metadata["indicators"][0]["id"],
+                "primary": False,
+            }
+        )
+        metadata["quality"]["coverage_by_indicator"] = {
+            metadata["indicators"][0]["id"]: 1,
+            "synthetic-detail": 0.5,
+        }
+        metadata["quality"]["countries_by_indicator"] = {
+            metadata["indicators"][0]["id"]: 1,
+            "synthetic-detail": 1,
+        }
+        metadata_path.write_text(yaml.safe_dump(metadata, sort_keys=False), encoding="utf-8")
+        report = self._validate()
+        self.assertTrue(report.valid, report.errors)
+
     def test_free_form_prompt_is_rejected(self) -> None:
         metadata_path = self.release / "dataset.yaml"
         metadata = yaml.safe_load(metadata_path.read_text(encoding="utf-8"))
