@@ -21,11 +21,11 @@
   "eurostat_provenance_contract": {
     "path": "contracts/eurostat-provenance.schema.json",
     "upstream_path": "data/schema/eurostat-provenance.schema.json",
-    "sha256": "4880c71b9e766849c0d36d912d40d2e6763063d06c664f17f521bb5b80441faa"
+    "sha256": "259e5c485a750379c24504ae60a4210cef25e16b11c811e6a506de493ddd756f"
   },
   "eurostat_config_contract": {
     "path": "contracts/eurostat-datasets.json",
     "upstream_path": "data/provider-contracts/eurostat.json",
-    "sha256": "67646b07308bf3b219d69c8bfcbf86eda9aab726bac98e08d04dbab07513069e"
+    "sha256": "0938627af85558cb13454a2be45a9e33591eef4862749986ac9f72f6053fbbe2"
   }
 }
