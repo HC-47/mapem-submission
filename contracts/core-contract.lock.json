@@ -4,7 +4,7 @@
   "dataset_contract": {
     "path": "contracts/dataset.schema.json",
     "upstream_path": "data/schema/dataset.schema.json",
-    "sha256": "6ecf5d53b87da128ea316cb6ea063d0e1ab9271d1f17c9c586f909dbfd851434"
+    "sha256": "33637d9ed464d5848318d31e8fa6d6a9c0365e6fd82bf515267514de2d019dc8"
   },
   "geography_contract": {
     "scheme": "NUTS",
