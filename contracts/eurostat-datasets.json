@@ -1,5 +1,1549 @@
 [
   {
+    "id": "eurostat-causes-of-death",
+    "dataset_code": "hlth_cd_asdr2",
+    "indicator_dimension": "icd10",
+    "title": "Standardised death rates by cause",
+    "description": "Age-standardised death rates by cause of death across European regions, from the Eurostat causes of death collection.",
+    "category": "Health",
+    "publisher": "Eurostat",
+    "source": "Eurostat hlth_cd_asdr2",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/hlth_cd_asdr2/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (hlth_cd_asdr2)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat hlth_cd_asdr2, three-year averages of age-standardised death rates per 100 000 inhabitants, both sexes and all ages. Every cause of death the table publishes becomes an indicator of this dataset; the indicators are discovered from the source rather than chosen, and a cause no country reports is not published. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "topics": ["health", "mortality", "public health"],
+      "example_questions": [
+        "Quali regioni europee hanno la mortalita per tumore piu alta?",
+        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
+      ],
+      "caveats": [
+        "Age-standardised rates compare regions with different age structures; they are not counts of deaths.",
+        "A regional rate is a three-year average, so a single exceptional year is smoothed rather than visible."
+      ]
+    },
+    "created_at": "2026-09-18",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "filters": {
+      "freq": "A",
+      "sex": "T",
+      "age": "TOTAL",
+      "unit": "RT"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "indicators": [
+      {
+        "id": "a-r-v-y",
+        "name": "All causes of death (A00-Y89) excluding S00-T98",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "A-R_V-Y"
+        },
+        "code": "A-R_V-Y",
+        "primary": true
+      },
+      {
+        "id": "a-b",
+        "name": "Certain infectious and parasitic diseases (A00-B99)",
+        "description": "Age-standardised death rate for Certain infectious and parasitic diseases (A00-B99) (A_B).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "A_B"
+        },
+        "code": "A_B",
+        "primary": true
+      },
+      {
+        "id": "a15-a19-b90",
+        "name": "Tuberculosis",
+        "description": "Age-standardised death rate for Tuberculosis (A15-A19_B90).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "A15-A19_B90"
+        },
+        "code": "A15-A19_B90"
+      },
+      {
+        "id": "b15-b19-b942",
+        "name": "Viral hepatitis and sequelae of viral hepatitis",
+        "description": "Age-standardised death rate for Viral hepatitis and sequelae of viral hepatitis (B15-B19_B942).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "B15-B19_B942"
+        },
+        "code": "B15-B19_B942"
+      },
+      {
+        "id": "b180-b182",
+        "name": "Chronic viral hepatitis B and C",
+        "description": "Age-standardised death rate for Chronic viral hepatitis B and C (B180-B182).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "B180-B182"
+        },
+        "code": "B180-B182"
+      },
+      {
+        "id": "b20-b24",
+        "name": "Human immunodeficiency virus [HIV] disease",
+        "description": "Age-standardised death rate for Human immunodeficiency virus [HIV] disease (B20-B24).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "B20-B24"
+        },
+        "code": "B20-B24"
+      },
+      {
+        "id": "a-b-oth",
+        "name": "Other infectious and parasitic diseases (remainder of A00-B99)",
+        "description": "Age-standardised death rate for Other infectious and parasitic diseases (remainder of A00-B99) (A_B_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "A_B_OTH"
+        },
+        "code": "A_B_OTH"
+      },
+      {
+        "id": "c00-d48",
+        "name": "Neoplasms",
+        "description": "Age-standardised death rate for Neoplasms (C00-D48).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C00-D48"
+        },
+        "code": "C00-D48"
+      },
+      {
+        "id": "c",
+        "name": "Malignant neoplasms (C00-C97)",
+        "description": "Age-standardised death rate for Malignant neoplasms (C00-C97) (C).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C"
+        },
+        "code": "C",
+        "primary": true
+      },
+      {
+        "id": "c00-c14",
+        "name": "Malignant neoplasm of lip, oral cavity, pharynx",
+        "description": "Age-standardised death rate for Malignant neoplasm of lip, oral cavity, pharynx (C00-C14).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C00-C14"
+        },
+        "code": "C00-C14"
+      },
+      {
+        "id": "c15",
+        "name": "Malignant neoplasm of oesophagus",
+        "description": "Age-standardised death rate for Malignant neoplasm of oesophagus (C15).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C15"
+        },
+        "code": "C15"
+      },
+      {
+        "id": "c16",
+        "name": "Malignant neoplasm of stomach",
+        "description": "Age-standardised death rate for Malignant neoplasm of stomach (C16).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C16"
+        },
+        "code": "C16"
+      },
+      {
+        "id": "c18-c21",
+        "name": "Malignant neoplasm of colon, rectosigmoid junction, rectum, anus and anal canal",
+        "description": "Age-standardised death rate for Malignant neoplasm of colon, rectosigmoid junction, rectum, anus and anal canal (C18-C21).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C18-C21"
+        },
+        "code": "C18-C21"
+      },
+      {
+        "id": "c22",
+        "name": "Malignant neoplasm of liver and intrahepatic bile ducts",
+        "description": "Age-standardised death rate for Malignant neoplasm of liver and intrahepatic bile ducts (C22).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C22"
+        },
+        "code": "C22"
+      },
+      {
+        "id": "c25",
+        "name": "Malignant neoplasm of pancreas",
+        "description": "Age-standardised death rate for Malignant neoplasm of pancreas (C25).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C25"
+        },
+        "code": "C25"
+      },
+      {
+        "id": "c32",
+        "name": "Malignant neoplasm of larynx",
+        "description": "Age-standardised death rate for Malignant neoplasm of larynx (C32).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C32"
+        },
+        "code": "C32"
+      },
+      {
+        "id": "c33-c34",
+        "name": "Malignant neoplasm of trachea, bronchus and lung",
+        "description": "Age-standardised death rate for Malignant neoplasm of trachea, bronchus and lung (C33_C34).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C33_C34"
+        },
+        "code": "C33_C34"
+      },
+      {
+        "id": "c43",
+        "name": "Malignant melanoma of skin",
+        "description": "Age-standardised death rate for Malignant melanoma of skin (C43).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C43"
+        },
+        "code": "C43"
+      },
+      {
+        "id": "c50",
+        "name": "Malignant neoplasm of breast",
+        "description": "Age-standardised death rate for Malignant neoplasm of breast (C50).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C50"
+        },
+        "code": "C50"
+      },
+      {
+        "id": "c53",
+        "name": "Malignant neoplasm of cervix uteri",
+        "description": "Age-standardised death rate for Malignant neoplasm of cervix uteri (C53).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C53"
+        },
+        "code": "C53"
+      },
+      {
+        "id": "c54-c55",
+        "name": "Malignant neoplasm of other parts of uterus",
+        "description": "Age-standardised death rate for Malignant neoplasm of other parts of uterus (C54_C55).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C54_C55"
+        },
+        "code": "C54_C55"
+      },
+      {
+        "id": "c56",
+        "name": "Malignant neoplasm of ovary",
+        "description": "Age-standardised death rate for Malignant neoplasm of ovary (C56).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C56"
+        },
+        "code": "C56"
+      },
+      {
+        "id": "c61",
+        "name": "Malignant neoplasm of prostate",
+        "description": "Age-standardised death rate for Malignant neoplasm of prostate (C61).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C61"
+        },
+        "code": "C61"
+      },
+      {
+        "id": "c64",
+        "name": "Malignant neoplasm of kidney, except renal pelvis",
+        "description": "Age-standardised death rate for Malignant neoplasm of kidney, except renal pelvis (C64).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C64"
+        },
+        "code": "C64"
+      },
+      {
+        "id": "c67",
+        "name": "Malignant neoplasm of bladder",
+        "description": "Age-standardised death rate for Malignant neoplasm of bladder (C67).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C67"
+        },
+        "code": "C67"
+      },
+      {
+        "id": "c70-c72",
+        "name": "Malignant neoplasm of brain and central nervous system",
+        "description": "Age-standardised death rate for Malignant neoplasm of brain and central nervous system (C70-C72).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C70-C72"
+        },
+        "code": "C70-C72"
+      },
+      {
+        "id": "c73",
+        "name": "Malignant neoplasm of thyroid gland",
+        "description": "Age-standardised death rate for Malignant neoplasm of thyroid gland (C73).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C73"
+        },
+        "code": "C73"
+      },
+      {
+        "id": "c81-c86",
+        "name": "Hodgkin disease and lymphomas",
+        "description": "Age-standardised death rate for Hodgkin disease and lymphomas (C81-C86).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C81-C86"
+        },
+        "code": "C81-C86"
+      },
+      {
+        "id": "c88-c90-c96",
+        "name": "Other malignant neoplasm of lymphoid, haematopoietic and related tissue",
+        "description": "Age-standardised death rate for Other malignant neoplasm of lymphoid, haematopoietic and related tissue (C88_C90_C96).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C88_C90_C96"
+        },
+        "code": "C88_C90_C96"
+      },
+      {
+        "id": "c91-c95",
+        "name": "Leukaemia",
+        "description": "Age-standardised death rate for Leukaemia (C91-C95).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C91-C95"
+        },
+        "code": "C91-C95"
+      },
+      {
+        "id": "c-oth",
+        "name": "Other malignant neoplasms (remainder of C00-C97)",
+        "description": "Age-standardised death rate for Other malignant neoplasms (remainder of C00-C97) (C_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "C_OTH"
+        },
+        "code": "C_OTH"
+      },
+      {
+        "id": "d00-d48",
+        "name": "Non-malignant neoplasms (benign and uncertain)",
+        "description": "Age-standardised death rate for Non-malignant neoplasms (benign and uncertain) (D00-D48).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "D00-D48"
+        },
+        "code": "D00-D48"
+      },
+      {
+        "id": "d50-d89",
+        "name": "Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism",
+        "description": "Age-standardised death rate for Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "D50-D89"
+        },
+        "code": "D50-D89"
+      },
+      {
+        "id": "e",
+        "name": "Endocrine, nutritional and metabolic diseases (E00-E90)",
+        "description": "Age-standardised death rate for Endocrine, nutritional and metabolic diseases (E00-E90) (E).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "E"
+        },
+        "code": "E",
+        "primary": true
+      },
+      {
+        "id": "e10-e14",
+        "name": "Diabetes mellitus",
+        "description": "Age-standardised death rate for Diabetes mellitus (E10-E14).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "E10-E14"
+        },
+        "code": "E10-E14"
+      },
+      {
+        "id": "e-oth",
+        "name": "Other endocrine, nutritional and metabolic diseases (remainder of E00-E90)",
+        "description": "Age-standardised death rate for Other endocrine, nutritional and metabolic diseases (remainder of E00-E90) (E_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "E_OTH"
+        },
+        "code": "E_OTH"
+      },
+      {
+        "id": "f",
+        "name": "Mental and behavioural disorders (F00-F99)",
+        "description": "Age-standardised death rate for Mental and behavioural disorders (F00-F99) (F).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "F"
+        },
+        "code": "F",
+        "primary": true
+      },
+      {
+        "id": "f01-f03",
+        "name": "Dementia",
+        "description": "Age-standardised death rate for Dementia (F01_F03).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "F01_F03"
+        },
+        "code": "F01_F03"
+      },
+      {
+        "id": "f10",
+        "name": "Mental and behavioural disorders due to use of alcohol",
+        "description": "Age-standardised death rate for Mental and behavioural disorders due to use of alcohol (F10).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "F10"
+        },
+        "code": "F10"
+      },
+      {
+        "id": "toxico",
+        "name": "Drug dependence, toxicomania (F11-F16, F18-F19)",
+        "description": "Age-standardised death rate for Drug dependence, toxicomania (F11-F16, F18-F19) (TOXICO).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "TOXICO"
+        },
+        "code": "TOXICO"
+      },
+      {
+        "id": "f-oth",
+        "name": "Other mental and behavioural disorders (remainder of F00-F99)",
+        "description": "Age-standardised death rate for Other mental and behavioural disorders (remainder of F00-F99) (F_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "F_OTH"
+        },
+        "code": "F_OTH"
+      },
+      {
+        "id": "g-h",
+        "name": "Diseases of the nervous system and the sense organs (G00-H95)",
+        "description": "Age-standardised death rate for Diseases of the nervous system and the sense organs (G00-H95) (G_H).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "G_H"
+        },
+        "code": "G_H",
+        "primary": true
+      },
+      {
+        "id": "g20",
+        "name": "Parkinson disease",
+        "description": "Age-standardised death rate for Parkinson disease (G20).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "G20"
+        },
+        "code": "G20"
+      },
+      {
+        "id": "g30",
+        "name": "Alzheimer disease",
+        "description": "Age-standardised death rate for Alzheimer disease (G30).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "G30"
+        },
+        "code": "G30"
+      },
+      {
+        "id": "g-h-oth",
+        "name": "Other diseases of the nervous system and the sense organs (remainder of G00-H95)",
+        "description": "Age-standardised death rate for Other diseases of the nervous system and the sense organs (remainder of G00-H95) (G_H_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "G_H_OTH"
+        },
+        "code": "G_H_OTH"
+      },
+      {
+        "id": "i",
+        "name": "Diseases of the circulatory system (I00-I99)",
+        "description": "Age-standardised death rate for Diseases of the circulatory system (I00-I99) (I).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "I"
+        },
+        "code": "I",
+        "primary": true
+      },
+      {
+        "id": "i20-i25",
+        "name": "Ischaemic heart diseases",
+        "description": "Age-standardised death rate for Ischaemic heart diseases (I20-I25).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "I20-I25"
+        },
+        "code": "I20-I25"
+      },
+      {
+        "id": "i21-i22",
+        "name": "Acute myocardial infarction including subsequent myocardial infarction",
+        "description": "Age-standardised death rate for Acute myocardial infarction including subsequent myocardial infarction (I21_I22).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "I21_I22"
+        },
+        "code": "I21_I22"
+      },
+      {
+        "id": "i20-i23-i25",
+        "name": "Other ischaemic heart diseases",
+        "description": "Age-standardised death rate for Other ischaemic heart diseases (I20_I23-I25).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "I20_I23-I25"
+        },
+        "code": "I20_I23-I25"
+      },
+      {
+        "id": "i30-i51",
+        "name": "Other heart diseases",
+        "description": "Age-standardised death rate for Other heart diseases (I30-I51).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "I30-I51"
+        },
+        "code": "I30-I51"
+      },
+      {
+        "id": "i60-i69",
+        "name": "Cerebrovascular diseases",
+        "description": "Age-standardised death rate for Cerebrovascular diseases (I60-I69).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "I60-I69"
+        },
+        "code": "I60-I69"
+      },
+      {
+        "id": "i-oth",
+        "name": "Other diseases of the circulatory system (remainder of I00-I99)",
+        "description": "Age-standardised death rate for Other diseases of the circulatory system (remainder of I00-I99) (I_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "I_OTH"
+        },
+        "code": "I_OTH"
+      },
+      {
+        "id": "j",
+        "name": "Diseases of the respiratory system (J00-J99)",
+        "description": "Age-standardised death rate for Diseases of the respiratory system (J00-J99) (J).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "J"
+        },
+        "code": "J",
+        "primary": true
+      },
+      {
+        "id": "j09-j11",
+        "name": "Influenza (including swine flu)",
+        "description": "Age-standardised death rate for Influenza (including swine flu) (J09-J11).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "J09-J11"
+        },
+        "code": "J09-J11"
+      },
+      {
+        "id": "j12-j18",
+        "name": "Pneumonia",
+        "description": "Age-standardised death rate for Pneumonia (J12-J18).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "J12-J18"
+        },
+        "code": "J12-J18"
+      },
+      {
+        "id": "j40-j47",
+        "name": "Chronic lower respiratory diseases",
+        "description": "Age-standardised death rate for Chronic lower respiratory diseases (J40-J47).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "J40-J47"
+        },
+        "code": "J40-J47"
+      },
+      {
+        "id": "j45-j46",
+        "name": "Asthma and status asthmaticus",
+        "description": "Age-standardised death rate for Asthma and status asthmaticus (J45_J46).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "J45_J46"
+        },
+        "code": "J45_J46"
+      },
+      {
+        "id": "j40-j44-j47",
+        "name": "Other lower respiratory diseases",
+        "description": "Age-standardised death rate for Other lower respiratory diseases (J40-J44_J47).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "J40-J44_J47"
+        },
+        "code": "J40-J44_J47"
+      },
+      {
+        "id": "j-oth",
+        "name": "Other diseases of the respiratory system (remainder of J00-J99)",
+        "description": "Age-standardised death rate for Other diseases of the respiratory system (remainder of J00-J99) (J_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "J_OTH"
+        },
+        "code": "J_OTH"
+      },
+      {
+        "id": "k",
+        "name": "Diseases of the digestive system (K00-K93)",
+        "description": "Age-standardised death rate for Diseases of the digestive system (K00-K93) (K).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "K"
+        },
+        "code": "K",
+        "primary": true
+      },
+      {
+        "id": "k25-k28",
+        "name": "Ulcer of stomach, duodenum and jejunum",
+        "description": "Age-standardised death rate for Ulcer of stomach, duodenum and jejunum (K25-K28).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "K25-K28"
+        },
+        "code": "K25-K28"
+      },
+      {
+        "id": "k70-k73-k74",
+        "name": "Chronic liver disease",
+        "description": "Age-standardised death rate for Chronic liver disease (K70_K73_K74).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "K70_K73_K74"
+        },
+        "code": "K70_K73_K74"
+      },
+      {
+        "id": "k72-k75",
+        "name": "Chronic liver disease (excluding alcoholic and toxic liver disease)",
+        "description": "Age-standardised death rate for Chronic liver disease (excluding alcoholic and toxic liver disease) (K72-K75).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "K72-K75"
+        },
+        "code": "K72-K75"
+      },
+      {
+        "id": "k-oth",
+        "name": "Other diseases of the digestive system (remainder of K00-K93)",
+        "description": "Age-standardised death rate for Other diseases of the digestive system (remainder of K00-K93) (K_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "K_OTH"
+        },
+        "code": "K_OTH"
+      },
+      {
+        "id": "l",
+        "name": "Diseases of the skin and subcutaneous tissue (L00-L99)",
+        "description": "Age-standardised death rate for Diseases of the skin and subcutaneous tissue (L00-L99) (L).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "L"
+        },
+        "code": "L"
+      },
+      {
+        "id": "m",
+        "name": "Diseases of the musculoskeletal system and connective tissue (M00-M99)",
+        "description": "Age-standardised death rate for Diseases of the musculoskeletal system and connective tissue (M00-M99) (M).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "M"
+        },
+        "code": "M"
+      },
+      {
+        "id": "rheum-arthro",
+        "name": "Rheumatoid arthritis and arthrosis (M05-M06,M15-M19)",
+        "description": "Age-standardised death rate for Rheumatoid arthritis and arthrosis (M05-M06,M15-M19) (RHEUM_ARTHRO).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "RHEUM_ARTHRO"
+        },
+        "code": "RHEUM_ARTHRO"
+      },
+      {
+        "id": "m-oth",
+        "name": "Other diseases of the musculoskeletal system and connective tissue (remainder of M00-M99)",
+        "description": "Age-standardised death rate for Other diseases of the musculoskeletal system and connective tissue (remainder of M00-M99) (M_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "M_OTH"
+        },
+        "code": "M_OTH"
+      },
+      {
+        "id": "n",
+        "name": "Diseases of the genitourinary system (N00-N99)",
+        "description": "Age-standardised death rate for Diseases of the genitourinary system (N00-N99) (N).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "N"
+        },
+        "code": "N"
+      },
+      {
+        "id": "n00-n29",
+        "name": "Diseases of kidney and ureter",
+        "description": "Age-standardised death rate for Diseases of kidney and ureter (N00-N29).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "N00-N29"
+        },
+        "code": "N00-N29"
+      },
+      {
+        "id": "n-oth",
+        "name": "Other diseases of the genitourinary system (remainder of N00-N99)",
+        "description": "Age-standardised death rate for Other diseases of the genitourinary system (remainder of N00-N99) (N_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "N_OTH"
+        },
+        "code": "N_OTH"
+      },
+      {
+        "id": "o",
+        "name": "Pregnancy, childbirth and the puerperium (O00-O99)",
+        "description": "Age-standardised death rate for Pregnancy, childbirth and the puerperium (O00-O99) (O).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "O"
+        },
+        "code": "O"
+      },
+      {
+        "id": "p",
+        "name": "Certain conditions originating in the perinatal period (P00-P96)",
+        "description": "Age-standardised death rate for Certain conditions originating in the perinatal period (P00-P96) (P).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "P"
+        },
+        "code": "P"
+      },
+      {
+        "id": "q",
+        "name": "Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)",
+        "description": "Age-standardised death rate for Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99) (Q).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "Q"
+        },
+        "code": "Q"
+      },
+      {
+        "id": "r",
+        "name": "Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00-R99)",
+        "description": "Age-standardised death rate for Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00-R99) (R).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "R"
+        },
+        "code": "R"
+      },
+      {
+        "id": "r95",
+        "name": "Sudden infant death syndrome",
+        "description": "Age-standardised death rate for Sudden infant death syndrome (R95).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "R95"
+        },
+        "code": "R95"
+      },
+      {
+        "id": "r96-r99",
+        "name": "Ill-defined and unknown causes of mortality",
+        "description": "Age-standardised death rate for Ill-defined and unknown causes of mortality (R96-R99).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "R96-R99"
+        },
+        "code": "R96-R99"
+      },
+      {
+        "id": "r-oth",
+        "name": "Other symptoms, signs and abnormal clinical and laboratory findings (remainder of R00-R99)",
+        "description": "Age-standardised death rate for Other symptoms, signs and abnormal clinical and laboratory findings (remainder of R00-R99) (R_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "R_OTH"
+        },
+        "code": "R_OTH"
+      },
+      {
+        "id": "u071",
+        "name": "COVID-19, virus identified",
+        "description": "Age-standardised death rate for COVID-19, virus identified (U071).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "U071"
+        },
+        "code": "U071"
+      },
+      {
+        "id": "u072",
+        "name": "COVID-19, virus not identified",
+        "description": "Age-standardised death rate for COVID-19, virus not identified (U072).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "U072"
+        },
+        "code": "U072"
+      },
+      {
+        "id": "u-cov19-oth",
+        "name": "COVID-19, other",
+        "description": "Age-standardised death rate for COVID-19, other (U_COV19_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "U_COV19_OTH"
+        },
+        "code": "U_COV19_OTH"
+      },
+      {
+        "id": "v01-y89",
+        "name": "External causes of morbidity and mortality (V01-Y89)",
+        "description": "Age-standardised death rate for External causes of morbidity and mortality (V01-Y89) (V01-Y89).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "V01-Y89"
+        },
+        "code": "V01-Y89",
+        "primary": true
+      },
+      {
+        "id": "acc",
+        "name": "Accidents (V01-X59, Y85, Y86)",
+        "description": "Age-standardised death rate for Accidents (V01-X59, Y85, Y86) (ACC).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "ACC"
+        },
+        "code": "ACC"
+      },
+      {
+        "id": "v-y85",
+        "name": "Transport accidents (V01-V99, Y85)",
+        "description": "Age-standardised death rate for Transport accidents (V01-V99, Y85) (V_Y85).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "V_Y85"
+        },
+        "code": "V_Y85"
+      },
+      {
+        "id": "acc-oth",
+        "name": "Other accidents (W20-W64, W75-X39, X50-X59, Y86)",
+        "description": "Age-standardised death rate for Other accidents (W20-W64, W75-X39, X50-X59, Y86) (ACC_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "ACC_OTH"
+        },
+        "code": "ACC_OTH"
+      },
+      {
+        "id": "w00-w19",
+        "name": "Falls",
+        "description": "Age-standardised death rate for Falls (W00-W19).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "W00-W19"
+        },
+        "code": "W00-W19"
+      },
+      {
+        "id": "w65-w74",
+        "name": "Accidental drowning and submersion",
+        "description": "Age-standardised death rate for Accidental drowning and submersion (W65-W74).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "W65-W74"
+        },
+        "code": "W65-W74"
+      },
+      {
+        "id": "x60-x84-y870",
+        "name": "Intentional self-harm",
+        "description": "Age-standardised death rate for Intentional self-harm (X60-X84_Y870).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "X60-X84_Y870"
+        },
+        "code": "X60-X84_Y870"
+      },
+      {
+        "id": "x40-x49",
+        "name": "Accidental poisoning by and exposure to noxious substances",
+        "description": "Age-standardised death rate for Accidental poisoning by and exposure to noxious substances (X40-X49).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "X40-X49"
+        },
+        "code": "X40-X49"
+      },
+      {
+        "id": "x85-y09-y871",
+        "name": "Assault",
+        "description": "Age-standardised death rate for Assault (X85-Y09_Y871).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "X85-Y09_Y871"
+        },
+        "code": "X85-Y09_Y871"
+      },
+      {
+        "id": "y10-y34-y872",
+        "name": "Event of undetermined intent",
+        "description": "Age-standardised death rate for Event of undetermined intent (Y10-Y34_Y872).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "Y10-Y34_Y872"
+        },
+        "code": "Y10-Y34_Y872"
+      },
+      {
+        "id": "v01-y89-oth",
+        "name": "Other external causes of morbidity and mortality (remainder of V01-Y89)",
+        "description": "Age-standardised death rate for Other external causes of morbidity and mortality (remainder of V01-Y89) (V01-Y89_OTH).",
+        "unit": "per 100,000 inhabitants",
+        "statistic": "standardised_rate",
+        "aggregation": "age-standardised rate over a three-year window",
+        "definition": {
+          "upstream_unit": "RT",
+          "sex": "TOTAL",
+          "age": "TOTAL",
+          "standard_population": "European Standard Population 2013",
+          "icd10": "V01-Y89_OTH"
+        },
+        "code": "V01-Y89_OTH"
+      }
+    ]
+  },
+  {
     "id": "eurostat-population-density",
     "title": "Population density",
     "description": "Population density across European regions, expressed as inhabitants per square kilometre.",
@@ -33,7 +1577,7 @@
       "example_questions": ["Quali regioni europee hanno la densita di popolazione piu alta?"],
       "caveats": ["Annual regional density is not a real-time population count."]
     },
-    "created_at": "2026-08-16",
+    "created_at": "2026-09-18",
     "quality": {
       "score": 95,
       "methodology_documented": true,
@@ -47,7 +1591,7 @@
       "freq": "A",
       "unit": "PER_KM2"
     },
-    "period_start": "2020",
+    "period_start": "2015",
     "period_end": "latest",
     "indicator": {
       "id": "population-density",
@@ -63,9 +1607,9 @@
     }
   },
   {
-    "id": "eurostat-median-age",
-    "title": "Median age of population",
-    "description": "Median age of the resident population across European regions.",
+    "id": "eurostat-population-structure",
+    "title": "Population structure and ageing",
+    "description": "Demographic structure indicators for European regions: median age, dependency ratios and the shares of each age group in the resident population.",
     "category": "Demography",
     "publisher": "Eurostat",
     "source": "Eurostat demo_r_pjanind3",
@@ -82,7 +1626,7 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat demo_r_pjanind3 with demographic indicator MEDAGEPOP and unit YR. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level — which matters here, because a median cannot be aggregated from its parts. Coverage follows the contract and upstream availability, not a fixed country list.",
+    "methodology": "Direct extract from Eurostat demo_r_pjanind3. Every demographic indicator the table publishes becomes an indicator of this dataset, and each one carries the unit Eurostat publishes it in — median ages in years, ratios and shares as percentages — read from the response rather than assumed. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, and each level carries the values Eurostat publishes for it rather than values derived from another level, which matters here because a median cannot be aggregated from its parts.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
@@ -91,12 +1635,18 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["eta mediana", "median population age"],
+      "aliases": ["struttura della popolazione", "eta mediana", "indice di dipendenza"],
       "topics": ["demography", "ageing", "population structure"],
-      "example_questions": ["Quali regioni europee hanno la popolazione piu anziana?"],
-      "caveats": ["Median age is not the arithmetic mean age."]
+      "example_questions": [
+        "Quali regioni europee hanno la popolazione piu anziana?",
+        "Dove e piu alto l'indice di dipendenza degli anziani?"
+      ],
+      "caveats": [
+        "Median age is not the arithmetic mean age.",
+        "Indicators of this table are published in different units; each one states its own."
+      ]
     },
-    "created_at": "2026-08-16",
+    "created_at": "2026-09-18",
     "quality": {
       "score": 95,
       "methodology_documented": true,
@@ -107,29 +1657,658 @@
     },
     "dataset_code": "demo_r_pjanind3",
     "filters": {
-      "freq": "A",
-      "indic_de": "MEDAGEPOP",
-      "unit": "YR"
+      "freq": "A"
     },
-    "period_start": "2020",
+    "period_start": "2015",
     "period_end": "latest",
-    "indicator": {
-      "id": "median-age",
-      "name": "Median age of population",
-      "description": "Age that divides the population into two numerically equal groups.",
-      "unit": "years",
-      "statistic": "annual_value",
-      "aggregation": "Eurostat demographic indicator",
-      "definition": {
-        "indicator_code": "MEDAGEPOP",
-        "upstream_unit": "YR"
+    "indicator_dimension": "indic_de",
+    "indicators": [
+      {
+        "id": "depratio1",
+        "name": "Age dependency ratio, 1st variant (population 0 to 14 years and 65 years or over to population 15 to 64 years)",
+        "description": "Age dependency ratio, 1st variant (population 0 to 14 years and 65 years or over to population 15 to 64 years).",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "DEPRATIO1"
+        },
+        "code": "DEPRATIO1",
+        "primary": true
+      },
+      {
+        "id": "depratio2",
+        "name": "Age dependency ratio, 2nd variant (population 0 to 19 years and 60 years or over to population 20 to 59 years)",
+        "description": "Age dependency ratio, 2nd variant (population 0 to 19 years and 60 years or over to population 20 to 59 years).",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "DEPRATIO2"
+        },
+        "code": "DEPRATIO2"
+      },
+      {
+        "id": "depratio3",
+        "name": "Age dependency ratio, 3rd variant (population 0 to 19 years and 65 years or over to population 20 to 64 years)",
+        "description": "Age dependency ratio, 3rd variant (population 0 to 19 years and 65 years or over to population 20 to 64 years).",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "DEPRATIO3"
+        },
+        "code": "DEPRATIO3"
+      },
+      {
+        "id": "depratio4",
+        "name": "Age dependency ratio, 4th variant (population 0 to 24 years and 65 years or over to population 25 to 64 years)",
+        "description": "Age dependency ratio, 4th variant (population 0 to 24 years and 65 years or over to population 25 to 64 years).",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "DEPRATIO4"
+        },
+        "code": "DEPRATIO4"
+      },
+      {
+        "id": "fmedagepop",
+        "name": "Median age of population - females",
+        "description": "Median age of population - females.",
+        "unit": "years",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "YR",
+          "indic_de": "FMEDAGEPOP"
+        },
+        "code": "FMEDAGEPOP"
+      },
+      {
+        "id": "medagepop",
+        "name": "Median age of population",
+        "description": "Median age of population.",
+        "unit": "years",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "YR",
+          "indic_de": "MEDAGEPOP"
+        },
+        "code": "MEDAGEPOP",
+        "primary": true
+      },
+      {
+        "id": "mmedagepop",
+        "name": "Median age of population - males",
+        "description": "Median age of population - males.",
+        "unit": "years",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "YR",
+          "indic_de": "MMEDAGEPOP"
+        },
+        "code": "MMEDAGEPOP"
+      },
+      {
+        "id": "olddep1",
+        "name": "Old-age dependency ratio 1st variant (population 65 years or over to population 15 to 64 years)",
+        "description": "Old-age dependency ratio 1st variant (population 65 years or over to population 15 to 64 years).",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "OLDDEP1"
+        },
+        "code": "OLDDEP1",
+        "primary": true
+      },
+      {
+        "id": "olddep2",
+        "name": "Old-age dependency ratio 2nd variant (population 60 years or over to population 20 to 59 years)",
+        "description": "Old-age dependency ratio 2nd variant (population 60 years or over to population 20 to 59 years).",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "OLDDEP2"
+        },
+        "code": "OLDDEP2"
+      },
+      {
+        "id": "olddep3",
+        "name": "Old-age dependency ratio 3rd variant (population 65 years or over to population 20 to 64 years)",
+        "description": "Old-age dependency ratio 3rd variant (population 65 years or over to population 20 to 64 years).",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "OLDDEP3"
+        },
+        "code": "OLDDEP3"
+      },
+      {
+        "id": "olddep4",
+        "name": "Old-age dependency ratio 4th variant (population 65 years or over to population 25 to 64 years)",
+        "description": "Old-age dependency ratio 4th variant (population 65 years or over to population 25 to 64 years).",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "OLDDEP4"
+        },
+        "code": "OLDDEP4"
+      },
+      {
+        "id": "pc-fm",
+        "name": "Women per 100 men",
+        "description": "Women per 100 men.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_FM"
+        },
+        "code": "PC_FM"
+      },
+      {
+        "id": "pc-y0-14",
+        "name": "Proportion of population aged 0-14 years",
+        "description": "Proportion of population aged 0-14 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y0_14"
+        },
+        "code": "PC_Y0_14"
+      },
+      {
+        "id": "pc-y0-19",
+        "name": "Proportion of population aged 0-19 years",
+        "description": "Proportion of population aged 0-19 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y0_19"
+        },
+        "code": "PC_Y0_19"
+      },
+      {
+        "id": "pc-y0-4",
+        "name": "Proportion of population aged 0-4 years",
+        "description": "Proportion of population aged 0-4 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y0_4"
+        },
+        "code": "PC_Y0_4"
+      },
+      {
+        "id": "pc-y10-14",
+        "name": "Proportion of population aged 10-14 years",
+        "description": "Proportion of population aged 10-14 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y10_14"
+        },
+        "code": "PC_Y10_14"
+      },
+      {
+        "id": "pc-y15-19",
+        "name": "Proportion of population aged 15-19 years",
+        "description": "Proportion of population aged 15-19 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y15_19"
+        },
+        "code": "PC_Y15_19"
+      },
+      {
+        "id": "pc-y15-24",
+        "name": "Proportion of population aged 15-24 years",
+        "description": "Proportion of population aged 15-24 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y15_24"
+        },
+        "code": "PC_Y15_24"
+      },
+      {
+        "id": "pc-y15-29",
+        "name": "Proportion of population aged 15-29 years",
+        "description": "Proportion of population aged 15-29 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y15_29"
+        },
+        "code": "PC_Y15_29"
+      },
+      {
+        "id": "pc-y15-74",
+        "name": "Proportion of population aged 15-74 years",
+        "description": "Proportion of population aged 15-74 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y15_74"
+        },
+        "code": "PC_Y15_74"
+      },
+      {
+        "id": "pc-y20-24",
+        "name": "Proportion of population aged 20-24 years",
+        "description": "Proportion of population aged 20-24 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y20_24"
+        },
+        "code": "PC_Y20_24"
+      },
+      {
+        "id": "pc-y20-39",
+        "name": "Proportion of population aged 20-39 years",
+        "description": "Proportion of population aged 20-39 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y20_39"
+        },
+        "code": "PC_Y20_39"
+      },
+      {
+        "id": "pc-y20-64",
+        "name": "Proportion of population aged 20-64 years",
+        "description": "Proportion of population aged 20-64 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y20_64"
+        },
+        "code": "PC_Y20_64"
+      },
+      {
+        "id": "pc-y25-29",
+        "name": "Proportion of population aged 25-29 years",
+        "description": "Proportion of population aged 25-29 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y25_29"
+        },
+        "code": "PC_Y25_29"
+      },
+      {
+        "id": "pc-y25-44",
+        "name": "Proportion of population aged 25-44 years",
+        "description": "Proportion of population aged 25-44 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y25_44"
+        },
+        "code": "PC_Y25_44"
+      },
+      {
+        "id": "pc-y25-49",
+        "name": "Proportion of population aged 25-49 years",
+        "description": "Proportion of population aged 25-49 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y25_49"
+        },
+        "code": "PC_Y25_49"
+      },
+      {
+        "id": "pc-y30-34",
+        "name": "Proportion of population aged 30-34 years",
+        "description": "Proportion of population aged 30-34 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y30_34"
+        },
+        "code": "PC_Y30_34"
+      },
+      {
+        "id": "pc-y35-39",
+        "name": "Proportion of population aged 35-39 years",
+        "description": "Proportion of population aged 35-39 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y35_39"
+        },
+        "code": "PC_Y35_39"
+      },
+      {
+        "id": "pc-y40-44",
+        "name": "Proportion of population aged 40-44 years",
+        "description": "Proportion of population aged 40-44 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y40_44"
+        },
+        "code": "PC_Y40_44"
+      },
+      {
+        "id": "pc-y40-59",
+        "name": "Proportion of population aged 40-59 years",
+        "description": "Proportion of population aged 40-59 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y40_59"
+        },
+        "code": "PC_Y40_59"
+      },
+      {
+        "id": "pc-y45-49",
+        "name": "Proportion of population aged 45-49 years",
+        "description": "Proportion of population aged 45-49 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y45_49"
+        },
+        "code": "PC_Y45_49"
+      },
+      {
+        "id": "pc-y45-64",
+        "name": "Proportion of population aged 45-64 years",
+        "description": "Proportion of population aged 45-64 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y45_64"
+        },
+        "code": "PC_Y45_64"
+      },
+      {
+        "id": "pc-y50-54",
+        "name": "Proportion of population aged 50-54 years",
+        "description": "Proportion of population aged 50-54 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y50_54"
+        },
+        "code": "PC_Y50_54"
+      },
+      {
+        "id": "pc-y50-64",
+        "name": "Proportion of population aged 50-64 years",
+        "description": "Proportion of population aged 50-64 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y50_64"
+        },
+        "code": "PC_Y50_64"
+      },
+      {
+        "id": "pc-y55-59",
+        "name": "Proportion of population aged 55-59 years",
+        "description": "Proportion of population aged 55-59 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y55_59"
+        },
+        "code": "PC_Y55_59"
+      },
+      {
+        "id": "pc-y5-9",
+        "name": "Proportion of population aged 5-9 years",
+        "description": "Proportion of population aged 5-9 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y5_9"
+        },
+        "code": "PC_Y5_9"
+      },
+      {
+        "id": "pc-y60-64",
+        "name": "Proportion of population aged 60-64 years",
+        "description": "Proportion of population aged 60-64 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y60_64"
+        },
+        "code": "PC_Y60_64"
+      },
+      {
+        "id": "pc-y60-79",
+        "name": "Proportion of population aged 60-79 years",
+        "description": "Proportion of population aged 60-79 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y60_79"
+        },
+        "code": "PC_Y60_79"
+      },
+      {
+        "id": "pc-y60-max",
+        "name": "Proportion of population aged 60 years and more",
+        "description": "Proportion of population aged 60 years and more.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y60_MAX"
+        },
+        "code": "PC_Y60_MAX"
+      },
+      {
+        "id": "pc-y65-69",
+        "name": "Proportion of population aged 65-69 years",
+        "description": "Proportion of population aged 65-69 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y65_69"
+        },
+        "code": "PC_Y65_69"
+      },
+      {
+        "id": "pc-y65-79",
+        "name": "Proportion of population aged 65-79 years",
+        "description": "Proportion of population aged 65-79 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y65_79"
+        },
+        "code": "PC_Y65_79"
+      },
+      {
+        "id": "pc-y65-max",
+        "name": "Proportion of population aged 65 years and more",
+        "description": "Proportion of population aged 65 years and more.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y65_MAX"
+        },
+        "code": "PC_Y65_MAX"
+      },
+      {
+        "id": "pc-y70-74",
+        "name": "Proportion of population aged 70-74 years",
+        "description": "Proportion of population aged 70-74 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y70_74"
+        },
+        "code": "PC_Y70_74"
+      },
+      {
+        "id": "pc-y75-79",
+        "name": "Proportion of population aged 75-79 years",
+        "description": "Proportion of population aged 75-79 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y75_79"
+        },
+        "code": "PC_Y75_79"
+      },
+      {
+        "id": "pc-y75-max",
+        "name": "Proportion of population aged 75 years and more",
+        "description": "Proportion of population aged 75 years and more.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y75_MAX"
+        },
+        "code": "PC_Y75_MAX"
+      },
+      {
+        "id": "pc-y80-84",
+        "name": "Proportion of population aged 80-84 years",
+        "description": "Proportion of population aged 80-84 years.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y80_84"
+        },
+        "code": "PC_Y80_84"
+      },
+      {
+        "id": "pc-y80-max",
+        "name": "Proportion of population aged 80 years and more",
+        "description": "Proportion of population aged 80 years and more.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y80_MAX"
+        },
+        "code": "PC_Y80_MAX"
+      },
+      {
+        "id": "pc-y85-max",
+        "name": "Proportion of population aged 85 years and more",
+        "description": "Proportion of population aged 85 years and more.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y85_MAX"
+        },
+        "code": "PC_Y85_MAX"
+      },
+      {
+        "id": "pc-y100-max",
+        "name": "Proportion of population aged 100 years and more",
+        "description": "Proportion of population aged 100 years and more.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "PC_Y100_MAX"
+        },
+        "code": "PC_Y100_MAX"
+      },
+      {
+        "id": "youngdep1",
+        "name": "Young-age dependency ratio 1st variant (population 0 to 14 years to population 15 to 64 years)",
+        "description": "Young-age dependency ratio 1st variant (population 0 to 14 years to population 15 to 64 years).",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "YOUNGDEP1"
+        },
+        "code": "YOUNGDEP1",
+        "primary": true
+      },
+      {
+        "id": "youngdep2",
+        "name": "Young-age dependency ratio 2nd variant (population 0 to 19 years to population 20 to 59 years)",
+        "description": "Young-age dependency ratio 2nd variant (population 0 to 19 years to population 20 to 59 years).",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "YOUNGDEP2"
+        },
+        "code": "YOUNGDEP2"
+      },
+      {
+        "id": "youngdep3",
+        "name": "Young-age dependency ratio 3rd variant (population 0 to 19 years to population 20 to 64 years)",
+        "description": "Young-age dependency ratio 3rd variant (population 0 to 19 years to population 20 to 64 years).",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "YOUNGDEP3"
+        },
+        "code": "YOUNGDEP3"
+      },
+      {
+        "id": "youngdep4",
+        "name": "Young-age dependency ratio 4th variant (population 0 to 24 years to population 25 to 64 years)",
+        "description": "Young-age dependency ratio 4th variant (population 0 to 24 years to population 25 to 64 years).",
+        "unit": "%",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PC",
+          "indic_de": "YOUNGDEP4"
+        },
+        "code": "YOUNGDEP4"
       }
-    }
+    ]
   },
   {
-    "id": "eurostat-gdp-per-capita-pps",
-    "title": "GDP per capita in PPS relative to the EU average",
-    "description": "Regional GDP per capita in purchasing power standards, expressed as a percentage of the EU27 average.",
+    "id": "eurostat-regional-gdp",
+    "title": "Regional gross domestic product",
+    "description": "Regional GDP measured the several ways Eurostat publishes it: in euro and in purchasing power standards, per inhabitant and in total, and as an index of the EU27 average.",
     "category": "Economy",
     "publisher": "Eurostat",
     "source": "Eurostat nama_10r_2gdp",
@@ -146,7 +2325,7 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat nama_10r_2gdp using unit PPS_HAB_EU27_2020. This table already represents GDP and does not expose an na_item dimension. It publishes no NUTS 3, so the dataset declares NUTS 2 alone; the normaliser keeps every NUTS 2 code of the NUTS 2024 geography contract. Coverage follows the contract and upstream availability, not a fixed country list.",
+    "methodology": "Direct extract from Eurostat nama_10r_2gdp. Each unit the table publishes becomes an indicator, because they are different measures of the same aggregate rather than the same measure repeated: a total in millions and a value per inhabitant do not compare across regions of different size. National currency is not published here, because a value in national currency is not comparable between countries.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
@@ -155,14 +2334,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["PIL pro capite", "regional GDP purchasing power"],
+      "aliases": ["PIL regionale", "regional GDP", "PIL pro capite"],
       "topics": ["economy", "regional wealth", "purchasing power"],
       "example_questions": [
         "Quali regioni hanno il PIL pro capite piu alto rispetto alla media UE?"
       ],
-      "caveats": ["Values are an index where the EU27 average equals 100, not currency amounts."]
+      "caveats": [
+        "Totals and per-inhabitant values are not comparable with each other across regions.",
+        "The EU27 index is a relative measure where the average equals 100, not a currency amount."
+      ]
     },
-    "created_at": "2026-08-16",
+    "created_at": "2026-09-18",
     "quality": {
       "score": 95,
       "methodology_documented": true,
@@ -173,28 +2355,92 @@
     },
     "dataset_code": "nama_10r_2gdp",
     "filters": {
-      "freq": "A",
-      "unit": "PPS_HAB_EU27_2020"
+      "freq": "A"
     },
-    "period_start": "2020",
+    "period_start": "2015",
     "period_end": "latest",
-    "indicator": {
-      "id": "gdp-per-capita-pps-eu-average",
-      "name": "GDP per capita in PPS",
-      "description": "GDP per inhabitant in PPS relative to the EU27 average (EU=100).",
-      "unit": "% of EU27 average",
-      "statistic": "annual_value",
-      "aggregation": "regional accounts",
-      "definition": {
-        "upstream_unit": "PPS_HAB_EU27_2020",
-        "reference": "EU27_2020 = 100"
+    "indicator_dimension": "unit",
+    "indicators": [
+      {
+        "id": "mio-eur",
+        "name": "Million euro",
+        "description": "Million euro.",
+        "unit": "million €",
+        "statistic": "annual_total",
+        "definition": {
+          "upstream_unit": "MIO_EUR",
+          "unit": "MIO_EUR"
+        },
+        "code": "MIO_EUR"
+      },
+      {
+        "id": "eur-hab",
+        "name": "Euro per inhabitant",
+        "description": "Euro per inhabitant.",
+        "unit": "€ per inhabitant",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "EUR_HAB",
+          "unit": "EUR_HAB"
+        },
+        "code": "EUR_HAB",
+        "primary": true
+      },
+      {
+        "id": "eur-hab-eu27-2020",
+        "name": "Euro per inhabitant in percentage of the EU27 (from 2020) average",
+        "description": "Euro per inhabitant in percentage of the EU27 (from 2020) average.",
+        "unit": "% of EU27 average",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "EUR_HAB_EU27_2020",
+          "unit": "EUR_HAB_EU27_2020"
+        },
+        "code": "EUR_HAB_EU27_2020"
+      },
+      {
+        "id": "mio-pps-eu27-2020",
+        "name": "Million purchasing power standards (PPS, EU27 from 2020)",
+        "description": "Million purchasing power standards (PPS, EU27 from 2020).",
+        "unit": "million PPS",
+        "statistic": "annual_total",
+        "definition": {
+          "upstream_unit": "MIO_PPS_EU27_2020",
+          "unit": "MIO_PPS_EU27_2020"
+        },
+        "code": "MIO_PPS_EU27_2020"
+      },
+      {
+        "id": "pps-eu27-2020-hab",
+        "name": "Purchasing power standard (PPS, EU27 from 2020), per inhabitant",
+        "description": "Purchasing power standard (PPS, EU27 from 2020), per inhabitant.",
+        "unit": "PPS per inhabitant",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PPS_EU27_2020_HAB",
+          "unit": "PPS_EU27_2020_HAB"
+        },
+        "code": "PPS_EU27_2020_HAB"
+      },
+      {
+        "id": "pps-hab-eu27-2020",
+        "name": "Purchasing power standard (PPS, EU27 from 2020), per inhabitant in percentage of the EU27 (from 2020) average",
+        "description": "Purchasing power standard (PPS, EU27 from 2020), per inhabitant in percentage of the EU27 (from 2020) average.",
+        "unit": "% of EU27 average",
+        "statistic": "annual_value",
+        "definition": {
+          "upstream_unit": "PPS_HAB_EU27_2020",
+          "unit": "PPS_HAB_EU27_2020"
+        },
+        "code": "PPS_HAB_EU27_2020",
+        "primary": true
       }
-    }
+    ]
   },
   {
     "id": "eurostat-unemployment-rate",
-    "title": "Unemployment rate",
-    "description": "Annual unemployment rate for people aged 15–74 across European regions.",
+    "title": "Unemployment rate by education",
+    "description": "Annual regional unemployment rate for people aged 15 to 74, in total and by the level of education attained.",
     "category": "Labour market",
     "publisher": "Eurostat",
     "source": "Eurostat tgs00010",
@@ -211,7 +2457,7 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tgs00010 selecting all education levels, total sex, age 15–74 and percentage unit. This is a Eurostat regional aggregate published at NUTS 2 only, so the dataset declares NUTS 2 alone; the normaliser keeps every NUTS 2 code of the NUTS 2024 geography contract. Coverage follows the contract and upstream availability, not a fixed country list.",
+    "methodology": "Direct extract from Eurostat tgs00010, both sexes, ages 15 to 74. Each level of educational attainment the table publishes becomes an indicator, so a region's overall rate can be read beside the rates of the groups it is made of. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
@@ -222,10 +2468,16 @@
     "semantic_hints": {
       "aliases": ["tasso di disoccupazione", "regional joblessness"],
       "topics": ["labour market", "employment", "unemployment"],
-      "example_questions": ["Dove e piu alta la disoccupazione regionale in Europa?"],
-      "caveats": ["The rate covers people aged 15-74 and is an annual survey estimate."]
+      "example_questions": [
+        "Dove e piu alta la disoccupazione regionale in Europa?",
+        "Come cambia la disoccupazione con il titolo di studio?"
+      ],
+      "caveats": [
+        "The rate covers people aged 15-74 and is an annual survey estimate.",
+        "Rates by education rest on smaller samples than the overall rate."
+      ]
     },
-    "created_at": "2026-08-16",
+    "created_at": "2026-09-18",
     "quality": {
       "score": 95,
       "methodology_documented": true,
@@ -237,32 +2489,84 @@
     "dataset_code": "tgs00010",
     "filters": {
       "freq": "A",
-      "isced11": "TOTAL",
       "sex": "T",
       "age": "Y15-74",
       "unit": "PC"
     },
-    "period_start": "2020",
+    "period_start": "2015",
     "period_end": "latest",
-    "indicator": {
-      "id": "unemployment-rate",
-      "name": "Unemployment rate",
-      "description": "Unemployed people as a percentage of the labour force, age 15–74.",
-      "unit": "%",
-      "statistic": "annual_average",
-      "aggregation": "labour force survey estimate",
-      "definition": {
-        "age": "Y15-74",
-        "sex": "T",
-        "education": "TOTAL",
-        "upstream_unit": "PC"
+    "indicator_dimension": "isced11",
+    "indicators": [
+      {
+        "id": "total",
+        "name": "All ISCED 2011 levels",
+        "description": "Unemployment rate of people aged 15 to 74 — All ISCED 2011 levels (TOTAL).",
+        "unit": "%",
+        "statistic": "annual_average",
+        "aggregation": "annual average of the labour force survey",
+        "definition": {
+          "upstream_unit": "PC",
+          "sex": "TOTAL",
+          "age": "Y15-74",
+          "isced11": "TOTAL"
+        },
+        "code": "TOTAL",
+        "primary": true
+      },
+      {
+        "id": "ed0-2",
+        "name": "Less than primary, primary and lower secondary education (levels 0-2)",
+        "description": "Unemployment rate of people aged 15 to 74 — Less than primary, primary and lower secondary education (levels 0-2) (ED0-2).",
+        "unit": "%",
+        "statistic": "annual_average",
+        "aggregation": "annual average of the labour force survey",
+        "definition": {
+          "upstream_unit": "PC",
+          "sex": "TOTAL",
+          "age": "Y15-74",
+          "isced11": "ED0-2"
+        },
+        "code": "ED0-2",
+        "parent": "total"
+      },
+      {
+        "id": "ed3-4",
+        "name": "Upper secondary and post-secondary non-tertiary education (levels 3 and 4)",
+        "description": "Unemployment rate of people aged 15 to 74 — Upper secondary and post-secondary non-tertiary education (levels 3 and 4) (ED3_4).",
+        "unit": "%",
+        "statistic": "annual_average",
+        "aggregation": "annual average of the labour force survey",
+        "definition": {
+          "upstream_unit": "PC",
+          "sex": "TOTAL",
+          "age": "Y15-74",
+          "isced11": "ED3_4"
+        },
+        "code": "ED3_4",
+        "parent": "total"
+      },
+      {
+        "id": "ed5-8",
+        "name": "Tertiary education (levels 5-8)",
+        "description": "Unemployment rate of people aged 15 to 74 — Tertiary education (levels 5-8) (ED5-8).",
+        "unit": "%",
+        "statistic": "annual_average",
+        "aggregation": "annual average of the labour force survey",
+        "definition": {
+          "upstream_unit": "PC",
+          "sex": "TOTAL",
+          "age": "Y15-74",
+          "isced11": "ED5-8"
+        },
+        "code": "ED5-8",
+        "parent": "total"
       }
-    }
+    ]
   },
   {
     "id": "eurostat-population-change",
-    "title": "Crude rate of total population change",
-    "description": "Annual total population change relative to average population, expressed per 1,000 inhabitants.",
+    "title": "Population change and its components",
+    "description": "Crude rates of regional population change, split into the natural change of the population and net migration.",
     "category": "Demography",
     "publisher": "Eurostat",
     "source": "Eurostat tgs00099",
@@ -279,7 +2583,7 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tgs00099 using indicator GROWRT: total population change divided by average population, multiplied by 1,000. This is a Eurostat regional aggregate published at NUTS 2 only, so the dataset declares NUTS 2 alone; the normaliser keeps every NUTS 2 code of the NUTS 2024 geography contract. Coverage follows the contract and upstream availability, not a fixed country list.",
+    "methodology": "Direct extract from Eurostat tgs00099. The table publishes total change together with the two components it is made of — natural change and net migration plus statistical adjustment — and each becomes an indicator, so a region losing population can be read for why. All three are crude rates per 1 000 inhabitants.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
@@ -288,12 +2592,22 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["variazione della popolazione", "population growth or decline"],
-      "topics": ["demography", "population growth", "depopulation"],
-      "example_questions": ["Quali regioni europee stanno perdendo popolazione?"],
-      "caveats": ["The value is a crude annual rate per 1,000 inhabitants, not an absolute count."]
+      "aliases": [
+        "variazione della popolazione",
+        "saldo migratorio",
+        "population growth or decline"
+      ],
+      "topics": ["demography", "population growth", "depopulation", "migration"],
+      "example_questions": [
+        "Quali regioni europee stanno perdendo popolazione?",
+        "Dove la crescita dipende dalla migrazione piuttosto che dalle nascite?"
+      ],
+      "caveats": [
+        "The values are crude annual rates per 1,000 inhabitants, not absolute counts.",
+        "Net migration is computed as a residual and absorbs statistical adjustments."
+      ]
     },
-    "created_at": "2026-08-16",
+    "created_at": "2026-09-18",
     "quality": {
       "score": 95,
       "methodology_documented": true,
@@ -304,28 +2618,60 @@
     },
     "dataset_code": "tgs00099",
     "filters": {
-      "freq": "A",
-      "indic_de": "GROWRT"
+      "freq": "A"
     },
-    "period_start": "2020",
+    "period_start": "2015",
     "period_end": "latest",
-    "indicator": {
-      "id": "population-change-rate",
-      "name": "Crude rate of total population change",
-      "description": "Total population change during the year per 1,000 inhabitants.",
-      "unit": "per 1,000 inhabitants",
-      "statistic": "annual_rate",
-      "aggregation": "Eurostat demographic balance",
-      "definition": {
-        "indicator_code": "GROWRT",
-        "denominator": "average population"
+    "indicator_dimension": "indic_de",
+    "indicators": [
+      {
+        "id": "growrt",
+        "name": "Crude rate of total population change",
+        "description": "Crude rate of total population change (GROWRT), per 1 000 inhabitants.",
+        "unit": "per 1,000 inhabitants",
+        "statistic": "annual_rate",
+        "aggregation": "crude rate over the annual average population",
+        "definition": {
+          "population_basis": "annual average population",
+          "indic_de": "GROWRT"
+        },
+        "code": "GROWRT",
+        "primary": true
+      },
+      {
+        "id": "natgrowrt",
+        "name": "Crude rate of natural change of population",
+        "description": "Crude rate of natural change of population (NATGROWRT), per 1 000 inhabitants.",
+        "unit": "per 1,000 inhabitants",
+        "statistic": "annual_rate",
+        "aggregation": "crude rate over the annual average population",
+        "definition": {
+          "population_basis": "annual average population",
+          "indic_de": "NATGROWRT"
+        },
+        "code": "NATGROWRT",
+        "parent": "growrt"
+      },
+      {
+        "id": "cnmigratrt",
+        "name": "Crude rate of net migration plus statistical adjustment",
+        "description": "Crude rate of net migration plus statistical adjustment (CNMIGRATRT), per 1 000 inhabitants.",
+        "unit": "per 1,000 inhabitants",
+        "statistic": "annual_rate",
+        "aggregation": "crude rate over the annual average population",
+        "definition": {
+          "population_basis": "annual average population",
+          "indic_de": "CNMIGRATRT"
+        },
+        "code": "CNMIGRATRT",
+        "parent": "growrt"
       }
-    }
+    ]
   },
   {
     "id": "eurostat-tourism-nights",
     "title": "Nights spent in tourist accommodation",
-    "description": "Annual nights spent by domestic and foreign guests in tourist accommodation establishments across European regions.",
+    "description": "Annual nights spent by residents and non-residents in tourist accommodation, by type of establishment.",
     "category": "Tourism",
     "publisher": "Eurostat",
     "source": "Eurostat tour_occ_nin2",
@@ -342,7 +2688,7 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2 selecting total guest residence, number unit and NACE group I551-I553. The table is titled by NUTS 2 region and its response carries NUTS 3 as well; the normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, each with the values Eurostat publishes for it. Coverage follows the contract and upstream availability, not a fixed country list.",
+    "methodology": "Direct extract from Eurostat tour_occ_nin2, residents and non-residents together. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
@@ -351,14 +2697,18 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["notti turistiche", "tourism overnight stays"],
+      "aliases": ["notti turistiche", "tourism overnight stays", "presenze turistiche"],
       "topics": ["tourism", "hospitality", "overnight stays"],
-      "example_questions": ["Quali regioni europee registrano piu notti turistiche?"],
+      "example_questions": [
+        "Quali regioni europee registrano piu notti turistiche?",
+        "Dove pesano di piu i campeggi rispetto agli alberghi?"
+      ],
       "caveats": [
-        "Counts cover reported tourist accommodation establishments, not all visitor nights."
+        "Counts cover reported tourist accommodation establishments, not all visitor nights.",
+        "A count is not comparable between regions of very different size."
       ]
     },
-    "created_at": "2026-08-16",
+    "created_at": "2026-09-18",
     "quality": {
       "score": 95,
       "methodology_documented": true,
@@ -371,23 +2721,87 @@
     "filters": {
       "freq": "A",
       "c_resid": "TOTAL",
-      "unit": "NR",
-      "nace_r2": "I551-I553"
+      "unit": "NR"
     },
-    "period_start": "2020",
+    "period_start": "2015",
     "period_end": "latest",
-    "indicator": {
-      "id": "tourism-nights",
-      "name": "Nights spent",
-      "description": "Total nights spent in hotels, short-stay accommodation and camping.",
-      "unit": "nights",
-      "statistic": "annual_total",
-      "aggregation": "sum of reported nights",
-      "definition": {
-        "country_of_residence": "TOTAL",
-        "accommodation": "I551-I553",
-        "upstream_unit": "NR"
+    "indicator_dimension": "nace_r2",
+    "indicators": [
+      {
+        "id": "i551-i553",
+        "name": "Hotels; holiday and other short-stay accommodation; camping grounds, recreational vehicle parks and trailer parks",
+        "description": "Nights spent in Hotels; holiday and other short-stay accommodation; camping grounds, recreational vehicle parks and trailer parks (I551-I553).",
+        "unit": "nights",
+        "statistic": "annual_total",
+        "aggregation": "sum of nights spent over the year",
+        "definition": {
+          "upstream_unit": "NR",
+          "residence": "TOTAL",
+          "nace_r2": "I551-I553"
+        },
+        "code": "I551-I553",
+        "primary": true
+      },
+      {
+        "id": "i551",
+        "name": "Hotels and similar accommodation",
+        "description": "Nights spent in Hotels and similar accommodation (I551).",
+        "unit": "nights",
+        "statistic": "annual_total",
+        "aggregation": "sum of nights spent over the year",
+        "definition": {
+          "upstream_unit": "NR",
+          "residence": "TOTAL",
+          "nace_r2": "I551"
+        },
+        "code": "I551",
+        "parent": "i551-i553"
+      },
+      {
+        "id": "i552-i553",
+        "name": "Holiday and other short-stay accommodation; camping grounds, recreational vehicle parks and trailer parks",
+        "description": "Nights spent in Holiday and other short-stay accommodation; camping grounds, recreational vehicle parks and trailer parks (I552_I553).",
+        "unit": "nights",
+        "statistic": "annual_total",
+        "aggregation": "sum of nights spent over the year",
+        "definition": {
+          "upstream_unit": "NR",
+          "residence": "TOTAL",
+          "nace_r2": "I552_I553"
+        },
+        "code": "I552_I553",
+        "parent": "i551-i553"
+      },
+      {
+        "id": "i552",
+        "name": "Holiday and other short-stay accommodation",
+        "description": "Nights spent in Holiday and other short-stay accommodation (I552).",
+        "unit": "nights",
+        "statistic": "annual_total",
+        "aggregation": "sum of nights spent over the year",
+        "definition": {
+          "upstream_unit": "NR",
+          "residence": "TOTAL",
+          "nace_r2": "I552"
+        },
+        "code": "I552",
+        "parent": "i552-i553"
+      },
+      {
+        "id": "i553",
+        "name": "Camping grounds, recreational vehicle parks and trailer parks",
+        "description": "Nights spent in Camping grounds, recreational vehicle parks and trailer parks (I553).",
+        "unit": "nights",
+        "statistic": "annual_total",
+        "aggregation": "sum of nights spent over the year",
+        "definition": {
+          "upstream_unit": "NR",
+          "residence": "TOTAL",
+          "nace_r2": "I553"
+        },
+        "code": "I553",
+        "parent": "i552-i553"
       }
-    }
+    ]
   }
 ]
