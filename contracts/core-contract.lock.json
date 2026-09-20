@@ -4,7 +4,7 @@
   "dataset_contract": {
     "path": "contracts/dataset.schema.json",
     "upstream_path": "data/schema/dataset.schema.json",
-    "sha256": "33637d9ed464d5848318d31e8fa6d6a9c0365e6fd82bf515267514de2d019dc8"
+    "sha256": "7e1ea96d29f9d8168c7bed1caa75130437334dfdf6542ea521645a57e181a33f"
   },
   "geography_contract": {
     "scheme": "NUTS",
@@ -26,6 +26,6 @@
   "eurostat_config_contract": {
     "path": "contracts/eurostat-datasets.json",
     "upstream_path": "data/provider-contracts/eurostat.json",
-    "sha256": "0938627af85558cb13454a2be45a9e33591eef4862749986ac9f72f6053fbbe2"
+    "sha256": "7f34d430026a8997f940e50ce1da759c105f4b376ab6fb5dec24bb5486ff8f6d"
   }
 }
