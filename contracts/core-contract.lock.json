@@ -26,6 +26,6 @@
   "eurostat_config_contract": {
     "path": "contracts/eurostat-datasets.json",
     "upstream_path": "data/provider-contracts/eurostat.json",
-    "sha256": "7f34d430026a8997f940e50ce1da759c105f4b376ab6fb5dec24bb5486ff8f6d"
+    "sha256": "7a3c39281a2e0c9923c19a814370dd23df6033767c710ad2733d283f54b66884"
   }
 }
