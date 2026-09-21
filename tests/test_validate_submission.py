@@ -155,6 +155,40 @@ class SubmissionContractTests(unittest.TestCase):
         self.assertEqual(report.geographies, 1)
         self.assertEqual(set(report.artifact_sha256), validator.REQUIRED_FILES)
 
+    def test_a_slice_whose_definition_contradicts_its_coordinates_is_rejected(self) -> None:
+        """The mistake that reached production through the managed channel.
+
+        A dataset cut from one slice of a table declared, in every indicator,
+        the totals it had precisely *not* kept. The schema admits it, the
+        observations were right, and the only reader who noticed was a person
+        who believed the metadata. Caught here the submitter sees it while the
+        bundle is still theirs.
+        """
+        metadata_path = self.release / "dataset.yaml"
+        metadata = yaml.safe_load(metadata_path.read_text(encoding="utf-8"))
+        metadata["coordinates"] = {
+            "sex": {"code": "F", "label": "Females", "total": False, "scope": "macro"}
+        }
+        metadata["indicators"][0]["definition"] = {"sex": "TOTAL"}
+        metadata_path.write_text(yaml.safe_dump(metadata, sort_keys=False), encoding="utf-8")
+        report = self._validate()
+        self.assertFalse(report.valid)
+        self.assertTrue(
+            any("while coordinates fix it to F" in error for error in report.errors),
+            report.errors,
+        )
+
+    def test_a_slice_that_repeats_its_coordinates_truthfully_is_accepted(self) -> None:
+        metadata_path = self.release / "dataset.yaml"
+        metadata = yaml.safe_load(metadata_path.read_text(encoding="utf-8"))
+        metadata["coordinates"] = {
+            "sex": {"code": "F", "label": "Females", "total": False, "scope": "macro"}
+        }
+        metadata["indicators"][0]["definition"] = {"sex": "F"}
+        metadata_path.write_text(yaml.safe_dump(metadata, sort_keys=False), encoding="utf-8")
+        report = self._validate()
+        self.assertTrue(report.valid, report.errors)
+
     def test_declarative_semantic_hints_are_accepted(self) -> None:
         metadata_path = self.release / "dataset.yaml"
         metadata = yaml.safe_load(metadata_path.read_text(encoding="utf-8"))

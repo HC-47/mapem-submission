@@ -294,6 +294,36 @@ def validate_observations(
     return row_count, len(geographies)
 
 
+def check_coordinate_agreement(metadata: dict[str, Any], errors: list[str]) -> None:
+    """A dimension cannot be fixed to one value and defined as another.
+
+    `coordinates` says where a dataset sits inside the table it was cut from and
+    an indicator's `definition` says what the number is; when both name the same
+    dimension they are one statement made twice, so they have to agree.
+
+    The managed channel learned this the hard way: every slice of a mortality
+    table shipped declaring `sex: TOTAL, age: TOTAL` in all of its definitions
+    while carrying a specific sex and age band, and nothing caught it — the
+    schema admits any `definition`, and the observations, which the gates
+    compare, were right. The same shape of mistake is available to a community
+    submission, and it is caught here rather than at promotion so the submitter
+    sees it while the bundle is still theirs to fix.
+    """
+    coordinates = metadata.get("coordinates") or {}
+    if not coordinates:
+        return
+    for indicator in metadata.get("indicators", []):
+        definition = indicator.get("definition") or {}
+        for dimension, coordinate in coordinates.items():
+            if dimension not in definition:
+                continue
+            if str(definition[dimension]) != str(coordinate.get("code")):
+                errors.append(
+                    f"dataset.yaml: indicator {indicator.get('id')} defines {dimension}="
+                    f"{definition[dimension]} while coordinates fix it to {coordinate.get('code')}"
+                )
+
+
 def validate_directory(
     directory: Path,
     report: ValidationReport,
@@ -331,6 +361,7 @@ def validate_directory(
         report.version = path_version
     except (ValueError, TypeError):
         report.errors.append("submission directory must be submissions/<dataset-id>/<version>")
+    check_coordinate_agreement(metadata, report.errors)
     report.observations, report.geographies = validate_observations(
         directory / "observations.csv", metadata, report.errors
     )
