@@ -78,7 +78,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "standardised_rate",
         "aggregation": "age-standardised rate, single year",
@@ -87,9 +87,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "T",
           "age": "TOTAL",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -1638,7 +1640,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "standardised_rate",
         "aggregation": "age-standardised rate, single year",
@@ -1647,9 +1649,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "T",
           "age": "Y_LT65",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -3198,7 +3202,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "standardised_rate",
         "aggregation": "age-standardised rate, single year",
@@ -3207,9 +3211,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "T",
           "age": "Y_GE65",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -4758,7 +4764,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "standardised_rate",
         "aggregation": "age-standardised rate, single year",
@@ -4767,9 +4773,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "M",
           "age": "TOTAL",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -6318,7 +6326,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "standardised_rate",
         "aggregation": "age-standardised rate, single year",
@@ -6327,9 +6335,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "M",
           "age": "Y_LT65",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -7878,7 +7888,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "standardised_rate",
         "aggregation": "age-standardised rate, single year",
@@ -7887,9 +7897,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "M",
           "age": "Y_GE65",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -9438,7 +9450,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "standardised_rate",
         "aggregation": "age-standardised rate, single year",
@@ -9447,9 +9459,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "F",
           "age": "TOTAL",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -10998,7 +11012,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "standardised_rate",
         "aggregation": "age-standardised rate, single year",
@@ -11007,9 +11021,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "F",
           "age": "Y_LT65",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -12558,7 +12574,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "standardised_rate",
         "aggregation": "age-standardised rate, single year",
@@ -12567,9 +12583,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "F",
           "age": "Y_GE65",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -34465,8 +34483,12 @@
       "unit": "rate",
       "statistic": "annual_value",
       "definition": {
-        "upstream_unit": "RT"
+        "upstream_unit": "RT",
+        "spliced_from": "A-R_V-Y"
       }
+    },
+    "spliced_filters": {
+      "icd10": ["A-R_V-Y"]
     }
   },
   {
@@ -34531,8 +34553,12 @@
       "unit": "rate",
       "statistic": "annual_value",
       "definition": {
-        "upstream_unit": "RT"
+        "upstream_unit": "RT",
+        "spliced_from": "A-R_V-Y"
       }
+    },
+    "spliced_filters": {
+      "icd10": ["A-R_V-Y"]
     }
   },
   {
@@ -35011,7 +35037,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "three_year_average",
         "aggregation": "age-standardised rate, three-year moving average ending in the period",
@@ -35020,9 +35046,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "T",
           "age": "TOTAL",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -36571,7 +36599,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "three_year_average",
         "aggregation": "age-standardised rate, three-year moving average ending in the period",
@@ -36580,9 +36608,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "T",
           "age": "Y_LT65",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -38131,7 +38161,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "three_year_average",
         "aggregation": "age-standardised rate, three-year moving average ending in the period",
@@ -38140,9 +38170,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "T",
           "age": "Y_GE65",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -39691,7 +39723,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "three_year_average",
         "aggregation": "age-standardised rate, three-year moving average ending in the period",
@@ -39700,9 +39732,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "M",
           "age": "TOTAL",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -41251,7 +41285,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "three_year_average",
         "aggregation": "age-standardised rate, three-year moving average ending in the period",
@@ -41260,9 +41294,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "M",
           "age": "Y_LT65",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -42811,7 +42847,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "three_year_average",
         "aggregation": "age-standardised rate, three-year moving average ending in the period",
@@ -42820,9 +42856,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "M",
           "age": "Y_GE65",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -44371,7 +44409,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "three_year_average",
         "aggregation": "age-standardised rate, three-year moving average ending in the period",
@@ -44380,9 +44418,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "F",
           "age": "TOTAL",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -45931,7 +45971,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "three_year_average",
         "aggregation": "age-standardised rate, three-year moving average ending in the period",
@@ -45940,9 +45980,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "F",
           "age": "Y_LT65",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
@@ -47491,7 +47533,7 @@
       {
         "id": "a-r-v-y",
         "name": "All causes of death (A00-Y89) excluding S00-T98",
-        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y).",
+        "description": "Age-standardised death rate for All causes of death (A00-Y89) excluding S00-T98 (A-R_V-Y). Eurostat publishes the same figure as TOTAL in the years where A-R_V-Y is absent; those years are read from it.",
         "unit": "per 100,000 inhabitants",
         "statistic": "three_year_average",
         "aggregation": "age-standardised rate, three-year moving average ending in the period",
@@ -47500,9 +47542,11 @@
           "standard_population": "European Standard Population 2013",
           "sex": "F",
           "age": "Y_GE65",
-          "icd10": "A-R_V-Y"
+          "icd10": "A-R_V-Y",
+          "spliced_from": "TOTAL"
         },
         "code": "A-R_V-Y",
+        "spliced_codes": ["TOTAL"],
         "primary": true
       },
       {
