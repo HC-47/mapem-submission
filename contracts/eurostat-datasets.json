@@ -16350,8 +16350,7 @@
         "code": "RCV_E",
         "primary": true
       }
-    ],
-    "headline": "dsp-i"
+    ]
   },
   {
     "id": "eurostat-env-wasfac-cap-rst",
@@ -16630,7 +16629,7 @@
         "primary": true
       }
     ],
-    "headline": "dsp-i"
+    "headline": "rcv-r"
   },
   {
     "id": "eurostat-env-wasfac-fac-cl",
@@ -22361,7 +22360,7 @@
         "primary": true
       }
     ],
-    "headline": "m"
+    "headline": false
   },
   {
     "id": "eurostat-proj-25rdbal",
@@ -34035,7 +34034,7 @@
         "primary": true
       }
     ],
-    "headline": "y-lt3"
+    "headline": "y20-24"
   },
   {
     "id": "eurostat-educ-uoe-enra14",
@@ -34143,7 +34142,7 @@
         "primary": true
       }
     ],
-    "headline": "y4"
+    "headline": "y20-24"
   },
   {
     "id": "eurostat-educ-uoe-enra15",
@@ -65866,7 +65865,7 @@
         "primary": true
       }
     ],
-    "headline": "ed0-2"
+    "headline": "ed5-8"
   },
   {
     "id": "eurostat-edat-lfse-04-y25-34-t",
@@ -66029,7 +66028,7 @@
         "primary": true
       }
     ],
-    "headline": "ed0-2"
+    "headline": "ed5-8"
   },
   {
     "id": "eurostat-edat-lfse-04",
@@ -66192,7 +66191,7 @@
         "primary": true
       }
     ],
-    "headline": "ed0-2"
+    "headline": "ed5-8"
   },
   {
     "id": "eurostat-edat-lfse-04-y30-34-t",
@@ -66355,7 +66354,7 @@
         "primary": true
       }
     ],
-    "headline": "ed0-2"
+    "headline": "ed5-8"
   },
   {
     "id": "eurostat-edat-lfse-04-y20-24-m",
@@ -66518,7 +66517,7 @@
         "primary": true
       }
     ],
-    "headline": "ed0-2"
+    "headline": "ed5-8"
   },
   {
     "id": "eurostat-edat-lfse-04-y25-34-m",
@@ -66681,7 +66680,7 @@
         "primary": true
       }
     ],
-    "headline": "ed0-2"
+    "headline": "ed5-8"
   },
   {
     "id": "eurostat-edat-lfse-04-y25-64-m",
@@ -66844,7 +66843,7 @@
         "primary": true
       }
     ],
-    "headline": "ed0-2"
+    "headline": "ed5-8"
   },
   {
     "id": "eurostat-edat-lfse-04-y30-34-m",
@@ -67007,7 +67006,7 @@
         "primary": true
       }
     ],
-    "headline": "ed0-2"
+    "headline": "ed5-8"
   },
   {
     "id": "eurostat-edat-lfse-04-y20-24-f",
@@ -67170,7 +67169,7 @@
         "primary": true
       }
     ],
-    "headline": "ed0-2"
+    "headline": "ed5-8"
   },
   {
     "id": "eurostat-edat-lfse-04-y25-34-f",
@@ -67333,7 +67332,7 @@
         "primary": true
       }
     ],
-    "headline": "ed0-2"
+    "headline": "ed5-8"
   },
   {
     "id": "eurostat-edat-lfse-04-y25-64-f",
@@ -67496,7 +67495,7 @@
         "primary": true
       }
     ],
-    "headline": "ed0-2"
+    "headline": "ed5-8"
   },
   {
     "id": "eurostat-edat-lfse-04-y30-34-f",
@@ -67659,7 +67658,7 @@
         "primary": true
       }
     ],
-    "headline": "ed0-2"
+    "headline": "ed5-8"
   },
   {
     "id": "eurostat-ef-m-sex-sh",
@@ -71183,7 +71182,7 @@
         "primary": true
       }
     ],
-    "headline": "r02-1"
+    "headline": "r03-2"
   },
   {
     "id": "eurostat-ef-olfreg",
@@ -71635,7 +71634,7 @@
         "primary": true
       }
     ],
-    "headline": "lfr-pers"
+    "headline": "lfd-awu"
   },
   {
     "id": "eurostat-cens-11dwob-r3",
