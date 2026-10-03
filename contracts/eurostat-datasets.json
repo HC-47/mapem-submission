@@ -1559,7 +1559,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-y-lt65-t",
@@ -3121,7 +3122,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-y-ge65-t",
@@ -4683,7 +4685,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-total-m",
@@ -6245,7 +6248,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-y-lt65-m",
@@ -7807,7 +7811,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-y-ge65-m",
@@ -9369,7 +9374,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-total-f",
@@ -10931,7 +10937,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-y-lt65-f",
@@ -12493,7 +12500,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-y-ge65-f",
@@ -14055,7 +14063,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-population-density",
@@ -14819,7 +14828,8 @@
         },
         "code": "YOUNGDEP4"
       }
-    ]
+    ],
+    "headline": "medagepop"
   },
   {
     "id": "eurostat-regional-gdp",
@@ -14952,7 +14962,8 @@
         "code": "PPS_HAB_EU27_2020",
         "primary": true
       }
-    ]
+    ],
+    "headline": "eur-hab"
   },
   {
     "id": "eurostat-tourism-nights-dom",
@@ -15093,7 +15104,8 @@
         "code": "I553",
         "parent": "i552-i553"
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-tourism-nights-dom-pch-pre",
@@ -15234,7 +15246,8 @@
         "code": "I553",
         "parent": "i552-i553"
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-tourism-nights-dom-pc-tot",
@@ -15323,7 +15336,8 @@
         "code": "I551-I553",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-tourism-nights-for",
@@ -15464,7 +15478,8 @@
         "code": "I553",
         "parent": "i552-i553"
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-tourism-nights-for-pch-pre",
@@ -15605,7 +15620,8 @@
         "code": "I553",
         "parent": "i552-i553"
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-tourism-nights-for-pc-tot",
@@ -15694,7 +15710,8 @@
         "code": "I551-I553",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-tourism-nights",
@@ -15835,7 +15852,8 @@
         "code": "I553",
         "parent": "i552-i553"
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-tourism-nights-pch-pre",
@@ -15976,7 +15994,8 @@
         "code": "I553",
         "parent": "i552-i553"
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-tourism-nights-pc-tot",
@@ -16065,7 +16084,8 @@
         "code": "I551-I553",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-tourism-nights-p-km2",
@@ -16154,7 +16174,8 @@
         "code": "I551-I553",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-tourism-nights-p-thab",
@@ -16243,7 +16264,8 @@
         "code": "I551-I553",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-env-wasfac",
@@ -16328,7 +16350,8 @@
         "code": "RCV_E",
         "primary": true
       }
-    ]
+    ],
+    "headline": "dsp-i"
   },
   {
     "id": "eurostat-env-wasfac-cap-rst",
@@ -16606,7 +16629,8 @@
         "code": "RCV_B",
         "primary": true
       }
-    ]
+    ],
+    "headline": "dsp-i"
   },
   {
     "id": "eurostat-env-wasfac-fac-cl",
@@ -17025,7 +17049,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "dw"
   },
   {
     "id": "eurostat-cens-21dwob-r3",
@@ -17134,7 +17159,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "dw"
   },
   {
     "id": "eurostat-cens-21dwob-r3-building",
@@ -17297,7 +17323,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-cens-21dwob-r3-building-dw-oc",
@@ -17460,7 +17487,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-cens-21dwob-r3-building-dw-noc",
@@ -17623,7 +17651,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-cens-21dwob-r3-building-unk",
@@ -17786,7 +17815,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-cens-21dwop-r3",
@@ -17895,7 +17925,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "dw"
   },
   {
     "id": "eurostat-cens-21dwop-r3-y-const",
@@ -18100,7 +18131,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-cens-21dwop-r3-y-const-dw-oc",
@@ -18305,7 +18337,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-cens-21dwop-r3-y-const-dw-noc",
@@ -18510,7 +18543,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-cens-21dwop-r3-y-const-unk",
@@ -18715,7 +18749,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-demo-r-find2",
@@ -18806,7 +18841,8 @@
         "code": "TOTFERRT",
         "primary": true
       }
-    ]
+    ],
+    "headline": "totferrt"
   },
   {
     "id": "eurostat-demo-r-find3",
@@ -18897,7 +18933,8 @@
         "code": "TOTFERRT",
         "primary": true
       }
-    ]
+    ],
+    "headline": "totferrt"
   },
   {
     "id": "eurostat-demo-r-minf",
@@ -19114,7 +19151,8 @@
         },
         "code": "F"
       }
-    ]
+    ],
+    "headline": "t"
   },
   {
     "id": "eurostat-educ-uoe-enra13",
@@ -19235,7 +19273,8 @@
         "code": "ED55",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed24"
   },
   {
     "id": "eurostat-educ-uoe-enra17",
@@ -19442,7 +19481,8 @@
         "code": "ED02",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0"
   },
   {
     "id": "eurostat-educ-uoe-enrs03",
@@ -19525,7 +19565,8 @@
         "code": "ED24",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed2"
   },
   {
     "id": "eurostat-educ-uoe-enrs06",
@@ -19621,7 +19662,8 @@
         "code": "ED35",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed3"
   },
   {
     "id": "eurostat-educ-uoe-enrs09",
@@ -19704,7 +19746,8 @@
         "code": "ED45",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed4"
   },
   {
     "id": "eurostat-educ-uoe-enrt05",
@@ -19901,7 +19944,8 @@
         "code": "ED8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed5-8"
   },
   {
     "id": "eurostat-hlth-silc-08-r",
@@ -20087,7 +20131,8 @@
         "code": "OTH",
         "primary": true
       }
-    ]
+    ],
+    "headline": "txp-tfar-wlist"
   },
   {
     "id": "eurostat-ilc-di11-r",
@@ -21102,7 +21147,8 @@
         "code": "EMP",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ent"
   },
   {
     "id": "eurostat-inn-cis13-bas-r",
@@ -21199,7 +21245,8 @@
         "code": "EMP",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ent"
   },
   {
     "id": "eurostat-inn-cis13-co-r",
@@ -21348,7 +21395,8 @@
         "code": "PRD_NEW_MKT",
         "primary": true
       }
-    ]
+    ],
+    "headline": "prd-new-ent"
   },
   {
     "id": "eurostat-isoc-r-ci-cm-pn2",
@@ -21563,7 +21611,8 @@
         },
         "code": "N"
       }
-    ]
+    ],
+    "headline": "c10-s951-x-k"
   },
   {
     "id": "eurostat-isoc-r-ec-evaln2",
@@ -21778,7 +21827,8 @@
         },
         "code": "N"
       }
-    ]
+    ],
+    "headline": "c10-s951-x-k"
   },
   {
     "id": "eurostat-isoc-r-ske-itspen2",
@@ -21993,7 +22043,8 @@
         },
         "code": "N"
       }
-    ]
+    ],
+    "headline": "c10-s951-x-k"
   },
   {
     "id": "eurostat-lfst-r-lfsd2hh",
@@ -22098,7 +22149,8 @@
         },
         "code": "DEG3"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-nama-10r-3popgdp",
@@ -22308,7 +22360,8 @@
         "code": "F",
         "primary": true
       }
-    ]
+    ],
+    "headline": "m"
   },
   {
     "id": "eurostat-proj-25rdbal",
@@ -22456,7 +22509,8 @@
         },
         "code": "L0008"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-tepsr-lm220",
@@ -22674,7 +22728,8 @@
         "code": "TOTAL",
         "primary": true
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-tour-ce-oaw",
@@ -22839,7 +22894,8 @@
         },
         "code": "WRL_NAL"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-tran-r-avgo-nm",
@@ -22933,7 +22989,8 @@
         "code": "FRM_NLD",
         "primary": true
       }
-    ]
+    ],
+    "headline": "frm-ld-nld"
   },
   {
     "id": "eurostat-tran-r-avpa-nm",
@@ -23027,7 +23084,8 @@
         "code": "PAS_CRD_DEP",
         "primary": true
       }
-    ]
+    ],
+    "headline": "pas-crd"
   },
   {
     "id": "eurostat-tran-r-mago-nm",
@@ -23121,7 +23179,8 @@
         "code": "FR_NLD",
         "primary": true
       }
-    ]
+    ],
+    "headline": "fr-ld-nld"
   },
   {
     "id": "eurostat-tran-r-mapa-nm",
@@ -23215,7 +23274,8 @@
         "code": "PAS_DEMB",
         "primary": true
       }
-    ]
+    ],
+    "headline": "pas"
   },
   {
     "id": "eurostat-trng-lfs-22",
@@ -23297,7 +23357,8 @@
         "code": "Y25-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y18-64"
   },
   {
     "id": "eurostat-trng-lfse-04",
@@ -23379,7 +23440,8 @@
         "code": "Y25-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y18-64"
   },
   {
     "id": "eurostat-yth-empl-130",
@@ -23472,7 +23534,8 @@
         },
         "code": "F"
       }
-    ]
+    ],
+    "headline": "t"
   },
   {
     "id": "eurostat-tran-r-net",
@@ -23601,7 +23664,8 @@
         },
         "code": "RL_TGE2"
       }
-    ]
+    ],
+    "headline": "rl"
   },
   {
     "id": "eurostat-tran-r-net-km-tkm2",
@@ -23686,7 +23750,8 @@
         "code": "RL",
         "primary": true
       }
-    ]
+    ],
+    "headline": "rl"
   },
   {
     "id": "eurostat-cult-emp-reg",
@@ -24233,7 +24298,8 @@
         "code": "P",
         "primary": true
       }
-    ]
+    ],
+    "headline": "n"
   },
   {
     "id": "eurostat-apro-mt-ls-r",
@@ -24899,7 +24965,8 @@
         "code": "A4220",
         "primary": true
       }
-    ]
+    ],
+    "headline": "a2000"
   },
   {
     "id": "eurostat-bd-salge1-size-r",
@@ -25256,7 +25323,8 @@
         "code": "SAL_SALGE1_EMP_BRTHR_PC",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ent-salge1-nr"
   },
   {
     "id": "eurostat-bd-size-r",
@@ -25637,7 +25705,8 @@
         "code": "SAL_EMP_BRTHR_PC",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ent-nr"
   },
   {
     "id": "eurostat-demo-r-d2jan",
@@ -26251,7 +26320,8 @@
         },
         "code": "UNK"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-demo-r-fagec3",
@@ -26464,7 +26534,8 @@
         },
         "code": "UNK"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-demo-r-frate2",
@@ -26977,7 +27048,8 @@
         },
         "code": "Y_GE50"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-demo-r-gind3",
@@ -28581,7 +28653,8 @@
         "code": "Y_GE95",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y-lt1"
   },
   {
     "id": "eurostat-demo-r-mlifexp-m",
@@ -29990,7 +30063,8 @@
         "code": "Y_GE95",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y-lt1"
   },
   {
     "id": "eurostat-demo-r-mlifexp-f",
@@ -31399,7 +31473,8 @@
         "code": "Y_GE95",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y-lt1"
   },
   {
     "id": "eurostat-demo-r-pjanaggr3",
@@ -32363,7 +32438,8 @@
         "code": "YOUNGDEP4",
         "primary": true
       }
-    ]
+    ],
+    "headline": "medagepop"
   },
   {
     "id": "eurostat-edat-lfse-22",
@@ -32473,7 +32549,8 @@
         "code": "Y18-29",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-29"
   },
   {
     "id": "eurostat-edat-lfse-33",
@@ -32571,7 +32648,8 @@
         "code": "Y20-34",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-34"
   },
   {
     "id": "eurostat-edat-lfse-37",
@@ -32683,7 +32761,8 @@
         "code": "Y25-34",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-34"
   },
   {
     "id": "eurostat-edat-lfse-38",
@@ -32795,7 +32874,8 @@
         "code": "Y25-34",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-34"
   },
   {
     "id": "eurostat-educ-uoe-enra11",
@@ -33014,7 +33094,8 @@
         "code": "ED8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-8"
   },
   {
     "id": "eurostat-educ-uoe-enra11-m",
@@ -33233,7 +33314,8 @@
         "code": "ED8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-8"
   },
   {
     "id": "eurostat-educ-uoe-enra11-f",
@@ -33452,7 +33534,8 @@
         "code": "ED8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-8"
   },
   {
     "id": "eurostat-educ-uoe-enra12",
@@ -33951,7 +34034,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y-lt3"
   },
   {
     "id": "eurostat-educ-uoe-enra14",
@@ -34058,7 +34142,8 @@
         "code": "Y20-24",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y4"
   },
   {
     "id": "eurostat-educ-uoe-enra15",
@@ -34165,7 +34250,8 @@
         "code": "ED5-8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-8"
   },
   {
     "id": "eurostat-ef-lsk-main",
@@ -34419,7 +34505,8 @@
         "code": "BLD_NST",
         "primary": true
       }
-    ]
+    ],
+    "headline": "bld-st"
   },
   {
     "id": "eurostat-hlth-cd-acdr2",
@@ -34696,7 +34783,8 @@
         "code": "D7-27",
         "primary": true
       }
-    ]
+    ],
+    "headline": "lfd"
   },
   {
     "id": "eurostat-hlth-cd-yperrto",
@@ -34805,7 +34893,8 @@
         "code": "PERI",
         "primary": true
       }
-    ]
+    ],
+    "headline": "lfoe"
   },
   {
     "id": "eurostat-hlth-cd-ypyll",
@@ -34889,7 +34978,8 @@
         "code": "Y_LT75",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y-lt70"
   },
   {
     "id": "eurostat-hlth-cd-yro",
@@ -36518,7 +36608,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-3y-y-lt65-t",
@@ -38080,7 +38171,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-3y-y-ge65-t",
@@ -39642,7 +39734,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-3y-total-m",
@@ -41204,7 +41297,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-3y-y-lt65-m",
@@ -42766,7 +42860,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-3y-y-ge65-m",
@@ -44328,7 +44423,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-3y-total-f",
@@ -45890,7 +45986,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-3y-y-lt65-f",
@@ -47452,7 +47549,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-causes-of-death-3y-y-ge65-f",
@@ -49014,7 +49112,8 @@
         },
         "code": "V01-Y89_OTH"
       }
-    ]
+    ],
+    "headline": "a-r-v-y"
   },
   {
     "id": "eurostat-hlth-silc-08b-r",
@@ -49188,7 +49287,8 @@
         "code": "E_IUSE_GE10A",
         "primary": true
       }
-    ]
+    ],
+    "headline": "e-iuse"
   },
   {
     "id": "eurostat-isoc-r-iacc-h",
@@ -49343,7 +49443,8 @@
         "code": "I_IUX",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i-iu3"
   },
   {
     "id": "eurostat-lfst-r-lfe2eedu",
@@ -49479,7 +49580,8 @@
         "code": "Y65-74",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2ehour",
@@ -49626,7 +49728,8 @@
         "code": "Y65-74",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2ehrwa",
@@ -49773,7 +49876,8 @@
         "code": "Y65-74",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2emprc",
@@ -49884,7 +49988,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2emprt",
@@ -50116,7 +50221,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2emprt-m",
@@ -50348,7 +50454,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2emprt-f",
@@ -50580,7 +50687,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2emprtn",
@@ -50691,7 +50799,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2en2",
@@ -50827,7 +50936,8 @@
         "code": "Y65-74",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfp2acedu",
@@ -50924,7 +51034,8 @@
         "code": "Y25-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfp2act",
@@ -51136,7 +51247,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfp2actrc",
@@ -51247,7 +51359,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfp2actrt",
@@ -51446,7 +51559,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfp2actrtn",
@@ -51557,7 +51671,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfsd2pop",
@@ -51771,7 +51886,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfu2gac",
@@ -51894,7 +52010,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfu2gan",
@@ -52017,7 +52134,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfu3pers",
@@ -52205,7 +52323,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfu3rt",
@@ -52427,7 +52546,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed0-2-t",
@@ -52649,7 +52769,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed3-4-t",
@@ -52871,7 +52992,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed5-8-t",
@@ -53093,7 +53215,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-total-m",
@@ -53315,7 +53438,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed0-2-m",
@@ -53537,7 +53661,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed3-4-m",
@@ -53759,7 +53884,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed5-8-m",
@@ -53951,7 +54077,8 @@
         "code": "Y45-54",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-total-f",
@@ -54173,7 +54300,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed0-2-f",
@@ -54395,7 +54523,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed3-4-f",
@@ -54617,7 +54746,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed5-8-f",
@@ -54824,7 +54954,8 @@
         "code": "Y45-54",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-74"
   },
   {
     "id": "eurostat-lfst-r-lfur2gac",
@@ -54947,7 +55078,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfur2gan",
@@ -55070,7 +55202,8 @@
         "code": "Y55-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-nama-10r-3empers",
@@ -55165,7 +55298,8 @@
         "code": "SELF",
         "primary": true
       }
-    ]
+    ],
+    "headline": "emp"
   },
   {
     "id": "eurostat-nrg-chddr2-a",
@@ -55246,7 +55380,8 @@
         "code": "CDD",
         "primary": true
       }
-    ]
+    ],
+    "headline": "hdd"
   },
   {
     "id": "eurostat-proj-19raasfr3",
@@ -55760,7 +55895,8 @@
         },
         "code": "Y_GE50"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-proj-19ranmig3",
@@ -55989,7 +56125,8 @@
         "code": "NIRMIGR",
         "primary": true
       }
-    ]
+    ],
+    "headline": "bsl"
   },
   {
     "id": "eurostat-proj-25rp5",
@@ -56303,7 +56440,8 @@
         "code": "YOUNGDEP3",
         "primary": true
       }
-    ]
+    ],
+    "headline": "medagepop"
   },
   {
     "id": "eurostat-road-go-na-rl3g",
@@ -56600,7 +56738,8 @@
         },
         "code": "GT19"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-road-go-na-ru3g",
@@ -56897,7 +57036,8 @@
         },
         "code": "GT19"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-tour-ce-omn12",
@@ -56994,7 +57134,8 @@
         "code": "NGT_SP",
         "primary": true
       }
-    ]
+    ],
+    "headline": "sty"
   },
   {
     "id": "eurostat-tran-r-vehst",
@@ -57158,7 +57299,8 @@
         },
         "code": "SPE"
       }
-    ]
+    ],
+    "headline": "tot-x-tm"
   },
   {
     "id": "eurostat-yth-empl-030",
@@ -57292,7 +57434,8 @@
         "code": "Y25-29",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-29"
   },
   {
     "id": "eurostat-yth-empl-110",
@@ -57426,7 +57569,8 @@
         "code": "Y25-29",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-29"
   },
   {
     "id": "eurostat-yth-empl-140",
@@ -57560,7 +57704,8 @@
         "code": "Y25-29",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-29"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt",
@@ -57831,7 +57976,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-total-sal",
@@ -58102,7 +58248,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-total-nsal",
@@ -58373,7 +58520,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-pt-emp",
@@ -58644,7 +58792,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-pt-sal",
@@ -58915,7 +59064,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-pt-nsal",
@@ -59186,7 +59336,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-ft-emp",
@@ -59457,7 +59608,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-ft-sal",
@@ -59728,7 +59880,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-ft-nsal",
@@ -59999,7 +60152,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-total-emp",
@@ -60270,7 +60424,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-total-sal",
@@ -60541,7 +60696,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-total-nsal",
@@ -60812,7 +60968,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-pt-emp",
@@ -61083,7 +61240,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-pt-sal",
@@ -61354,7 +61512,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-pt-nsal",
@@ -61625,7 +61784,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-ft-emp",
@@ -61896,7 +62056,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-ft-sal",
@@ -62167,7 +62328,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-ft-nsal",
@@ -62438,7 +62600,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-total-emp",
@@ -62709,7 +62872,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-total-sal",
@@ -62980,7 +63144,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-total-nsal",
@@ -63251,7 +63416,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-pt-emp",
@@ -63522,7 +63688,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-pt-sal",
@@ -63793,7 +63960,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-pt-nsal",
@@ -64048,7 +64216,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-ft-emp",
@@ -64319,7 +64488,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-ft-sal",
@@ -64590,7 +64760,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-ft-nsal",
@@ -64845,7 +65016,8 @@
         "code": "Y_GE65",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-hrst-st-rcat",
@@ -64967,7 +65139,8 @@
         "code": "SE",
         "primary": true
       }
-    ]
+    ],
+    "headline": "hrst"
   },
   {
     "id": "eurostat-hrst-st-rcat-pc-pop",
@@ -65089,7 +65262,8 @@
         "code": "SE",
         "primary": true
       }
-    ]
+    ],
+    "headline": "hrst"
   },
   {
     "id": "eurostat-hrst-st-rcat-ths-per",
@@ -65211,7 +65385,8 @@
         "code": "SE",
         "primary": true
       }
-    ]
+    ],
+    "headline": "hrst"
   },
   {
     "id": "eurostat-isoc-r-blt12-i",
@@ -65332,7 +65507,8 @@
         "code": "I_BUMT12X",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i-blt12"
   },
   {
     "id": "eurostat-isoc-r-blt12-i-pc-ind-ilt12",
@@ -65453,7 +65629,8 @@
         "code": "I_BUMT12X",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i-blt12"
   },
   {
     "id": "eurostat-isoc-r-blt12-i-pc-ind-iu3",
@@ -65688,7 +65865,8 @@
         "code": "ED5-8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-2"
   },
   {
     "id": "eurostat-edat-lfse-04-y25-34-t",
@@ -65850,7 +66028,8 @@
         "code": "ED5-8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-2"
   },
   {
     "id": "eurostat-edat-lfse-04",
@@ -66012,7 +66191,8 @@
         "code": "ED5-8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-2"
   },
   {
     "id": "eurostat-edat-lfse-04-y30-34-t",
@@ -66174,7 +66354,8 @@
         "code": "ED5-8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-2"
   },
   {
     "id": "eurostat-edat-lfse-04-y20-24-m",
@@ -66336,7 +66517,8 @@
         "code": "ED5-8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-2"
   },
   {
     "id": "eurostat-edat-lfse-04-y25-34-m",
@@ -66498,7 +66680,8 @@
         "code": "ED5-8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-2"
   },
   {
     "id": "eurostat-edat-lfse-04-y25-64-m",
@@ -66660,7 +66843,8 @@
         "code": "ED5-8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-2"
   },
   {
     "id": "eurostat-edat-lfse-04-y30-34-m",
@@ -66822,7 +67006,8 @@
         "code": "ED5-8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-2"
   },
   {
     "id": "eurostat-edat-lfse-04-y20-24-f",
@@ -66984,7 +67169,8 @@
         "code": "ED5-8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-2"
   },
   {
     "id": "eurostat-edat-lfse-04-y25-34-f",
@@ -67146,7 +67332,8 @@
         "code": "ED5-8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-2"
   },
   {
     "id": "eurostat-edat-lfse-04-y25-64-f",
@@ -67308,7 +67495,8 @@
         "code": "ED5-8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-2"
   },
   {
     "id": "eurostat-edat-lfse-04-y30-34-f",
@@ -67470,7 +67658,8 @@
         "code": "ED5-8",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ed0-2"
   },
   {
     "id": "eurostat-ef-m-sex-sh",
@@ -67566,7 +67755,8 @@
         },
         "code": "F"
       }
-    ]
+    ],
+    "headline": "t"
   },
   {
     "id": "eurostat-ef-m-sex-sh-pc",
@@ -67662,7 +67852,8 @@
         },
         "code": "F"
       }
-    ]
+    ],
+    "headline": "t"
   },
   {
     "id": "eurostat-ef-m-so-sh",
@@ -67758,7 +67949,8 @@
         },
         "code": "KE_GE8"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-ef-m-so-sh-pc",
@@ -67854,7 +68046,8 @@
         },
         "code": "KE_GE8"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-ef-mp-training-sh",
@@ -67961,7 +68154,8 @@
         },
         "code": "FULL"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-ef-mp-training-sh-pc",
@@ -68068,7 +68262,8 @@
         },
         "code": "FULL"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-ef-m-age-sh",
@@ -68175,7 +68370,8 @@
         },
         "code": "Y_GE55"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-ef-m-age-sh-pc",
@@ -68282,7 +68478,8 @@
         },
         "code": "Y_GE55"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-isoc-r-cux-i",
@@ -68442,7 +68639,8 @@
         "code": "BUS_MCO_TRO",
         "primary": true
       }
-    ]
+    ],
+    "headline": "car"
   },
   {
     "id": "eurostat-tran-r-elvehst-pc",
@@ -68540,7 +68738,8 @@
         "code": "BUS_MCO_TRO",
         "primary": true
       }
-    ]
+    ],
+    "headline": "car"
   },
   {
     "id": "eurostat-apri-lrnt",
@@ -68767,7 +68966,8 @@
         "code": "BEDPL",
         "primary": true
       }
-    ]
+    ],
+    "headline": "bedrm"
   },
   {
     "id": "eurostat-isoc-r-gov-i",
@@ -68998,7 +69198,8 @@
         "code": "J0000",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ara"
   },
   {
     "id": "eurostat-apri-lprc-nac-ha",
@@ -69083,7 +69284,8 @@
         "code": "J0000",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ara"
   },
   {
     "id": "eurostat-ef-lu-ofirrig",
@@ -69179,7 +69381,8 @@
         },
         "code": "I03B"
       }
-    ]
+    ],
+    "headline": "i03a"
   },
   {
     "id": "eurostat-ef-lu-ofirrig-hld",
@@ -69286,7 +69489,8 @@
         },
         "code": "I03B"
       }
-    ]
+    ],
+    "headline": "i03a"
   },
   {
     "id": "eurostat-lan-lcv-fao",
@@ -69392,7 +69596,8 @@
         },
         "code": "OWL_NFAO"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-lan-lcv-fao-pc",
@@ -69498,7 +69703,8 @@
         },
         "code": "OWL_NFAO"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-nama-10r-2rlp",
@@ -69729,7 +69935,8 @@
         "code": "B1GQ",
         "primary": true
       }
-    ]
+    ],
+    "headline": "b1g"
   },
   {
     "id": "eurostat-nama-10r-2gvagr-pch-pre",
@@ -69814,7 +70021,8 @@
         "code": "B1GQ",
         "primary": true
       }
-    ]
+    ],
+    "headline": "b1g"
   },
   {
     "id": "eurostat-tran-r-acci",
@@ -69899,7 +70107,8 @@
         "code": "INJ",
         "primary": true
       }
-    ]
+    ],
+    "headline": "kil"
   },
   {
     "id": "eurostat-tran-r-acci-p-mhab",
@@ -69984,7 +70193,8 @@
         "code": "INJ",
         "primary": true
       }
-    ]
+    ],
+    "headline": "kil"
   },
   {
     "id": "eurostat-aei-ps-inp",
@@ -70082,7 +70292,8 @@
         "code": "MED_INP",
         "primary": true
       }
-    ]
+    ],
+    "headline": "high-inp"
   },
   {
     "id": "eurostat-aei-ps-inp-pc-area",
@@ -70180,7 +70391,8 @@
         "code": "MED_INP",
         "primary": true
       }
-    ]
+    ],
+    "headline": "high-inp"
   },
   {
     "id": "eurostat-nama-10r-2nlp",
@@ -70479,7 +70691,8 @@
         },
         "code": "L0008"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-aei-fm-ms",
@@ -70636,7 +70849,8 @@
         "code": "I07A3_EQ_YC",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i07a-eq-y"
   },
   {
     "id": "eurostat-aei-fm-ms-pc",
@@ -70793,7 +71007,8 @@
         "code": "I07A3_EQ_YC",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i07a-eq-y"
   },
   {
     "id": "eurostat-educ-regind",
@@ -70967,7 +71182,8 @@
         "code": "R05_3",
         "primary": true
       }
-    ]
+    ],
+    "headline": "r02-1"
   },
   {
     "id": "eurostat-ef-olfreg",
@@ -71418,7 +71634,8 @@
         "code": "LFND_AWU",
         "primary": true
       }
-    ]
+    ],
+    "headline": "lfr-pers"
   },
   {
     "id": "eurostat-cens-11dwob-r3",
@@ -71527,7 +71744,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "dw"
   },
   {
     "id": "eurostat-cens-11htts-r2",
@@ -71852,7 +72070,8 @@
         },
         "code": "U400"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-lan-use-ovw-pc",
@@ -72112,7 +72331,8 @@
         },
         "code": "U400"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-ef-so-mptenure",
@@ -72223,7 +72443,8 @@
         "code": "CC03",
         "primary": true
       }
-    ]
+    ],
+    "headline": "agrarea"
   },
   {
     "id": "eurostat-ef-so-mptenure-hld",
@@ -72334,7 +72555,8 @@
         "code": "CC03",
         "primary": true
       }
-    ]
+    ],
+    "headline": "agrarea"
   },
   {
     "id": "eurostat-rd-e-gerdreg",
@@ -72452,7 +72674,8 @@
         },
         "code": "PNP"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-rd-e-gerdreg-mio-eur",
@@ -72570,7 +72793,8 @@
         },
         "code": "PNP"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-rd-e-gerdreg-mio-nac",
@@ -72688,7 +72912,8 @@
         },
         "code": "PNP"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-rd-e-gerdreg-mio-pps",
@@ -72806,7 +73031,8 @@
         },
         "code": "PNP"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-rd-e-gerdreg-mio-pps-kp05",
@@ -72924,7 +73150,8 @@
         },
         "code": "PNP"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-rd-e-gerdreg-pc-gdp",
@@ -73042,7 +73269,8 @@
         },
         "code": "PNP"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-rd-e-gerdreg-pps-hab-kp05",
@@ -73160,7 +73388,8 @@
         },
         "code": "PNP"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-cens-11hou-r2",
@@ -73348,7 +73577,8 @@
         "code": "SMC",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ht"
   },
   {
     "id": "eurostat-pat-ep-rtec-nr",
@@ -73482,7 +73712,8 @@
         "code": "SMC",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ht"
   },
   {
     "id": "eurostat-pat-ep-rtec-p-mact",
@@ -73616,7 +73847,8 @@
         "code": "SMC",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ht"
   },
   {
     "id": "eurostat-pat-ep-rtec-p-mhab",
@@ -73750,7 +73982,8 @@
         "code": "SMC",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ht"
   },
   {
     "id": "eurostat-tour-occ-arn2",
@@ -73872,7 +74105,8 @@
         "code": "I553",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-tour-occ-arn2-pch-pre",
@@ -73994,7 +74228,8 @@
         "code": "I553",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-ef-so-mporg",
@@ -74087,7 +74322,8 @@
         "code": "SGM_ESU",
         "primary": true
       }
-    ]
+    ],
+    "headline": "agrarea-ha"
   },
   {
     "id": "eurostat-cens-11arco-r2",
@@ -74329,7 +74565,8 @@
         "code": "Y20-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-lfst-r-sla-ga-ths-per",
@@ -74440,7 +74677,8 @@
         "code": "Y20-64",
         "primary": true
       }
-    ]
+    ],
+    "headline": "y15-64"
   },
   {
     "id": "eurostat-ef-ov-kvftreg",
@@ -74592,7 +74830,8 @@
         "code": "J_LSU",
         "primary": true
       }
-    ]
+    ],
+    "headline": "agrarea-ha"
   },
   {
     "id": "eurostat-cens-21hhct-r3",
@@ -74786,7 +75025,8 @@
         "code": "J_LSU",
         "primary": true
       }
-    ]
+    ],
+    "headline": "agrarea-ha"
   },
   {
     "id": "eurostat-lan-lcv-ovw",
@@ -75662,7 +75902,8 @@
         },
         "code": "H20"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-lan-lcv-ovw-pc",
@@ -76538,7 +76779,8 @@
         },
         "code": "H20"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "eurostat-cens-21dwbno-r3",
@@ -76748,7 +76990,8 @@
         "code": "ICCS050211",
         "primary": true
       }
-    ]
+    ],
+    "headline": "iccs0101"
   },
   {
     "id": "eurostat-crim-gen-reg-p-hthab",
@@ -76893,7 +77136,8 @@
         "code": "ICCS050211",
         "primary": true
       }
-    ]
+    ],
+    "headline": "iccs0101"
   },
   {
     "id": "eurostat-tour-occ-nin2dc",
@@ -77017,7 +77261,8 @@
         "code": "I553",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-tour-occ-nin2dc-pch-pre",
@@ -77141,7 +77386,8 @@
         "code": "I553",
         "primary": true
       }
-    ]
+    ],
+    "headline": "i551-i553"
   },
   {
     "id": "eurostat-ef-poirrig",
@@ -77317,7 +77563,8 @@
         "code": "B_6_2_2_99_HOLD",
         "primary": true
       }
-    ]
+    ],
+    "headline": "hold-hold"
   },
   {
     "id": "eurostat-cens-21m-r3",
@@ -77547,7 +77794,8 @@
         "code": "A_3_3_1_EQ_Y_HOLD",
         "primary": true
       }
-    ]
+    ],
+    "headline": "hold-hold"
   },
   {
     "id": "eurostat-ef-kvaareg",
@@ -77676,7 +77924,8 @@
         "code": "TOTAREA_HA",
         "primary": true
       }
-    ]
+    ],
+    "headline": "hold-hold"
   },
   {
     "id": "eurostat-ef-r-farm",
@@ -79437,7 +79686,8 @@
         },
         "code": "155"
       }
-    ]
+    ],
+    "headline": "001"
   },
   {
     "id": "eurostat-ef-aux-soc",
@@ -80302,7 +80552,8 @@
         "code": "K0000T_UAA09S",
         "primary": true
       }
-    ]
+    ],
+    "headline": false
   },
   {
     "id": "eurostat-ef-aux-soc-eur-hd",
@@ -80591,7 +80842,8 @@
         "code": "A6111",
         "primary": true
       }
-    ]
+    ],
+    "headline": false
   },
   {
     "id": "eurostat-ef-aux-soc-eur-hhd",
@@ -80748,7 +81000,8 @@
         "code": "A5410",
         "primary": true
       }
-    ]
+    ],
+    "headline": false
   },
   {
     "id": "eurostat-ef-aux-soc-eur-hive",
@@ -80821,7 +81074,8 @@
         "code": "A6710R",
         "primary": true
       }
-    ]
+    ],
+    "headline": false
   },
   {
     "id": "eurostat-ef-aux-soc-eur-hm2",
@@ -80894,7 +81148,8 @@
         "code": "U1000",
         "primary": true
       }
-    ]
+    ],
+    "headline": false
   },
   {
     "id": "eurostat-cens-21ara-r2",
@@ -81369,7 +81624,8 @@
         "code": "G07",
         "primary": true
       }
-    ]
+    ],
+    "headline": "agrarea"
   },
   {
     "id": "eurostat-ef-lu-pcreg-hld",
@@ -81648,7 +81904,8 @@
         "code": "G07",
         "primary": true
       }
-    ]
+    ],
+    "headline": "agrarea"
   },
   {
     "id": "eurostat-ef-mporganic",
@@ -82220,7 +82477,8 @@
         "code": "SO_EURO",
         "primary": true
       }
-    ]
+    ],
+    "headline": "hold-hold"
   },
   {
     "id": "eurostat-ef-kvecsleg",
@@ -82361,7 +82619,8 @@
         "code": "A_3_3_1_EQ_Y_HOLD",
         "primary": true
       }
-    ]
+    ],
+    "headline": "hold-hold"
   },
   {
     "id": "eurostat-cens-21fhcs-r3",
@@ -82575,7 +82834,8 @@
         "code": "NREN",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ren"
   },
   {
     "id": "eurostat-ef-mp-renerg-hld",
@@ -82736,7 +82996,8 @@
         "code": "NREN",
         "primary": true
       }
-    ]
+    ],
+    "headline": "ren"
   },
   {
     "id": "eurostat-ef-ls-ovesu",
@@ -83135,7 +83396,8 @@
         "code": "J19_EQ_Y",
         "primary": true
       }
-    ]
+    ],
+    "headline": "hold"
   },
   {
     "id": "eurostat-ef-ls-ovesu-nr",
@@ -83909,7 +84171,8 @@
         "code": "J19_EQ_Y",
         "primary": true
       }
-    ]
+    ],
+    "headline": "hold"
   },
   {
     "id": "eurostat-ef-ls-ovlsureg-nr",
@@ -84683,7 +84946,8 @@
         "code": "J19_EQ_Y",
         "primary": true
       }
-    ]
+    ],
+    "headline": "hold"
   },
   {
     "id": "eurostat-ef-ls-ovaareg-nr",
@@ -85195,7 +85459,8 @@
         "code": "UNK",
         "primary": true
       }
-    ]
+    ],
+    "headline": "pop"
   },
   {
     "id": "eurostat-cens-21f-r3",
@@ -85844,7 +86109,8 @@
         "code": "MIO_NAC",
         "primary": true
       }
-    ]
+    ],
+    "headline": "mio-eur"
   },
   {
     "id": "eurostat-nama-10r-2gfcf",
@@ -85925,7 +86191,8 @@
         "code": "MIO_NAC",
         "primary": true
       }
-    ]
+    ],
+    "headline": "mio-eur"
   },
   {
     "id": "eurostat-nama-10r-2emhrw",
@@ -86020,7 +86287,8 @@
         "code": "SELF",
         "primary": true
       }
-    ]
+    ],
+    "headline": "emp"
   },
   {
     "id": "eurostat-nama-10r-2lp10",
@@ -86107,7 +86375,8 @@
         "code": "D1_SAL_HW",
         "primary": true
       }
-    ]
+    ],
+    "headline": "d1-sal-per"
   },
   {
     "id": "eurostat-nama-10r-2lp10-hw",
@@ -86269,7 +86538,8 @@
         "code": "D1_SAL_HW",
         "primary": true
       }
-    ]
+    ],
+    "headline": "d1-sal-per"
   },
   {
     "id": "eurostat-nama-10r-2lp10-pch-pre",
@@ -86431,6 +86701,7 @@
         "code": "D1_SAL_HW",
         "primary": true
       }
-    ]
+    ],
+    "headline": "d1-sal-per"
   }
 ]
