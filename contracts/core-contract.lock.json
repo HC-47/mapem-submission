@@ -11,7 +11,7 @@
     "version": "2024",
     "path": "contracts/nuts-2024.csv",
     "upstream_path": "data/geographies/nuts/2024/units.csv",
-    "sha256": "b75084507b80c2c62612e6cc20a3ee30d5000b5e226763078db53e525eb8f795"
+    "sha256": "8fb7923121d55a962abda405fe95d8385e7ec53231b9c3b73ab8108e35973d6d"
   },
   "managed_batch_contract": {
     "path": "contracts/managed-batch.schema.json",
@@ -26,6 +26,6 @@
   "eurostat_config_contract": {
     "path": "contracts/eurostat-datasets.json",
     "upstream_path": "data/provider-contracts/eurostat.json",
-    "sha256": "1f58e17a19dc5164bd98b183a16df6f35001c2437a236847efe7bf5cfc15fcde"
+    "sha256": "e30b3a6f1e24b93777d0f7a326b4687fb6f424111a780cf8ad987ab46f6cb97c"
   }
 }
