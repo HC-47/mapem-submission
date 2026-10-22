@@ -26,7 +26,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -1589,7 +1589,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -3152,7 +3152,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -4715,7 +4715,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -6278,7 +6278,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -7841,7 +7841,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -9404,7 +9404,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -10967,7 +10967,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -12530,7 +12530,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -14087,11 +14087,11 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat demo_r_d3dens. Population density is population divided by regional area. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Coverage follows the contract and upstream availability, not a fixed country list.",
+    "methodology": "Direct extract from Eurostat demo_r_d3dens. Population density is population divided by regional area. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, from the country (NUTS 0) to NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Coverage follows the contract and upstream availability, not a fixed country list.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -14155,7 +14155,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -14856,7 +14856,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -14986,11 +14986,11 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Limited to domestic country.",
+    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, from the country (NUTS 0) to NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Limited to domestic country.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -15128,11 +15128,11 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Limited to domestic country.",
+    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, from the country (NUTS 0) to NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Limited to domestic country.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -15270,11 +15270,11 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Limited to domestic country.",
+    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, from the country (NUTS 0) to NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Limited to domestic country.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -15360,11 +15360,11 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Limited to foreign country.",
+    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, from the country (NUTS 0) to NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Limited to foreign country.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -15502,11 +15502,11 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Limited to foreign country.",
+    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, from the country (NUTS 0) to NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Limited to foreign country.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -15644,11 +15644,11 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Limited to foreign country.",
+    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, from the country (NUTS 0) to NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level. Limited to foreign country.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -15734,11 +15734,11 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level.",
+    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, from the country (NUTS 0) to NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -15876,11 +15876,11 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level.",
+    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, from the country (NUTS 0) to NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -16018,11 +16018,11 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level.",
+    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, from the country (NUTS 0) to NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -16108,11 +16108,11 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level.",
+    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, from the country (NUTS 0) to NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -16198,11 +16198,11 @@
       "share_alike": false,
       "redistribution": true
     },
-    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, NUTS 2 and NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level.",
+    "methodology": "Direct extract from Eurostat tour_occ_nin2. Each type of accommodation the table publishes becomes an indicator, hotels and campsites beside the total they belong to. The normaliser keeps every code of the NUTS 2024 geography contract at the levels this dataset declares, from the country (NUTS 0) to NUTS 3, and each level carries the values Eurostat publishes for it rather than values derived from another level.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -16292,7 +16292,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -16377,7 +16377,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -16486,7 +16486,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -16656,7 +16656,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -16753,7 +16753,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -16816,7 +16816,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -16879,7 +16879,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -16941,7 +16941,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -17077,7 +17077,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -17187,7 +17187,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -17351,7 +17351,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -17515,7 +17515,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -17679,7 +17679,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -17843,7 +17843,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -17953,7 +17953,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -18159,7 +18159,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -18365,7 +18365,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -18571,7 +18571,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -18776,7 +18776,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -18868,7 +18868,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -18960,7 +18960,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -19022,7 +19022,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -19084,7 +19084,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -19179,7 +19179,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -19300,7 +19300,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -19362,7 +19362,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -19425,7 +19425,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -19509,7 +19509,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -19593,7 +19593,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -19690,7 +19690,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -19773,7 +19773,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -19836,7 +19836,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -19972,7 +19972,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20158,7 +20158,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20220,7 +20220,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20282,7 +20282,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20344,7 +20344,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20406,7 +20406,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20468,7 +20468,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20530,7 +20530,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20592,7 +20592,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20654,7 +20654,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20716,7 +20716,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20778,7 +20778,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20840,7 +20840,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20902,7 +20902,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -20964,7 +20964,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -21026,7 +21026,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -21089,7 +21089,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -21175,7 +21175,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -21272,7 +21272,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -21338,7 +21338,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -21423,7 +21423,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -21639,7 +21639,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -21855,7 +21855,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -22071,7 +22071,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -22176,7 +22176,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -22455,7 +22455,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -22599,7 +22599,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -22661,7 +22661,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [3]
+      "levels": [0, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -22756,7 +22756,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -22921,7 +22921,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -23016,7 +23016,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -23111,7 +23111,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -23206,7 +23206,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -23301,7 +23301,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -23384,7 +23384,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -23467,7 +23467,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -23561,7 +23561,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -23691,7 +23691,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -23777,7 +23777,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -23843,7 +23843,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -23909,7 +23909,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -23977,7 +23977,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -24045,7 +24045,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -24111,7 +24111,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -24177,7 +24177,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -24243,7 +24243,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -24325,7 +24325,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -24993,7 +24993,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -25351,7 +25351,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -25733,7 +25733,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -25798,7 +25798,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -26348,7 +26348,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -26562,7 +26562,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -27075,7 +27075,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -27141,7 +27141,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -27206,7 +27206,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -27271,7 +27271,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -28681,7 +28681,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -30091,7 +30091,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -31501,7 +31501,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -31566,7 +31566,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -31631,7 +31631,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -31695,7 +31695,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -32465,7 +32465,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -32577,7 +32577,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -32676,7 +32676,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -32789,7 +32789,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -32902,7 +32902,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -33122,7 +33122,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -33342,7 +33342,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -33562,7 +33562,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -34061,7 +34061,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -34169,7 +34169,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -34277,7 +34277,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -34350,7 +34350,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -34422,7 +34422,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -34532,7 +34532,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -34603,7 +34603,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -34673,7 +34673,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -34811,7 +34811,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -34920,7 +34920,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -35006,7 +35006,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -35074,7 +35074,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -36637,7 +36637,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -38200,7 +38200,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -39763,7 +39763,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -41326,7 +41326,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -42889,7 +42889,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -44452,7 +44452,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -46015,7 +46015,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -47578,7 +47578,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -49140,7 +49140,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -49204,7 +49204,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -49314,7 +49314,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -49376,7 +49376,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -49471,7 +49471,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -49607,7 +49607,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -49755,7 +49755,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -49904,7 +49904,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -50015,7 +50015,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -50248,7 +50248,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -50481,7 +50481,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -50715,7 +50715,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -50827,7 +50827,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -50964,7 +50964,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -51061,7 +51061,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -51275,7 +51275,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -51386,7 +51386,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -51587,7 +51587,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -51699,7 +51699,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -51914,7 +51914,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -52038,7 +52038,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -52162,7 +52162,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -52351,7 +52351,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -52574,7 +52574,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -52797,7 +52797,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -53020,7 +53020,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -53243,7 +53243,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -53466,7 +53466,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -53689,7 +53689,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -53912,7 +53912,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -54105,7 +54105,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -54328,7 +54328,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -54551,7 +54551,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -54774,7 +54774,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -54982,7 +54982,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -55106,7 +55106,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -55229,7 +55229,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -55325,7 +55325,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -57064,7 +57064,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -57162,7 +57162,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -57326,7 +57326,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -57461,7 +57461,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -57596,7 +57596,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -57732,7 +57732,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -58004,7 +58004,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -58276,7 +58276,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -58548,7 +58548,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -58820,7 +58820,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -59092,7 +59092,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -59364,7 +59364,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -59636,7 +59636,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -59908,7 +59908,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -60180,7 +60180,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -60452,7 +60452,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -60724,7 +60724,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -60996,7 +60996,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -61268,7 +61268,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -61540,7 +61540,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -61812,7 +61812,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -62084,7 +62084,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -62356,7 +62356,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -62628,7 +62628,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -62900,7 +62900,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -63172,7 +63172,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -63444,7 +63444,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -63716,7 +63716,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -63988,7 +63988,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -64244,7 +64244,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -64516,7 +64516,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -64788,7 +64788,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -65044,7 +65044,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -65167,7 +65167,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -65290,7 +65290,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -65412,7 +65412,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -65534,7 +65534,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -65656,7 +65656,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -65730,7 +65730,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -65893,7 +65893,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -66056,7 +66056,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -66219,7 +66219,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -66382,7 +66382,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -66545,7 +66545,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -66708,7 +66708,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -66871,7 +66871,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -67034,7 +67034,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -67197,7 +67197,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -67360,7 +67360,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -67523,7 +67523,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -67686,7 +67686,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -67783,7 +67783,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -67880,7 +67880,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -67977,7 +67977,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -68074,7 +68074,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -68182,7 +68182,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -68290,7 +68290,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -68398,7 +68398,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -68505,7 +68505,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -68568,7 +68568,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -68667,7 +68667,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -68765,7 +68765,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -68838,7 +68838,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -68911,7 +68911,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -68993,7 +68993,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -69066,7 +69066,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -69139,7 +69139,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -69225,7 +69225,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -69312,7 +69312,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -69409,7 +69409,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -69516,7 +69516,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -69623,7 +69623,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -69730,7 +69730,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -69803,7 +69803,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -69876,7 +69876,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -69962,7 +69962,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -70048,7 +70048,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -70134,7 +70134,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -70221,7 +70221,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -70320,7 +70320,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -70418,7 +70418,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -70491,7 +70491,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -70564,7 +70564,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -70637,7 +70637,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -70718,7 +70718,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -70876,7 +70876,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -71034,7 +71034,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -71210,7 +71210,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -71662,7 +71662,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -71772,7 +71772,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -71836,7 +71836,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -72097,7 +72097,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -72359,7 +72359,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -72471,7 +72471,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -72583,7 +72583,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -72702,7 +72702,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -72821,7 +72821,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -72940,7 +72940,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -73059,7 +73059,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -73178,7 +73178,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -73297,7 +73297,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -73416,7 +73416,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -73482,7 +73482,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -73605,7 +73605,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -73740,7 +73740,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -73875,7 +73875,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -74009,7 +74009,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -74132,7 +74132,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -74256,7 +74256,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -74350,7 +74350,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -74416,7 +74416,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -74480,7 +74480,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -74592,7 +74592,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -74705,7 +74705,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -74858,7 +74858,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -74923,7 +74923,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -75052,7 +75052,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -75929,7 +75929,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -76807,7 +76807,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -76871,7 +76871,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -77017,7 +77017,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -77164,7 +77164,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -77289,7 +77289,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -77414,7 +77414,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -77591,7 +77591,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -77657,7 +77657,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -77822,7 +77822,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -77952,7 +77952,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -81176,7 +81176,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -81242,7 +81242,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -81307,7 +81307,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -81372,7 +81372,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -81652,7 +81652,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -81932,7 +81932,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -82505,7 +82505,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -82647,7 +82647,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -82712,7 +82712,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -82862,7 +82862,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -83024,7 +83024,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -83424,7 +83424,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -83799,7 +83799,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -84199,7 +84199,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -84574,7 +84574,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -84974,7 +84974,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -85349,7 +85349,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -85487,7 +85487,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -85553,7 +85553,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2, 3]
+      "levels": [0, 1, 2, 3]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -85618,7 +85618,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -85691,7 +85691,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -85764,7 +85764,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -85837,7 +85837,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -85910,7 +85910,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -85983,7 +85983,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -86056,7 +86056,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -86137,7 +86137,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -86218,7 +86218,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -86315,7 +86315,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -86403,7 +86403,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -86478,7 +86478,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -86566,7 +86566,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
@@ -86641,7 +86641,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [2]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
