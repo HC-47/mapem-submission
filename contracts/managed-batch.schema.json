@@ -80,6 +80,24 @@
             "provenance.json": { "$ref": "#/$defs/sha256" }
           }
         },
+        "references": {
+          "description": "Reference values beside the release (EU27_2020, migration 0047): references.csv and references.provenance.json in the release directory of the batch, promoted to data/datasets/<id>/references/<version>/. Absent when the source publishes no aggregate for the table.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["values", "sha256"],
+          "properties": {
+            "values": { "type": "integer", "minimum": 1 },
+            "sha256": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["references.csv", "references.provenance.json"],
+              "properties": {
+                "references.csv": { "$ref": "#/$defs/sha256" },
+                "references.provenance.json": { "$ref": "#/$defs/sha256" }
+              }
+            }
+          }
+        },
         "regression": {
           "type": "object",
           "required": [
