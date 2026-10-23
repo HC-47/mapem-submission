@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
 import stat
@@ -92,6 +93,66 @@ def resolve_pr_batch(
     return candidate
 
 
+#: Reference values beside a release (EU27_2020, core migration 0047): optional,
+#: declared under `references` in batch.yaml, in the release directory.
+REFERENCE_FILES = ("references.csv", "references.provenance.json")
+REFERENCE_COLUMNS = [
+    "dataset_id",
+    "indicator_id",
+    "reference_code",
+    "period",
+    "value",
+    "unit",
+    "statistic",
+    "quality_flags",
+]
+REFERENCE_AREAS = {"EU27_2020"}
+
+
+def _check_references(
+    dataset_id: str, version: str, release: Path, entry: dict, metadata: dict, errors: list[str]
+) -> None:
+    """The reference pair is the release's own: same observations, same indicators."""
+    declared = entry.get("references")
+    if not declared:
+        return
+    digests = {name: sha256_file(release / name) for name in REFERENCE_FILES}
+    if declared.get("sha256") != digests:
+        errors.append(f"{dataset_id}: reference checksums do not match batch.yaml")
+    try:
+        provenance = read_json(release / "references.provenance.json")
+    except Exception as error:
+        errors.append(f"{dataset_id}: unable to parse reference provenance: {error}")
+        return
+    if provenance.get("dataset_id") != dataset_id or provenance.get("release_version") != version:
+        errors.append(f"{dataset_id}: reference provenance names another release")
+    if provenance.get("observations_sha256") != sha256_file(release / "observations.csv"):
+        errors.append(f"{dataset_id}: references were not read with this release's observations")
+    if provenance.get("references_sha256") != digests["references.csv"]:
+        errors.append(f"{dataset_id}: reference provenance checksum mismatch")
+    indicators = {item.get("id"): item for item in metadata.get("indicators", [])}
+    with (release / "references.csv").open(encoding="utf-8", newline="") as stream:
+        reader = csv.DictReader(stream)
+        if reader.fieldnames != REFERENCE_COLUMNS:
+            errors.append(f"{dataset_id}: references.csv columns are not the contract's")
+            return
+        rows = 0
+        for row in reader:
+            rows += 1
+            indicator = indicators.get(row["indicator_id"])
+            if (
+                row["dataset_id"] != dataset_id
+                or row["reference_code"] not in REFERENCE_AREAS
+                or indicator is None
+                or (row["unit"], row["statistic"])
+                != (indicator.get("unit"), indicator.get("statistic"))
+            ):
+                errors.append(f"{dataset_id}: references.csv row {rows + 1} is not this release's")
+                return
+    if declared.get("values") != rows:
+        errors.append(f"{dataset_id}: manifest reference count does not match references.csv")
+
+
 def _check_files(
     directory: Path,
     expected: set[str],
@@ -177,6 +238,8 @@ def validate_managed_batch(directory: Path, report: ManagedBatchReport) -> None:
             continue
         relative_release = f"datasets/{entry.get('dataset_id')}/{entry.get('version')}"
         expected.update(f"{relative_release}/{filename}" for filename in REQUIRED_FILES)
+        if entry.get("references"):
+            expected.update(f"{relative_release}/{filename}" for filename in REFERENCE_FILES)
     _check_files(directory, expected, report.errors)
     if len(report.errors) >= MAX_REPORTED_ERRORS:
         return
@@ -242,6 +305,7 @@ def validate_managed_batch(directory: Path, report: ManagedBatchReport) -> None:
         if entry.get("artifact_sha256") != actual_digests:
             report.errors.append(f"{dataset_id}: manifest artifact checksums do not match release")
         report.artifact_sha256[str(dataset_id)] = actual_digests
+        _check_references(str(dataset_id), str(version), release, entry, metadata, report.errors)
     report.datasets = len(entries)
     if report.observations > int(limits["maximum_total_observations"]):
         report.errors.append("batch exceeds the configured total observation limit")

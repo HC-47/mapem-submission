@@ -209,6 +209,49 @@ class ManagedBatchContractTests(unittest.TestCase):
         report = self._validate()
         self.assertTrue(any("artifact checksums" in item for item in report.errors))
 
+    def _add_references(self, observations_sha256: str | None = None) -> None:
+        values = (
+            "dataset_id,indicator_id,reference_code,period,value,unit,statistic,quality_flags\n"
+            f"{self.dataset_id},population-density,EU27_2020,2024,109.7,inhabitants/km²,"
+            "annual_value,\n"
+        )
+        (self.release / "references.csv").write_text(values, encoding="utf-8")
+        provenance = {
+            "provider": "Eurostat",
+            "dataset_id": self.dataset_id,
+            "release_version": self.version,
+            "observations_sha256": observations_sha256
+            or validator.sha256_file(self.release / "observations.csv"),
+            "references_sha256": validator.sha256_file(self.release / "references.csv"),
+        }
+        (self.release / "references.provenance.json").write_text(
+            json.dumps(provenance), encoding="utf-8"
+        )
+        self._rewrite_entry(
+            references={
+                "values": 1,
+                "sha256": {
+                    name: validator.sha256_file(self.release / name)
+                    for name in validator.REFERENCE_FILES
+                },
+            }
+        )
+
+    def test_declared_reference_values_pass(self) -> None:
+        self._add_references()
+        report = self._validate()
+        self.assertTrue(report.valid, report.errors)
+
+    def test_reference_values_read_with_other_observations_are_rejected(self) -> None:
+        self._add_references(observations_sha256="0" * 64)
+        report = self._validate()
+        self.assertTrue(any("this release's observations" in item for item in report.errors))
+
+    def test_undeclared_reference_files_are_rejected(self) -> None:
+        (self.release / "references.csv").write_text("x\n", encoding="utf-8")
+        report = self._validate()
+        self.assertTrue(any("undeclared files" in item for item in report.errors))
+
     def _rewrite_entry(self, **changes: object) -> None:
         manifest_path = self.batch / "batch.yaml"
         manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
