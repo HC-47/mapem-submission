@@ -201,6 +201,122 @@ class ManagedBatchContractTests(unittest.TestCase):
         self.assertEqual(report.datasets, 1)
         self.assertEqual(report.observations, 1)
 
+    def _as_jrc(self) -> None:
+        """Turn the fixture into a JRC batch: same release, the JRC's contracts."""
+        dataset_id = "jrc-rioi"
+        release = self.batch / "datasets" / dataset_id / self.version
+        release.parent.mkdir(parents=True)
+        self.release.rename(release)
+        shutil.rmtree(self.batch / "datasets" / self.dataset_id)
+        self.dataset_id, self.release = dataset_id, release
+        metadata = yaml.safe_load((release / "dataset.yaml").read_text(encoding="utf-8"))
+        metadata.update(id=dataset_id, publisher="European Commission, Joint Research Centre")
+        metadata["upstream"] = {
+            "provider": "JRC",
+            "dataset_code": "RIOI",
+            "api_base_url": "https://data.jrc.ec.europa.eu/sparql",
+            "reference_url": "http://data.europa.eu/89h/4eb939d6-aaf2-4d9c-81ab-3cc9c9a83e25",
+        }
+        (release / "dataset.yaml").write_text(
+            yaml.safe_dump(metadata, sort_keys=False, allow_unicode=True), encoding="utf-8"
+        )
+        observations = (release / "observations.csv").read_text(encoding="utf-8")
+        (release / "observations.csv").write_text(
+            observations.replace("eurostat-population-density", dataset_id), encoding="utf-8"
+        )
+        provenance = {
+            "provider": "JRC",
+            "dataset_code": "RIOI",
+            "catalogue_record": metadata["upstream"]["reference_url"],
+            "catalogue_title": "Regional Innovation Output Indicator",
+            "catalogue_issued": "2099-01-01",
+            "catalogue_modified": "2099-01-01",
+            "distribution_url": "https://knowledge4policy.ec.europa.eu/dataset/k4p-dataset-81062_en",
+            "licence_uri": "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0",
+            "edition": "rioi_2099.xlsx",
+            "source_url": "https://knowledge4policy.ec.europa.eu/sites/default/files/rioi_2099.xlsx",
+            "source_sha256": "0" * 64,
+            "config_sha256": "0" * 64,
+            "imported_at": "2099-01-01T00:00:00Z",
+            "observations_sha256": validator.sha256_file(release / "observations.csv"),
+            "geography_levels": {"declared": [3], "available_upstream": [3]},
+            "excluded_codes": {"count": 0, "in_contract_countries": []},
+            "normalisation": {
+                "geography": "Only NUTS 2024 units are retained, at the declared levels.",
+                "missing_values": "Empty upstream cells remain absent.",
+                "flags": "The JRC files carry no status flags.",
+            },
+        }
+        (release / "provenance.json").write_text(
+            json.dumps(provenance, indent=2) + "\n", encoding="utf-8"
+        )
+        manifest_path = self.batch / "batch.yaml"
+        manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
+        manifest["provider"] = "JRC"
+        manifest["source_config_sha256"] = validator.sha256_file(
+            ROOT / "contracts" / "jrc-datasets.json"
+        )
+        entry = manifest["datasets"][0]
+        entry["dataset_id"] = dataset_id
+        entry["path"] = f"managed-batches/{self.batch_id}/datasets/{dataset_id}/{self.version}"
+        entry["artifact_sha256"] = {
+            name: validator.sha256_file(release / name)
+            for name in sorted(validator.REQUIRED_FILES)
+        }
+        manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False), encoding="utf-8")
+
+    def _edit_manifest(self, **changes: object) -> None:
+        manifest_path = self.batch / "batch.yaml"
+        manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
+        manifest.update(changes)
+        manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False), encoding="utf-8")
+
+    def test_a_jrc_batch_passes_with_the_jrc_contracts(self) -> None:
+        self._as_jrc()
+        report = self._validate()
+        self.assertTrue(report.valid, report.errors)
+
+    def test_a_jrc_batch_cannot_carry_the_eurostat_configuration(self) -> None:
+        self._as_jrc()
+        self._edit_manifest(
+            source_config_sha256=validator.sha256_file(ROOT / "contracts" / "eurostat-datasets.json")
+        )
+        report = self._validate()
+        self.assertIn("batch.yaml: JRC source configuration is not the pinned contract", report.errors)
+
+    def test_a_eurostat_dataset_is_refused_in_a_jrc_batch(self) -> None:
+        self._edit_manifest(
+            provider="JRC",
+            source_config_sha256=validator.sha256_file(ROOT / "contracts" / "jrc-datasets.json"),
+        )
+        report = self._validate()
+        self.assertIn(
+            "eurostat-population-density: dataset is not in the pinned JRC configuration",
+            report.errors,
+        )
+
+    def test_a_jrc_release_must_name_the_jrc_upstream(self) -> None:
+        self._as_jrc()
+        metadata_path = self.release / "dataset.yaml"
+        metadata = yaml.safe_load(metadata_path.read_text(encoding="utf-8"))
+        metadata["upstream"]["provider"] = "Eurostat"
+        metadata_path.write_text(
+            yaml.safe_dump(metadata, sort_keys=False, allow_unicode=True), encoding="utf-8"
+        )
+        manifest_path = self.batch / "batch.yaml"
+        manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
+        manifest["datasets"][0]["artifact_sha256"]["dataset.yaml"] = validator.sha256_file(
+            metadata_path
+        )
+        manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False), encoding="utf-8")
+        report = self._validate()
+        self.assertIn("jrc-rioi: managed JRC data must be an official source", report.errors)
+
+    def test_an_unknown_provider_is_refused(self) -> None:
+        self._edit_manifest(provider="OECD")
+        report = self._validate()
+        self.assertIn("batch.yaml: provider is not allowed for managed intake", report.errors)
+
     def test_manifest_artifact_checksum_mismatch_is_rejected(self) -> None:
         manifest_path = self.batch / "batch.yaml"
         manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))

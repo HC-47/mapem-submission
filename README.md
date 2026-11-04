@@ -1,7 +1,7 @@
 # Mapem data submissions
 
-This public repository is the review boundary for community datasets and bot-managed public Eurostat
-refreshes. Community contributors work in their own forks and propose one release; the managed worker uses
+This public repository is the review boundary for community datasets and bot-managed public refreshes
+from Eurostat and the European Commission's Joint Research Centre. Community contributors work in their own forks and propose one release; the managed worker uses
 one persistent technical fork and proposes one atomic multi-dataset batch. Both paths enforce pinned data
 contracts before promotion.
 
@@ -38,7 +38,7 @@ versions are immutable.
 Full contributor and governance documentation is in
 [`docs/CONTRIBUTING_DATA.md`](docs/CONTRIBUTING_DATA.md).
 
-## Managed Eurostat intake
+## Managed intake (Eurostat, JRC)
 
 Managed refresh PRs add `managed-batches/<batch-id>/batch.yaml` plus the standard three-file release for
 every changed dataset — including the first release of a dataset newly registered in the core, which can
