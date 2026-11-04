@@ -1,14 +1,14 @@
-# Managed Eurostat batches
+# Managed batches
 
 This repository has two independent intake lanes. Community contributors add one proposed dataset under
-`submissions/` and use review/voting. The Open Geo Data Map intake bot adds one atomic Eurostat batch under
+`submissions/` and use review/voting. The Open Geo Data Map intake bot adds one atomic batch from one provider, Eurostat or the JRC, under
 `managed-batches/` and uses protected automated validation. Both lanes produce the same three-file open
 release format; neither can publish directly to the core or PostgreSQL.
 
 ## Repository and fork model
 
 Managed intake uses one persistent technical fork owned by the project bot. A scheduled run does not create
-a new fork. It synchronizes the fork's default branch, creates `managed/eurostat/<batch-id>`, writes one
+a new fork. It synchronizes the fork's default branch, creates `managed/<provider>/<batch-id>`, writes one
 batch and opens a PR against `HC-47/mapem-submission`.
 
 The technical fork must be configured in the gateway. A normal GitHub user cannot obtain managed status by
@@ -39,9 +39,10 @@ archives, symlinks and executable content are rejected.
 
 The manifest validates against `contracts/managed-batch.schema.json` and declares:
 
-- stable `batch_id`, `provider: Eurostat` and `channel: managed_public`;
+- stable `batch_id`, `provider` (`Eurostat` or `JRC`, one per batch) and `channel: managed_public`;
 - generation timestamp and geography contract `NUTS/2024`;
-- SHA-256 of `contracts/eurostat-datasets.json`;
+- SHA-256 of the provider's pinned configuration, `contracts/eurostat-datasets.json` or
+  `contracts/jrc-datasets.json`;
 - every changed dataset, candidate and previous version, exact directory and row count;
 - SHA-256 of `dataset.yaml`, `observations.csv` and `provenance.json`;
 - regression counts, coverage loss, removal fraction and an empty failure list;
@@ -53,16 +54,18 @@ previous observations, nothing removed or changed, and no coverage loss. Only da
 the core — a provider contract entry and a publication profile — can be proposed this way; the core refuses
 the claim for any dataset that is published or already has releases on disk.
 
-The `source_config_sha256` prevents a fork from silently changing Eurostat codes or filters. Configuration
+The `source_config_sha256` prevents a fork from silently changing Eurostat codes or filters, or the JRC files a
+dataset is read from. Configuration
 changes must first be reviewed in the core and then copied/pinned here by maintainers.
 
 ## Release files
 
 ### `dataset.yaml`
 
-The normal open dataset schema applies. Managed Eurostat releases must additionally be official sources,
-declare provider `Eurostat`, use NUTS 2024 and match the pinned upstream `dataset_code` and filters for their
-dataset id. The path id/version and the single immutable version declared in metadata must agree.
+The normal open dataset schema applies. Managed releases must additionally be official sources, declare
+as upstream provider the batch's provider, use NUTS 2024 and match the pinned upstream `dataset_code` (and,
+for Eurostat, filters) for their dataset id. A dataset id from the other provider's configuration is
+refused. The path id/version and the single immutable version declared in metadata must agree.
 
 ### `observations.csv`
 
@@ -73,14 +76,18 @@ dataset_id,indicator_id,geo_scheme,geo_version,geo_level,geo_code,period,value,u
 ```
 
 The validator checks NUTS codes/levels, periods, indicators, units, statistics, finite values, uniqueness,
-quality counts and configured size limits. Missing Eurostat values remain absent rows and status flags are
-preserved in `quality_flags`.
+quality counts and configured size limits. Missing upstream values remain absent rows and Eurostat status flags are
+preserved in `quality_flags` (the JRC files carry none).
 
 ### `provenance.json`
 
-Managed provenance validates against `contracts/eurostat-provenance.schema.json`. It preserves the exact
-query URL, import time, raw response SHA-256, observations SHA-256, upstream update/label and explicit
-normalization rules for geography, missing values and flags.
+Managed provenance validates against the provider's schema. Eurostat's
+(`contracts/eurostat-provenance.schema.json`) preserves the exact query URL, import time, raw response
+SHA-256, observations SHA-256, upstream update/label and explicit normalization rules for geography, missing
+values and flags. The JRC's (`contracts/jrc-provenance.schema.json`) records the catalogue record and
+edition the file was found through, the licence read from the catalogue at that run (CC BY 4.0 or the
+Commission reuse decision, nothing else), the file URL and SHA-256, the SHA-256 of the configuration that
+read it, and the codes left out of the NUTS 2024 contract.
 
 ## Trusted contract copies
 
@@ -89,8 +96,11 @@ normalization rules for geography, missing values and flags.
 - the dataset JSON Schema;
 - the NUTS 2024 unit lookup;
 - the managed batch JSON Schema;
-- the Eurostat provenance JSON Schema;
-- the six Eurostat importer configurations.
+- the Eurostat and JRC provenance JSON Schemas;
+- the Eurostat and JRC importer configurations.
+
+The accepted providers and the contract files of each are listed in `contracts/governance.yaml`
+(`managed_batches.providers`).
 
 Pull-request validation checks these trusted base-repository copies before reading candidate data. The fork
 checkout supplies only untrusted bytes. Candidate code is never run.
@@ -107,7 +117,8 @@ checkout supplies only untrusted bytes. Candidate code is never run.
 5. a JSON artifact recording PR, head, batch, row totals, errors and artifact checksums.
 
 Limits currently allow at most 20 datasets, 250,000 observations per release, 2,000,000 observations in
-total and 100 MiB for a complete managed batch. The six current Eurostat imports are below those limits.
+total and 100 MiB for a complete managed batch. The current Eurostat and JRC batches are below
+those limits.
 
 Run a local batch validation with:
 
@@ -162,5 +173,5 @@ It then opens a second PR. PostgreSQL changes only after that protected core PR 
 - Stale previous version during core promotion: rerun intake from the new baseline.
 - Failed core promotion or loader: no published or current-version state changes.
 
-The future partner lane is not implemented here. It may reuse release files, but must not reuse managed
-Eurostat identity, credentials or automatic approval.
+The future partner lane is not implemented here. It may reuse release files, but must not reuse the managed
+identity, credentials or automatic approval.

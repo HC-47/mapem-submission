@@ -208,18 +208,20 @@ def validate_managed_batch(directory: Path, report: ManagedBatchReport) -> None:
     if manifest.get("batch_id") != batch_id:
         report.errors.append("batch.yaml: batch_id must match the directory name")
     limits = managed_limits()
-    if manifest.get("provider") != limits["provider"]:
+    provider = manifest.get("provider")
+    contracts = limits["providers"].get(provider) if isinstance(provider, str) else None
+    if contracts is None:
         report.errors.append("batch.yaml: provider is not allowed for managed intake")
+        return
     if manifest.get("channel") != limits["channel"]:
         report.errors.append("batch.yaml: channel must be managed_public")
-    if manifest.get("source_config_sha256") != sha256_file(
-        CONTRACTS / "eurostat-datasets.json"
-    ):
-        report.errors.append("batch.yaml: Eurostat source configuration is not the pinned contract")
+    config_path = CONTRACTS / contracts["config"]
+    if manifest.get("source_config_sha256") != sha256_file(config_path):
+        report.errors.append(
+            f"batch.yaml: {provider} source configuration is not the pinned contract"
+        )
 
-    configs = {
-        item["id"]: item for item in read_json(CONTRACTS / "eurostat-datasets.json")
-    }
+    configs = {item["id"]: item for item in read_json(config_path)}
     entries = manifest.get("datasets", [])
     if not isinstance(entries, list):
         entries = []
@@ -251,7 +253,9 @@ def validate_managed_batch(directory: Path, report: ManagedBatchReport) -> None:
         version = entry.get("version")
         config = configs.get(dataset_id)
         if config is None:
-            report.errors.append(f"{dataset_id}: dataset is not in the pinned Eurostat configuration")
+            report.errors.append(
+                f"{dataset_id}: dataset is not in the pinned {provider} configuration"
+            )
             continue
         release = directory / "datasets" / str(dataset_id) / str(version)
         expected_path = f"managed-batches/{batch_id}/datasets/{dataset_id}/{version}"
@@ -271,7 +275,7 @@ def validate_managed_batch(directory: Path, report: ManagedBatchReport) -> None:
         )
         validate_schema(
             provenance,
-            CONTRACTS / "eurostat-provenance.schema.json",
+            CONTRACTS / contracts["provenance_schema"],
             f"{dataset_id}/provenance.json",
             report.errors,
         )
@@ -283,11 +287,12 @@ def validate_managed_batch(directory: Path, report: ManagedBatchReport) -> None:
         elif versions[0].get("immutable") is not True:
             report.errors.append(f"{dataset_id}: release must be immutable")
         upstream = metadata.get("upstream", {})
-        if metadata.get("source_type") != "official" or upstream.get("provider") != "Eurostat":
-            report.errors.append(f"{dataset_id}: managed Eurostat data must be an official source")
+        if metadata.get("source_type") != "official" or upstream.get("provider") != provider:
+            report.errors.append(f"{dataset_id}: managed {provider} data must be an official source")
         if upstream.get("dataset_code") != config["dataset_code"]:
             report.errors.append(f"{dataset_id}: upstream dataset_code is not pinned")
-        if upstream.get("filters") != config["filters"]:
+        # Only Eurostat tables are queried with filters; a JRC file has none.
+        if upstream.get("filters") != config.get("filters"):
             report.errors.append(f"{dataset_id}: upstream filters are not pinned")
         if provenance.get("dataset_code") != config["dataset_code"]:
             report.errors.append(f"{dataset_id}: provenance dataset_code is not pinned")

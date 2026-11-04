@@ -23,7 +23,7 @@
       "maxLength": 160
     },
     "channel": { "const": "managed_public" },
-    "provider": { "const": "Eurostat" },
+    "provider": { "enum": ["Eurostat", "JRC"] },
     "generated_at": { "type": "string", "format": "date-time" },
     "geography": {
       "type": "object",

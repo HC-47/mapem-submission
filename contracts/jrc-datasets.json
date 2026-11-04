@@ -1,0 +1,1057 @@
+[
+  {
+    "id": "jrc-edgar-ghg",
+    "dataset_code": "EDGAR_GHG_NUTS2",
+    "title": "Greenhouse gas emissions by region",
+    "description": "Greenhouse gas emissions of European NUTS 2 regions by sector, in CO2 equivalent, from the JRC Emissions Database for Global Atmospheric Research (EDGAR).",
+    "subject": "Greenhouse gas emissions",
+    "breakdown": "gas, sector",
+    "category": "Environment",
+    "publisher": "European Commission, Joint Research Centre",
+    "source": "JRC EDGAR GHG emissions at sub-national level",
+    "source_url": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: European Commission, Joint Research Centre (EDGAR, GHG emissions at sub-national level)"
+    },
+    "methodology": "Read from the JRC EDGAR release of greenhouse gas emissions at sub-national level (NUTS 2), in kilotonnes of CO2 equivalent with IPCC AR5 GWP-100 values. The total covers fossil CO2, CH4, N2O and F-gases. Emissions EDGAR allocates at national level or cannot assign to a region are published upstream under extra-regio codes (country code followed by ZZ): they are not regions and are left out, so the regions of a country do not add up to its national total. Only codes present in the NUTS 2024 geography contract are kept; no code is converted. Values are copied as published. Mapem changes nothing else: it selects the regions, the sectors and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        2
+      ]
+    },
+    "geographic_coverage": [
+      "Europe (NUTS 2024)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "emissioni di gas serra",
+        "greenhouse gas emissions",
+        "EDGAR",
+        "GHG emissions"
+      ],
+      "topics": [
+        "environment",
+        "climate",
+        "emissions"
+      ],
+      "example_questions": [
+        "Quali regioni europee emettono piu gas serra?",
+        "Quanto pesano i trasporti sulle emissioni di una regione?"
+      ],
+      "caveats": [
+        "Regional emissions are modelled by EDGAR from national inventories and spatial proxies; they are not measured by each region.",
+        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total."
+      ]
+    },
+    "created_at": "2026-11-03",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "coordinates": {
+      "gas": {
+        "code": "GHG",
+        "label": "All greenhouse gases",
+        "total": true,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "total",
+        "name": "Total greenhouse gas emissions",
+        "description": "Fossil CO2, CH4, N2O and F-gases, all sectors the region is allocated.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "TOTAL",
+        "primary": true
+      },
+      {
+        "id": "energy",
+        "name": "Power generation",
+        "description": "Power generation (EDGAR sector Energy).",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Energy",
+        "parent": "total"
+      },
+      {
+        "id": "industry",
+        "name": "Industry",
+        "description": "Combustion in manufacturing, refineries and transformation industry, chemical processes, fuel exploitation, iron and steel, non-energy use of fuels, non-ferrous metals and non-metallic minerals, solvents and products use.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Industry",
+        "parent": "total"
+      },
+      {
+        "id": "buildings",
+        "name": "Buildings",
+        "description": "Energy used in buildings.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Buildings",
+        "parent": "total"
+      },
+      {
+        "id": "transport",
+        "name": "Transport",
+        "description": "Road transport, railways, pipelines and off-road transport. Aviation and shipping are not allocated to regions upstream and are not part of it.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Transport",
+        "parent": "total"
+      },
+      {
+        "id": "agriculture",
+        "name": "Agriculture",
+        "description": "Agricultural soils, agricultural waste burning, enteric fermentation, manure management and indirect N2O from agriculture.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Agriculture",
+        "parent": "total"
+      },
+      {
+        "id": "waste",
+        "name": "Waste",
+        "description": "Solid waste incineration, landfills and waste water handling.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Waste",
+        "parent": "total"
+      },
+      {
+        "id": "indirect",
+        "name": "Indirect N2O",
+        "description": "Indirect N2O emissions.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Indirect",
+        "parent": "total"
+      }
+    ],
+    "headline": "total",
+    "jrc": {
+      "catalogue": {
+        "record": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658"
+      },
+      "distribution": {
+        "url_pattern": "/subnational_NUTS2/(\\d{4})_FT(\\d{4})_GHG_NUTS2/$",
+        "accepted_licences": [
+          "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0",
+          "http://publications.europa.eu/resource/authority/licence/COM_REUSE"
+        ],
+        "file_pattern": "^EDGAR_\\d{4}_total_GHG_AR5_NUTS2_\\d{4}-\\d{4}\\.zip$"
+      },
+      "reader": "edgar_totals",
+      "sheets": {
+        "total": "TOTALS by NUTS2",
+        "sectors": "TOTALS by NUTS2 and Sector"
+      },
+      "compound": "GWP_100_AR5_GHG"
+    }
+  },
+  {
+    "id": "jrc-edgar-ghg-co2",
+    "dataset_code": "EDGAR_GHG_NUTS2",
+    "title": "Greenhouse gas emissions by region · Fossil carbon dioxide",
+    "description": "Emissions of fossil carbon dioxide (CO2) of European NUTS 2 regions by sector, in CO2 equivalent, from the JRC EDGAR database.",
+    "subject": "Greenhouse gas emissions",
+    "breakdown": "gas, sector",
+    "category": "Environment",
+    "publisher": "European Commission, Joint Research Centre",
+    "source": "JRC EDGAR GHG emissions at sub-national level",
+    "source_url": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: European Commission, Joint Research Centre (EDGAR, GHG emissions at sub-national level)"
+    },
+    "methodology": "Read from the JRC EDGAR release of greenhouse gas emissions at sub-national level (NUTS 2), in kilotonnes of CO2 equivalent with IPCC AR5 GWP-100 values. The total covers fossil CO2, CH4, N2O and F-gases. Emissions EDGAR allocates at national level or cannot assign to a region are published upstream under extra-regio codes (country code followed by ZZ): they are not regions and are left out, so the regions of a country do not add up to its national total. Only codes present in the NUTS 2024 geography contract are kept; no code is converted. Values are copied as published. Mapem changes nothing else: it selects the regions, the sectors and the years and reshapes the table into one row per observation. Limited to fossil carbon dioxide (CO2).",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        2
+      ]
+    },
+    "geographic_coverage": [
+      "Europe (NUTS 2024)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": [
+        "environment",
+        "climate",
+        "emissions"
+      ],
+      "example_questions": [],
+      "caveats": [
+        "Regional emissions are modelled by EDGAR from national inventories and spatial proxies; they are not measured by each region.",
+        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total."
+      ]
+    },
+    "created_at": "2026-11-03",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "coordinates": {
+      "gas": {
+        "code": "CO2",
+        "label": "Fossil carbon dioxide",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "energy",
+        "name": "Power generation",
+        "description": "Power generation (EDGAR sector Energy).",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Energy",
+        "primary": true
+      },
+      {
+        "id": "industry",
+        "name": "Industry",
+        "description": "Combustion in manufacturing, refineries and transformation industry, chemical processes, fuel exploitation, iron and steel, non-energy use of fuels, non-ferrous metals and non-metallic minerals, solvents and products use.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Industry",
+        "primary": true
+      },
+      {
+        "id": "buildings",
+        "name": "Buildings",
+        "description": "Energy used in buildings.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Buildings",
+        "primary": true
+      },
+      {
+        "id": "transport",
+        "name": "Transport",
+        "description": "Road transport, railways, pipelines and off-road transport. Aviation and shipping are not allocated to regions upstream and are not part of it.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Transport",
+        "primary": true
+      },
+      {
+        "id": "agriculture",
+        "name": "Agriculture",
+        "description": "Agricultural soils, agricultural waste burning, enteric fermentation, manure management and indirect N2O from agriculture.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Agriculture",
+        "primary": true
+      },
+      {
+        "id": "waste",
+        "name": "Waste",
+        "description": "Solid waste incineration, landfills and waste water handling.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Waste",
+        "primary": true
+      }
+    ],
+    "headline": false,
+    "jrc": {
+      "catalogue": {
+        "record": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658"
+      },
+      "distribution": {
+        "url_pattern": "/subnational_NUTS2/(\\d{4})_FT(\\d{4})_GHG_NUTS2/$",
+        "accepted_licences": [
+          "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0",
+          "http://publications.europa.eu/resource/authority/licence/COM_REUSE"
+        ],
+        "file_pattern": "^EDGAR_\\d{4}_GHGs_CO2eq_AR5_NUTS2_\\d{4}-\\d{4}\\.zip$"
+      },
+      "reader": "edgar_gas",
+      "sheets": {
+        "sectors": "Fossil CO2"
+      },
+      "compound": "CO2"
+    }
+  },
+  {
+    "id": "jrc-edgar-ghg-ch4",
+    "dataset_code": "EDGAR_GHG_NUTS2",
+    "title": "Greenhouse gas emissions by region · Methane",
+    "description": "Emissions of methane (CH4) of European NUTS 2 regions by sector, in CO2 equivalent, from the JRC EDGAR database.",
+    "subject": "Greenhouse gas emissions",
+    "breakdown": "gas, sector",
+    "category": "Environment",
+    "publisher": "European Commission, Joint Research Centre",
+    "source": "JRC EDGAR GHG emissions at sub-national level",
+    "source_url": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: European Commission, Joint Research Centre (EDGAR, GHG emissions at sub-national level)"
+    },
+    "methodology": "Read from the JRC EDGAR release of greenhouse gas emissions at sub-national level (NUTS 2), in kilotonnes of CO2 equivalent with IPCC AR5 GWP-100 values. The total covers fossil CO2, CH4, N2O and F-gases. Emissions EDGAR allocates at national level or cannot assign to a region are published upstream under extra-regio codes (country code followed by ZZ): they are not regions and are left out, so the regions of a country do not add up to its national total. Only codes present in the NUTS 2024 geography contract are kept; no code is converted. Values are copied as published. Mapem changes nothing else: it selects the regions, the sectors and the years and reshapes the table into one row per observation. Limited to methane (CH4).",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        2
+      ]
+    },
+    "geographic_coverage": [
+      "Europe (NUTS 2024)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": [
+        "environment",
+        "climate",
+        "emissions"
+      ],
+      "example_questions": [],
+      "caveats": [
+        "Regional emissions are modelled by EDGAR from national inventories and spatial proxies; they are not measured by each region.",
+        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total."
+      ]
+    },
+    "created_at": "2026-11-03",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "coordinates": {
+      "gas": {
+        "code": "CH4",
+        "label": "Methane",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "energy",
+        "name": "Power generation",
+        "description": "Power generation (EDGAR sector Energy).",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Energy",
+        "primary": true
+      },
+      {
+        "id": "industry",
+        "name": "Industry",
+        "description": "Combustion in manufacturing, refineries and transformation industry, chemical processes, fuel exploitation, iron and steel, non-energy use of fuels, non-ferrous metals and non-metallic minerals, solvents and products use.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Industry",
+        "primary": true
+      },
+      {
+        "id": "buildings",
+        "name": "Buildings",
+        "description": "Energy used in buildings.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Buildings",
+        "primary": true
+      },
+      {
+        "id": "transport",
+        "name": "Transport",
+        "description": "Road transport, railways, pipelines and off-road transport. Aviation and shipping are not allocated to regions upstream and are not part of it.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Transport",
+        "primary": true
+      },
+      {
+        "id": "agriculture",
+        "name": "Agriculture",
+        "description": "Agricultural soils, agricultural waste burning, enteric fermentation, manure management and indirect N2O from agriculture.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Agriculture",
+        "primary": true
+      },
+      {
+        "id": "waste",
+        "name": "Waste",
+        "description": "Solid waste incineration, landfills and waste water handling.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Waste",
+        "primary": true
+      }
+    ],
+    "headline": false,
+    "jrc": {
+      "catalogue": {
+        "record": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658"
+      },
+      "distribution": {
+        "url_pattern": "/subnational_NUTS2/(\\d{4})_FT(\\d{4})_GHG_NUTS2/$",
+        "accepted_licences": [
+          "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0",
+          "http://publications.europa.eu/resource/authority/licence/COM_REUSE"
+        ],
+        "file_pattern": "^EDGAR_\\d{4}_GHGs_CO2eq_AR5_NUTS2_\\d{4}-\\d{4}\\.zip$"
+      },
+      "reader": "edgar_gas",
+      "sheets": {
+        "sectors": "CH4 AR5"
+      },
+      "compound": "GWP_100_AR5_CH4"
+    }
+  },
+  {
+    "id": "jrc-edgar-ghg-n2o",
+    "dataset_code": "EDGAR_GHG_NUTS2",
+    "title": "Greenhouse gas emissions by region · Nitrous oxide",
+    "description": "Emissions of nitrous oxide (N2O) of European NUTS 2 regions by sector, in CO2 equivalent, from the JRC EDGAR database.",
+    "subject": "Greenhouse gas emissions",
+    "breakdown": "gas, sector",
+    "category": "Environment",
+    "publisher": "European Commission, Joint Research Centre",
+    "source": "JRC EDGAR GHG emissions at sub-national level",
+    "source_url": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: European Commission, Joint Research Centre (EDGAR, GHG emissions at sub-national level)"
+    },
+    "methodology": "Read from the JRC EDGAR release of greenhouse gas emissions at sub-national level (NUTS 2), in kilotonnes of CO2 equivalent with IPCC AR5 GWP-100 values. The total covers fossil CO2, CH4, N2O and F-gases. Emissions EDGAR allocates at national level or cannot assign to a region are published upstream under extra-regio codes (country code followed by ZZ): they are not regions and are left out, so the regions of a country do not add up to its national total. Only codes present in the NUTS 2024 geography contract are kept; no code is converted. Values are copied as published. Mapem changes nothing else: it selects the regions, the sectors and the years and reshapes the table into one row per observation. Limited to nitrous oxide (N2O).",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        2
+      ]
+    },
+    "geographic_coverage": [
+      "Europe (NUTS 2024)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": [
+        "environment",
+        "climate",
+        "emissions"
+      ],
+      "example_questions": [],
+      "caveats": [
+        "Regional emissions are modelled by EDGAR from national inventories and spatial proxies; they are not measured by each region.",
+        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total."
+      ]
+    },
+    "created_at": "2026-11-03",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "coordinates": {
+      "gas": {
+        "code": "N2O",
+        "label": "Nitrous oxide",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "energy",
+        "name": "Power generation",
+        "description": "Power generation (EDGAR sector Energy).",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Energy",
+        "primary": true
+      },
+      {
+        "id": "industry",
+        "name": "Industry",
+        "description": "Combustion in manufacturing, refineries and transformation industry, chemical processes, fuel exploitation, iron and steel, non-energy use of fuels, non-ferrous metals and non-metallic minerals, solvents and products use.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Industry",
+        "primary": true
+      },
+      {
+        "id": "buildings",
+        "name": "Buildings",
+        "description": "Energy used in buildings.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Buildings",
+        "primary": true
+      },
+      {
+        "id": "transport",
+        "name": "Transport",
+        "description": "Road transport, railways, pipelines and off-road transport. Aviation and shipping are not allocated to regions upstream and are not part of it.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Transport",
+        "primary": true
+      },
+      {
+        "id": "agriculture",
+        "name": "Agriculture",
+        "description": "Agricultural soils, agricultural waste burning, enteric fermentation, manure management and indirect N2O from agriculture.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Agriculture",
+        "primary": true
+      },
+      {
+        "id": "waste",
+        "name": "Waste",
+        "description": "Solid waste incineration, landfills and waste water handling.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Waste",
+        "primary": true
+      },
+      {
+        "id": "indirect",
+        "name": "Indirect N2O",
+        "description": "Indirect N2O emissions.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Indirect",
+        "primary": true
+      }
+    ],
+    "headline": false,
+    "jrc": {
+      "catalogue": {
+        "record": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658"
+      },
+      "distribution": {
+        "url_pattern": "/subnational_NUTS2/(\\d{4})_FT(\\d{4})_GHG_NUTS2/$",
+        "accepted_licences": [
+          "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0",
+          "http://publications.europa.eu/resource/authority/licence/COM_REUSE"
+        ],
+        "file_pattern": "^EDGAR_\\d{4}_GHGs_CO2eq_AR5_NUTS2_\\d{4}-\\d{4}\\.zip$"
+      },
+      "reader": "edgar_gas",
+      "sheets": {
+        "sectors": "N2O AR5"
+      },
+      "compound": "GWP_100_AR5_N2O"
+    }
+  },
+  {
+    "id": "jrc-edgar-ghg-f-gases",
+    "dataset_code": "EDGAR_GHG_NUTS2",
+    "title": "Greenhouse gas emissions by region · Fluorinated gases",
+    "description": "Emissions of fluorinated gases (F-gases) of European NUTS 2 regions by sector, in CO2 equivalent, from the JRC EDGAR database.",
+    "subject": "Greenhouse gas emissions",
+    "breakdown": "gas, sector",
+    "category": "Environment",
+    "publisher": "European Commission, Joint Research Centre",
+    "source": "JRC EDGAR GHG emissions at sub-national level",
+    "source_url": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: European Commission, Joint Research Centre (EDGAR, GHG emissions at sub-national level)"
+    },
+    "methodology": "Read from the JRC EDGAR release of greenhouse gas emissions at sub-national level (NUTS 2), in kilotonnes of CO2 equivalent with IPCC AR5 GWP-100 values. The total covers fossil CO2, CH4, N2O and F-gases. Emissions EDGAR allocates at national level or cannot assign to a region are published upstream under extra-regio codes (country code followed by ZZ): they are not regions and are left out, so the regions of a country do not add up to its national total. Only codes present in the NUTS 2024 geography contract are kept; no code is converted. Values are copied as published. Mapem changes nothing else: it selects the regions, the sectors and the years and reshapes the table into one row per observation. Limited to fluorinated gases (F-gases).",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        2
+      ]
+    },
+    "geographic_coverage": [
+      "Europe (NUTS 2024)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": [
+        "environment",
+        "climate",
+        "emissions"
+      ],
+      "example_questions": [],
+      "caveats": [
+        "Regional emissions are modelled by EDGAR from national inventories and spatial proxies; they are not measured by each region.",
+        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total."
+      ]
+    },
+    "created_at": "2026-11-03",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "coordinates": {
+      "gas": {
+        "code": "F-gases",
+        "label": "Fluorinated gases",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "industry",
+        "name": "Industry",
+        "description": "Combustion in manufacturing, refineries and transformation industry, chemical processes, fuel exploitation, iron and steel, non-energy use of fuels, non-ferrous metals and non-metallic minerals, solvents and products use.",
+        "unit": "kt CO2 equivalent",
+        "statistic": "annual_total",
+        "code": "Industry"
+      }
+    ],
+    "headline": false,
+    "jrc": {
+      "catalogue": {
+        "record": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658"
+      },
+      "distribution": {
+        "url_pattern": "/subnational_NUTS2/(\\d{4})_FT(\\d{4})_GHG_NUTS2/$",
+        "accepted_licences": [
+          "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0",
+          "http://publications.europa.eu/resource/authority/licence/COM_REUSE"
+        ],
+        "file_pattern": "^EDGAR_\\d{4}_GHGs_CO2eq_AR5_NUTS2_\\d{4}-\\d{4}\\.zip$"
+      },
+      "reader": "edgar_gas",
+      "sheets": {
+        "sectors": "F-gases AR5"
+      },
+      "compound": "GWP_100_AR5_F-gases"
+    }
+  },
+  {
+    "id": "jrc-rioi",
+    "dataset_code": "RIOI",
+    "title": "Regional Innovation Output Indicator",
+    "description": "How far innovative ideas reach the market in EU NUTS 2 regions, as a composite index against the EU27 and its pillars, from the JRC Regional Innovation Output Indicator.",
+    "subject": "Regional Innovation Output Indicator",
+    "category": "Science and technology",
+    "publisher": "European Commission, Joint Research Centre",
+    "source": "JRC Regional Innovation Output Indicator",
+    "source_url": "http://data.europa.eu/89h/4eb939d6-aaf2-4d9c-81ab-3cc9c9a83e25",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: European Commission, Joint Research Centre (Regional Innovation Output Indicator)"
+    },
+    "methodology": "Read from the JRC Regional Innovation Output Indicator workbook: the composite index and three of its pillars, each expressed against the EU27 score (EU27 = 100). The individual indicators behind the pillars come from other sources and are not republished here. The reference year is the one the workbook declares. Upstream codes follow NUTS 2021; only codes present in the NUTS 2024 geography contract are kept, none is converted. Values are copied as published; Mapem only selects and reshapes them.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        2
+      ]
+    },
+    "geographic_coverage": [
+      "Europe (NUTS 2024)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "indice di innovazione regionale",
+        "RIOI",
+        "innovation output"
+      ],
+      "topics": [
+        "innovation",
+        "science and technology",
+        "patents"
+      ],
+      "example_questions": [
+        "Quali regioni europee trasformano meglio l'innovazione in valore economico?"
+      ],
+      "caveats": [
+        "A composite index: a score compares regions with the EU27 at 100, it is not a count.",
+        "One edition so far; scores of different editions are not meant to be compared as a time series."
+      ]
+    },
+    "created_at": "2026-11-03",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "indicators": [
+      {
+        "id": "rioi",
+        "name": "Regional Innovation Output Indicator",
+        "description": "Composite index of innovation output, EU27 = 100.",
+        "unit": "Index, EU27 = 100",
+        "statistic": "annual_value",
+        "code": "RIOI",
+        "primary": true
+      },
+      {
+        "id": "ip",
+        "name": "Intellectual property pillar",
+        "description": "Patent and trademark applications pillar of the index, EU27 = 100.",
+        "unit": "Index, EU27 = 100",
+        "statistic": "annual_value",
+        "code": "IP",
+        "parent": "rioi"
+      },
+      {
+        "id": "tech-cap",
+        "name": "Technological capacity pillar",
+        "description": "Technological capacity pillar of the index, EU27 = 100.",
+        "unit": "Index, EU27 = 100",
+        "statistic": "annual_value",
+        "code": "TECH_CAP",
+        "parent": "rioi"
+      },
+      {
+        "id": "ent",
+        "name": "Enterprise innovation pillar",
+        "description": "Enterprise innovation pillar of the index, EU27 = 100.",
+        "unit": "Index, EU27 = 100",
+        "statistic": "annual_value",
+        "code": "ENT",
+        "parent": "rioi"
+      }
+    ],
+    "headline": "rioi",
+    "jrc": {
+      "catalogue": {
+        "record": "http://data.europa.eu/89h/4eb939d6-aaf2-4d9c-81ab-3cc9c9a83e25"
+      },
+      "distribution": {
+        "url_pattern": "knowledge4policy\\.ec\\.europa\\.eu/dataset/",
+        "accepted_licences": [
+          "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+        ],
+        "file_pattern": "^rioi_\\d{4}[^/]*\\.xlsx$"
+      },
+      "reader": "rioi",
+      "missing_values": [
+        "NA"
+      ],
+      "sheets": {
+        "rioi": "rioi",
+        "ip": "ip",
+        "tech-cap": "tech_cap",
+        "ent": "ent"
+      }
+    }
+  },
+  {
+    "id": "jrc-regional-resilience",
+    "dataset_code": "RESILIENCE_REGIONAL",
+    "title": "Regional resilience: capacities and vulnerabilities",
+    "description": "Overall resilience capacities and vulnerabilities of EU NUTS 2 regions, from the JRC Regional Resilience dashboard.",
+    "subject": "Regional resilience",
+    "category": "Regional indicators",
+    "publisher": "European Commission, Joint Research Centre",
+    "source": "JRC Regional Resilience dashboard",
+    "source_url": "http://data.europa.eu/89h/fabcfe7a-c38d-4173-af71-6ed40218c656",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://eur-lex.europa.eu/eli/dec/2011/833/oj",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: European Commission, Joint Research Centre (Regional Resilience dashboard)"
+    },
+    "methodology": "Read from the time series of the latest JRC Regional Resilience dashboard release: the overall capacity and the overall vulnerability index, each the median of the dashboard's normalised indicators for a region and year. The newest release is found in the JRC data catalogue. Upstream codes follow NUTS 2021; only codes present in the NUTS 2024 geography contract are kept, none is converted. Values are copied as published.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        2
+      ]
+    },
+    "geographic_coverage": [
+      "Europe (NUTS 2024)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "resilienza regionale",
+        "resilience dashboard",
+        "vulnerabilita regionali"
+      ],
+      "topics": [
+        "resilience",
+        "regional development",
+        "vulnerability"
+      ],
+      "example_questions": [
+        "Quali regioni hanno le vulnerabilita piu alte?"
+      ],
+      "caveats": [
+        "Both indices are medians of normalised indicators: they rank regions, they are not quantities.",
+        "A higher capacity is better, a higher vulnerability is worse."
+      ]
+    },
+    "created_at": "2026-11-03",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "indicators": [
+      {
+        "id": "capacities",
+        "name": "Overall capacities",
+        "description": "Median of all capacity indicators of the region in the year.",
+        "unit": "Index, 0 to 1",
+        "statistic": "annual_value",
+        "code": "c",
+        "primary": true
+      },
+      {
+        "id": "vulnerabilities",
+        "name": "Overall vulnerabilities",
+        "description": "Median of all vulnerability indicators of the region in the year.",
+        "unit": "Index, 0 to 1",
+        "statistic": "annual_value",
+        "code": "v",
+        "primary": true
+      }
+    ],
+    "headline": "capacities",
+    "jrc": {
+      "catalogue": {
+        "title_pattern": "^Regional Resilience dashboard: "
+      },
+      "distribution": {
+        "url_pattern": "/RESILIENCE-DASHBOARDS/[^/]+/Timeseries4DataCatalogue\\.xlsx$",
+        "accepted_licences": [
+          "http://publications.europa.eu/resource/authority/licence/COM_REUSE",
+          "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+        ]
+      },
+      "reader": "resilience"
+    }
+  },
+  {
+    "id": "jrc-deli-projections",
+    "dataset_code": "DELI_NUTS3",
+    "title": "Regional socioeconomic projections",
+    "description": "Projected annual population change, natural change, net migration and GDP growth of EU NUTS 3 regions, from the JRC DELi model.",
+    "subject": "Regional socioeconomic projections",
+    "category": "Demography",
+    "publisher": "European Commission, Joint Research Centre",
+    "source": "JRC DELi regional socioeconomic projections",
+    "source_url": "http://data.europa.eu/89h/00156a52-db4a-44cf-9f37-dd0373abba14",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://eur-lex.europa.eu/eli/dec/2011/833/oj",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: European Commission, Joint Research Centre (DELi regional socioeconomic projections)"
+    },
+    "methodology": "Read from the latest JRC DELi regional socioeconomic projections, found in the JRC data catalogue. DELi regionalises national projections of the Ageing Report under a business as usual scenario; the rates are percentage changes from one year to the next, and the population change rate is the sum of the natural change and net migration rates. As for every projection in the catalogue, years later than ten years after the release are not published. Upstream codes follow NUTS 2021; only codes present in the NUTS 2024 geography contract are kept, none is converted. Values are copied as published.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        3
+      ]
+    },
+    "geographic_coverage": [
+      "Europe (NUTS 2024)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "proiezioni demografiche regionali",
+        "DELi",
+        "regional projections"
+      ],
+      "topics": [
+        "demography",
+        "projections",
+        "economy"
+      ],
+      "example_questions": [
+        "Quali province europee perderanno piu popolazione nei prossimi anni?"
+      ],
+      "caveats": [
+        "Projections under a business as usual scenario, not forecasts: they assume observed relationships stay constant.",
+        "Rates are in percent per year; they are not levels of population or GDP."
+      ]
+    },
+    "created_at": "2026-11-03",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "indicators": [
+      {
+        "id": "pop-change-rate",
+        "name": "Population change rate",
+        "description": "Projected change of the population from one year to the next.",
+        "unit": "% per year",
+        "statistic": "annual_value",
+        "code": "pop_change_rate",
+        "primary": true
+      },
+      {
+        "id": "nat-change-rate",
+        "name": "Natural change rate",
+        "description": "Births minus deaths, as a share of the population.",
+        "unit": "% per year",
+        "statistic": "annual_value",
+        "code": "nat_change_rate",
+        "parent": "pop-change-rate"
+      },
+      {
+        "id": "net-mig-rate",
+        "name": "Net migration rate",
+        "description": "Arrivals minus departures, as a share of the population.",
+        "unit": "% per year",
+        "statistic": "annual_value",
+        "code": "net_mig_rate",
+        "parent": "pop-change-rate"
+      },
+      {
+        "id": "gdp-growth",
+        "name": "GDP growth",
+        "description": "Projected growth of regional GDP.",
+        "unit": "% per year",
+        "statistic": "annual_value",
+        "code": "GDP_growth"
+      },
+      {
+        "id": "gdppc-growth",
+        "name": "GDP per capita growth",
+        "description": "Projected growth of regional GDP per inhabitant.",
+        "unit": "% per year",
+        "statistic": "annual_value",
+        "code": "GDPpc_growth"
+      }
+    ],
+    "headline": "pop-change-rate",
+    "jrc": {
+      "catalogue": {
+        "title_pattern": "^DELi regional socioeconomic projections \\d{4}$"
+      },
+      "distribution": {
+        "url_pattern": "/DELi/[^/]+/JRC-DELI_\\d{4}_NUTS3_dataset\\.csv$",
+        "accepted_licences": [
+          "http://publications.europa.eu/resource/authority/licence/COM_REUSE",
+          "http://publications.europa.eu/resource/authority/licence/CC_BY_4_0"
+        ]
+      },
+      "reader": "deli",
+      "projection": true
+    }
+  }
+]

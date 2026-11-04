@@ -21,7 +21,15 @@ limits:
   maximum_provenance_bytes: 262144
 
 managed_batches:
-  provider: Eurostat
+  # A batch carries one provider. Each one has its pinned configuration and
+  # provenance schema, copied from the core with the lock above.
+  providers:
+    Eurostat:
+      config: eurostat-datasets.json
+      provenance_schema: eurostat-provenance.schema.json
+    JRC:
+      config: jrc-datasets.json
+      provenance_schema: jrc-provenance.schema.json
   channel: managed_public
   maximum_datasets: 20
   maximum_total_observations: 2000000

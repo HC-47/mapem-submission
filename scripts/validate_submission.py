@@ -78,6 +78,8 @@ def verify_pinned_contracts(errors: list[str]) -> None:
         "managed_batch_contract",
         "eurostat_provenance_contract",
         "eurostat_config_contract",
+        "jrc_provenance_contract",
+        "jrc_config_contract",
     ):
         contract = lock[key]
         path = ROOT / contract["path"]
