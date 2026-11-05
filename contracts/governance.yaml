@@ -32,5 +32,10 @@ managed_batches:
       provenance_schema: jrc-provenance.schema.json
   channel: managed_public
   maximum_datasets: 20
+  # Per release. The 250,000 under `limits` is the community lane's: two dozen
+  # published Eurostat releases exceed it (population-structure has 1,032,709
+  # rows), and applied here it rejected any batch that refreshed one of them.
+  # The batch totals below are what bounds the managed lane.
+  maximum_release_observations: 2000000
   maximum_total_observations: 2000000
   maximum_total_bytes: 104857600

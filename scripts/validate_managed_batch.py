@@ -297,7 +297,10 @@ def validate_managed_batch(directory: Path, report: ManagedBatchReport) -> None:
         if provenance.get("dataset_code") != config["dataset_code"]:
             report.errors.append(f"{dataset_id}: provenance dataset_code is not pinned")
         row_count, _ = validate_observations(
-            release / "observations.csv", metadata, report.errors
+            release / "observations.csv",
+            metadata,
+            report.errors,
+            maximum=int(limits["maximum_release_observations"]),
         )
         report.observations += row_count
         if entry.get("observations") != row_count:
