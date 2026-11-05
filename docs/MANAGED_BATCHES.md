@@ -116,8 +116,9 @@ checkout supplies only untrusted bytes. Candidate code is never run.
 4. `scripts/validate_managed_batch.py` to enforce PR scope and all nested contracts;
 5. a JSON artifact recording PR, head, batch, row totals, errors and artifact checksums.
 
-Limits currently allow at most 20 datasets, 250,000 observations per release, 2,000,000 observations in
-total and 100 MiB for a complete managed batch. The current Eurostat and JRC batches are below
+Limits currently allow at most 20 datasets, 2,000,000 observations per release and in total, and 100 MiB
+for a complete managed batch. The 250,000 observations per release under `limits` apply to community
+submissions only: two dozen published Eurostat releases exceed them. The current Eurostat and JRC batches are below
 those limits.
 
 Run a local batch validation with:

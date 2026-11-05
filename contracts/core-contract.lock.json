@@ -36,6 +36,6 @@
   "jrc_config_contract": {
     "path": "contracts/jrc-datasets.json",
     "upstream_path": "data/provider-contracts/jrc.json",
-    "sha256": "f038ae167a6a775d9471a9f8093f49cf338f12ca8ba2f904717fdaea869a90d0"
+    "sha256": "83c8da1434b535c1eecb1f768d9be8ee63361106544d8b762b75f9cf58afd647"
   }
 }

@@ -7,6 +7,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 import yaml
@@ -316,6 +317,27 @@ class ManagedBatchContractTests(unittest.TestCase):
         self._edit_manifest(provider="OECD")
         report = self._validate()
         self.assertIn("batch.yaml: provider is not allowed for managed intake", report.errors)
+
+    def test_the_community_release_limit_does_not_bind_a_managed_batch(self) -> None:
+        """population-structure has 1,032,709 rows; the community lane stops at 250,000."""
+        import validate_submission
+
+        community = dict(validate_submission.contract_limits())
+        with patch.object(
+            validate_submission,
+            "contract_limits",
+            return_value={**community, "maximum_observations": 0},
+        ):
+            report = self._validate()
+        self.assertTrue(report.valid, report.errors)
+
+    def test_a_release_above_the_managed_limit_is_refused(self) -> None:
+        limits = dict(validator.managed_limits())
+        with patch.object(
+            validator, "managed_limits", return_value={**limits, "maximum_release_observations": 0}
+        ):
+            report = self._validate()
+        self.assertIn("observations.csv: exceeds 0 observations", report.errors)
 
     def test_manifest_artifact_checksum_mismatch_is_rejected(self) -> None:
         manifest_path = self.batch / "batch.yaml"

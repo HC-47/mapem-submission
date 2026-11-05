@@ -213,6 +213,7 @@ def validate_observations(
     path: Path,
     metadata: dict[str, Any],
     errors: list[str],
+    maximum: int | None = None,
 ) -> tuple[int, int]:
     columns = read_json(CONTRACTS / "observations.columns.json")["columns"]
     indicators = {item["id"]: item for item in metadata.get("indicators", [])}
@@ -223,7 +224,8 @@ def validate_observations(
     seen: set[tuple[str, str, str]] = set()
     geographies: set[str] = set()
     row_count = 0
-    maximum = contract_limits()["maximum_observations"]
+    if maximum is None:
+        maximum = int(contract_limits()["maximum_observations"])
     with path.open(encoding="utf-8", newline="") as stream:
         reader = csv.DictReader(stream)
         if reader.fieldnames != columns:

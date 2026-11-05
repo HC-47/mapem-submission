@@ -951,7 +951,7 @@
       "redistribution": true,
       "attribution": "Source: European Commission, Joint Research Centre (DELi regional socioeconomic projections)"
     },
-    "methodology": "Read from the latest JRC DELi regional socioeconomic projections, found in the JRC data catalogue. DELi regionalises national projections of the Ageing Report under a business as usual scenario; the rates are percentage changes from one year to the next, and the population change rate is the sum of the natural change and net migration rates. As for every projection in the catalogue, years later than ten years after the release are not published. Upstream codes follow NUTS 2021; only codes present in the NUTS 2024 geography contract are kept, none is converted. Values are copied as published.",
+    "methodology": "Read from the latest JRC DELi regional socioeconomic projections, found in the JRC data catalogue. DELi regionalises national projections of the Ageing Report under a business as usual scenario; the rates are percentage changes from one year to the next, and the population change rate is the sum of the natural change and net migration rates. As for every projection in the catalogue, years later than twenty years after the release are not published. Upstream codes follow NUTS 2021; only codes present in the NUTS 2024 geography contract are kept, none is converted. Values are copied as published.",
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
