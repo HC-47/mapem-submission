@@ -21298,7 +21298,7 @@
       "sizeclas": "10-249",
       "nace_r2": "B-M73_INN",
       "enterpr": "INN",
-      "inn_act": "RNDINN"
+      "bsn_act": "RNDINN"
     },
     "period_start": "2015",
     "period_end": "latest",
@@ -73740,7 +73740,7 @@
     "geography": {
       "scheme": "NUTS",
       "version": "2024",
-      "levels": [0, 1, 2, 3]
+      "levels": [0, 1, 2]
     },
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
