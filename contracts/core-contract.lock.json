@@ -4,7 +4,7 @@
   "dataset_contract": {
     "path": "contracts/dataset.schema.json",
     "upstream_path": "data/schema/dataset.schema.json",
-    "sha256": "7291e8049b64f2c9fd13b35fa51c1740825f60d7939cab649637e968349246c2"
+    "sha256": "b0fe33bb957e15ce61381ea24098d0e4355de185c2a305624722a97edf08a3e3"
   },
   "geography_contract": {
     "scheme": "NUTS",
@@ -26,7 +26,7 @@
   "eurostat_config_contract": {
     "path": "contracts/eurostat-datasets.json",
     "upstream_path": "data/provider-contracts/eurostat.json",
-    "sha256": "c140fcb3f4ba39603ead2598496510aea9097c31cb0feac784c7871647562f40"
+    "sha256": "0efc60ff7aebd1481fb2cea2ae0b4ebe2c0f8e7e1b0762027131a07f0e3abdb2"
   },
   "jrc_provenance_contract": {
     "path": "contracts/jrc-provenance.schema.json",
@@ -36,6 +36,6 @@
   "jrc_config_contract": {
     "path": "contracts/jrc-datasets.json",
     "upstream_path": "data/provider-contracts/jrc.json",
-    "sha256": "83c8da1434b535c1eecb1f768d9be8ee63361106544d8b762b75f9cf58afd647"
+    "sha256": "891a89a0f7f44206f83fc4ddb3ec482d1fbee1adeb6f15f377d2bc02a13fa75d"
   }
 }
