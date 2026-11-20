@@ -52,7 +52,8 @@
       ],
       "caveats": [
         "Regional emissions are modelled by EDGAR from national inventories and spatial proxies; they are not measured by each region.",
-        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total."
+        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total.",
+        "The last two years of each edition are fast-track estimates, flagged e: EDGAR extends the latest full statistics with growth rates and revises those years with the next edition."
       ]
     },
     "created_at": "2026-11-03",
@@ -162,6 +163,7 @@
         "file_pattern": "^EDGAR_\\d{4}_total_GHG_AR5_NUTS2_\\d{4}-\\d{4}\\.zip$"
       },
       "reader": "edgar_totals",
+      "fast_track": true,
       "sheets": {
         "total": "TOTALS by NUTS2",
         "sectors": "TOTALS by NUTS2 and Sector"
@@ -214,7 +216,8 @@
       "example_questions": [],
       "caveats": [
         "Regional emissions are modelled by EDGAR from national inventories and spatial proxies; they are not measured by each region.",
-        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total."
+        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total.",
+        "The last two years of each edition are fast-track estimates, flagged e: EDGAR extends the latest full statistics with growth rates and revises those years with the next edition."
       ]
     },
     "created_at": "2026-11-03",
@@ -306,6 +309,7 @@
         "file_pattern": "^EDGAR_\\d{4}_GHGs_CO2eq_AR5_NUTS2_\\d{4}-\\d{4}\\.zip$"
       },
       "reader": "edgar_gas",
+      "fast_track": true,
       "sheets": {
         "sectors": "Fossil CO2"
       },
@@ -357,7 +361,8 @@
       "example_questions": [],
       "caveats": [
         "Regional emissions are modelled by EDGAR from national inventories and spatial proxies; they are not measured by each region.",
-        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total."
+        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total.",
+        "The last two years of each edition are fast-track estimates, flagged e: EDGAR extends the latest full statistics with growth rates and revises those years with the next edition."
       ]
     },
     "created_at": "2026-11-03",
@@ -449,6 +454,7 @@
         "file_pattern": "^EDGAR_\\d{4}_GHGs_CO2eq_AR5_NUTS2_\\d{4}-\\d{4}\\.zip$"
       },
       "reader": "edgar_gas",
+      "fast_track": true,
       "sheets": {
         "sectors": "CH4 AR5"
       },
@@ -500,7 +506,8 @@
       "example_questions": [],
       "caveats": [
         "Regional emissions are modelled by EDGAR from national inventories and spatial proxies; they are not measured by each region.",
-        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total."
+        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total.",
+        "The last two years of each edition are fast-track estimates, flagged e: EDGAR extends the latest full statistics with growth rates and revises those years with the next edition."
       ]
     },
     "created_at": "2026-11-03",
@@ -601,6 +608,7 @@
         "file_pattern": "^EDGAR_\\d{4}_GHGs_CO2eq_AR5_NUTS2_\\d{4}-\\d{4}\\.zip$"
       },
       "reader": "edgar_gas",
+      "fast_track": true,
       "sheets": {
         "sectors": "N2O AR5"
       },
@@ -652,7 +660,8 @@
       "example_questions": [],
       "caveats": [
         "Regional emissions are modelled by EDGAR from national inventories and spatial proxies; they are not measured by each region.",
-        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total."
+        "International aviation and shipping, off-shore exploitation and emissions not assignable to a region are excluded, so regions do not sum to the national total.",
+        "The last two years of each edition are fast-track estimates, flagged e: EDGAR extends the latest full statistics with growth rates and revises those years with the next edition."
       ]
     },
     "created_at": "2026-11-03",
@@ -698,6 +707,7 @@
         "file_pattern": "^EDGAR_\\d{4}_GHGs_CO2eq_AR5_NUTS2_\\d{4}-\\d{4}\\.zip$"
       },
       "reader": "edgar_gas",
+      "fast_track": true,
       "sheets": {
         "sectors": "F-gases AR5"
       },

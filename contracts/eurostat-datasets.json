@@ -22244,11 +22244,18 @@
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": [],
-      "topics": ["demography"],
+      "topics": ["demography", "projections"],
       "example_questions": [],
-      "caveats": []
+      "caveats": [
+        "Projections of the EUROPOP2025 exercise under its baseline assumptions, not observed data: they show what happens if those assumptions hold.",
+        "The 2025 starting point is observed and is not repeated here; observed values come from the observed tables. Years later than twenty years after the table's last update are not published."
+      ]
     },
     "created_at": "2026-09-20",
+    "projection": {
+      "exercise": "EUROPOP2025",
+      "base_period": "2025"
+    },
     "quality": {
       "score": 95,
       "methodology_documented": true,
@@ -22309,11 +22316,18 @@
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": [],
-      "topics": ["demography"],
+      "topics": ["demography", "projections"],
       "example_questions": [],
-      "caveats": []
+      "caveats": [
+        "Projections of the EUROPOP2025 exercise under its baseline assumptions, not observed data: they show what happens if those assumptions hold.",
+        "The 2025 starting point is observed and is not repeated here; observed values come from the observed tables. Years later than twenty years after the table's last update are not published."
+      ]
     },
     "created_at": "2026-09-20",
+    "projection": {
+      "exercise": "EUROPOP2025",
+      "base_period": "2025"
+    },
     "quality": {
       "score": 95,
       "methodology_documented": true,
@@ -22394,11 +22408,18 @@
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": [],
-      "topics": ["demography"],
+      "topics": ["demography", "projections"],
       "example_questions": [],
-      "caveats": []
+      "caveats": [
+        "Projections of the EUROPOP2025 exercise under its baseline assumptions, not observed data: they show what happens if those assumptions hold.",
+        "The 2025 starting point is observed and is not repeated here; observed values come from the observed tables. Years later than twenty years after the table's last update are not published."
+      ]
     },
     "created_at": "2026-09-20",
+    "projection": {
+      "exercise": "EUROPOP2025",
+      "base_period": "2025"
+    },
     "quality": {
       "score": 95,
       "methodology_documented": true,
@@ -55383,751 +55404,6 @@
     "headline": "hdd"
   },
   {
-    "id": "eurostat-proj-19raasfr3",
-    "title": "Assumptions for fertility rates",
-    "description": "Assumptions for fertility rates, across European regions, from Eurostat table proj_19raasfr3.",
-    "subject": "Assumptions for fertility rates",
-    "breakdown": "age, type of projection",
-    "category": "Demography",
-    "publisher": "Eurostat",
-    "source": "Eurostat proj_19raasfr3",
-    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/proj_19raasfr3/default/table",
-    "source_type": "official",
-    "status": "official_source",
-    "licence": {
-      "id": "EC-REUSE-2011-833",
-      "name": "European Commission reuse policy (Decision 2011/833/EU)",
-      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
-      "attribution": "Source: Eurostat (proj_19raasfr3)",
-      "commercial_use": true,
-      "attribution_required": true,
-      "share_alike": false,
-      "redistribution": true
-    },
-    "methodology": "Direct extract from Eurostat proj_19raasfr3. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
-    "geography": {
-      "scheme": "NUTS",
-      "version": "2024",
-      "levels": [3]
-    },
-    "geographic_coverage": ["Europe (NUTS 2024)"],
-    "temporal_frequency": "annual",
-    "semantic_hints": {
-      "aliases": [],
-      "topics": ["demography"],
-      "example_questions": [],
-      "caveats": []
-    },
-    "created_at": "2026-09-22",
-    "quality": {
-      "score": 95,
-      "methodology_documented": true,
-      "source_documented": true,
-      "reproducible": true,
-      "peer_reviews": 0,
-      "community_votes": 0
-    },
-    "dataset_code": "proj_19raasfr3",
-    "filters": {
-      "freq": "A",
-      "projection": "BSL",
-      "unit": "NR"
-    },
-    "period_start": "2015",
-    "period_end": "latest",
-    "indicator_dimension": "age",
-    "indicators": [
-      {
-        "id": "total",
-        "name": "Total",
-        "description": "Assumptions for fertility rates — Total (TOTAL).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "TOTAL"
-        },
-        "code": "TOTAL",
-        "primary": true
-      },
-      {
-        "id": "y-lt15",
-        "name": "Less than 15 years",
-        "description": "Assumptions for fertility rates — Less than 15 years (Y_LT15).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y_LT15"
-        },
-        "code": "Y_LT15"
-      },
-      {
-        "id": "y15",
-        "name": "15 years",
-        "description": "Assumptions for fertility rates — 15 years (Y15).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y15"
-        },
-        "code": "Y15"
-      },
-      {
-        "id": "y16",
-        "name": "16 years",
-        "description": "Assumptions for fertility rates — 16 years (Y16).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y16"
-        },
-        "code": "Y16"
-      },
-      {
-        "id": "y17",
-        "name": "17 years",
-        "description": "Assumptions for fertility rates — 17 years (Y17).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y17"
-        },
-        "code": "Y17"
-      },
-      {
-        "id": "y18",
-        "name": "18 years",
-        "description": "Assumptions for fertility rates — 18 years (Y18).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y18"
-        },
-        "code": "Y18"
-      },
-      {
-        "id": "y19",
-        "name": "19 years",
-        "description": "Assumptions for fertility rates — 19 years (Y19).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y19"
-        },
-        "code": "Y19"
-      },
-      {
-        "id": "y20",
-        "name": "20 years",
-        "description": "Assumptions for fertility rates — 20 years (Y20).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y20"
-        },
-        "code": "Y20"
-      },
-      {
-        "id": "y21",
-        "name": "21 years",
-        "description": "Assumptions for fertility rates — 21 years (Y21).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y21"
-        },
-        "code": "Y21"
-      },
-      {
-        "id": "y22",
-        "name": "22 years",
-        "description": "Assumptions for fertility rates — 22 years (Y22).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y22"
-        },
-        "code": "Y22"
-      },
-      {
-        "id": "y23",
-        "name": "23 years",
-        "description": "Assumptions for fertility rates — 23 years (Y23).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y23"
-        },
-        "code": "Y23"
-      },
-      {
-        "id": "y24",
-        "name": "24 years",
-        "description": "Assumptions for fertility rates — 24 years (Y24).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y24"
-        },
-        "code": "Y24"
-      },
-      {
-        "id": "y25",
-        "name": "25 years",
-        "description": "Assumptions for fertility rates — 25 years (Y25).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y25"
-        },
-        "code": "Y25"
-      },
-      {
-        "id": "y26",
-        "name": "26 years",
-        "description": "Assumptions for fertility rates — 26 years (Y26).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y26"
-        },
-        "code": "Y26"
-      },
-      {
-        "id": "y27",
-        "name": "27 years",
-        "description": "Assumptions for fertility rates — 27 years (Y27).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y27"
-        },
-        "code": "Y27"
-      },
-      {
-        "id": "y28",
-        "name": "28 years",
-        "description": "Assumptions for fertility rates — 28 years (Y28).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y28"
-        },
-        "code": "Y28"
-      },
-      {
-        "id": "y29",
-        "name": "29 years",
-        "description": "Assumptions for fertility rates — 29 years (Y29).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y29"
-        },
-        "code": "Y29"
-      },
-      {
-        "id": "y30",
-        "name": "30 years",
-        "description": "Assumptions for fertility rates — 30 years (Y30).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y30"
-        },
-        "code": "Y30"
-      },
-      {
-        "id": "y31",
-        "name": "31 years",
-        "description": "Assumptions for fertility rates — 31 years (Y31).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y31"
-        },
-        "code": "Y31"
-      },
-      {
-        "id": "y32",
-        "name": "32 years",
-        "description": "Assumptions for fertility rates — 32 years (Y32).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y32"
-        },
-        "code": "Y32"
-      },
-      {
-        "id": "y33",
-        "name": "33 years",
-        "description": "Assumptions for fertility rates — 33 years (Y33).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y33"
-        },
-        "code": "Y33"
-      },
-      {
-        "id": "y34",
-        "name": "34 years",
-        "description": "Assumptions for fertility rates — 34 years (Y34).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y34"
-        },
-        "code": "Y34"
-      },
-      {
-        "id": "y35",
-        "name": "35 years",
-        "description": "Assumptions for fertility rates — 35 years (Y35).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y35"
-        },
-        "code": "Y35"
-      },
-      {
-        "id": "y36",
-        "name": "36 years",
-        "description": "Assumptions for fertility rates — 36 years (Y36).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y36"
-        },
-        "code": "Y36"
-      },
-      {
-        "id": "y37",
-        "name": "37 years",
-        "description": "Assumptions for fertility rates — 37 years (Y37).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y37"
-        },
-        "code": "Y37"
-      },
-      {
-        "id": "y38",
-        "name": "38 years",
-        "description": "Assumptions for fertility rates — 38 years (Y38).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y38"
-        },
-        "code": "Y38"
-      },
-      {
-        "id": "y39",
-        "name": "39 years",
-        "description": "Assumptions for fertility rates — 39 years (Y39).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y39"
-        },
-        "code": "Y39"
-      },
-      {
-        "id": "y40",
-        "name": "40 years",
-        "description": "Assumptions for fertility rates — 40 years (Y40).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y40"
-        },
-        "code": "Y40"
-      },
-      {
-        "id": "y41",
-        "name": "41 years",
-        "description": "Assumptions for fertility rates — 41 years (Y41).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y41"
-        },
-        "code": "Y41"
-      },
-      {
-        "id": "y42",
-        "name": "42 years",
-        "description": "Assumptions for fertility rates — 42 years (Y42).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y42"
-        },
-        "code": "Y42"
-      },
-      {
-        "id": "y43",
-        "name": "43 years",
-        "description": "Assumptions for fertility rates — 43 years (Y43).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y43"
-        },
-        "code": "Y43"
-      },
-      {
-        "id": "y44",
-        "name": "44 years",
-        "description": "Assumptions for fertility rates — 44 years (Y44).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y44"
-        },
-        "code": "Y44"
-      },
-      {
-        "id": "y45",
-        "name": "45 years",
-        "description": "Assumptions for fertility rates — 45 years (Y45).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y45"
-        },
-        "code": "Y45"
-      },
-      {
-        "id": "y46",
-        "name": "46 years",
-        "description": "Assumptions for fertility rates — 46 years (Y46).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y46"
-        },
-        "code": "Y46"
-      },
-      {
-        "id": "y47",
-        "name": "47 years",
-        "description": "Assumptions for fertility rates — 47 years (Y47).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y47"
-        },
-        "code": "Y47"
-      },
-      {
-        "id": "y48",
-        "name": "48 years",
-        "description": "Assumptions for fertility rates — 48 years (Y48).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y48"
-        },
-        "code": "Y48"
-      },
-      {
-        "id": "y49",
-        "name": "49 years",
-        "description": "Assumptions for fertility rates — 49 years (Y49).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y49"
-        },
-        "code": "Y49"
-      },
-      {
-        "id": "y-ge50",
-        "name": "50 years or over",
-        "description": "Assumptions for fertility rates — 50 years or over (Y_GE50).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "NR",
-          "age": "Y_GE50"
-        },
-        "code": "Y_GE50"
-      }
-    ],
-    "headline": "total"
-  },
-  {
-    "id": "eurostat-proj-19ranmig3",
-    "title": "Assumptions for net migration",
-    "description": "Assumptions for net migration, across European regions, from Eurostat table proj_19ranmig3.",
-    "subject": "Assumptions for net migration",
-    "breakdown": "age, sex, type of projection",
-    "category": "Demography",
-    "publisher": "Eurostat",
-    "source": "Eurostat proj_19ranmig3",
-    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/proj_19ranmig3/default/table",
-    "source_type": "official",
-    "status": "official_source",
-    "licence": {
-      "id": "EC-REUSE-2011-833",
-      "name": "European Commission reuse policy (Decision 2011/833/EU)",
-      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
-      "attribution": "Source: Eurostat (proj_19ranmig3)",
-      "commercial_use": true,
-      "attribution_required": true,
-      "share_alike": false,
-      "redistribution": true
-    },
-    "methodology": "Direct extract from Eurostat proj_19ranmig3. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
-    "geography": {
-      "scheme": "NUTS",
-      "version": "2024",
-      "levels": [3]
-    },
-    "geographic_coverage": ["Europe (NUTS 2024)"],
-    "temporal_frequency": "annual",
-    "semantic_hints": {
-      "aliases": [],
-      "topics": ["demography"],
-      "example_questions": [],
-      "caveats": []
-    },
-    "created_at": "2026-09-22",
-    "quality": {
-      "score": 95,
-      "methodology_documented": true,
-      "source_documented": true,
-      "reproducible": true,
-      "peer_reviews": 0,
-      "community_votes": 0
-    },
-    "dataset_code": "proj_19ranmig3",
-    "filters": {
-      "freq": "A",
-      "projection": "BSL",
-      "age": "TOTAL",
-      "sex": "T",
-      "unit": "PER"
-    },
-    "period_start": "2015",
-    "period_end": "latest",
-    "indicator": {
-      "id": "proj-19ranmig3",
-      "name": "Assumptions for net migration",
-      "description": "Assumptions for net migration, across European regions, from Eurostat table proj_19ranmig3.",
-      "unit": "Person",
-      "statistic": "annual_value",
-      "definition": {
-        "upstream_unit": "PER"
-      }
-    }
-  },
-  {
-    "id": "eurostat-proj-19rdth3",
-    "title": "Projected deaths",
-    "description": "Projected deaths, across European regions, from Eurostat table proj_19rdth3.",
-    "subject": "Projected deaths",
-    "breakdown": "age, sex, type of projection",
-    "category": "Demography",
-    "publisher": "Eurostat",
-    "source": "Eurostat proj_19rdth3",
-    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/proj_19rdth3/default/table",
-    "source_type": "official",
-    "status": "official_source",
-    "licence": {
-      "id": "EC-REUSE-2011-833",
-      "name": "European Commission reuse policy (Decision 2011/833/EU)",
-      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
-      "attribution": "Source: Eurostat (proj_19rdth3)",
-      "commercial_use": true,
-      "attribution_required": true,
-      "share_alike": false,
-      "redistribution": true
-    },
-    "methodology": "Direct extract from Eurostat proj_19rdth3. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
-    "geography": {
-      "scheme": "NUTS",
-      "version": "2024",
-      "levels": [3]
-    },
-    "geographic_coverage": ["Europe (NUTS 2024)"],
-    "temporal_frequency": "annual",
-    "semantic_hints": {
-      "aliases": [],
-      "topics": ["demography"],
-      "example_questions": [],
-      "caveats": []
-    },
-    "created_at": "2026-09-22",
-    "quality": {
-      "score": 95,
-      "methodology_documented": true,
-      "source_documented": true,
-      "reproducible": true,
-      "peer_reviews": 0,
-      "community_votes": 0
-    },
-    "dataset_code": "proj_19rdth3",
-    "filters": {
-      "freq": "A",
-      "projection": "BSL",
-      "age": "TOTAL",
-      "sex": "T",
-      "unit": "PER"
-    },
-    "period_start": "2015",
-    "period_end": "latest",
-    "indicator": {
-      "id": "proj-19rdth3",
-      "name": "Projected deaths",
-      "description": "Projected deaths, across European regions, from Eurostat table proj_19rdth3.",
-      "unit": "Person",
-      "statistic": "annual_value",
-      "definition": {
-        "upstream_unit": "PER"
-      }
-    }
-  },
-  {
-    "id": "eurostat-proj-19rp3",
-    "title": "Population on 1st January",
-    "description": "Population on 1st January, across European regions, from Eurostat table proj_19rp3.",
-    "subject": "Population on 1st January",
-    "breakdown": "age, sex, type of projection",
-    "category": "Demography",
-    "publisher": "Eurostat",
-    "source": "Eurostat proj_19rp3",
-    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/proj_19rp3/default/table",
-    "source_type": "official",
-    "status": "official_source",
-    "licence": {
-      "id": "EC-REUSE-2011-833",
-      "name": "European Commission reuse policy (Decision 2011/833/EU)",
-      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
-      "attribution": "Source: Eurostat (proj_19rp3)",
-      "commercial_use": true,
-      "attribution_required": true,
-      "share_alike": false,
-      "redistribution": true
-    },
-    "methodology": "Direct extract from Eurostat proj_19rp3. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
-    "geography": {
-      "scheme": "NUTS",
-      "version": "2024",
-      "levels": [3]
-    },
-    "geographic_coverage": ["Europe (NUTS 2024)"],
-    "temporal_frequency": "annual",
-    "semantic_hints": {
-      "aliases": [],
-      "topics": ["demography"],
-      "example_questions": [],
-      "caveats": []
-    },
-    "created_at": "2026-09-22",
-    "quality": {
-      "score": 95,
-      "methodology_documented": true,
-      "source_documented": true,
-      "reproducible": true,
-      "peer_reviews": 0,
-      "community_votes": 0
-    },
-    "dataset_code": "proj_19rp3",
-    "filters": {
-      "freq": "A",
-      "age": "TOTAL",
-      "sex": "T",
-      "unit": "PER"
-    },
-    "period_start": "2015",
-    "period_end": "latest",
-    "indicator_dimension": "projection",
-    "indicators": [
-      {
-        "id": "bsl",
-        "name": "Baseline projections",
-        "description": "Population on 1st January — Baseline projections (BSL).",
-        "unit": "Person",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "PER",
-          "projection": "BSL"
-        },
-        "code": "BSL",
-        "primary": true
-      },
-      {
-        "id": "nmigr",
-        "name": "Sensitivity test: no migration",
-        "description": "Population on 1st January — Sensitivity test: no migration (NMIGR).",
-        "unit": "Person",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "PER",
-          "projection": "NMIGR"
-        },
-        "code": "NMIGR",
-        "primary": true
-      },
-      {
-        "id": "nirmigr",
-        "name": "Sensitivity test: no inter-regional migration",
-        "description": "Population on 1st January — Sensitivity test: no inter-regional migration (NIRMIGR).",
-        "unit": "Person",
-        "statistic": "annual_value",
-        "definition": {
-          "upstream_unit": "PER",
-          "projection": "NIRMIGR"
-        },
-        "code": "NIRMIGR",
-        "primary": true
-      }
-    ],
-    "headline": "bsl"
-  },
-  {
     "id": "eurostat-proj-25rp5",
     "title": "Population on 1st January",
     "description": "Population on 1st January, across European regions, from Eurostat table proj_25rp5.",
@@ -56159,11 +55435,18 @@
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": [],
-      "topics": ["demography"],
+      "topics": ["demography", "projections"],
       "example_questions": [],
-      "caveats": []
+      "caveats": [
+        "Projections of the EUROPOP2025 exercise under its baseline assumptions, not observed data: they show what happens if those assumptions hold.",
+        "The 2025 starting point is observed and is not repeated here; observed values come from the observed tables. Years later than twenty years after the table's last update are not published."
+      ]
     },
     "created_at": "2026-09-22",
+    "projection": {
+      "exercise": "EUROPOP2025",
+      "base_period": "2025"
+    },
     "quality": {
       "score": 95,
       "methodology_documented": true,
@@ -56225,11 +55508,18 @@
     "temporal_frequency": "annual",
     "semantic_hints": {
       "aliases": [],
-      "topics": ["demography"],
+      "topics": ["demography", "projections"],
       "example_questions": [],
-      "caveats": []
+      "caveats": [
+        "Projections of the EUROPOP2025 exercise under its baseline assumptions, not observed data: they show what happens if those assumptions hold.",
+        "The 2025 starting point is observed and is not repeated here; observed values come from the observed tables. Years later than twenty years after the table's last update are not published."
+      ]
     },
     "created_at": "2026-09-22",
+    "projection": {
+      "exercise": "EUROPOP2025",
+      "base_period": "2025"
+    },
     "quality": {
       "score": 95,
       "methodology_documented": true,

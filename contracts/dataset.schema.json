@@ -76,6 +76,15 @@
         "unit": { "type": "string", "minLength": 1 }
       }
     },
+    "projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["exercise"],
+      "properties": {
+        "exercise": { "type": "string", "minLength": 1 },
+        "base_period": { "type": "string", "minLength": 1 }
+      }
+    },
     "temporal_frequency": { "enum": ["annual", "quarterly", "monthly", "daily"] },
     "temporal_coverage": {
       "type": "array",
