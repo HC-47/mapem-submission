@@ -3312,5 +3312,117 @@
         "primary": true
       }
     ]
+  },
+  {
+    "id": "ecb-macroeconomic-projections",
+    "dataset_code": "MPD",
+    "title": "Macroeconomic projections for the euro area countries",
+    "description": "Real GDP growth, HICP inflation and the unemployment rate projected for each euro area country in the latest Eurosystem staff macroeconomic projections with country detail, from the ECB.",
+    "subject": "Macroeconomic projections",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB macroeconomic projections (MPD)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/MPD",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (MPD)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow MPD): the latest exercise of the staff macroeconomic projections that publishes the three series by country, which are the June and December exercises of the Eurosystem staff (the March and September exercises of the ECB staff project the euro area only). Of each series only the years the ECB marks as projected (status F) are published, with the flag f; the observed years of the same series are national accounts, HICP and labour force figures that Eurostat publishes, and are left out. As for every projection in the catalogue, only the latest exercise is kept and no year later than twenty years after it is published. Values are copied as published. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "Euro area (21 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "macroeconomic projections",
+        "proiezioni macroeconomiche",
+        "previsioni BCE",
+        "ECB staff projections",
+        "Eurosystem staff macroeconomic projections",
+        "inflation forecast",
+        "GDP forecast"
+      ],
+      "topics": [
+        "economy",
+        "projections",
+        "prices",
+        "labour"
+      ],
+      "example_questions": [
+        "Quanto crescerà il PIL dell'Italia nei prossimi anni secondo la BCE?",
+        "In quali paesi dell'area euro la BCE prevede l'inflazione più alta?"
+      ],
+      "caveats": [
+        "Projections, not observations: only the years the ECB marks as projected are published. The observed years are in Eurostat's national datasets.",
+        "Each exercise replaces the previous one. Projections are conditional on the assumptions at their cut-off date (oil and commodity prices, interest and exchange rates, fiscal measures) and are revised at every exercise.",
+        "Only the euro area countries: the ECB projects no other EU country, and the euro area aggregate is not published here.",
+        "Real GDP growth and HICP inflation are annual percentage changes; the unemployment rate is a percentage of the labour force."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "MPD",
+      "unit_mult": "0",
+      "projection": {
+        "seasons": [
+          "G",
+          "A"
+        ],
+        "origin": "0000"
+      }
+    },
+    "indicators": [
+      {
+        "id": "real-gdp-growth",
+        "name": "Real GDP growth",
+        "description": "Annual percentage change of gross domestic product at constant prices, as projected for the year.",
+        "unit": "% change on previous year",
+        "statistic": "annual_value",
+        "code": "YER.A",
+        "primary": true
+      },
+      {
+        "id": "hicp-inflation",
+        "name": "HICP inflation",
+        "description": "Annual percentage change of the Harmonised Index of Consumer Prices, overall index, as projected for the year.",
+        "unit": "% change on previous year",
+        "statistic": "annual_value",
+        "code": "HIC.A"
+      },
+      {
+        "id": "unemployment-rate",
+        "name": "Unemployment rate",
+        "description": "Unemployed persons as a percentage of the labour force, as projected for the year.",
+        "unit": "% of labour force",
+        "statistic": "annual_value",
+        "code": "URX.F"
+      }
+    ]
   }
 ]

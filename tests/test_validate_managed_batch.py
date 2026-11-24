@@ -402,6 +402,43 @@ class ManagedBatchContractTests(unittest.TestCase):
         report = self._validate()
         self.assertFalse(report.valid)
 
+    def _rewrite_ecb_provenance(self, **changes: object) -> None:
+        provenance_path = self.release / "provenance.json"
+        provenance = json.loads(provenance_path.read_text(encoding="utf-8"))
+        provenance.update(changes)
+        provenance_path.write_text(json.dumps(provenance, indent=2) + "\n", encoding="utf-8")
+        manifest_path = self.batch / "batch.yaml"
+        manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
+        manifest["datasets"][0]["artifact_sha256"]["provenance.json"] = validator.sha256_file(
+            provenance_path
+        )
+        manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False), encoding="utf-8")
+
+    def test_an_ecb_projection_records_its_exercise(self) -> None:
+        """MPD publishes the projected years (F) of the latest exercise only."""
+        self._as_ecb()
+        projection = {
+            "exercise": "G26",
+            "base_period": "2025",
+            "observed_left_out": 693,
+            "beyond_horizon": 0,
+        }
+        self._rewrite_ecb_provenance(observation_statuses={"F": 1}, projection=projection)
+        report = self._validate()
+        self.assertTrue(report.valid, report.errors)
+
+    def test_an_ecb_projection_with_a_malformed_exercise_is_refused(self) -> None:
+        self._as_ecb()
+        projection = {
+            "exercise": "June 2026",
+            "base_period": "2025",
+            "observed_left_out": 0,
+            "beyond_horizon": 0,
+        }
+        self._rewrite_ecb_provenance(observation_statuses={"F": 1}, projection=projection)
+        report = self._validate()
+        self.assertFalse(report.valid)
+
     def test_an_unknown_provider_is_refused(self) -> None:
         self._edit_manifest(provider="OECD")
         report = self._validate()

@@ -41,11 +41,11 @@
   "ecb_provenance_contract": {
     "path": "contracts/ecb-provenance.schema.json",
     "upstream_path": "data/schema/ecb-provenance.schema.json",
-    "sha256": "ae293c05378ea61ff9b2ba397bdd0c9f72f40d5b7556b1c979721511cdc3be0d"
+    "sha256": "f31d48bca846bb340d3bca1f7217f25b5db51d58843460fdb5285c0f0f737388"
   },
   "ecb_config_contract": {
     "path": "contracts/ecb-datasets.json",
     "upstream_path": "data/provider-contracts/ecb.json",
-    "sha256": "f6393a1af47ce98556a5c40049b2fc5a2f103b701f2e51d2943d58826f29418c"
+    "sha256": "b31b15f0e100e7796afc47f665417478ffb6084f555fea0df2c49b89b89b64df"
   }
 }
