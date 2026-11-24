@@ -16,7 +16,7 @@
   "managed_batch_contract": {
     "path": "contracts/managed-batch.schema.json",
     "upstream_path": "data/schema/managed-batch.schema.json",
-    "sha256": "233d421b04a778510052037c92b5d8a8d81e0f48ee6082b7ce184c9292f3b4e1"
+    "sha256": "ea4efa2d2626d2147abb569d0a79c8ce47f900927be1f48e02a002ca6248164a"
   },
   "eurostat_provenance_contract": {
     "path": "contracts/eurostat-provenance.schema.json",
@@ -37,5 +37,15 @@
     "path": "contracts/jrc-datasets.json",
     "upstream_path": "data/provider-contracts/jrc.json",
     "sha256": "891a89a0f7f44206f83fc4ddb3ec482d1fbee1adeb6f15f377d2bc02a13fa75d"
+  },
+  "ecb_provenance_contract": {
+    "path": "contracts/ecb-provenance.schema.json",
+    "upstream_path": "data/schema/ecb-provenance.schema.json",
+    "sha256": "ae293c05378ea61ff9b2ba397bdd0c9f72f40d5b7556b1c979721511cdc3be0d"
+  },
+  "ecb_config_contract": {
+    "path": "contracts/ecb-datasets.json",
+    "upstream_path": "data/provider-contracts/ecb.json",
+    "sha256": "f6393a1af47ce98556a5c40049b2fc5a2f103b701f2e51d2943d58826f29418c"
   }
 }

@@ -30,6 +30,9 @@ managed_batches:
     JRC:
       config: jrc-datasets.json
       provenance_schema: jrc-provenance.schema.json
+    ECB:
+      config: ecb-datasets.json
+      provenance_schema: ecb-provenance.schema.json
   channel: managed_public
   maximum_datasets: 20
   # Per release. The 250,000 under `limits` is the community lane's: two dozen
