@@ -125,6 +125,94 @@
     }
   },
   "$defs": {
+    "aliases": {
+      "description": "Other names for the dataset, at most 30 per language. A plain list is the shape of releases before 25 November 2026 and reads as English; an object holds one list per language (R16).",
+      "anyOf": [
+        {
+          "type": "array",
+          "maxItems": 30,
+          "items": { "type": "string", "minLength": 2, "maxLength": 100 },
+          "uniqueItems": true
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "en": { "$ref": "#/$defs/aliases/anyOf/0" },
+            "it": { "$ref": "#/$defs/aliases/anyOf/0" },
+            "de": { "$ref": "#/$defs/aliases/anyOf/0" },
+            "fr": { "$ref": "#/$defs/aliases/anyOf/0" },
+            "es": { "$ref": "#/$defs/aliases/anyOf/0" }
+          }
+        }
+      ]
+    },
+    "questions": {
+      "description": "Questions the dataset answers, at most 20 per language; each is a search test (R20). A plain list is the shape of releases before 25 November 2026 and reads as English; an object holds one list per language (R16).",
+      "anyOf": [
+        {
+          "type": "array",
+          "maxItems": 20,
+          "items": { "type": "string", "minLength": 5, "maxLength": 300 },
+          "uniqueItems": true
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "en": { "$ref": "#/$defs/questions/anyOf/0" },
+            "it": { "$ref": "#/$defs/questions/anyOf/0" },
+            "de": { "$ref": "#/$defs/questions/anyOf/0" },
+            "fr": { "$ref": "#/$defs/questions/anyOf/0" },
+            "es": { "$ref": "#/$defs/questions/anyOf/0" }
+          }
+        }
+      ]
+    },
+    "indicator_aliases": {
+      "description": "Names a reader uses for the indicator when its own name does not say them (R17), at most 20 per language. A plain list is the shape of releases before 25 November 2026 and reads as English; an object holds one list per language (R16).",
+      "anyOf": [
+        {
+          "type": "array",
+          "maxItems": 20,
+          "items": { "type": "string", "minLength": 2, "maxLength": 100 },
+          "uniqueItems": true
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "en": { "$ref": "#/$defs/indicator_aliases/anyOf/0" },
+            "it": { "$ref": "#/$defs/indicator_aliases/anyOf/0" },
+            "de": { "$ref": "#/$defs/indicator_aliases/anyOf/0" },
+            "fr": { "$ref": "#/$defs/indicator_aliases/anyOf/0" },
+            "es": { "$ref": "#/$defs/indicator_aliases/anyOf/0" }
+          }
+        }
+      ]
+    },
+    "indicator_questions": {
+      "description": "Questions the indicator answers, at most 10 per language. A plain list is the shape of releases before 25 November 2026 and reads as English; an object holds one list per language (R16).",
+      "anyOf": [
+        {
+          "type": "array",
+          "maxItems": 10,
+          "items": { "type": "string", "minLength": 5, "maxLength": 300 },
+          "uniqueItems": true
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "en": { "$ref": "#/$defs/indicator_questions/anyOf/0" },
+            "it": { "$ref": "#/$defs/indicator_questions/anyOf/0" },
+            "de": { "$ref": "#/$defs/indicator_questions/anyOf/0" },
+            "fr": { "$ref": "#/$defs/indicator_questions/anyOf/0" },
+            "es": { "$ref": "#/$defs/indicator_questions/anyOf/0" }
+          }
+        }
+      ]
+    },
     "licence": {
       "type": "object",
       "additionalProperties": false,
@@ -183,42 +271,22 @@
           "type": "object",
           "additionalProperties": { "type": ["string", "number", "boolean"] }
         },
-        "aliases": {
-          "type": "array",
-          "maxItems": 20,
-          "items": { "type": "string", "minLength": 2, "maxLength": 100 },
-          "uniqueItems": true
-        },
-        "example_questions": {
-          "type": "array",
-          "maxItems": 10,
-          "items": { "type": "string", "minLength": 5, "maxLength": 300 },
-          "uniqueItems": true
-        }
+        "aliases": { "$ref": "#/$defs/indicator_aliases" },
+        "example_questions": { "$ref": "#/$defs/indicator_questions" }
       }
     },
     "semantic_hints": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "aliases": {
-          "type": "array",
-          "maxItems": 30,
-          "items": { "type": "string", "minLength": 2, "maxLength": 100 },
-          "uniqueItems": true
-        },
+        "aliases": { "$ref": "#/$defs/aliases" },
         "topics": {
           "type": "array",
           "maxItems": 30,
           "items": { "type": "string", "minLength": 2, "maxLength": 100 },
           "uniqueItems": true
         },
-        "example_questions": {
-          "type": "array",
-          "maxItems": 20,
-          "items": { "type": "string", "minLength": 5, "maxLength": 300 },
-          "uniqueItems": true
-        },
+        "example_questions": { "$ref": "#/$defs/questions" },
         "caveats": {
           "type": "array",
           "maxItems": 20,
