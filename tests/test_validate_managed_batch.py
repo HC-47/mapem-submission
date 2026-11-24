@@ -266,6 +266,67 @@ class ManagedBatchContractTests(unittest.TestCase):
         }
         manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False), encoding="utf-8")
 
+    def _as_ecb(self) -> None:
+        """Turn the fixture into an ECB batch: same rows, the ECB's contracts."""
+        dataset_id = "ecb-payments"
+        release = self.batch / "datasets" / dataset_id / self.version
+        release.parent.mkdir(parents=True)
+        self.release.rename(release)
+        shutil.rmtree(self.batch / "datasets" / self.dataset_id)
+        self.dataset_id, self.release = dataset_id, release
+        metadata = yaml.safe_load((release / "dataset.yaml").read_text(encoding="utf-8"))
+        metadata.update(id=dataset_id, publisher="European Central Bank")
+        metadata["upstream"] = {
+            "provider": "ECB",
+            "dataset_code": "PAY",
+            "api_base_url": "https://data-api.ecb.europa.eu/service/",
+            "reference_url": "https://data.ecb.europa.eu/data/datasets/PAY",
+        }
+        (release / "dataset.yaml").write_text(
+            yaml.safe_dump(metadata, sort_keys=False, allow_unicode=True), encoding="utf-8"
+        )
+        observations = (release / "observations.csv").read_text(encoding="utf-8")
+        (release / "observations.csv").write_text(
+            observations.replace("eurostat-population-density", dataset_id), encoding="utf-8"
+        )
+        provenance = {
+            "provider": "ECB",
+            "dataset_code": "PAY",
+            "licence_uri": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+            "source_url": "https://data-api.ecb.europa.eu/service/data/PAY/A.AT.W0.TOTL.1._Z.N.PN?format=csvdata",
+            "source_sha256": "0" * 64,
+            "config_sha256": "0" * 64,
+            "imported_at": "2099-01-01T00:00:00Z",
+            "observations_sha256": validator.sha256_file(release / "observations.csv"),
+            "series": 1,
+            "observation_statuses": {"A": 1},
+            "geography_levels": {"declared": [0], "available_upstream": [0]},
+            "excluded_codes": {"count": 0, "in_contract_countries": []},
+            "normalisation": {
+                "geography": "Country codes kept as published, GR stored as EL.",
+                "missing_values": "Missing and confidential observations remain absent.",
+                "flags": "OBS_STATUS E is carried as e, A as no flag.",
+                "units": "Values copied as published; UNIT_MULT checked, never applied.",
+            },
+        }
+        (release / "provenance.json").write_text(
+            json.dumps(provenance, indent=2) + "\n", encoding="utf-8"
+        )
+        manifest_path = self.batch / "batch.yaml"
+        manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
+        manifest["provider"] = "ECB"
+        manifest["source_config_sha256"] = validator.sha256_file(
+            ROOT / "contracts" / "ecb-datasets.json"
+        )
+        entry = manifest["datasets"][0]
+        entry["dataset_id"] = dataset_id
+        entry["path"] = f"managed-batches/{self.batch_id}/datasets/{dataset_id}/{self.version}"
+        entry["artifact_sha256"] = {
+            name: validator.sha256_file(release / name)
+            for name in sorted(validator.REQUIRED_FILES)
+        }
+        manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False), encoding="utf-8")
+
     def _edit_manifest(self, **changes: object) -> None:
         manifest_path = self.batch / "batch.yaml"
         manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
@@ -312,6 +373,34 @@ class ManagedBatchContractTests(unittest.TestCase):
         manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False), encoding="utf-8")
         report = self._validate()
         self.assertIn("jrc-rioi: managed JRC data must be an official source", report.errors)
+
+    def test_an_ecb_batch_passes_with_the_ecb_contracts(self) -> None:
+        self._as_ecb()
+        report = self._validate()
+        self.assertTrue(report.valid, report.errors)
+
+    def test_an_ecb_batch_cannot_carry_the_jrc_configuration(self) -> None:
+        self._as_ecb()
+        self._edit_manifest(
+            source_config_sha256=validator.sha256_file(ROOT / "contracts" / "jrc-datasets.json")
+        )
+        report = self._validate()
+        self.assertIn("batch.yaml: ECB source configuration is not the pinned contract", report.errors)
+
+    def test_an_ecb_provenance_with_an_unknown_status_is_refused(self) -> None:
+        self._as_ecb()
+        provenance_path = self.release / "provenance.json"
+        provenance = json.loads(provenance_path.read_text(encoding="utf-8"))
+        provenance["observation_statuses"] = {"P": 1}
+        provenance_path.write_text(json.dumps(provenance, indent=2) + "\n", encoding="utf-8")
+        manifest_path = self.batch / "batch.yaml"
+        manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
+        manifest["datasets"][0]["artifact_sha256"]["provenance.json"] = validator.sha256_file(
+            provenance_path
+        )
+        manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False), encoding="utf-8")
+        report = self._validate()
+        self.assertFalse(report.valid)
 
     def test_an_unknown_provider_is_refused(self) -> None:
         self._edit_manifest(provider="OECD")

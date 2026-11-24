@@ -1,0 +1,3316 @@
+[
+  {
+    "id": "ecb-payments",
+    "dataset_code": "PAY",
+    "title": "Payment transactions by type",
+    "description": "Number and value of payment transactions in the EU countries by type of payment: credit transfers, direct debits, card payments, e-money, remittances, from the ECB payments statistics.",
+    "subject": "Payment transactions",
+    "breakdown": "type of payment",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PAY)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PAY",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PAY)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PAY): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "payment transactions",
+        "pagamenti",
+        "operazioni di pagamento",
+        "payments statistics",
+        "cashless payments"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti pagamenti elettronici si fanno in Italia ogni anno?",
+        "In quali paesi UE i bonifici pesano di più sul totale dei pagamenti?"
+      ],
+      "caveats": [
+        "Values are in millions, as the ECB publishes them.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PAY",
+      "unit_mult": "6"
+    },
+    "coordinates": {
+      "institution": {
+        "code": "_T",
+        "label": "All payment service providers",
+        "total": true,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "all-number",
+        "name": "All payment transactions, number",
+        "description": "All payment transactions sent by payers through payment service providers resident in the country, cash withdrawals with cards included. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.TOTL.1._Z.N.PN",
+        "primary": true
+      },
+      {
+        "id": "all-value",
+        "name": "All payment transactions, value",
+        "description": "All payment transactions sent by payers through payment service providers resident in the country, cash withdrawals with cards included. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.TOTL.1._Z.N.EUR"
+      },
+      {
+        "id": "all-excluding-cash-withdrawals-number",
+        "name": "Payment transactions excluding cash withdrawals, number",
+        "description": "All payment transactions sent by payers, cash withdrawals with cards excluded. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.TOTL1.1._Z.N.PN"
+      },
+      {
+        "id": "all-excluding-cash-withdrawals-value",
+        "name": "Payment transactions excluding cash withdrawals, value",
+        "description": "All payment transactions sent by payers, cash withdrawals with cards excluded. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.TOTL1.1._Z.N.EUR"
+      },
+      {
+        "id": "credit-transfers-number",
+        "name": "Credit transfers, number",
+        "description": "Credit transfers sent by payers. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.CT0.1._Z.N.PN"
+      },
+      {
+        "id": "credit-transfers-value",
+        "name": "Credit transfers, value",
+        "description": "Credit transfers sent by payers. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.CT0.1._Z.N.EUR"
+      },
+      {
+        "id": "card-payments-number",
+        "name": "Card payments, number",
+        "description": "Payments with cards issued by resident payment service providers. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.CP0.1._Z.N.PN"
+      },
+      {
+        "id": "card-payments-value",
+        "name": "Card payments, value",
+        "description": "Payments with cards issued by resident payment service providers. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.CP0.1._Z.N.EUR"
+      },
+      {
+        "id": "e-money-payments-number",
+        "name": "E-money payments, number",
+        "description": "Payments with electronic money. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.EMP0.1._Z.N.PN"
+      },
+      {
+        "id": "e-money-payments-value",
+        "name": "E-money payments, value",
+        "description": "Payments with electronic money. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.EMP0.1._Z.N.EUR"
+      },
+      {
+        "id": "money-remittances-number",
+        "name": "Money remittances, number",
+        "description": "Money remittances sent. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.MREM.1._Z.N.PN"
+      },
+      {
+        "id": "money-remittances-value",
+        "name": "Money remittances, value",
+        "description": "Money remittances sent. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.MREM.1._Z.N.EUR"
+      },
+      {
+        "id": "other-payment-services-number",
+        "name": "Other payment services, number",
+        "description": "Payment services not classified elsewhere. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.SER.1._Z.N.PN"
+      },
+      {
+        "id": "other-payment-services-value",
+        "name": "Other payment services, value",
+        "description": "Payment services not classified elsewhere. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.SER.1._Z.N.EUR"
+      },
+      {
+        "id": "cash-withdrawals-cards-number",
+        "name": "Cash withdrawals with cards, number",
+        "description": "Cash withdrawals using cards issued by resident payment service providers. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.CW1.1._Z.N.PN"
+      },
+      {
+        "id": "cash-withdrawals-cards-value",
+        "name": "Cash withdrawals with cards, value",
+        "description": "Cash withdrawals using cards issued by resident payment service providers. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.CW1.1._Z.N.EUR"
+      },
+      {
+        "id": "direct-debits-number",
+        "name": "Direct debits, number",
+        "description": "Direct debits collected by payees through resident payment service providers (payee side, the side the ECB publishes direct debits on). Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.DD.2._Z.N.PN"
+      },
+      {
+        "id": "direct-debits-value",
+        "name": "Direct debits, value",
+        "description": "Direct debits collected by payees through resident payment service providers (payee side, the side the ECB publishes direct debits on). Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.DD.2._Z.N.EUR"
+      },
+      {
+        "id": "direct-debits-payer-side-number",
+        "name": "Direct debits, payer side, number",
+        "description": "Direct debits debited from payers' accounts at resident payment service providers. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.DD.1._Z.N.PN"
+      },
+      {
+        "id": "direct-debits-payer-side-value",
+        "name": "Direct debits, payer side, value",
+        "description": "Direct debits debited from payers' accounts at resident payment service providers. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.DD.1._Z.N.EUR"
+      },
+      {
+        "id": "all-domestic-number",
+        "name": "All payment transactions, domestic, number",
+        "description": "All payment transactions sent by payers, with the counterpart in the same country. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W2.TOTL.1._Z.N.PN"
+      },
+      {
+        "id": "all-domestic-value",
+        "name": "All payment transactions, domestic, value",
+        "description": "All payment transactions sent by payers, with the counterpart in the same country. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W2.TOTL.1._Z.N.EUR"
+      },
+      {
+        "id": "all-cross-border-number",
+        "name": "All payment transactions, cross-border, number",
+        "description": "All payment transactions sent by payers, with the counterpart in another country (rest of the world, EEA included). Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W1.TOTL.1._Z.N.PN"
+      },
+      {
+        "id": "all-cross-border-value",
+        "name": "All payment transactions, cross-border, value",
+        "description": "All payment transactions sent by payers, with the counterpart in another country (rest of the world, EEA included). Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W1.TOTL.1._Z.N.EUR"
+      }
+    ]
+  },
+  {
+    "id": "ecb-payments-credit-institutions",
+    "dataset_code": "PPC",
+    "title": "Payment transactions by type: credit institutions",
+    "description": "Credit transfers, direct debits and money remittances processed by credit institutions in the EU countries, from the ECB payments statistics by type of payment service provider.",
+    "subject": "Payment transactions",
+    "breakdown": "type of payment",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PAY)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PPC",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PPC)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PPC): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "payment transactions by institution",
+        "credit institutions"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti bonifici passano per credit institutions in ciascun paese UE?"
+      ],
+      "caveats": [
+        "Values are in millions, as the ECB publishes them.",
+        "The types of provider do not always add up to the total: some countries publish only some of them, so a slice is never a complete breakdown.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PPC",
+      "unit_mult": "6"
+    },
+    "coordinates": {
+      "institution": {
+        "code": "S122C",
+        "label": "Credit institutions",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "credit-transfers-number",
+        "name": "Credit transfers, number",
+        "description": "Credit transfers sent through credit institutions. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0._Z.CT0.1._T.S122C.N.PN",
+        "primary": true
+      },
+      {
+        "id": "credit-transfers-value",
+        "name": "Credit transfers, value",
+        "description": "Credit transfers sent through credit institutions. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0._Z.CT0.1._T.S122C.N.EUR"
+      },
+      {
+        "id": "direct-debits-number",
+        "name": "Direct debits, number",
+        "description": "Direct debits collected through credit institutions (payee side). Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0._Z.DD.2._T.S122C.N.PN"
+      },
+      {
+        "id": "direct-debits-value",
+        "name": "Direct debits, value",
+        "description": "Direct debits collected through credit institutions (payee side). Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0._Z.DD.2._T.S122C.N.EUR"
+      },
+      {
+        "id": "money-remittances-number",
+        "name": "Money remittances, number",
+        "description": "Money remittances sent through credit institutions. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0._Z.MREM.1._T.S122C.N.PN"
+      },
+      {
+        "id": "money-remittances-value",
+        "name": "Money remittances, value",
+        "description": "Money remittances sent through credit institutions. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0._Z.MREM.1._T.S122C.N.EUR"
+      }
+    ]
+  },
+  {
+    "id": "ecb-payments-payment-institutions",
+    "dataset_code": "PPC",
+    "title": "Payment transactions by type: payment institutions",
+    "description": "Credit transfers, direct debits and money remittances processed by payment institutions in the EU countries, from the ECB payments statistics by type of payment service provider.",
+    "subject": "Payment transactions",
+    "breakdown": "type of payment",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PAY)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PPC",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PPC)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PPC): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "payment transactions by institution",
+        "payment institutions"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti bonifici passano per payment institutions in ciascun paese UE?"
+      ],
+      "caveats": [
+        "Values are in millions, as the ECB publishes them.",
+        "The types of provider do not always add up to the total: some countries publish only some of them, so a slice is never a complete breakdown.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PPC",
+      "unit_mult": "6"
+    },
+    "coordinates": {
+      "institution": {
+        "code": "S126C",
+        "label": "Payment institutions",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "credit-transfers-number",
+        "name": "Credit transfers, number",
+        "description": "Credit transfers sent through payment institutions. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0._Z.CT0.1._T.S126C.N.PN",
+        "primary": true
+      },
+      {
+        "id": "credit-transfers-value",
+        "name": "Credit transfers, value",
+        "description": "Credit transfers sent through payment institutions. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0._Z.CT0.1._T.S126C.N.EUR"
+      },
+      {
+        "id": "direct-debits-number",
+        "name": "Direct debits, number",
+        "description": "Direct debits collected through payment institutions (payee side). Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0._Z.DD.2._T.S126C.N.PN"
+      },
+      {
+        "id": "direct-debits-value",
+        "name": "Direct debits, value",
+        "description": "Direct debits collected through payment institutions (payee side). Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0._Z.DD.2._T.S126C.N.EUR"
+      },
+      {
+        "id": "money-remittances-number",
+        "name": "Money remittances, number",
+        "description": "Money remittances sent through payment institutions. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0._Z.MREM.1._T.S126C.N.PN"
+      },
+      {
+        "id": "money-remittances-value",
+        "name": "Money remittances, value",
+        "description": "Money remittances sent through payment institutions. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0._Z.MREM.1._T.S126C.N.EUR"
+      }
+    ]
+  },
+  {
+    "id": "ecb-payments-e-money-institutions",
+    "dataset_code": "PPC",
+    "title": "Payment transactions by type: electronic money institutions",
+    "description": "Credit transfers, direct debits and money remittances processed by electronic money institutions in the EU countries, from the ECB payments statistics by type of payment service provider.",
+    "subject": "Payment transactions",
+    "breakdown": "type of payment",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PAY)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PPC",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PPC)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PPC): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "payment transactions by institution",
+        "electronic money institutions"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti bonifici passano per electronic money institutions in ciascun paese UE?"
+      ],
+      "caveats": [
+        "Values are in millions, as the ECB publishes them.",
+        "The types of provider do not always add up to the total: some countries publish only some of them, so a slice is never a complete breakdown.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PPC",
+      "unit_mult": "6"
+    },
+    "coordinates": {
+      "institution": {
+        "code": "S12E",
+        "label": "Electronic money institutions",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "credit-transfers-number",
+        "name": "Credit transfers, number",
+        "description": "Credit transfers sent through electronic money institutions. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0._Z.CT0.1._T.S12E.N.PN",
+        "primary": true
+      },
+      {
+        "id": "credit-transfers-value",
+        "name": "Credit transfers, value",
+        "description": "Credit transfers sent through electronic money institutions. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0._Z.CT0.1._T.S12E.N.EUR"
+      },
+      {
+        "id": "direct-debits-number",
+        "name": "Direct debits, number",
+        "description": "Direct debits collected through electronic money institutions (payee side). Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0._Z.DD.2._T.S12E.N.PN"
+      },
+      {
+        "id": "direct-debits-value",
+        "name": "Direct debits, value",
+        "description": "Direct debits collected through electronic money institutions (payee side). Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0._Z.DD.2._T.S12E.N.EUR"
+      },
+      {
+        "id": "money-remittances-number",
+        "name": "Money remittances, number",
+        "description": "Money remittances sent through electronic money institutions. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0._Z.MREM.1._T.S12E.N.PN"
+      },
+      {
+        "id": "money-remittances-value",
+        "name": "Money remittances, value",
+        "description": "Money remittances sent through electronic money institutions. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0._Z.MREM.1._T.S12E.N.EUR"
+      }
+    ]
+  },
+  {
+    "id": "ecb-payments-central-banks-government",
+    "dataset_code": "PPC",
+    "title": "Payment transactions by type: central banks and general government",
+    "description": "Credit transfers, direct debits and money remittances processed by central banks and general government in the EU countries, from the ECB payments statistics by type of payment service provider.",
+    "subject": "Payment transactions",
+    "breakdown": "type of payment",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PAY)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PPC",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PPC)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PPC): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "payment transactions by institution",
+        "central banks and general government"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti bonifici passano per central banks and general government in ciascun paese UE?"
+      ],
+      "caveats": [
+        "Values are in millions, as the ECB publishes them.",
+        "The types of provider do not always add up to the total: some countries publish only some of them, so a slice is never a complete breakdown.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PPC",
+      "unit_mult": "6"
+    },
+    "coordinates": {
+      "institution": {
+        "code": "S1KK",
+        "label": "Central banks and general government",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "credit-transfers-number",
+        "name": "Credit transfers, number",
+        "description": "Credit transfers sent through central banks and general government. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0._Z.CT0.1._T.S1KK.N.PN",
+        "primary": true
+      },
+      {
+        "id": "credit-transfers-value",
+        "name": "Credit transfers, value",
+        "description": "Credit transfers sent through central banks and general government. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0._Z.CT0.1._T.S1KK.N.EUR"
+      },
+      {
+        "id": "direct-debits-number",
+        "name": "Direct debits, number",
+        "description": "Direct debits collected through central banks and general government (payee side). Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0._Z.DD.2._T.S1KK.N.PN"
+      },
+      {
+        "id": "direct-debits-value",
+        "name": "Direct debits, value",
+        "description": "Direct debits collected through central banks and general government (payee side). Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0._Z.DD.2._T.S1KK.N.EUR"
+      },
+      {
+        "id": "money-remittances-number",
+        "name": "Money remittances, number",
+        "description": "Money remittances sent through central banks and general government. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0._Z.MREM.1._T.S1KK.N.PN"
+      },
+      {
+        "id": "money-remittances-value",
+        "name": "Money remittances, value",
+        "description": "Money remittances sent through central banks and general government. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0._Z.MREM.1._T.S1KK.N.EUR"
+      }
+    ]
+  },
+  {
+    "id": "ecb-credit-transfers",
+    "dataset_code": "PCT",
+    "title": "Credit transfers by initiation channel",
+    "description": "Number and value of credit transfers in the EU countries by how they are initiated (paper, file, single payment, online banking) and by counterpart, from the ECB payments statistics.",
+    "subject": "Payment transactions",
+    "breakdown": "credit transfers by channel",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PCT)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PCT",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PCT)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PCT): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "credit transfers",
+        "bonifici",
+        "SEPA credit transfers",
+        "online banking payments"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti bonifici si fanno online in Germania?",
+        "Quale quota dei bonifici è ancora cartacea?"
+      ],
+      "caveats": [
+        "Values are in millions, as the ECB publishes them.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PCT",
+      "unit_mult": "6"
+    },
+    "indicators": [
+      {
+        "id": "total-number",
+        "name": "Credit transfers, number",
+        "description": "All credit transfers sent by payers. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.1._T._T.CTS_ALL._X._Z.N.PN",
+        "primary": true
+      },
+      {
+        "id": "total-value",
+        "name": "Credit transfers, value",
+        "description": "All credit transfers sent by payers. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.1._T._T.CTS_ALL._X._Z.N.EUR"
+      },
+      {
+        "id": "paper-based-number",
+        "name": "Credit transfers initiated on paper, number",
+        "description": "Credit transfers initiated in paper-based form. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.1.1200._T.CTS_ALL._X._Z.N.PN"
+      },
+      {
+        "id": "paper-based-value",
+        "name": "Credit transfers initiated on paper, value",
+        "description": "Credit transfers initiated in paper-based form. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.1.1200._T.CTS_ALL._X._Z.N.EUR"
+      },
+      {
+        "id": "electronic-number",
+        "name": "Credit transfers initiated electronically, number",
+        "description": "Credit transfers initiated electronically. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.1.2000._T.CTS_ALL._X._Z.N.PN"
+      },
+      {
+        "id": "electronic-value",
+        "name": "Credit transfers initiated electronically, value",
+        "description": "Credit transfers initiated electronically. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.1.2000._T.CTS_ALL._X._Z.N.EUR"
+      },
+      {
+        "id": "file-batch-number",
+        "name": "Credit transfers initiated in a file or batch, number",
+        "description": "Electronic credit transfers initiated in a file or batch. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.1.2100._T.CTS_ALL._X._Z.N.PN"
+      },
+      {
+        "id": "file-batch-value",
+        "name": "Credit transfers initiated in a file or batch, value",
+        "description": "Electronic credit transfers initiated in a file or batch. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.1.2100._T.CTS_ALL._X._Z.N.EUR"
+      },
+      {
+        "id": "single-payment-number",
+        "name": "Credit transfers initiated one by one, number",
+        "description": "Electronic credit transfers initiated on a single payment basis. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.1.2200._T.CTS_ALL._X._Z.N.PN"
+      },
+      {
+        "id": "single-payment-value",
+        "name": "Credit transfers initiated one by one, value",
+        "description": "Electronic credit transfers initiated on a single payment basis. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.1.2200._T.CTS_ALL._X._Z.N.EUR"
+      },
+      {
+        "id": "online-banking-number",
+        "name": "Credit transfers initiated through online banking, number",
+        "description": "Electronic credit transfers initiated through online banking. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.1.2210._T.CTS_ALL._X._Z.N.PN"
+      },
+      {
+        "id": "online-banking-value",
+        "name": "Credit transfers initiated through online banking, value",
+        "description": "Electronic credit transfers initiated through online banking. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.1.2210._T.CTS_ALL._X._Z.N.EUR"
+      },
+      {
+        "id": "domestic-number",
+        "name": "Credit transfers, domestic, number",
+        "description": "Credit transfers with the counterpart in the same country. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W2.1._T._T.CTS_ALL._X._Z.N.PN"
+      },
+      {
+        "id": "domestic-value",
+        "name": "Credit transfers, domestic, value",
+        "description": "Credit transfers with the counterpart in the same country. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W2.1._T._T.CTS_ALL._X._Z.N.EUR"
+      },
+      {
+        "id": "cross-border-number",
+        "name": "Credit transfers, cross-border, number",
+        "description": "Credit transfers with the counterpart in another country (rest of the world, EEA included). Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W1.1._T._T.CTS_ALL._X._Z.N.PN"
+      },
+      {
+        "id": "cross-border-value",
+        "name": "Credit transfers, cross-border, value",
+        "description": "Credit transfers with the counterpart in another country (rest of the world, EEA included). Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W1.1._T._T.CTS_ALL._X._Z.N.EUR"
+      }
+    ]
+  },
+  {
+    "id": "ecb-direct-debits",
+    "dataset_code": "PDD",
+    "title": "Direct debits by counterpart",
+    "description": "Number and value of direct debits debited from payers' accounts in the EU countries, domestic and cross-border, from the ECB payments statistics.",
+    "subject": "Payment transactions",
+    "breakdown": "direct debits by counterpart",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PDD)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PDD",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PDD)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PDD): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "direct debits",
+        "addebiti diretti",
+        "SEPA direct debit",
+        "domiciliazioni"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti addebiti diretti transfrontalieri ci sono in Belgio?"
+      ],
+      "caveats": [
+        "Values are in millions, as the ECB publishes them.",
+        "Payer side: the ECB's headline direct debit figures are on the payee side, published in the dataset of payment transactions by type.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PDD",
+      "unit_mult": "6"
+    },
+    "indicators": [
+      {
+        "id": "total-number",
+        "name": "Direct debits, number",
+        "description": "Direct debits debited from payers' accounts. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.1._T.DDS_ALL._T._Z.N.PN",
+        "primary": true
+      },
+      {
+        "id": "total-value",
+        "name": "Direct debits, value",
+        "description": "Direct debits debited from payers' accounts. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.1._T.DDS_ALL._T._Z.N.EUR"
+      },
+      {
+        "id": "domestic-number",
+        "name": "Direct debits, domestic, number",
+        "description": "Direct debits debited from payers' accounts, with the counterpart in the same country. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W2.1._T.DDS_ALL._T._Z.N.PN"
+      },
+      {
+        "id": "domestic-value",
+        "name": "Direct debits, domestic, value",
+        "description": "Direct debits debited from payers' accounts, with the counterpart in the same country. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W2.1._T.DDS_ALL._T._Z.N.EUR"
+      },
+      {
+        "id": "cross-border-number",
+        "name": "Direct debits, cross-border, number",
+        "description": "Direct debits debited from payers' accounts, with the counterpart in another country (rest of the world, EEA included). Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W1.1._T.DDS_ALL._T._Z.N.PN"
+      },
+      {
+        "id": "cross-border-value",
+        "name": "Direct debits, cross-border, value",
+        "description": "Direct debits debited from payers' accounts, with the counterpart in another country (rest of the world, EEA included). Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W1.1._T.DDS_ALL._T._Z.N.EUR"
+      }
+    ]
+  },
+  {
+    "id": "ecb-card-payments",
+    "dataset_code": "PCP",
+    "title": "Card payments by channel and counterpart",
+    "description": "Number and value of payments with cards issued in the EU countries, at point-of-sale terminals and by counterpart, from the ECB payments statistics.",
+    "subject": "Payment transactions",
+    "breakdown": "card payments",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PCP)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PCP",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PCP)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PCP): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "card payments",
+        "pagamenti con carta",
+        "debit card payments",
+        "POS payments"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanto si paga con carta in Spagna rispetto all'Italia?"
+      ],
+      "caveats": [
+        "Values are in millions, as the ECB publishes them.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PCP",
+      "unit_mult": "6"
+    },
+    "indicators": [
+      {
+        "id": "total-number",
+        "name": "Card payments, number",
+        "description": "Payments with cards issued by resident payment service providers. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.W0.CP0.1._T._T.PCS_ALL._Z._X._Z.N.PN",
+        "primary": true
+      },
+      {
+        "id": "total-value",
+        "name": "Card payments, value",
+        "description": "Payments with cards issued by resident payment service providers. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.W0.CP0.1._T._T.PCS_ALL._Z._X._Z.N.EUR"
+      },
+      {
+        "id": "eftpos-number",
+        "name": "Card payments at EFTPOS terminals, number",
+        "description": "Card payments initiated at electronic point-of-sale (EFTPOS) terminals, in person. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.W0.CP0.1.2223.NR.PCS_ALL._Z._X._Z.N.PN"
+      },
+      {
+        "id": "eftpos-value",
+        "name": "Card payments at EFTPOS terminals, value",
+        "description": "Card payments initiated at electronic point-of-sale (EFTPOS) terminals, in person. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.W0.CP0.1.2223.NR.PCS_ALL._Z._X._Z.N.EUR"
+      },
+      {
+        "id": "domestic-number",
+        "name": "Card payments, domestic, number",
+        "description": "Card payments with the counterpart in the same country. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W2.W0.CP0.1._T._T.PCS_ALL._Z._X._Z.N.PN"
+      },
+      {
+        "id": "domestic-value",
+        "name": "Card payments, domestic, value",
+        "description": "Card payments with the counterpart in the same country. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W2.W0.CP0.1._T._T.PCS_ALL._Z._X._Z.N.EUR"
+      },
+      {
+        "id": "cross-border-number",
+        "name": "Card payments, cross-border, number",
+        "description": "Card payments with the counterpart in another country (rest of the world, EEA included). Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W1.W0.CP0.1._T._T.PCS_ALL._Z._X._Z.N.PN"
+      },
+      {
+        "id": "cross-border-value",
+        "name": "Card payments, cross-border, value",
+        "description": "Card payments with the counterpart in another country (rest of the world, EEA included). Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W1.W0.CP0.1._T._T.PCS_ALL._Z._X._Z.N.EUR"
+      }
+    ]
+  },
+  {
+    "id": "ecb-e-money-payments",
+    "dataset_code": "PEM",
+    "title": "E-money payments",
+    "description": "Number and value of payments with electronic money in the EU countries, by how the e-money is held and by counterpart, from the ECB payments statistics.",
+    "subject": "Payment transactions",
+    "breakdown": "e-money payments",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PEM)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PEM",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PEM)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PEM): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "e-money payments",
+        "moneta elettronica",
+        "electronic money",
+        "prepaid payments"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "In quali paesi UE si usa di più la moneta elettronica?"
+      ],
+      "caveats": [
+        "Values are in millions, as the ECB publishes them.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PEM",
+      "unit_mult": "6"
+    },
+    "indicators": [
+      {
+        "id": "total-number",
+        "name": "E-money payments, number",
+        "description": "Payments with electronic money issued by resident providers. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.EMP0.1._T._T._X._Z.N.PN",
+        "primary": true
+      },
+      {
+        "id": "total-value",
+        "name": "E-money payments, value",
+        "description": "Payments with electronic money issued by resident providers. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.EMP0.1._T._T._X._Z.N.EUR"
+      },
+      {
+        "id": "card-stored-number",
+        "name": "E-money payments with cards storing e-money, number",
+        "description": "E-money payments with a card on which e-money is stored directly. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.EMP2.1._T._T._X._Z.N.PN"
+      },
+      {
+        "id": "card-stored-value",
+        "name": "E-money payments with cards storing e-money, value",
+        "description": "E-money payments with a card on which e-money is stored directly. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.EMP2.1._T._T._X._Z.N.EUR"
+      },
+      {
+        "id": "from-account-number",
+        "name": "E-money payments from e-money accounts, number",
+        "description": "E-money payments from e-money accounts. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W0.EMP3.1._T._T._X._Z.N.PN"
+      },
+      {
+        "id": "from-account-value",
+        "name": "E-money payments from e-money accounts, value",
+        "description": "E-money payments from e-money accounts. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W0.EMP3.1._T._T._X._Z.N.EUR"
+      },
+      {
+        "id": "domestic-number",
+        "name": "E-money payments, domestic, number",
+        "description": "E-money payments with the counterpart in the same country. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W2.EMP0.1._T._T._X._Z.N.PN"
+      },
+      {
+        "id": "domestic-value",
+        "name": "E-money payments, domestic, value",
+        "description": "E-money payments with the counterpart in the same country. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W2.EMP0.1._T._T._X._Z.N.EUR"
+      },
+      {
+        "id": "cross-border-number",
+        "name": "E-money payments, cross-border, number",
+        "description": "E-money payments with the counterpart in another country (rest of the world, EEA included). Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W1.EMP0.1._T._T._X._Z.N.PN"
+      },
+      {
+        "id": "cross-border-value",
+        "name": "E-money payments, cross-border, value",
+        "description": "E-money payments with the counterpart in another country (rest of the world, EEA included). Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W1.EMP0.1._T._T._X._Z.N.EUR"
+      }
+    ]
+  },
+  {
+    "id": "ecb-terminal-transactions",
+    "dataset_code": "PTT",
+    "title": "Transactions at payment terminals",
+    "description": "Number and value of transactions at ATMs and point-of-sale terminals provided by payment service providers in the EU countries, with cards issued at home or abroad, from the ECB payments statistics.",
+    "subject": "Payment transactions",
+    "breakdown": "transactions at terminals",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PTT)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PTT",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PTT)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PTT): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "terminal transactions",
+        "operazioni ai terminali",
+        "ATM and POS transactions",
+        "transazioni POS"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quante transazioni ai terminali italiani si fanno con carte estere?"
+      ],
+      "caveats": [
+        "Values are in millions, as the ECB publishes them.",
+        "Terminal side: counted by the provider of the terminal (acquirer), the side the ECB publishes terminal transactions on; split by where the card was issued, with no published total.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PTT",
+      "unit_mult": "6"
+    },
+    "indicators": [
+      {
+        "id": "domestic-cards-number",
+        "name": "Transactions at terminals, cards issued domestically, number",
+        "description": "Transactions at terminals provided by resident payment service providers with cards issued in the same country. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W2.W0._T.2.2220.N.PN",
+        "primary": true
+      },
+      {
+        "id": "domestic-cards-value",
+        "name": "Transactions at terminals, cards issued domestically, value",
+        "description": "Transactions at terminals provided by resident payment service providers with cards issued in the same country. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W2.W0._T.2.2220.N.EUR"
+      },
+      {
+        "id": "foreign-cards-number",
+        "name": "Transactions at terminals, cards issued abroad, number",
+        "description": "Transactions at terminals provided by resident payment service providers with cards issued in another country. Number of transactions in the year.",
+        "unit": "million transactions",
+        "statistic": "annual_total",
+        "code": "W1.W0._T.2.2220.N.PN"
+      },
+      {
+        "id": "foreign-cards-value",
+        "name": "Transactions at terminals, cards issued abroad, value",
+        "description": "Transactions at terminals provided by resident payment service providers with cards issued in another country. Value of transactions in the year.",
+        "unit": "EUR million",
+        "statistic": "annual_total",
+        "code": "W1.W0._T.2.2220.N.EUR"
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-terminals",
+    "dataset_code": "PTN",
+    "title": "Payment terminals",
+    "description": "Number of ATMs, point-of-sale and e-money terminals provided by payment service providers in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment terminals",
+    "breakdown": "type of terminal",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PTN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PTN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PTN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PTN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "payment terminals",
+        "ATM",
+        "POS",
+        "bancomat",
+        "terminali di pagamento"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti bancomat ci sono in Italia?",
+        "Dove sono diminuiti di più gli ATM?"
+      ],
+      "caveats": [
+        "The terminal types are different objects and do not add up.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PTN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "_T",
+        "label": "All functions",
+        "total": true,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "atms",
+        "name": "ATMs",
+        "description": "ATMs provided by resident payment service providers, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W0.2221._T.PN",
+        "primary": true
+      },
+      {
+        "id": "atms-located-domestically",
+        "name": "ATMs, located domestically",
+        "description": "ATMs provided by resident payment service providers and located in the country, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W2.2221._T.PN"
+      },
+      {
+        "id": "atms-located-abroad",
+        "name": "ATMs, located abroad",
+        "description": "ATMs provided by resident payment service providers and located abroad, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W1.2221._T.PN"
+      },
+      {
+        "id": "pos-terminals",
+        "name": "POS terminals",
+        "description": "POS terminals provided by resident payment service providers, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W0.2222._T.PN"
+      },
+      {
+        "id": "pos-terminals-located-domestically",
+        "name": "POS terminals, located domestically",
+        "description": "POS terminals provided by resident payment service providers and located in the country, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W2.2222._T.PN"
+      },
+      {
+        "id": "pos-terminals-located-abroad",
+        "name": "POS terminals, located abroad",
+        "description": "POS terminals provided by resident payment service providers and located abroad, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W1.2222._T.PN"
+      },
+      {
+        "id": "eftpos-terminals",
+        "name": "EFTPOS terminals",
+        "description": "EFTPOS terminals provided by resident payment service providers, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W0.2223._T.PN"
+      },
+      {
+        "id": "eftpos-terminals-located-domestically",
+        "name": "EFTPOS terminals, located domestically",
+        "description": "EFTPOS terminals provided by resident payment service providers and located in the country, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W2.2223._T.PN"
+      },
+      {
+        "id": "eftpos-terminals-located-abroad",
+        "name": "EFTPOS terminals, located abroad",
+        "description": "EFTPOS terminals provided by resident payment service providers and located abroad, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W1.2223._T.PN"
+      },
+      {
+        "id": "e-money-terminals",
+        "name": "E-money card terminals",
+        "description": "E-money card terminals provided by resident payment service providers, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W0.2224._T.PN"
+      },
+      {
+        "id": "e-money-terminals-located-domestically",
+        "name": "E-money card terminals, located domestically",
+        "description": "E-money card terminals provided by resident payment service providers and located in the country, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W2.2224._T.PN"
+      },
+      {
+        "id": "e-money-terminals-located-abroad",
+        "name": "E-money card terminals, located abroad",
+        "description": "E-money card terminals provided by resident payment service providers and located abroad, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W1.2224._T.PN"
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-terminals-cash-withdrawal",
+    "dataset_code": "PTN",
+    "title": "Payment terminals: cash withdrawal function",
+    "description": "Number of payment terminals with the cash withdrawal function in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment terminals",
+    "breakdown": "type of terminal",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PTN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PTN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PTN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PTN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "terminals cash withdrawal function"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti terminali offrono la funzione «cash withdrawal function» in Francia?"
+      ],
+      "caveats": [
+        "A terminal can have several functions: the functions overlap and do not add up to the total.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PTN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "1",
+        "label": "Cash withdrawal function",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "atms",
+        "name": "ATMs",
+        "description": "ATMs provided by resident payment service providers, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W0.2221.1.PN",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-terminals-credit-transfer",
+    "dataset_code": "PTN",
+    "title": "Payment terminals: credit transfer function",
+    "description": "Number of payment terminals with the credit transfer function in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment terminals",
+    "breakdown": "type of terminal",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PTN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PTN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PTN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PTN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "terminals credit transfer function"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti terminali offrono la funzione «credit transfer function» in Francia?"
+      ],
+      "caveats": [
+        "A terminal can have several functions: the functions overlap and do not add up to the total.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PTN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "2",
+        "label": "Credit transfer function",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "atms",
+        "name": "ATMs",
+        "description": "ATMs provided by resident payment service providers, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W0.2221.2.PN",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-terminals-contactless",
+    "dataset_code": "PTN",
+    "title": "Payment terminals: accepting contactless transactions",
+    "description": "Number of payment terminals with the accepting contactless transactions in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment terminals",
+    "breakdown": "type of terminal",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PTN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PTN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PTN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PTN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "terminals accepting contactless transactions"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti terminali offrono la funzione «accepting contactless transactions» in Francia?"
+      ],
+      "caveats": [
+        "A terminal can have several functions: the functions overlap and do not add up to the total.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PTN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "3",
+        "label": "Accepting contactless transactions",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "atms",
+        "name": "ATMs",
+        "description": "ATMs provided by resident payment service providers, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W0.2221.3.PN",
+        "primary": true
+      },
+      {
+        "id": "eftpos-terminals",
+        "name": "EFTPOS terminals",
+        "description": "EFTPOS terminals provided by resident payment service providers, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W0.2223.3.PN"
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-terminals-e-money",
+    "dataset_code": "PTN",
+    "title": "Payment terminals: accepting e-money cards",
+    "description": "Number of payment terminals with the accepting e-money cards in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment terminals",
+    "breakdown": "type of terminal",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PTN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PTN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PTN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PTN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "terminals accepting e-money cards"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti terminali offrono la funzione «accepting e-money cards» in Francia?"
+      ],
+      "caveats": [
+        "A terminal can have several functions: the functions overlap and do not add up to the total.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PTN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "4",
+        "label": "Accepting e-money cards",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "eftpos-terminals",
+        "name": "EFTPOS terminals",
+        "description": "EFTPOS terminals provided by resident payment service providers, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W0.2223.4.PN",
+        "primary": true
+      },
+      {
+        "id": "e-money-terminals",
+        "name": "E-money card terminals",
+        "description": "E-money card terminals provided by resident payment service providers, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W0.2224.4.PN"
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-terminals-card-loading",
+    "dataset_code": "PTN",
+    "title": "Payment terminals: card loading or unloading",
+    "description": "Number of payment terminals with the card loading or unloading in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment terminals",
+    "breakdown": "type of terminal",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PTN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PTN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PTN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PTN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "terminals card loading or unloading"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti terminali offrono la funzione «card loading or unloading» in Francia?"
+      ],
+      "caveats": [
+        "A terminal can have several functions: the functions overlap and do not add up to the total.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PTN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "5",
+        "label": "Card loading or unloading",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "e-money-terminals",
+        "name": "E-money card terminals",
+        "description": "E-money card terminals provided by resident payment service providers, at the end of the year.",
+        "unit": "terminals",
+        "statistic": "annual_value",
+        "code": "W0.2224.5.PN",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-cards",
+    "dataset_code": "PCN",
+    "title": "Payment cards",
+    "description": "Number of payment cards issued by payment service providers in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment cards",
+    "breakdown": "card function",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PCN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PCN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PCN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PCN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "payment cards",
+        "carte di pagamento",
+        "debit cards",
+        "credit cards",
+        "carte di credito"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quante carte di pagamento ci sono per paese nell'UE?"
+      ],
+      "caveats": [
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PCN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "_T",
+        "label": "All cards",
+        "total": true,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "cards",
+        "name": "Cards issued",
+        "description": "Cards issued by resident payment service providers, at the end of the year.",
+        "unit": "cards",
+        "statistic": "annual_value",
+        "code": "PCS_ALL._T.PN",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-cards-payment",
+    "dataset_code": "PCN",
+    "title": "Payment cards: payment function",
+    "description": "Number of payment cards with the payment function issued in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment cards",
+    "breakdown": "card function",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PCN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PCN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PCN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PCN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "payment function"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quante carte con «payment function» ci sono in Austria?"
+      ],
+      "caveats": [
+        "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PCN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "1",
+        "label": "Payment function",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "cards",
+        "name": "Cards issued",
+        "description": "Cards issued by resident payment service providers, at the end of the year.",
+        "unit": "cards",
+        "statistic": "annual_value",
+        "code": "PCS_ALL.1.PN",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-cards-debit",
+    "dataset_code": "PCN",
+    "title": "Payment cards: debit cards",
+    "description": "Number of payment cards with the debit cards issued in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment cards",
+    "breakdown": "card function",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PCN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PCN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PCN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PCN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "debit cards"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quante carte con «debit cards» ci sono in Austria?"
+      ],
+      "caveats": [
+        "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PCN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "11",
+        "label": "Debit cards",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "cards",
+        "name": "Cards issued",
+        "description": "Cards issued by resident payment service providers, at the end of the year.",
+        "unit": "cards",
+        "statistic": "annual_value",
+        "code": "PCS_ALL.11.PN",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-cards-delayed-debit",
+    "dataset_code": "PCN",
+    "title": "Payment cards: delayed debit cards",
+    "description": "Number of payment cards with the delayed debit cards issued in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment cards",
+    "breakdown": "card function",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PCN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PCN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PCN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PCN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "delayed debit cards"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quante carte con «delayed debit cards» ci sono in Austria?"
+      ],
+      "caveats": [
+        "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PCN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "12",
+        "label": "Delayed debit cards",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "cards",
+        "name": "Cards issued",
+        "description": "Cards issued by resident payment service providers, at the end of the year.",
+        "unit": "cards",
+        "statistic": "annual_value",
+        "code": "PCS_ALL.12.PN",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-cards-credit",
+    "dataset_code": "PCN",
+    "title": "Payment cards: credit cards",
+    "description": "Number of payment cards with the credit cards issued in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment cards",
+    "breakdown": "card function",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PCN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PCN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PCN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PCN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "credit cards"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quante carte con «credit cards» ci sono in Austria?"
+      ],
+      "caveats": [
+        "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PCN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "13",
+        "label": "Credit cards",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "cards",
+        "name": "Cards issued",
+        "description": "Cards issued by resident payment service providers, at the end of the year.",
+        "unit": "cards",
+        "statistic": "annual_value",
+        "code": "PCS_ALL.13.PN",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-cards-combined",
+    "dataset_code": "PCN",
+    "title": "Payment cards: combined debit, cash and e-money function",
+    "description": "Number of payment cards with the combined debit, cash and e-money function issued in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment cards",
+    "breakdown": "card function",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PCN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PCN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PCN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PCN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "combined debit, cash and e-money function"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quante carte con «combined debit, cash and e-money function» ci sono in Austria?"
+      ],
+      "caveats": [
+        "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PCN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "2",
+        "label": "Combined debit, cash and e-money function",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "cards",
+        "name": "Cards issued",
+        "description": "Cards issued by resident payment service providers, at the end of the year.",
+        "unit": "cards",
+        "statistic": "annual_value",
+        "code": "PCS_ALL.2.PN",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-cards-cash",
+    "dataset_code": "PCN",
+    "title": "Payment cards: cash function",
+    "description": "Number of payment cards with the cash function issued in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment cards",
+    "breakdown": "card function",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PCN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PCN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PCN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PCN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "cash function"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quante carte con «cash function» ci sono in Austria?"
+      ],
+      "caveats": [
+        "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PCN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "3",
+        "label": "Cash function",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "cards",
+        "name": "Cards issued",
+        "description": "Cards issued by resident payment service providers, at the end of the year.",
+        "unit": "cards",
+        "statistic": "annual_value",
+        "code": "PCS_ALL.3.PN",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-cards-contactless",
+    "dataset_code": "PCN",
+    "title": "Payment cards: contactless payment function",
+    "description": "Number of payment cards with the contactless payment function issued in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment cards",
+    "breakdown": "card function",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (PCN)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/PCN",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (PCN)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow PCN): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "contactless payment function"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quante carte con «contactless payment function» ci sono in Austria?"
+      ],
+      "caveats": [
+        "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "PCN",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "function": {
+        "code": "5",
+        "label": "Contactless payment function",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "cards",
+        "name": "Cards issued",
+        "description": "Cards issued by resident payment service providers, at the end of the year.",
+        "unit": "cards",
+        "statistic": "annual_value",
+        "code": "PCS_ALL.5.PN",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-service-providers",
+    "dataset_code": "SSP",
+    "title": "Payment service providers",
+    "description": "Institutions offering payment services in the EU countries, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment service providers",
+    "breakdown": "type of provider",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (SSP)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/SSP",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (SSP)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow SSP): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "payment service providers",
+        "prestatori di servizi di pagamento",
+        "all institutions offering payment services"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti istituti di pagamento ci sono in Lituania?"
+      ],
+      "caveats": [
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "SSP",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "provider": {
+        "code": "120B",
+        "label": "All institutions offering payment services",
+        "total": true,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "institutions",
+        "name": "Institutions",
+        "description": "Number of institutions offering payment services. At the end of the year.",
+        "unit": "institutions",
+        "statistic": "annual_value",
+        "code": "120B.N50.1.Z5.Z0Z.Z",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-service-providers-credit-institutions",
+    "dataset_code": "SSP",
+    "title": "Payment service providers: credit institutions",
+    "description": "Credit institutions offering payment services in the EU countries: institutions, clients and accounts, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment service providers",
+    "breakdown": "type of provider",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (SSP)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/SSP",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (SSP)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow SSP): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "payment service providers",
+        "prestatori di servizi di pagamento",
+        "credit institutions"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti clienti hanno i credit institutions in Irlanda?"
+      ],
+      "caveats": [
+        "The ECB publishes a total over all providers for the number of institutions only; clients and accounts exist by type of provider.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "SSP",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "provider": {
+        "code": "122C",
+        "label": "Credit institutions",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "clients",
+        "name": "Clients",
+        "description": "Number of clients. At the end of the year.",
+        "unit": "clients",
+        "statistic": "annual_value",
+        "code": "122C.N60.1.Z5.Z0Z.Z",
+        "primary": true
+      },
+      {
+        "id": "overnight-deposit-accounts",
+        "name": "Overnight deposit accounts",
+        "description": "Overnight deposit accounts held by non-MFIs. At the end of the year.",
+        "unit": "accounts",
+        "statistic": "annual_value",
+        "code": "122C.L21.1.Z5.Z0Z.Z"
+      },
+      {
+        "id": "internet-linked-overnight-deposit-accounts",
+        "name": "Internet or PC-linked overnight deposit accounts",
+        "description": "Overnight deposit accounts held by non-MFIs, of which internet or PC-linked. At the end of the year.",
+        "unit": "accounts",
+        "statistic": "annual_value",
+        "code": "122C.L22.1.Z5.Z0Z.Z"
+      },
+      {
+        "id": "transferable-deposit-accounts",
+        "name": "Overnight transferable deposit accounts",
+        "description": "Overnight transferable deposit accounts held by non-MFIs. At the end of the year.",
+        "unit": "accounts",
+        "statistic": "annual_value",
+        "code": "122C.L23.1.Z5.Z0Z.Z"
+      },
+      {
+        "id": "internet-linked-transferable-deposit-accounts",
+        "name": "Internet or PC-linked transferable deposit accounts",
+        "description": "Overnight transferable deposit accounts linked to internet or PC. At the end of the year.",
+        "unit": "accounts",
+        "statistic": "annual_value",
+        "code": "122C.L24.1.Z5.Z0Z.Z"
+      },
+      {
+        "id": "e-money-accounts",
+        "name": "E-money accounts",
+        "description": "Number of e-money accounts. At the end of the year.",
+        "unit": "accounts",
+        "statistic": "annual_value",
+        "code": "122C.L25.1.Z5.Z0Z.Z"
+      },
+      {
+        "id": "payment-accounts",
+        "name": "Payment accounts",
+        "description": "Number of payment accounts. At the end of the year.",
+        "unit": "accounts",
+        "statistic": "annual_value",
+        "code": "122C.L26.1.Z5.Z0Z.Z"
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-service-providers-payment-institutions",
+    "dataset_code": "SSP",
+    "title": "Payment service providers: payment institutions",
+    "description": "Payment institutions offering payment services in the EU countries: institutions, clients and accounts, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment service providers",
+    "breakdown": "type of provider",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (SSP)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/SSP",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (SSP)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow SSP): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "payment service providers",
+        "prestatori di servizi di pagamento",
+        "payment institutions"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti clienti hanno i payment institutions in Irlanda?"
+      ],
+      "caveats": [
+        "The ECB publishes a total over all providers for the number of institutions only; clients and accounts exist by type of provider.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "SSP",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "provider": {
+        "code": "1241",
+        "label": "Payment institutions",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "institutions",
+        "name": "Institutions",
+        "description": "Number of institutions offering payment services. At the end of the year.",
+        "unit": "institutions",
+        "statistic": "annual_value",
+        "code": "1241.N50.1.Z5.Z0Z.Z",
+        "primary": true
+      },
+      {
+        "id": "payment-accounts",
+        "name": "Payment accounts",
+        "description": "Number of payment accounts. At the end of the year.",
+        "unit": "accounts",
+        "statistic": "annual_value",
+        "code": "1241.L26.1.Z5.Z0Z.Z"
+      }
+    ]
+  },
+  {
+    "id": "ecb-payment-service-providers-central-bank",
+    "dataset_code": "SSP",
+    "title": "Payment service providers: the central bank",
+    "description": "The central bank offering payment services in the EU countries: institutions, clients and accounts, at the end of each year, from the ECB payments statistics.",
+    "subject": "Payment service providers",
+    "breakdown": "type of provider",
+    "category": "Economy",
+    "publisher": "European Central Bank",
+    "source": "ECB payments statistics (SSP)",
+    "source_url": "https://data.ecb.europa.eu/data/datasets/SSP",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "ESCB-STATISTICS-REUSE",
+      "name": "Policy regarding the reuse of ESCB statistics",
+      "url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+      "summary": "Publicly available ESCB statistics may be reused free of charge, including commercially, provided the source is quoted and the statistics, metadata included, are not modified.",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: ECB statistics (SSP)"
+    },
+    "methodology": "Read from the ECB Data Portal (SDMX API, dataflow SSP): annual series of the 27 EU countries from 2015. Values are copied as published, in the unit and multiplier the ECB gives; the ECB's estimated observations (status E) carry the flag e. Observations the ECB publishes as missing or confidential carry no value and stay absent. Greece, published by the ECB as GR, is stored under its NUTS code EL; no other code is converted. Mapem changes nothing else: it selects the series, the countries and the years and reshapes the table into one row per observation.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "European Union (27 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "payment service providers",
+        "prestatori di servizi di pagamento",
+        "the central bank"
+      ],
+      "topics": [
+        "economy",
+        "payments",
+        "finance"
+      ],
+      "example_questions": [
+        "Quanti clienti hanno i the central bank in Irlanda?"
+      ],
+      "caveats": [
+        "The ECB publishes a total over all providers for the number of institutions only; clients and accounts exist by type of provider.",
+        "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
+        "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "ecb": {
+      "flow": "SSP",
+      "unit_mult": "0"
+    },
+    "coordinates": {
+      "provider": {
+        "code": "1210",
+        "label": "The central bank",
+        "total": false,
+        "scope": "micro"
+      }
+    },
+    "indicators": [
+      {
+        "id": "overnight-deposit-accounts",
+        "name": "Overnight deposit accounts",
+        "description": "Overnight deposit accounts held by non-MFIs. At the end of the year.",
+        "unit": "accounts",
+        "statistic": "annual_value",
+        "code": "1210.L21.1.Z5.Z0Z.Z",
+        "primary": true
+      }
+    ]
+  }
+]

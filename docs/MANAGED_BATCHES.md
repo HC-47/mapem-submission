@@ -1,7 +1,7 @@
 # Managed batches
 
 This repository has two independent intake lanes. Community contributors add one proposed dataset under
-`submissions/` and use review/voting. The Open Geo Data Map intake bot adds one atomic batch from one provider, Eurostat or the JRC, under
+`submissions/` and use review/voting. The Open Geo Data Map intake bot adds one atomic batch from one provider, Eurostat, the JRC or the ECB, under
 `managed-batches/` and uses protected automated validation. Both lanes produce the same three-file open
 release format; neither can publish directly to the core or PostgreSQL.
 
@@ -39,10 +39,10 @@ archives, symlinks and executable content are rejected.
 
 The manifest validates against `contracts/managed-batch.schema.json` and declares:
 
-- stable `batch_id`, `provider` (`Eurostat` or `JRC`, one per batch) and `channel: managed_public`;
+- stable `batch_id`, `provider` (`Eurostat`, `JRC` or `ECB`, one per batch) and `channel: managed_public`;
 - generation timestamp and geography contract `NUTS/2024`;
-- SHA-256 of the provider's pinned configuration, `contracts/eurostat-datasets.json` or
-  `contracts/jrc-datasets.json`;
+- SHA-256 of the provider's pinned configuration, `contracts/eurostat-datasets.json`,
+  `contracts/jrc-datasets.json` or `contracts/ecb-datasets.json`;
 - every changed dataset, candidate and previous version, exact directory and row count;
 - SHA-256 of `dataset.yaml`, `observations.csv` and `provenance.json`;
 - regression counts, coverage loss, removal fraction and an empty failure list;
@@ -87,7 +87,10 @@ SHA-256, observations SHA-256, upstream update/label and explicit normalization 
 values and flags. The JRC's (`contracts/jrc-provenance.schema.json`) records the catalogue record and
 edition the file was found through, the licence read from the catalogue at that run (CC BY 4.0 or the
 Commission reuse decision, nothing else), the file URL and SHA-256, the SHA-256 of the configuration that
-read it, and the codes left out of the NUTS 2024 contract.
+read it, and the codes left out of the NUTS 2024 contract. The ECB's (`contracts/ecb-provenance.schema.json`)
+records the SDMX query on the ECB Data Portal and the SHA-256 of its answer, the SHA-256 of the configuration,
+the licence (the ESCB statistics reuse policy, nothing else), the count of observations by ECB status (`A`,
+`E` only) and the codes left out.
 
 ## Trusted contract copies
 
@@ -96,8 +99,8 @@ read it, and the codes left out of the NUTS 2024 contract.
 - the dataset JSON Schema;
 - the NUTS 2024 unit lookup;
 - the managed batch JSON Schema;
-- the Eurostat and JRC provenance JSON Schemas;
-- the Eurostat and JRC importer configurations.
+- the Eurostat, JRC and ECB provenance JSON Schemas;
+- the Eurostat, JRC and ECB importer configurations.
 
 The accepted providers and the contract files of each are listed in `contracts/governance.yaml`
 (`managed_batches.providers`).
