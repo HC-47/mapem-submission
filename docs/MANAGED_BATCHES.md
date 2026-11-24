@@ -90,7 +90,9 @@ Commission reuse decision, nothing else), the file URL and SHA-256, the SHA-256 
 read it, and the codes left out of the NUTS 2024 contract. The ECB's (`contracts/ecb-provenance.schema.json`)
 records the SDMX query on the ECB Data Portal and the SHA-256 of its answer, the SHA-256 of the configuration,
 the licence (the ESCB statistics reuse policy, nothing else), the count of observations by ECB status (`A`,
-`E` only) and the codes left out.
+`E` and, for a projection, `F` only) and the codes left out. A projection (`MPD`, the staff macroeconomic
+projections) also records the exercise read (`G26` is June 2026), the year it starts from and how many
+observed or too distant years it left out: only the projected years of the latest exercise are published.
 
 ## Trusted contract copies
 

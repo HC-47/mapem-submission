@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://opengeomap.example/schema/ecb-provenance-1.0.json",
   "title": "Open Geo Data Map ECB provenance",
-  "description": "Where one release of a European Central Bank dataset was read from: the SDMX query and the checksum of its answer, the configuration that read it, the observation statuses carried and the codes left out.",
+  "description": "Where one release of a European Central Bank dataset was read from: the SDMX query and the checksum of its answer, the configuration that read it, the observation statuses carried, the codes left out and, for a projection, the exercise read and what it left out.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -38,7 +38,7 @@
     "series": { "type": "integer", "minimum": 1 },
     "observation_statuses": {
       "type": "object",
-      "propertyNames": { "enum": ["A", "E"] },
+      "propertyNames": { "enum": ["A", "E", "F"] },
       "additionalProperties": { "type": "integer", "minimum": 0 }
     },
     "geography_levels": {
@@ -81,6 +81,17 @@
         "missing_values": { "type": "string", "minLength": 10 },
         "flags": { "type": "string", "minLength": 10 },
         "units": { "type": "string", "minLength": 10 }
+      }
+    },
+    "projection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["exercise", "base_period", "observed_left_out", "beyond_horizon"],
+      "properties": {
+        "exercise": { "type": "string", "pattern": "^[WGSA][0-9]{2}$" },
+        "base_period": { "type": "string", "pattern": "^[0-9]{4}$" },
+        "observed_left_out": { "type": "integer", "minimum": 0 },
+        "beyond_horizon": { "type": "integer", "minimum": 0 }
       }
     }
   }
