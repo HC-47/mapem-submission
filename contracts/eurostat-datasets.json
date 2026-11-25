@@ -31,12 +31,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Age-standardised rates compare regions with different age structures; they are not counts of deaths.",
         "A single year is shown as it is: an exceptional year is visible rather than smoothed. The three-year moving average is a separate dataset."
@@ -1560,7 +1565,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-y-lt65-t",
@@ -1594,12 +1604,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Age-standardised rates compare regions with different age structures; they are not counts of deaths.",
         "A single year is shown as it is: an exceptional year is visible rather than smoothed. The three-year moving average is a separate dataset."
@@ -3123,7 +3138,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-y-ge65-t",
@@ -3157,12 +3177,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Age-standardised rates compare regions with different age structures; they are not counts of deaths.",
         "A single year is shown as it is: an exceptional year is visible rather than smoothed. The three-year moving average is a separate dataset."
@@ -4686,7 +4711,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-total-m",
@@ -4720,12 +4750,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Age-standardised rates compare regions with different age structures; they are not counts of deaths.",
         "A single year is shown as it is: an exceptional year is visible rather than smoothed. The three-year moving average is a separate dataset."
@@ -6249,7 +6284,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-y-lt65-m",
@@ -6283,12 +6323,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Age-standardised rates compare regions with different age structures; they are not counts of deaths.",
         "A single year is shown as it is: an exceptional year is visible rather than smoothed. The three-year moving average is a separate dataset."
@@ -7812,7 +7857,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-y-ge65-m",
@@ -7846,12 +7896,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Age-standardised rates compare regions with different age structures; they are not counts of deaths.",
         "A single year is shown as it is: an exceptional year is visible rather than smoothed. The three-year moving average is a separate dataset."
@@ -9375,7 +9430,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-total-f",
@@ -9409,12 +9469,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Age-standardised rates compare regions with different age structures; they are not counts of deaths.",
         "A single year is shown as it is: an exceptional year is visible rather than smoothed. The three-year moving average is a separate dataset."
@@ -10938,7 +11003,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-y-lt65-f",
@@ -10972,12 +11042,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Age-standardised rates compare regions with different age structures; they are not counts of deaths.",
         "A single year is shown as it is: an exceptional year is visible rather than smoothed. The three-year moving average is a separate dataset."
@@ -12501,7 +12576,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-y-ge65-f",
@@ -12535,12 +12615,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Age-standardised rates compare regions with different age structures; they are not counts of deaths.",
         "A single year is shown as it is: an exceptional year is visible rather than smoothed. The three-year moving average is a separate dataset."
@@ -14064,7 +14149,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-population-density",
@@ -14096,9 +14186,14 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["densita di popolazione", "population concentration"],
+      "aliases": {
+        "en": ["population concentration"],
+        "it": ["densità di popolazione"]
+      },
       "topics": ["demography", "population", "urbanisation"],
-      "example_questions": ["Quali regioni europee hanno la densita di popolazione piu alta?"],
+      "example_questions": {
+        "it": ["Quali regioni europee hanno la densità di popolazione più alta?"]
+      },
       "caveats": ["Annual regional density is not a real-time population count."]
     },
     "created_at": "2026-09-18",
@@ -14160,12 +14255,16 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["struttura della popolazione", "eta mediana", "indice di dipendenza"],
+      "aliases": {
+        "it": ["struttura della popolazione", "età mediana", "indice di dipendenza"]
+      },
       "topics": ["demography", "ageing", "population structure"],
-      "example_questions": [
-        "Quali regioni europee hanno la popolazione piu anziana?",
-        "Dove e piu alto l'indice di dipendenza degli anziani?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la popolazione più anziana?",
+          "Dove è più alto l'indice di dipendenza degli anziani?"
+        ]
+      },
       "caveats": [
         "Median age is not the arithmetic mean age.",
         "Indicators of this table are published in different units; each one states its own."
@@ -14829,7 +14928,8 @@
         "code": "YOUNGDEP4"
       }
     ],
-    "headline": "medagepop"
+    "headline": "medagepop",
+    "opens_subject": true
   },
   {
     "id": "eurostat-regional-gdp",
@@ -14861,11 +14961,14 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["PIL regionale", "regional GDP", "PIL pro capite"],
+      "aliases": {
+        "en": ["regional GDP", "GDP per capita"],
+        "it": ["PIL regionale", "PIL pro capite"]
+      },
       "topics": ["economy", "regional wealth", "purchasing power"],
-      "example_questions": [
-        "Quali regioni hanno il PIL pro capite piu alto rispetto alla media UE?"
-      ],
+      "example_questions": {
+        "it": ["Quali regioni hanno il PIL pro capite più alto rispetto alla media UE?"]
+      },
       "caveats": [
         "Totals and per-inhabitant values are not comparable with each other across regions.",
         "The EU27 index is a relative measure where the average equals 100, not a currency amount."
@@ -14909,6 +15012,10 @@
         "definition": {
           "upstream_unit": "EUR_HAB",
           "unit": "EUR_HAB"
+        },
+        "aliases": {
+          "en": ["GDP per capita"],
+          "it": ["PIL pro capite"]
         },
         "code": "EUR_HAB",
         "primary": true
@@ -14995,12 +15102,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["notti turistiche", "tourism overnight stays", "presenze turistiche"],
+      "aliases": {
+        "en": ["tourism overnight stays"],
+        "it": ["notti turistiche", "presenze turistiche"]
+      },
       "topics": ["tourism", "hospitality", "overnight stays"],
-      "example_questions": [
-        "Quali regioni europee registrano piu notti turistiche?",
-        "Dove pesano di piu i campeggi rispetto agli alberghi?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee registrano più notti turistiche?",
+          "Dove pesano di più i campeggi rispetto agli alberghi?"
+        ]
+      },
       "caveats": [
         "Counts cover reported tourist accommodation establishments, not all visitor nights.",
         "A count is not comparable between regions of very different size."
@@ -15105,7 +15217,12 @@
         "parent": "i552-i553"
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-dom-pch-pre",
@@ -15137,12 +15254,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["notti turistiche", "tourism overnight stays", "presenze turistiche"],
+      "aliases": {
+        "en": ["tourism overnight stays"],
+        "it": ["notti turistiche", "presenze turistiche"]
+      },
       "topics": ["tourism", "hospitality", "overnight stays"],
-      "example_questions": [
-        "Quali regioni europee registrano piu notti turistiche?",
-        "Dove pesano di piu i campeggi rispetto agli alberghi?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee registrano più notti turistiche?",
+          "Dove pesano di più i campeggi rispetto agli alberghi?"
+        ]
+      },
       "caveats": [
         "Counts cover reported tourist accommodation establishments, not all visitor nights.",
         "A count is not comparable between regions of very different size."
@@ -15247,7 +15369,12 @@
         "parent": "i552-i553"
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-dom-pc-tot",
@@ -15279,12 +15406,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["notti turistiche", "tourism overnight stays", "presenze turistiche"],
+      "aliases": {
+        "en": ["tourism overnight stays"],
+        "it": ["notti turistiche", "presenze turistiche"]
+      },
       "topics": ["tourism", "hospitality", "overnight stays"],
-      "example_questions": [
-        "Quali regioni europee registrano piu notti turistiche?",
-        "Dove pesano di piu i campeggi rispetto agli alberghi?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee registrano più notti turistiche?",
+          "Dove pesano di più i campeggi rispetto agli alberghi?"
+        ]
+      },
       "caveats": [
         "Counts cover reported tourist accommodation establishments, not all visitor nights.",
         "A count is not comparable between regions of very different size."
@@ -15337,7 +15469,12 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-for",
@@ -15369,12 +15506,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["notti turistiche", "tourism overnight stays", "presenze turistiche"],
+      "aliases": {
+        "en": ["tourism overnight stays"],
+        "it": ["notti turistiche", "presenze turistiche"]
+      },
       "topics": ["tourism", "hospitality", "overnight stays"],
-      "example_questions": [
-        "Quali regioni europee registrano piu notti turistiche?",
-        "Dove pesano di piu i campeggi rispetto agli alberghi?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee registrano più notti turistiche?",
+          "Dove pesano di più i campeggi rispetto agli alberghi?"
+        ]
+      },
       "caveats": [
         "Counts cover reported tourist accommodation establishments, not all visitor nights.",
         "A count is not comparable between regions of very different size."
@@ -15479,7 +15621,12 @@
         "parent": "i552-i553"
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-for-pch-pre",
@@ -15511,12 +15658,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["notti turistiche", "tourism overnight stays", "presenze turistiche"],
+      "aliases": {
+        "en": ["tourism overnight stays"],
+        "it": ["notti turistiche", "presenze turistiche"]
+      },
       "topics": ["tourism", "hospitality", "overnight stays"],
-      "example_questions": [
-        "Quali regioni europee registrano piu notti turistiche?",
-        "Dove pesano di piu i campeggi rispetto agli alberghi?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee registrano più notti turistiche?",
+          "Dove pesano di più i campeggi rispetto agli alberghi?"
+        ]
+      },
       "caveats": [
         "Counts cover reported tourist accommodation establishments, not all visitor nights.",
         "A count is not comparable between regions of very different size."
@@ -15621,7 +15773,12 @@
         "parent": "i552-i553"
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-for-pc-tot",
@@ -15653,12 +15810,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["notti turistiche", "tourism overnight stays", "presenze turistiche"],
+      "aliases": {
+        "en": ["tourism overnight stays"],
+        "it": ["notti turistiche", "presenze turistiche"]
+      },
       "topics": ["tourism", "hospitality", "overnight stays"],
-      "example_questions": [
-        "Quali regioni europee registrano piu notti turistiche?",
-        "Dove pesano di piu i campeggi rispetto agli alberghi?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee registrano più notti turistiche?",
+          "Dove pesano di più i campeggi rispetto agli alberghi?"
+        ]
+      },
       "caveats": [
         "Counts cover reported tourist accommodation establishments, not all visitor nights.",
         "A count is not comparable between regions of very different size."
@@ -15711,7 +15873,12 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights",
@@ -15743,12 +15910,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["notti turistiche", "tourism overnight stays", "presenze turistiche"],
+      "aliases": {
+        "en": ["tourism overnight stays"],
+        "it": ["notti turistiche", "presenze turistiche"]
+      },
       "topics": ["tourism", "hospitality", "overnight stays"],
-      "example_questions": [
-        "Quali regioni europee registrano piu notti turistiche?",
-        "Dove pesano di piu i campeggi rispetto agli alberghi?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee registrano più notti turistiche?",
+          "Dove pesano di più i campeggi rispetto agli alberghi?"
+        ]
+      },
       "caveats": [
         "Counts cover reported tourist accommodation establishments, not all visitor nights.",
         "A count is not comparable between regions of very different size."
@@ -15853,7 +16025,12 @@
         "parent": "i552-i553"
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-pch-pre",
@@ -15885,12 +16062,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["notti turistiche", "tourism overnight stays", "presenze turistiche"],
+      "aliases": {
+        "en": ["tourism overnight stays"],
+        "it": ["notti turistiche", "presenze turistiche"]
+      },
       "topics": ["tourism", "hospitality", "overnight stays"],
-      "example_questions": [
-        "Quali regioni europee registrano piu notti turistiche?",
-        "Dove pesano di piu i campeggi rispetto agli alberghi?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee registrano più notti turistiche?",
+          "Dove pesano di più i campeggi rispetto agli alberghi?"
+        ]
+      },
       "caveats": [
         "Counts cover reported tourist accommodation establishments, not all visitor nights.",
         "A count is not comparable between regions of very different size."
@@ -15995,7 +16177,12 @@
         "parent": "i552-i553"
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-pc-tot",
@@ -16027,12 +16214,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["notti turistiche", "tourism overnight stays", "presenze turistiche"],
+      "aliases": {
+        "en": ["tourism overnight stays"],
+        "it": ["notti turistiche", "presenze turistiche"]
+      },
       "topics": ["tourism", "hospitality", "overnight stays"],
-      "example_questions": [
-        "Quali regioni europee registrano piu notti turistiche?",
-        "Dove pesano di piu i campeggi rispetto agli alberghi?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee registrano più notti turistiche?",
+          "Dove pesano di più i campeggi rispetto agli alberghi?"
+        ]
+      },
       "caveats": [
         "Counts cover reported tourist accommodation establishments, not all visitor nights.",
         "A count is not comparable between regions of very different size."
@@ -16085,7 +16277,12 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-p-km2",
@@ -16117,12 +16314,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["notti turistiche", "tourism overnight stays", "presenze turistiche"],
+      "aliases": {
+        "en": ["tourism overnight stays"],
+        "it": ["notti turistiche", "presenze turistiche"]
+      },
       "topics": ["tourism", "hospitality", "overnight stays"],
-      "example_questions": [
-        "Quali regioni europee registrano piu notti turistiche?",
-        "Dove pesano di piu i campeggi rispetto agli alberghi?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee registrano più notti turistiche?",
+          "Dove pesano di più i campeggi rispetto agli alberghi?"
+        ]
+      },
       "caveats": [
         "Counts cover reported tourist accommodation establishments, not all visitor nights.",
         "A count is not comparable between regions of very different size."
@@ -16175,7 +16377,12 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-p-thab",
@@ -16207,12 +16414,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["notti turistiche", "tourism overnight stays", "presenze turistiche"],
+      "aliases": {
+        "en": ["tourism overnight stays"],
+        "it": ["notti turistiche", "presenze turistiche"]
+      },
       "topics": ["tourism", "hospitality", "overnight stays"],
-      "example_questions": [
-        "Quali regioni europee registrano piu notti turistiche?",
-        "Dove pesano di piu i campeggi rispetto agli alberghi?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee registrano più notti turistiche?",
+          "Dove pesano di più i campeggi rispetto agli alberghi?"
+        ]
+      },
       "caveats": [
         "Counts cover reported tourist accommodation establishments, not all visitor nights.",
         "A count is not comparable between regions of very different size."
@@ -16265,7 +16477,12 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-env-wasfac",
@@ -16350,7 +16567,8 @@
         "code": "RCV_E",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "FAC"
   },
   {
     "id": "eurostat-env-wasfac-cap-rst",
@@ -16459,7 +16677,8 @@
         "code": "DSP_LIN",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "FAC"
   },
   {
     "id": "eurostat-env-wasfac-fac",
@@ -16629,7 +16848,8 @@
         "primary": true
       }
     ],
-    "headline": "rcv-r"
+    "headline": "rcv-r",
+    "opening_variant": "FAC"
   },
   {
     "id": "eurostat-env-wasfac-fac-cl",
@@ -16726,7 +16946,8 @@
         "code": "DSP_LIN",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "FAC"
   },
   {
     "id": "eurostat-aact-ali01-r",
@@ -16789,7 +17010,8 @@
       "definition": {
         "upstream_unit": "THS_AWU"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-aact-ali02-r",
@@ -17159,7 +17381,8 @@
         "primary": true
       }
     ],
-    "headline": "dw"
+    "headline": "dw",
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21dwob-r3-building",
@@ -17236,7 +17459,8 @@
           "building": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All types of building"
       },
       {
         "id": "res",
@@ -17323,7 +17547,11 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21dwob-r3-building-dw-oc",
@@ -17400,7 +17628,8 @@
           "building": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All types of building"
       },
       {
         "id": "res",
@@ -17487,7 +17716,11 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21dwob-r3-building-dw-noc",
@@ -17564,7 +17797,8 @@
           "building": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All types of building"
       },
       {
         "id": "res",
@@ -17651,7 +17885,11 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21dwob-r3-building-unk",
@@ -17728,7 +17966,8 @@
           "building": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All types of building"
       },
       {
         "id": "res",
@@ -17815,7 +18054,11 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21dwop-r3",
@@ -18002,7 +18245,8 @@
           "y_const": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All construction periods"
       },
       {
         "id": "y-lt1919",
@@ -18131,7 +18375,10 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    }
   },
   {
     "id": "eurostat-cens-21dwop-r3-y-const-dw-oc",
@@ -18208,7 +18455,8 @@
           "y_const": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All construction periods"
       },
       {
         "id": "y-lt1919",
@@ -18337,7 +18585,10 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    }
   },
   {
     "id": "eurostat-cens-21dwop-r3-y-const-dw-noc",
@@ -18414,7 +18665,8 @@
           "y_const": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All construction periods"
       },
       {
         "id": "y-lt1919",
@@ -18543,7 +18795,10 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    }
   },
   {
     "id": "eurostat-cens-21dwop-r3-y-const-unk",
@@ -18620,7 +18875,8 @@
           "y_const": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All construction periods"
       },
       {
         "id": "y-lt1919",
@@ -18749,7 +19005,10 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    }
   },
   {
     "id": "eurostat-demo-r-find2",
@@ -18933,7 +19192,8 @@
         "primary": true
       }
     ],
-    "headline": "totferrt"
+    "headline": "totferrt",
+    "opens_subject": true
   },
   {
     "id": "eurostat-demo-r-minf",
@@ -19124,7 +19384,8 @@
           "sex": "T"
         },
         "code": "T",
-        "primary": true
+        "primary": true,
+        "short_name": "Both sexes"
       },
       {
         "id": "m",
@@ -20379,7 +20640,8 @@
       "definition": {
         "upstream_unit": "PC"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-ilc-lvho04n",
@@ -21061,7 +21323,8 @@
       "definition": {
         "upstream_unit": "PC"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-inn-cis13-bas-ip-r",
@@ -22110,7 +22373,8 @@
           "deg_urb": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All households"
       },
       {
         "id": "deg1",
@@ -22149,7 +22413,8 @@
         "code": "DEG3"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opens_subject": true
   },
   {
     "id": "eurostat-nama-10r-3popgdp",
@@ -22530,7 +22795,8 @@
         "code": "L0008"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opens_subject": true
   },
   {
     "id": "eurostat-tepsr-lm220",
@@ -22746,7 +23012,8 @@
           "c_resid": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All guests"
       }
     ],
     "headline": "total"
@@ -22900,7 +23167,8 @@
           "c_resid": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All world regions"
       },
       {
         "id": "wrl-nal",
@@ -23528,7 +23796,8 @@
           "sex": "T"
         },
         "code": "T",
-        "primary": true
+        "primary": true,
+        "short_name": "Both sexes"
       },
       {
         "id": "m",
@@ -23685,7 +23954,8 @@
         "code": "RL_TGE2"
       }
     ],
-    "headline": "rl"
+    "headline": "rl",
+    "opening_variant": "KM_TKM2"
   },
   {
     "id": "eurostat-tran-r-net-km-tkm2",
@@ -23771,7 +24041,8 @@
         "primary": true
       }
     ],
-    "headline": "rl"
+    "headline": "rl",
+    "opening_variant": "KM_TKM2"
   },
   {
     "id": "eurostat-cult-emp-reg",
@@ -23837,7 +24108,8 @@
       "unit": "% of total employment",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC_EMP"
   },
   {
     "id": "eurostat-cult-emp-reg-ths-per",
@@ -23903,7 +24175,8 @@
       "unit": "thousand persons",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC_EMP"
   },
   {
     "id": "eurostat-ef-lf-fam-sh",
@@ -23971,7 +24244,8 @@
       "unit": "holdings",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-lf-fam-sh-pc",
@@ -24039,7 +24313,8 @@
       "unit": "%",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ilc-lvhl21",
@@ -24105,7 +24380,8 @@
       "unit": "%",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-tran-sf-roadnu",
@@ -24171,7 +24447,8 @@
       "unit": "number",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-tran-sf-roadnu-p-mhab",
@@ -24237,7 +24514,8 @@
       "unit": "per 1,000,000 inhabitants",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-aei-fm-usefert",
@@ -25858,7 +26136,8 @@
           "age": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All ages of the mother"
       },
       {
         "id": "y10-14",
@@ -26408,7 +26687,8 @@
           "age": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All ages of the mother"
       },
       {
         "id": "y10-14",
@@ -26555,7 +26835,8 @@
         "code": "UNK"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opens_subject": true
   },
   {
     "id": "eurostat-demo-r-frate2",
@@ -26622,7 +26903,8 @@
           "age": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All ages of the mother"
       },
       {
         "id": "y10-14",
@@ -27264,7 +27546,8 @@
       "definition": {
         "upstream_unit": "NR"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-demo-r-mlifexp",
@@ -27297,7 +27580,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["speranza di vita", "aspettativa di vita"]
+      },
       "topics": ["demography"],
       "example_questions": [],
       "caveats": []
@@ -28674,7 +28959,10 @@
         "primary": true
       }
     ],
-    "headline": "y-lt1"
+    "headline": "y-lt1",
+    "dimension_labels": {
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-demo-r-mlifexp-m",
@@ -28707,7 +28995,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["speranza di vita", "aspettativa di vita"]
+      },
       "topics": ["demography"],
       "example_questions": [],
       "caveats": []
@@ -30084,7 +30374,10 @@
         "primary": true
       }
     ],
-    "headline": "y-lt1"
+    "headline": "y-lt1",
+    "dimension_labels": {
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-demo-r-mlifexp-f",
@@ -30117,7 +30410,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["speranza di vita", "aspettativa di vita"]
+      },
       "topics": ["demography"],
       "example_questions": [],
       "caveats": []
@@ -31494,7 +31789,10 @@
         "primary": true
       }
     ],
-    "headline": "y-lt1"
+    "headline": "y-lt1",
+    "dimension_labels": {
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-demo-r-pjanaggr3",
@@ -31559,7 +31857,8 @@
       "definition": {
         "upstream_unit": "NR"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-demo-r-pjangroup",
@@ -32570,7 +32869,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-29"
+    "headline": "y15-29",
+    "opens_subject": true
   },
   {
     "id": "eurostat-edat-lfse-33",
@@ -32782,7 +33082,7 @@
         "primary": true
       }
     ],
-    "headline": "y15-34"
+    "headline": "y15-29"
   },
   {
     "id": "eurostat-edat-lfse-38",
@@ -32895,7 +33195,7 @@
         "primary": true
       }
     ],
-    "headline": "y15-34"
+    "headline": "y15-29"
   },
   {
     "id": "eurostat-educ-uoe-enra11",
@@ -33115,7 +33415,11 @@
         "primary": true
       }
     ],
-    "headline": "ed0-8"
+    "headline": "ed0-8",
+    "dimension_labels": {
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-educ-uoe-enra11-m",
@@ -33335,7 +33639,11 @@
         "primary": true
       }
     ],
-    "headline": "ed0-8"
+    "headline": "ed0-8",
+    "dimension_labels": {
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-educ-uoe-enra11-f",
@@ -33555,7 +33863,11 @@
         "primary": true
       }
     ],
-    "headline": "ed0-8"
+    "headline": "ed0-8",
+    "dimension_labels": {
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-educ-uoe-enra12",
@@ -34596,7 +34908,8 @@
     },
     "spliced_filters": {
       "icd10": ["A-R_V-Y"]
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-hlth-cd-ycdr2",
@@ -35100,12 +35413,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Each value is the mean of three consecutive years, so consecutive values share two years: a year-on-year difference is not an annual change.",
         "The annual series is the dataset eurostat-causes-of-death."
@@ -36629,7 +36947,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-y-lt65-t",
@@ -36663,12 +36985,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Each value is the mean of three consecutive years, so consecutive values share two years: a year-on-year difference is not an annual change.",
         "The annual series is the dataset eurostat-causes-of-death."
@@ -38192,7 +38519,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-y-ge65-t",
@@ -38226,12 +38557,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Each value is the mean of three consecutive years, so consecutive values share two years: a year-on-year difference is not an annual change.",
         "The annual series is the dataset eurostat-causes-of-death."
@@ -39755,7 +40091,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-total-m",
@@ -39789,12 +40129,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Each value is the mean of three consecutive years, so consecutive values share two years: a year-on-year difference is not an annual change.",
         "The annual series is the dataset eurostat-causes-of-death."
@@ -41318,7 +41663,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-y-lt65-m",
@@ -41352,12 +41701,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Each value is the mean of three consecutive years, so consecutive values share two years: a year-on-year difference is not an annual change.",
         "The annual series is the dataset eurostat-causes-of-death."
@@ -42881,7 +43235,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-y-ge65-m",
@@ -42915,12 +43273,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Each value is the mean of three consecutive years, so consecutive values share two years: a year-on-year difference is not an annual change.",
         "The annual series is the dataset eurostat-causes-of-death."
@@ -44444,7 +44807,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-total-f",
@@ -44478,12 +44845,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Each value is the mean of three consecutive years, so consecutive values share two years: a year-on-year difference is not an annual change.",
         "The annual series is the dataset eurostat-causes-of-death."
@@ -46007,7 +46379,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-y-lt65-f",
@@ -46041,12 +46417,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Each value is the mean of three consecutive years, so consecutive values share two years: a year-on-year difference is not an annual change.",
         "The annual series is the dataset eurostat-causes-of-death."
@@ -47570,7 +47951,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-y-ge65-f",
@@ -47604,12 +47989,17 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": ["mortalita per causa", "cause of death rates", "standardised mortality"],
+      "aliases": {
+        "en": ["cause of death rates", "standardised mortality"],
+        "it": ["mortalità per causa"]
+      },
       "topics": ["health", "mortality", "public health"],
-      "example_questions": [
-        "Quali regioni europee hanno la mortalita per tumore piu alta?",
-        "Come varia la mortalita per malattie cardiovascolari fra le regioni?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quali regioni europee hanno la mortalità per tumore più alta?",
+          "Come varia la mortalità per malattie cardiovascolari fra le regioni?"
+        ]
+      },
       "caveats": [
         "Each value is the mean of three consecutive years, so consecutive values share two years: a year-on-year difference is not an annual change.",
         "The annual series is the dataset eurostat-causes-of-death."
@@ -49133,7 +49523,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-hlth-silc-08b-r",
@@ -50009,7 +50403,7 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y20-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2emprt",
@@ -50041,7 +50435,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di occupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -50084,6 +50480,10 @@
           "sex": "T",
           "age": "Y15-24"
         },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
+        },
         "code": "Y15-24",
         "primary": true
       },
@@ -50242,7 +50642,11 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y20-64",
+    "dimension_labels": {
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfe2emprt-m",
@@ -50274,7 +50678,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di occupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -50317,6 +50723,10 @@
           "sex": "M",
           "age": "Y15-24"
         },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
+        },
         "code": "Y15-24",
         "primary": true
       },
@@ -50475,7 +50885,11 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y20-64",
+    "dimension_labels": {
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfe2emprt-f",
@@ -50507,7 +50921,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di occupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -50550,6 +50966,10 @@
           "sex": "F",
           "age": "Y15-24"
         },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
+        },
         "code": "Y15-24",
         "primary": true
       },
@@ -50708,7 +51128,11 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y20-64",
+    "dimension_labels": {
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfe2emprtn",
@@ -50820,7 +51244,7 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y20-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2en2",
@@ -50957,7 +51381,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfp2acedu",
@@ -51268,7 +51693,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfp2actrc",
@@ -51580,7 +52006,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfp2actrtn",
@@ -51907,7 +52334,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu2gac",
@@ -52344,7 +52772,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt",
@@ -52377,7 +52806,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di disoccupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -52427,6 +52858,10 @@
           "sex": "T",
           "isced11": "TOTAL",
           "age": "Y15-24"
+        },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
         },
         "code": "Y15-24",
         "primary": true
@@ -52567,7 +53002,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed0-2-t",
@@ -52600,7 +53040,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di disoccupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -52650,6 +53092,10 @@
           "sex": "T",
           "isced11": "ED0-2",
           "age": "Y15-24"
+        },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
         },
         "code": "Y15-24",
         "primary": true
@@ -52790,7 +53236,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed3-4-t",
@@ -52823,7 +53274,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di disoccupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -52873,6 +53326,10 @@
           "sex": "T",
           "isced11": "ED3_4",
           "age": "Y15-24"
+        },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
         },
         "code": "Y15-24",
         "primary": true
@@ -53013,7 +53470,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed5-8-t",
@@ -53046,7 +53508,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di disoccupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -53097,6 +53561,10 @@
           "isced11": "ED5-8",
           "age": "Y15-24"
         },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
+        },
         "code": "Y15-24",
         "primary": true
       },
@@ -53236,7 +53704,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-total-m",
@@ -53269,7 +53742,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di disoccupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -53319,6 +53794,10 @@
           "sex": "M",
           "isced11": "TOTAL",
           "age": "Y15-24"
+        },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
         },
         "code": "Y15-24",
         "primary": true
@@ -53459,7 +53938,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed0-2-m",
@@ -53492,7 +53976,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di disoccupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -53543,6 +54029,10 @@
           "isced11": "ED0-2",
           "age": "Y15-24"
         },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
+        },
         "code": "Y15-24",
         "primary": true
       },
@@ -53682,7 +54172,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed3-4-m",
@@ -53715,7 +54210,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di disoccupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -53766,6 +54263,10 @@
           "isced11": "ED3_4",
           "age": "Y15-24"
         },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
+        },
         "code": "Y15-24",
         "primary": true
       },
@@ -53905,7 +54406,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed5-8-m",
@@ -53938,7 +54444,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di disoccupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -54098,7 +54606,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-total-f",
@@ -54131,7 +54644,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di disoccupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -54182,6 +54697,10 @@
           "isced11": "TOTAL",
           "age": "Y15-24"
         },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
+        },
         "code": "Y15-24",
         "primary": true
       },
@@ -54321,7 +54840,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed0-2-f",
@@ -54354,7 +54878,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di disoccupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -54405,6 +54931,10 @@
           "isced11": "ED0-2",
           "age": "Y15-24"
         },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
+        },
         "code": "Y15-24",
         "primary": true
       },
@@ -54544,7 +55074,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed3-4-f",
@@ -54577,7 +55112,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di disoccupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -54628,6 +55165,10 @@
           "isced11": "ED3_4",
           "age": "Y15-24"
         },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
+        },
         "code": "Y15-24",
         "primary": true
       },
@@ -54767,7 +55308,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed5-8-f",
@@ -54800,7 +55346,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["tasso di disoccupazione"]
+      },
       "topics": ["labour market"],
       "example_questions": [],
       "caveats": []
@@ -54850,6 +55398,10 @@
           "sex": "F",
           "isced11": "ED5-8",
           "age": "Y15-24"
+        },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
         },
         "code": "Y15-24",
         "primary": true
@@ -54975,7 +55527,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfur2gac",
@@ -56028,7 +56585,8 @@
         "code": "GT19"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opens_subject": true
   },
   {
     "id": "eurostat-road-go-na-ru3g",
@@ -56756,9 +57314,15 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "en": ["youth unemployment"],
+        "it": ["disoccupazione giovanile"]
+      },
       "topics": ["education"],
-      "example_questions": [],
+      "example_questions": {
+        "en": ["Where in Europe is youth unemployment highest?"],
+        "it": ["Dove è più alta la disoccupazione giovanile in Europa?"]
+      },
       "caveats": []
     },
     "created_at": "2026-09-22",
@@ -56802,6 +57366,10 @@
         "definition": {
           "upstream_unit": "PC",
           "age": "Y15-24"
+        },
+        "aliases": {
+          "en": ["youth"],
+          "it": ["giovani", "giovanile"]
         },
         "code": "Y15-24",
         "primary": true
@@ -56859,7 +57427,7 @@
         "primary": true
       }
     ],
-    "headline": "y15-29"
+    "headline": "y15-24"
   },
   {
     "id": "eurostat-yth-empl-140",
@@ -57266,7 +57834,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-total-sal",
@@ -57538,7 +58111,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-total-nsal",
@@ -57810,7 +58388,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-pt-emp",
@@ -58082,7 +58665,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-pt-sal",
@@ -58354,7 +58942,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-pt-nsal",
@@ -58626,7 +59219,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-ft-emp",
@@ -58898,7 +59496,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-ft-sal",
@@ -59170,7 +59773,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-ft-nsal",
@@ -59442,7 +60050,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-total-emp",
@@ -59714,7 +60327,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-total-sal",
@@ -59986,7 +60604,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-total-nsal",
@@ -60258,7 +60881,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-pt-emp",
@@ -60530,7 +61158,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-pt-sal",
@@ -60802,7 +61435,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-pt-nsal",
@@ -61074,7 +61712,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-ft-emp",
@@ -61346,7 +61989,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-ft-sal",
@@ -61618,7 +62266,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-ft-nsal",
@@ -61890,7 +62543,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-total-emp",
@@ -62162,7 +62820,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-total-sal",
@@ -62434,7 +63097,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-total-nsal",
@@ -62706,7 +63374,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-pt-emp",
@@ -62978,7 +63651,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-pt-sal",
@@ -63250,7 +63928,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-pt-nsal",
@@ -63506,7 +64189,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-ft-emp",
@@ -63778,7 +64466,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-ft-sal",
@@ -64050,7 +64743,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-ft-nsal",
@@ -64306,7 +65004,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-hrst-st-rcat",
@@ -64429,7 +65132,8 @@
         "primary": true
       }
     ],
-    "headline": "hrst"
+    "headline": "hrst",
+    "opening_variant": "PC_ACT"
   },
   {
     "id": "eurostat-hrst-st-rcat-pc-pop",
@@ -64552,7 +65256,8 @@
         "primary": true
       }
     ],
-    "headline": "hrst"
+    "headline": "hrst",
+    "opening_variant": "PC_ACT"
   },
   {
     "id": "eurostat-hrst-st-rcat-ths-per",
@@ -64675,7 +65380,8 @@
         "primary": true
       }
     ],
-    "headline": "hrst"
+    "headline": "hrst",
+    "opening_variant": "PC_ACT"
   },
   {
     "id": "eurostat-isoc-r-blt12-i",
@@ -64797,7 +65503,8 @@
         "primary": true
       }
     ],
-    "headline": "i-blt12"
+    "headline": "i-blt12",
+    "opening_variant": "PC_IND"
   },
   {
     "id": "eurostat-isoc-r-blt12-i-pc-ind-ilt12",
@@ -64919,7 +65626,8 @@
         "primary": true
       }
     ],
-    "headline": "i-blt12"
+    "headline": "i-blt12",
+    "opening_variant": "PC_IND"
   },
   {
     "id": "eurostat-isoc-r-blt12-i-pc-ind-iu3",
@@ -64992,7 +65700,8 @@
         "code": "I_BUY3",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "PC_IND"
   },
   {
     "id": "eurostat-edat-lfse-04-y20-24-t",
@@ -65155,7 +65864,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y25-34-t",
@@ -65318,7 +66031,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04",
@@ -65481,7 +66198,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y30-34-t",
@@ -65644,7 +66365,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y20-24-m",
@@ -65807,7 +66532,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y25-34-m",
@@ -65970,7 +66699,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y25-64-m",
@@ -66133,7 +66866,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y30-34-m",
@@ -66296,7 +67033,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y20-24-f",
@@ -66459,7 +67200,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y25-34-f",
@@ -66622,7 +67367,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y25-64-f",
@@ -66785,7 +67534,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y30-34-f",
@@ -66948,7 +67701,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-ef-m-sex-sh",
@@ -67020,7 +67777,8 @@
           "sex": "T"
         },
         "code": "T",
-        "primary": true
+        "primary": true,
+        "short_name": "Both sexes"
       },
       {
         "id": "m",
@@ -67045,7 +67803,8 @@
         "code": "F"
       }
     ],
-    "headline": "t"
+    "headline": "t",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-m-sex-sh-pc",
@@ -67117,7 +67876,8 @@
           "sex": "T"
         },
         "code": "T",
-        "primary": true
+        "primary": true,
+        "short_name": "Both sexes"
       },
       {
         "id": "m",
@@ -67142,7 +67902,8 @@
         "code": "F"
       }
     ],
-    "headline": "t"
+    "headline": "t",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-m-so-sh",
@@ -67214,7 +67975,8 @@
           "so_eur": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All economic sizes"
       },
       {
         "id": "ke-lt8",
@@ -67239,7 +68001,8 @@
         "code": "KE_GE8"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-m-so-sh-pc",
@@ -67311,7 +68074,8 @@
           "so_eur": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All economic sizes"
       },
       {
         "id": "ke-lt8",
@@ -67336,7 +68100,8 @@
         "code": "KE_GE8"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-mp-training-sh",
@@ -67408,7 +68173,8 @@
           "training": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All levels of training"
       },
       {
         "id": "basic",
@@ -67444,7 +68210,8 @@
         "code": "FULL"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-mp-training-sh-pc",
@@ -67516,7 +68283,8 @@
           "training": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All levels of training"
       },
       {
         "id": "basic",
@@ -67552,7 +68320,8 @@
         "code": "FULL"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-m-age-sh",
@@ -67624,7 +68393,8 @@
           "age": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All ages of the manager"
       },
       {
         "id": "y-lt35",
@@ -67660,7 +68430,8 @@
         "code": "Y_GE55"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-m-age-sh-pc",
@@ -67732,7 +68503,8 @@
           "age": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All ages of the manager"
       },
       {
         "id": "y-lt35",
@@ -67768,7 +68540,8 @@
         "code": "Y_GE55"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-isoc-r-cux-i",
@@ -67929,7 +68702,8 @@
         "primary": true
       }
     ],
-    "headline": "car"
+    "headline": "car",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-tran-r-elvehst-pc",
@@ -68028,7 +68802,8 @@
         "primary": true
       }
     ],
-    "headline": "car"
+    "headline": "car",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-apri-lrnt",
@@ -68101,7 +68876,8 @@
         "code": "ARA_J0000",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-apri-lrnt-nac-ha",
@@ -68174,7 +68950,8 @@
         "code": "ARA_J0000",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-tour-occ-anor2",
@@ -68329,7 +69106,8 @@
         "code": "I_IUGOV1",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "PC_IND"
   },
   {
     "id": "eurostat-isoc-r-gov-i-pc-ind-ilt12",
@@ -68402,7 +69180,8 @@
         "code": "I_IUGOV1",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "PC_IND"
   },
   {
     "id": "eurostat-apri-lprc",
@@ -68488,7 +69267,8 @@
         "primary": true
       }
     ],
-    "headline": "ara"
+    "headline": "ara",
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-apri-lprc-nac-ha",
@@ -68574,7 +69354,8 @@
         "primary": true
       }
     ],
-    "headline": "ara"
+    "headline": "ara",
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-ef-lu-ofirrig",
@@ -68671,7 +69452,8 @@
         "code": "I03B"
       }
     ],
-    "headline": "i03a"
+    "headline": "i03a",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-ef-lu-ofirrig-hld",
@@ -68779,7 +69561,8 @@
         "code": "I03B"
       }
     ],
-    "headline": "i03a"
+    "headline": "i03a",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-lan-lcv-fao",
@@ -68886,7 +69669,8 @@
         "code": "OWL_NFAO"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-lan-lcv-fao-pc",
@@ -68993,7 +69777,8 @@
         "code": "OWL_NFAO"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-nama-10r-2rlp",
@@ -69066,7 +69851,8 @@
         "code": "RLPR_PER",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "PCH_PRE"
   },
   {
     "id": "eurostat-nama-10r-2rlp-pch-pre",
@@ -69139,7 +69925,8 @@
         "code": "RLPR_PER",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "PCH_PRE"
   },
   {
     "id": "eurostat-nama-10r-2gvagr",
@@ -69225,7 +70012,8 @@
         "primary": true
       }
     ],
-    "headline": "b1g"
+    "headline": "b1g",
+    "opening_variant": "PCH_PRE"
   },
   {
     "id": "eurostat-nama-10r-2gvagr-pch-pre",
@@ -69311,7 +70099,8 @@
         "primary": true
       }
     ],
-    "headline": "b1g"
+    "headline": "b1g",
+    "opening_variant": "PCH_PRE"
   },
   {
     "id": "eurostat-tran-r-acci",
@@ -69397,7 +70186,8 @@
         "primary": true
       }
     ],
-    "headline": "kil"
+    "headline": "kil",
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-tran-r-acci-p-mhab",
@@ -69483,7 +70273,8 @@
         "primary": true
       }
     ],
-    "headline": "kil"
+    "headline": "kil",
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-aei-ps-inp",
@@ -69582,7 +70373,8 @@
         "primary": true
       }
     ],
-    "headline": "high-inp"
+    "headline": "high-inp",
+    "opening_variant": "PC_AREA"
   },
   {
     "id": "eurostat-aei-ps-inp-pc-area",
@@ -69681,7 +70473,8 @@
         "primary": true
       }
     ],
-    "headline": "high-inp"
+    "headline": "high-inp",
+    "opening_variant": "PC_AREA"
   },
   {
     "id": "eurostat-nama-10r-2nlp",
@@ -69754,7 +70547,8 @@
         "code": "NLPR_PER",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-nama-10r-2nlp-nac",
@@ -69827,7 +70621,8 @@
         "code": "NLPR_PER",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-nama-10r-2nlp-pc-eu27-2020-meur-cp",
@@ -69900,7 +70695,8 @@
         "code": "NLPR_PER",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-demo-r-d3area",
@@ -70139,7 +70935,8 @@
         "primary": true
       }
     ],
-    "headline": "i07a-eq-y"
+    "headline": "i07a-eq-y",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-aei-fm-ms-pc",
@@ -70297,7 +71094,8 @@
         "primary": true
       }
     ],
-    "headline": "i07a-eq-y"
+    "headline": "i07a-eq-y",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-educ-regind",
@@ -71360,7 +72158,8 @@
         "code": "U400"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-lan-use-ovw-pc",
@@ -71621,7 +72420,8 @@
         "code": "U400"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-so-mptenure",
@@ -71733,7 +72533,8 @@
         "primary": true
       }
     ],
-    "headline": "agrarea"
+    "headline": "agrarea",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-ef-so-mptenure-hld",
@@ -71845,7 +72646,8 @@
         "primary": true
       }
     ],
-    "headline": "agrarea"
+    "headline": "agrarea",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-rd-e-gerdreg",
@@ -71964,7 +72766,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-rd-e-gerdreg-mio-eur",
@@ -72083,7 +72886,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-rd-e-gerdreg-mio-nac",
@@ -72202,7 +73006,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-rd-e-gerdreg-mio-pps",
@@ -72321,7 +73126,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-rd-e-gerdreg-mio-pps-kp05",
@@ -72440,7 +73246,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-rd-e-gerdreg-pc-gdp",
@@ -72559,7 +73366,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-rd-e-gerdreg-pps-hab-kp05",
@@ -72678,7 +73486,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-cens-11hou-r2",
@@ -72867,7 +73676,8 @@
         "primary": true
       }
     ],
-    "headline": "ht"
+    "headline": "ht",
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-pat-ep-rtec-nr",
@@ -73002,7 +73812,8 @@
         "primary": true
       }
     ],
-    "headline": "ht"
+    "headline": "ht",
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-pat-ep-rtec-p-mact",
@@ -73137,7 +73948,8 @@
         "primary": true
       }
     ],
-    "headline": "ht"
+    "headline": "ht",
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-pat-ep-rtec-p-mhab",
@@ -73272,7 +74084,8 @@
         "primary": true
       }
     ],
-    "headline": "ht"
+    "headline": "ht",
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-tour-occ-arn2",
@@ -73395,7 +74208,9 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "headline_note": "Defaults on total counts, not rates: larger regions show more arrivals.",
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-tour-occ-arn2-pch-pre",
@@ -73518,7 +74333,8 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-ef-so-mporg",
@@ -73743,7 +74559,8 @@
       "definition": {
         "upstream_unit": "NR"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-sla-ga",
@@ -73855,7 +74672,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "opening_variant": "PC_ELF"
   },
   {
     "id": "eurostat-lfst-r-sla-ga-ths-per",
@@ -73967,7 +74785,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "opening_variant": "PC_ELF"
   },
   {
     "id": "eurostat-ef-ov-kvftreg",
@@ -75192,7 +76011,8 @@
         "code": "H20"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-lan-lcv-ovw-pc",
@@ -76069,7 +76889,8 @@
         "code": "H20"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-cens-21dwbno-r3",
@@ -76134,7 +76955,8 @@
       "definition": {
         "upstream_unit": "NR"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-crim-gen-reg",
@@ -76280,7 +77102,8 @@
         "primary": true
       }
     ],
-    "headline": "iccs0101"
+    "headline": "iccs0101",
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-crim-gen-reg-p-hthab",
@@ -76426,7 +77249,8 @@
         "primary": true
       }
     ],
-    "headline": "iccs0101"
+    "headline": "iccs0101",
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-tour-occ-nin2dc",
@@ -76551,7 +77375,9 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "headline_note": "Defaults on total counts, not rates: larger regions show more nights.",
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-tour-occ-nin2dc-pch-pre",
@@ -76676,7 +77502,8 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-ef-poirrig",
@@ -76853,7 +77680,8 @@
         "primary": true
       }
     ],
-    "headline": "hold-hold"
+    "headline": "hold-hold",
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21m-r3",
@@ -79842,7 +80670,8 @@
         "primary": true
       }
     ],
-    "headline": false
+    "headline": false,
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-ef-aux-soc-eur-hd",
@@ -80132,7 +80961,8 @@
         "primary": true
       }
     ],
-    "headline": false
+    "headline": false,
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-ef-aux-soc-eur-hhd",
@@ -80290,7 +81120,8 @@
         "primary": true
       }
     ],
-    "headline": false
+    "headline": false,
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-ef-aux-soc-eur-hive",
@@ -80364,7 +81195,8 @@
         "primary": true
       }
     ],
-    "headline": false
+    "headline": false,
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-ef-aux-soc-eur-hm2",
@@ -80438,7 +81270,8 @@
         "primary": true
       }
     ],
-    "headline": false
+    "headline": false,
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-cens-21ara-r2",
@@ -80914,7 +81747,8 @@
         "primary": true
       }
     ],
-    "headline": "agrarea"
+    "headline": "agrarea",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-ef-lu-pcreg-hld",
@@ -81194,7 +82028,8 @@
         "primary": true
       }
     ],
-    "headline": "agrarea"
+    "headline": "agrarea",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-ef-mporganic",
@@ -82124,7 +82959,8 @@
         "primary": true
       }
     ],
-    "headline": "ren"
+    "headline": "ren",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-ef-mp-renerg-hld",
@@ -82286,7 +83122,8 @@
         "primary": true
       }
     ],
-    "headline": "ren"
+    "headline": "ren",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-ef-ls-ovesu",
@@ -82686,7 +83523,8 @@
         "primary": true
       }
     ],
-    "headline": "hold"
+    "headline": "hold",
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-ef-ls-ovesu-nr",
@@ -83061,7 +83899,8 @@
         "code": "J18",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-ef-ls-ovlsureg",
@@ -83461,7 +84300,8 @@
         "primary": true
       }
     ],
-    "headline": "hold"
+    "headline": "hold",
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-ef-ls-ovlsureg-nr",
@@ -83836,7 +84676,8 @@
         "code": "J18",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-ef-ls-ovaareg",
@@ -84236,7 +85077,8 @@
         "primary": true
       }
     ],
-    "headline": "hold"
+    "headline": "hold",
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-ef-ls-ovaareg-nr",
@@ -84611,7 +85453,8 @@
         "code": "J18",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-cens-11coba-r2",
@@ -84815,7 +85658,8 @@
       "definition": {
         "upstream_unit": "NR"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21lha-r3",
@@ -84954,7 +85798,8 @@
         "code": "OC221",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-hlth-rs-prsrg-nr",
@@ -85027,7 +85872,8 @@
         "code": "OC221",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-hlth-rs-prsrg-p-hthab",
@@ -85100,7 +85946,8 @@
         "code": "OC221",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-hlth-rs-bdsrg",
@@ -85132,7 +85979,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["posti letto ospedalieri"]
+      },
       "topics": ["health"],
       "example_questions": [],
       "caveats": []
@@ -85173,7 +86022,8 @@
         "code": "HBEDT",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-hlth-rs-bdsrg-nr",
@@ -85205,7 +86055,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["posti letto ospedalieri"]
+      },
       "topics": ["health"],
       "example_questions": [],
       "caveats": []
@@ -85246,7 +86098,8 @@
         "code": "HBEDT",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-hlth-rs-bdsrg-p-hthab",
@@ -85278,7 +86131,9 @@
     "geographic_coverage": ["Europe (NUTS 2024)"],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [],
+      "aliases": {
+        "it": ["posti letto ospedalieri"]
+      },
       "topics": ["health"],
       "example_questions": [],
       "caveats": []
@@ -85319,7 +86174,8 @@
         "code": "HBEDT",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-nama-10r-2coe",
@@ -85665,7 +86521,8 @@
         "primary": true
       }
     ],
-    "headline": "d1-sal-per"
+    "headline": "d1-sal-per",
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-nama-10r-2lp10-hw",
@@ -85740,7 +86597,8 @@
         "code": "HW_EMP",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-nama-10r-2lp10-nac",
@@ -85828,7 +86686,8 @@
         "primary": true
       }
     ],
-    "headline": "d1-sal-per"
+    "headline": "d1-sal-per",
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-nama-10r-2lp10-pch-pre",
@@ -85903,7 +86762,8 @@
         "code": "HW_EMP",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-nama-10r-2lp10-pc-eu27-2020-meur-cp",
@@ -85991,6 +86851,7 @@
         "primary": true
       }
     ],
-    "headline": "d1-sal-per"
+    "headline": "d1-sal-per",
+    "opening_variant": "EUR"
   }
 ]

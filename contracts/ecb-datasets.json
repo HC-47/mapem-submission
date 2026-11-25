@@ -36,22 +36,29 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "payment transactions",
-        "pagamenti",
-        "operazioni di pagamento",
-        "payments statistics",
-        "cashless payments"
-      ],
+      "aliases": {
+        "en": [
+          "payment transactions",
+          "payments statistics",
+          "cashless payments"
+        ],
+        "it": [
+          "pagamenti",
+          "operazioni di pagamento",
+          "pagamenti elettronici"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti pagamenti elettronici si fanno in Italia ogni anno?",
-        "In quali paesi UE i bonifici pesano di più sul totale dei pagamenti?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti pagamenti elettronici si fanno in Italia ogni anno?",
+          "In quali paesi UE i bonifici pesano di più sul totale dei pagamenti?"
+        ]
+      },
       "caveats": [
         "Values are in millions, as the ECB publishes them.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -275,7 +282,12 @@
         "statistic": "annual_total",
         "code": "W1.TOTL.1._Z.N.EUR"
       }
-    ]
+    ],
+    "headline": "all-number",
+    "dimension_labels": {
+      "institution": "Type of institution"
+    },
+    "opens_subject": true
   },
   {
     "id": "ecb-payments-credit-institutions",
@@ -314,18 +326,22 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "payment transactions by institution",
-        "credit institutions"
-      ],
+      "aliases": {
+        "en": [
+          "payment transactions by institution",
+          "credit institutions"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti bonifici passano per credit institutions in ciascun paese UE?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti bonifici passano per credit institutions in ciascun paese UE?"
+        ]
+      },
       "caveats": [
         "Values are in millions, as the ECB publishes them.",
         "The types of provider do not always add up to the total: some countries publish only some of them, so a slice is never a complete breakdown.",
@@ -406,7 +422,13 @@
         "statistic": "annual_total",
         "code": "W0._Z.MREM.1._T.S122C.N.EUR"
       }
-    ]
+    ],
+    "headline": "credit-transfers-number",
+    "headline_note": "Defaults on credit transfers: this table has no total of payments for this kind of institution.",
+    "dimension_labels": {
+      "institution": "Type of institution"
+    },
+    "opens_subject": true
   },
   {
     "id": "ecb-payments-payment-institutions",
@@ -445,18 +467,22 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "payment transactions by institution",
-        "payment institutions"
-      ],
+      "aliases": {
+        "en": [
+          "payment transactions by institution",
+          "payment institutions"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti bonifici passano per payment institutions in ciascun paese UE?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti bonifici passano per payment institutions in ciascun paese UE?"
+        ]
+      },
       "caveats": [
         "Values are in millions, as the ECB publishes them.",
         "The types of provider do not always add up to the total: some countries publish only some of them, so a slice is never a complete breakdown.",
@@ -537,7 +563,13 @@
         "statistic": "annual_total",
         "code": "W0._Z.MREM.1._T.S126C.N.EUR"
       }
-    ]
+    ],
+    "headline": "credit-transfers-number",
+    "headline_note": "Defaults on credit transfers: this table has no total of payments for this kind of institution.",
+    "dimension_labels": {
+      "institution": "Type of institution"
+    },
+    "opens_subject": true
   },
   {
     "id": "ecb-payments-e-money-institutions",
@@ -576,18 +608,22 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "payment transactions by institution",
-        "electronic money institutions"
-      ],
+      "aliases": {
+        "en": [
+          "payment transactions by institution",
+          "electronic money institutions"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti bonifici passano per electronic money institutions in ciascun paese UE?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti bonifici passano per electronic money institutions in ciascun paese UE?"
+        ]
+      },
       "caveats": [
         "Values are in millions, as the ECB publishes them.",
         "The types of provider do not always add up to the total: some countries publish only some of them, so a slice is never a complete breakdown.",
@@ -668,7 +704,13 @@
         "statistic": "annual_total",
         "code": "W0._Z.MREM.1._T.S12E.N.EUR"
       }
-    ]
+    ],
+    "headline": "credit-transfers-number",
+    "headline_note": "Defaults on credit transfers: this table has no total of payments for this kind of institution.",
+    "dimension_labels": {
+      "institution": "Type of institution"
+    },
+    "opens_subject": true
   },
   {
     "id": "ecb-payments-central-banks-government",
@@ -707,18 +749,22 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "payment transactions by institution",
-        "central banks and general government"
-      ],
+      "aliases": {
+        "en": [
+          "payment transactions by institution",
+          "central banks and general government"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti bonifici passano per central banks and general government in ciascun paese UE?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti bonifici passano per central banks and general government in ciascun paese UE?"
+        ]
+      },
       "caveats": [
         "Values are in millions, as the ECB publishes them.",
         "The types of provider do not always add up to the total: some countries publish only some of them, so a slice is never a complete breakdown.",
@@ -799,7 +845,13 @@
         "statistic": "annual_total",
         "code": "W0._Z.MREM.1._T.S1KK.N.EUR"
       }
-    ]
+    ],
+    "headline": "credit-transfers-number",
+    "headline_note": "Defaults on credit transfers: this table has no total of payments for this kind of institution.",
+    "dimension_labels": {
+      "institution": "Type of institution"
+    },
+    "opens_subject": true
   },
   {
     "id": "ecb-credit-transfers",
@@ -838,21 +890,27 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "credit transfers",
-        "bonifici",
-        "SEPA credit transfers",
-        "online banking payments"
-      ],
+      "aliases": {
+        "en": [
+          "credit transfers",
+          "SEPA credit transfers",
+          "online banking payments"
+        ],
+        "it": [
+          "bonifici"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti bonifici si fanno online in Germania?",
-        "Quale quota dei bonifici è ancora cartacea?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti bonifici si fanno online in Germania?",
+          "Quale quota dei bonifici è ancora cartacea?"
+        ]
+      },
       "caveats": [
         "Values are in millions, as the ECB publishes them.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -1004,7 +1062,8 @@
         "statistic": "annual_total",
         "code": "W1.1._T._T.CTS_ALL._X._Z.N.EUR"
       }
-    ]
+    ],
+    "headline": "total-number"
   },
   {
     "id": "ecb-direct-debits",
@@ -1043,20 +1102,26 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "direct debits",
-        "addebiti diretti",
-        "SEPA direct debit",
-        "domiciliazioni"
-      ],
+      "aliases": {
+        "en": [
+          "direct debits",
+          "SEPA direct debit"
+        ],
+        "it": [
+          "addebiti diretti",
+          "domiciliazioni"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti addebiti diretti transfrontalieri ci sono in Belgio?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti addebiti diretti transfrontalieri ci sono in Belgio?"
+        ]
+      },
       "caveats": [
         "Values are in millions, as the ECB publishes them.",
         "Payer side: the ECB's headline direct debit figures are on the payee side, published in the dataset of payment transactions by type.",
@@ -1129,7 +1194,8 @@
         "statistic": "annual_total",
         "code": "W1.1._T.DDS_ALL._T._Z.N.EUR"
       }
-    ]
+    ],
+    "headline": "total-number"
   },
   {
     "id": "ecb-card-payments",
@@ -1168,20 +1234,26 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "card payments",
-        "pagamenti con carta",
-        "debit card payments",
-        "POS payments"
-      ],
+      "aliases": {
+        "en": [
+          "card payments",
+          "debit card payments",
+          "POS payments"
+        ],
+        "it": [
+          "pagamenti con carta"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanto si paga con carta in Spagna rispetto all'Italia?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanto si paga con carta in Spagna rispetto all'Italia?"
+        ]
+      },
       "caveats": [
         "Values are in millions, as the ECB publishes them.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -1269,7 +1341,8 @@
         "statistic": "annual_total",
         "code": "W1.W0.CP0.1._T._T.PCS_ALL._Z._X._Z.N.EUR"
       }
-    ]
+    ],
+    "headline": "total-number"
   },
   {
     "id": "ecb-e-money-payments",
@@ -1308,20 +1381,26 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "e-money payments",
-        "moneta elettronica",
-        "electronic money",
-        "prepaid payments"
-      ],
+      "aliases": {
+        "en": [
+          "e-money payments",
+          "electronic money",
+          "prepaid payments"
+        ],
+        "it": [
+          "moneta elettronica"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "In quali paesi UE si usa di più la moneta elettronica?"
-      ],
+      "example_questions": {
+        "it": [
+          "In quali paesi UE si usa di più la moneta elettronica?"
+        ]
+      },
       "caveats": [
         "Values are in millions, as the ECB publishes them.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -1425,7 +1504,8 @@
         "statistic": "annual_total",
         "code": "W1.EMP0.1._T._T._X._Z.N.EUR"
       }
-    ]
+    ],
+    "headline": "total-number"
   },
   {
     "id": "ecb-terminal-transactions",
@@ -1464,20 +1544,26 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "terminal transactions",
-        "operazioni ai terminali",
-        "ATM and POS transactions",
-        "transazioni POS"
-      ],
+      "aliases": {
+        "en": [
+          "terminal transactions",
+          "ATM and POS transactions"
+        ],
+        "it": [
+          "operazioni ai terminali",
+          "transazioni POS"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quante transazioni ai terminali italiani si fanno con carte estere?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quante transazioni ai terminali italiani si fanno con carte estere?"
+        ]
+      },
       "caveats": [
         "Values are in millions, as the ECB publishes them.",
         "Terminal side: counted by the provider of the terminal (acquirer), the side the ECB publishes terminal transactions on; split by where the card was issued, with no published total.",
@@ -1534,7 +1620,9 @@
         "statistic": "annual_total",
         "code": "W1.W0._T.2.2220.N.EUR"
       }
-    ]
+    ],
+    "headline": "domestic-cards-number",
+    "headline_note": "Defaults on cards issued in the country: transactions with cards issued abroad are a separate figure, not part of this one."
   },
   {
     "id": "ecb-payment-terminals",
@@ -1573,22 +1661,28 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "payment terminals",
-        "ATM",
-        "POS",
-        "bancomat",
-        "terminali di pagamento"
-      ],
+      "aliases": {
+        "en": [
+          "payment terminals",
+          "ATM",
+          "POS"
+        ],
+        "it": [
+          "bancomat",
+          "terminali di pagamento"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti bancomat ci sono in Italia?",
-        "Dove sono diminuiti di più gli ATM?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti bancomat ci sono in Italia?",
+          "Dove sono diminuiti di più gli ATM?"
+        ]
+      },
       "caveats": [
         "The terminal types are different objects and do not add up.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -1625,6 +1719,15 @@
         "description": "ATMs provided by resident payment service providers, at the end of the year.",
         "unit": "terminals",
         "statistic": "annual_value",
+        "aliases": {
+          "en": [
+            "cash machines"
+          ],
+          "it": [
+            "bancomat",
+            "sportelli automatici"
+          ]
+        },
         "code": "W0.2221._T.PN",
         "primary": true
       },
@@ -1716,7 +1819,12 @@
         "statistic": "annual_value",
         "code": "W1.2224._T.PN"
       }
-    ]
+    ],
+    "headline": "atms",
+    "headline_note": "Defaults on ATMs: the four kinds of terminal are counted separately and do not add up to a total.",
+    "dimension_labels": {
+      "function": "Terminal function"
+    }
   },
   {
     "id": "ecb-payment-terminals-cash-withdrawal",
@@ -1755,17 +1863,21 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "terminals cash withdrawal function"
-      ],
+      "aliases": {
+        "en": [
+          "terminals cash withdrawal function"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti terminali offrono la funzione «cash withdrawal function» in Francia?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti terminali offrono la funzione «cash withdrawal function» in Francia?"
+        ]
+      },
       "caveats": [
         "A terminal can have several functions: the functions overlap and do not add up to the total.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -1802,10 +1914,22 @@
         "description": "ATMs provided by resident payment service providers, at the end of the year.",
         "unit": "terminals",
         "statistic": "annual_value",
+        "aliases": {
+          "en": [
+            "cash machines"
+          ],
+          "it": [
+            "bancomat",
+            "sportelli automatici"
+          ]
+        },
         "code": "W0.2221.1.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Terminal function"
+    }
   },
   {
     "id": "ecb-payment-terminals-credit-transfer",
@@ -1844,17 +1968,21 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "terminals credit transfer function"
-      ],
+      "aliases": {
+        "en": [
+          "terminals credit transfer function"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti terminali offrono la funzione «credit transfer function» in Francia?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti terminali offrono la funzione «credit transfer function» in Francia?"
+        ]
+      },
       "caveats": [
         "A terminal can have several functions: the functions overlap and do not add up to the total.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -1891,10 +2019,22 @@
         "description": "ATMs provided by resident payment service providers, at the end of the year.",
         "unit": "terminals",
         "statistic": "annual_value",
+        "aliases": {
+          "en": [
+            "cash machines"
+          ],
+          "it": [
+            "bancomat",
+            "sportelli automatici"
+          ]
+        },
         "code": "W0.2221.2.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Terminal function"
+    }
   },
   {
     "id": "ecb-payment-terminals-contactless",
@@ -1933,17 +2073,21 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "terminals accepting contactless transactions"
-      ],
+      "aliases": {
+        "en": [
+          "terminals accepting contactless transactions"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti terminali offrono la funzione «accepting contactless transactions» in Francia?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti terminali offrono la funzione «accepting contactless transactions» in Francia?"
+        ]
+      },
       "caveats": [
         "A terminal can have several functions: the functions overlap and do not add up to the total.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -1980,6 +2124,15 @@
         "description": "ATMs provided by resident payment service providers, at the end of the year.",
         "unit": "terminals",
         "statistic": "annual_value",
+        "aliases": {
+          "en": [
+            "cash machines"
+          ],
+          "it": [
+            "bancomat",
+            "sportelli automatici"
+          ]
+        },
         "code": "W0.2221.3.PN",
         "primary": true
       },
@@ -1991,7 +2144,12 @@
         "statistic": "annual_value",
         "code": "W0.2223.3.PN"
       }
-    ]
+    ],
+    "headline": "eftpos-terminals",
+    "headline_note": "Defaults on EFTPOS terminals, where contactless payments are made; contactless ATMs are a separate figure.",
+    "dimension_labels": {
+      "function": "Terminal function"
+    }
   },
   {
     "id": "ecb-payment-terminals-e-money",
@@ -2030,17 +2188,21 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "terminals accepting e-money cards"
-      ],
+      "aliases": {
+        "en": [
+          "terminals accepting e-money cards"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti terminali offrono la funzione «accepting e-money cards» in Francia?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti terminali offrono la funzione «accepting e-money cards» in Francia?"
+        ]
+      },
       "caveats": [
         "A terminal can have several functions: the functions overlap and do not add up to the total.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -2088,7 +2250,12 @@
         "statistic": "annual_value",
         "code": "W0.2224.4.PN"
       }
-    ]
+    ],
+    "headline": "eftpos-terminals",
+    "headline_note": "Defaults on EFTPOS terminals, where e-money cards are used to pay; e-money card terminals are a separate figure.",
+    "dimension_labels": {
+      "function": "Terminal function"
+    }
   },
   {
     "id": "ecb-payment-terminals-card-loading",
@@ -2127,17 +2294,21 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "terminals card loading or unloading"
-      ],
+      "aliases": {
+        "en": [
+          "terminals card loading or unloading"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti terminali offrono la funzione «card loading or unloading» in Francia?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti terminali offrono la funzione «card loading or unloading» in Francia?"
+        ]
+      },
       "caveats": [
         "A terminal can have several functions: the functions overlap and do not add up to the total.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -2177,7 +2348,10 @@
         "code": "W0.2224.5.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Terminal function"
+    }
   },
   {
     "id": "ecb-payment-cards",
@@ -2216,21 +2390,27 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "payment cards",
-        "carte di pagamento",
-        "debit cards",
-        "credit cards",
-        "carte di credito"
-      ],
+      "aliases": {
+        "en": [
+          "payment cards",
+          "debit cards",
+          "credit cards"
+        ],
+        "it": [
+          "carte di pagamento",
+          "carte di credito"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quante carte di pagamento ci sono per paese nell'UE?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quante carte di pagamento ci sono per paese nell'UE?"
+        ]
+      },
       "caveats": [
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
         "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
@@ -2269,7 +2449,10 @@
         "code": "PCS_ALL._T.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-payment",
@@ -2308,17 +2491,21 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "payment function"
-      ],
+      "aliases": {
+        "en": [
+          "payment function"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quante carte con «payment function» ci sono in Austria?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quante carte con «payment function» ci sono in Austria?"
+        ]
+      },
       "caveats": [
         "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -2358,7 +2545,10 @@
         "code": "PCS_ALL.1.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-debit",
@@ -2397,17 +2587,21 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "debit cards"
-      ],
+      "aliases": {
+        "en": [
+          "debit cards"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quante carte con «debit cards» ci sono in Austria?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quante carte con «debit cards» ci sono in Austria?"
+        ]
+      },
       "caveats": [
         "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -2447,7 +2641,10 @@
         "code": "PCS_ALL.11.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-delayed-debit",
@@ -2486,17 +2683,21 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "delayed debit cards"
-      ],
+      "aliases": {
+        "en": [
+          "delayed debit cards"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quante carte con «delayed debit cards» ci sono in Austria?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quante carte con «delayed debit cards» ci sono in Austria?"
+        ]
+      },
       "caveats": [
         "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -2536,7 +2737,10 @@
         "code": "PCS_ALL.12.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-credit",
@@ -2575,17 +2779,21 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "credit cards"
-      ],
+      "aliases": {
+        "en": [
+          "credit cards"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quante carte con «credit cards» ci sono in Austria?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quante carte con «credit cards» ci sono in Austria?"
+        ]
+      },
       "caveats": [
         "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -2625,7 +2833,10 @@
         "code": "PCS_ALL.13.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-combined",
@@ -2664,17 +2875,21 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "combined debit, cash and e-money function"
-      ],
+      "aliases": {
+        "en": [
+          "combined debit, cash and e-money function"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quante carte con «combined debit, cash and e-money function» ci sono in Austria?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quante carte con «combined debit, cash and e-money function» ci sono in Austria?"
+        ]
+      },
       "caveats": [
         "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -2714,7 +2929,10 @@
         "code": "PCS_ALL.2.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-cash",
@@ -2753,17 +2971,21 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "cash function"
-      ],
+      "aliases": {
+        "en": [
+          "cash function"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quante carte con «cash function» ci sono in Austria?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quante carte con «cash function» ci sono in Austria?"
+        ]
+      },
       "caveats": [
         "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -2803,7 +3025,10 @@
         "code": "PCS_ALL.3.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-contactless",
@@ -2842,17 +3067,21 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "contactless payment function"
-      ],
+      "aliases": {
+        "en": [
+          "contactless payment function"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quante carte con «contactless payment function» ci sono in Austria?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quante carte con «contactless payment function» ci sono in Austria?"
+        ]
+      },
       "caveats": [
         "A card can have several functions: the functions overlap and do not add up to the total, except debit, delayed debit and credit within the payment function.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -2892,7 +3121,10 @@
         "code": "PCS_ALL.5.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-service-providers",
@@ -2931,19 +3163,25 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "payment service providers",
-        "prestatori di servizi di pagamento",
-        "all institutions offering payment services"
-      ],
+      "aliases": {
+        "en": [
+          "payment service providers",
+          "all institutions offering payment services"
+        ],
+        "it": [
+          "prestatori di servizi di pagamento"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti istituti di pagamento ci sono in Lituania?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti istituti di pagamento ci sono in Lituania?"
+        ]
+      },
       "caveats": [
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
         "The ECB publishes these statistics for the 27 EU countries only; candidate and EFTA countries have no data."
@@ -2982,7 +3220,10 @@
         "code": "120B.N50.1.Z5.Z0Z.Z",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "provider": "Type of provider"
+    }
   },
   {
     "id": "ecb-payment-service-providers-credit-institutions",
@@ -3021,19 +3262,25 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "payment service providers",
-        "prestatori di servizi di pagamento",
-        "credit institutions"
-      ],
+      "aliases": {
+        "en": [
+          "payment service providers",
+          "credit institutions"
+        ],
+        "it": [
+          "prestatori di servizi di pagamento"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti clienti hanno i credit institutions in Irlanda?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti clienti hanno i credit institutions in Irlanda?"
+        ]
+      },
       "caveats": [
         "The ECB publishes a total over all providers for the number of institutions only; clients and accounts exist by type of provider.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -3121,7 +3368,11 @@
         "statistic": "annual_value",
         "code": "122C.L26.1.Z5.Z0Z.Z"
       }
-    ]
+    ],
+    "headline": "clients",
+    "dimension_labels": {
+      "provider": "Type of provider"
+    }
   },
   {
     "id": "ecb-payment-service-providers-payment-institutions",
@@ -3160,19 +3411,25 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "payment service providers",
-        "prestatori di servizi di pagamento",
-        "payment institutions"
-      ],
+      "aliases": {
+        "en": [
+          "payment service providers",
+          "payment institutions"
+        ],
+        "it": [
+          "prestatori di servizi di pagamento"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti clienti hanno i payment institutions in Irlanda?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti clienti hanno i payment institutions in Irlanda?"
+        ]
+      },
       "caveats": [
         "The ECB publishes a total over all providers for the number of institutions only; clients and accounts exist by type of provider.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -3220,7 +3477,11 @@
         "statistic": "annual_value",
         "code": "1241.L26.1.Z5.Z0Z.Z"
       }
-    ]
+    ],
+    "headline": "institutions",
+    "dimension_labels": {
+      "provider": "Type of provider"
+    }
   },
   {
     "id": "ecb-payment-service-providers-central-bank",
@@ -3259,19 +3520,25 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "payment service providers",
-        "prestatori di servizi di pagamento",
-        "the central bank"
-      ],
+      "aliases": {
+        "en": [
+          "payment service providers",
+          "the central bank"
+        ],
+        "it": [
+          "prestatori di servizi di pagamento"
+        ]
+      },
       "topics": [
         "economy",
         "payments",
         "finance"
       ],
-      "example_questions": [
-        "Quanti clienti hanno i the central bank in Irlanda?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanti clienti hanno i the central bank in Irlanda?"
+        ]
+      },
       "caveats": [
         "The ECB publishes a total over all providers for the number of institutions only; clients and accounts exist by type of provider.",
         "From 2022 the data follow ECB Regulation (EU) 2020/2011 on payments statistics, which changed definitions and reporting agents: comparisons between 2021 and 2022 are not reliable. The ECB flags no break; this caveat is Mapem's.",
@@ -3311,7 +3578,10 @@
         "code": "1210.L21.1.Z5.Z0Z.Z",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "provider": "Type of provider"
+    }
   },
   {
     "id": "ecb-macroeconomic-projections",
@@ -3349,25 +3619,31 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "macroeconomic projections",
-        "proiezioni macroeconomiche",
-        "previsioni BCE",
-        "ECB staff projections",
-        "Eurosystem staff macroeconomic projections",
-        "inflation forecast",
-        "GDP forecast"
-      ],
+      "aliases": {
+        "en": [
+          "macroeconomic projections",
+          "ECB staff projections",
+          "Eurosystem staff macroeconomic projections",
+          "inflation forecast",
+          "GDP forecast"
+        ],
+        "it": [
+          "proiezioni macroeconomiche",
+          "previsioni BCE"
+        ]
+      },
       "topics": [
         "economy",
         "projections",
         "prices",
         "labour"
       ],
-      "example_questions": [
-        "Quanto crescerà il PIL dell'Italia nei prossimi anni secondo la BCE?",
-        "In quali paesi dell'area euro la BCE prevede l'inflazione più alta?"
-      ],
+      "example_questions": {
+        "it": [
+          "Quanto crescerà il PIL dell'Italia nei prossimi anni secondo la BCE?",
+          "In quali paesi dell'area euro la BCE prevede l'inflazione più alta?"
+        ]
+      },
       "caveats": [
         "Projections, not observations: only the years the ECB marks as projected are published. The observed years are in Eurostat's national datasets.",
         "Each exercise replaces the previous one. Projections are conditional on the assumptions at their cut-off date (oil and commodity prices, interest and exchange rates, fiscal measures) and are revised at every exercise.",
@@ -3423,6 +3699,7 @@
         "statistic": "annual_value",
         "code": "URX.F"
       }
-    ]
+    ],
+    "headline": "real-gdp-growth"
   }
 ]

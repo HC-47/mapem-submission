@@ -33,15 +33,24 @@ New submissions can include safe, declarative semantic hints directly in `datase
 
 ```yaml
 semantic_hints:
-  aliases: [densita di popolazione, population concentration]
+  aliases:
+    en: [population concentration]
+    it: [densità di popolazione]
   topics: [demography, urbanisation]
   example_questions:
-    - Quali province europee hanno la densita piu alta nel 2024?
+    it: [Quali province europee hanno la densità più alta nel 2024?]
   caveats:
     - Values are annual regional estimates, not real-time counts.
 ```
 
-Each indicator may also contain `aliases` and `example_questions`. These strings are versioned with the
+`aliases` and `example_questions` are written per language: `en`, `it`, `de`, `fr` or `es`. The catalog
+stays in English; an alias is the name a reader uses for this dataset in that language («bancomat», «PIL
+regionale»), written with its accents, not a translation of the title. A plain list, as releases before
+25 November 2026 wrote it, is still valid and reads as English. Every example question is a search test:
+the managed search must return the dataset among its first three results.
+
+Each indicator may also contain `aliases` and `example_questions`, in the same shape. An indicator alias
+belongs where the common name of the concept is not in the indicator's name: "youth" on 15–24 years. These strings are versioned with the
 submission and help the managed MCP resolver select stable ids. They are never executed as prompts.
 `system_prompt`, roles, instructions, templates and arbitrary additional properties are rejected by the
 schema. Prompt ownership stays in the trusted core service, which treats all fork metadata as untrusted data.

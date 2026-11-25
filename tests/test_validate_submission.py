@@ -203,6 +203,28 @@ class SubmissionContractTests(unittest.TestCase):
         report = self._validate()
         self.assertTrue(report.valid, report.errors)
 
+    def test_aliases_and_questions_may_be_written_per_language(self) -> None:
+        """R16: one list per language; the plain list above stays valid and reads as English."""
+        metadata_path = self.release / "dataset.yaml"
+        metadata = yaml.safe_load(metadata_path.read_text(encoding="utf-8"))
+        metadata["semantic_hints"] = {
+            "aliases": {"en": ["synthetic territorial test"], "it": ["prova territoriale"]},
+            "example_questions": {"it": ["Qual è il valore sintetico di questa regione?"]},
+        }
+        metadata["indicators"][0]["aliases"] = {"en": ["youth"], "it": ["giovani"]}
+        metadata["indicators"][0]["example_questions"] = {"en": ["Where is it highest?"]}
+        metadata_path.write_text(yaml.safe_dump(metadata, sort_keys=False), encoding="utf-8")
+        report = self._validate()
+        self.assertTrue(report.valid, report.errors)
+
+    def test_a_language_the_catalog_does_not_carry_is_rejected(self) -> None:
+        metadata_path = self.release / "dataset.yaml"
+        metadata = yaml.safe_load(metadata_path.read_text(encoding="utf-8"))
+        metadata["semantic_hints"] = {"aliases": {"xx": ["unknown language"]}}
+        metadata_path.write_text(yaml.safe_dump(metadata, sort_keys=False), encoding="utf-8")
+        report = self._validate()
+        self.assertTrue(any("semantic_hints.aliases" in item for item in report.errors))
+
     def test_an_indicator_may_declare_its_parent_and_whether_it_is_primary(self) -> None:
         """The pinned contract has to admit what a multi-indicator release carries.
 
