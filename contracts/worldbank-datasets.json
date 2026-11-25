@@ -34,20 +34,30 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "risparmio netto corretto",
-        "adjusted net savings",
-        "genuine savings",
-        "esaurimento delle risorse"
-      ],
+      "aliases": {
+        "en": [
+          "adjusted net savings",
+          "genuine savings",
+          "resource depletion"
+        ],
+        "it": [
+          "risparmio netto corretto",
+          "esaurimento delle risorse"
+        ]
+      },
       "topics": [
         "economy",
         "environment",
         "sustainability"
       ],
-      "example_questions": [
-        "Quali paesi europei consumano più ricchezza naturale di quanta ne risparmiano?"
-      ],
+      "example_questions": {
+        "en": [
+          "Which European countries use up more natural wealth than they save?"
+        ],
+        "it": [
+          "Quali paesi europei consumano più ricchezza naturale di quanta ne risparmiano?"
+        ]
+      },
       "caveats": [
         "The World Bank last updated these estimates with data to 2021: later years are not published yet.",
         "Values in current US$ are levels; the % of GNI values are shares of gross national income.",
@@ -188,6 +198,14 @@
         "description": "Cost of damage due to carbon dioxide emissions from fossil fuel use and the manufacture of cement, estimated to be US$40 per ton of CO2 (the unit damage in 2017 US dollars for CO2 emitted in 2020) times the number of tons of CO2 emitted. This indicator is expressed as a percentage of Gross National Income (GNI) which is the total income earned by all residents within an economic territory during an accounting period.",
         "unit": "% of GNI",
         "statistic": "annual_value",
+        "aliases": {
+          "en": [
+            "CO2 damage"
+          ],
+          "it": [
+            "danno da CO2"
+          ]
+        },
         "code": "NY.ADJ.DCO2.GN.ZS"
       },
       {
@@ -235,19 +253,29 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "reddito nazionale netto corretto",
-        "adjusted net national income",
-        "ANNI"
-      ],
+      "aliases": {
+        "en": [
+          "adjusted net national income",
+          "ANNI"
+        ],
+        "it": [
+          "reddito nazionale netto corretto",
+          "reddito nazionale corretto"
+        ]
+      },
       "topics": [
         "economy",
         "environment",
         "sustainability"
       ],
-      "example_questions": [
-        "Quanto vale il reddito nazionale corretto per abitante in Polonia rispetto alla Germania?"
-      ],
+      "example_questions": {
+        "en": [
+          "How does adjusted net national income per capita in Poland compare with Germany?"
+        ],
+        "it": [
+          "Quanto vale il reddito nazionale corretto per abitante in Polonia rispetto alla Germania?"
+        ]
+      },
       "caveats": [
         "The World Bank last updated these estimates with data to 2021: later years are not published yet.",
         "Estimates of the World Bank: they are not the net national income of national accounts."
@@ -354,19 +382,29 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "rendite delle risorse naturali",
-        "natural resource rents",
-        "rendita petrolifera"
-      ],
+      "aliases": {
+        "en": [
+          "natural resource rents",
+          "oil rents"
+        ],
+        "it": [
+          "rendite delle risorse naturali",
+          "rendita petrolifera"
+        ]
+      },
       "topics": [
         "environment",
         "economy",
         "energy"
       ],
-      "example_questions": [
-        "Quanto pesano le rendite di gas e petrolio sul PIL della Norvegia?"
-      ],
+      "example_questions": {
+        "en": [
+          "How much do oil and gas rents weigh on Norway's GDP?"
+        ],
+        "it": [
+          "Quanto pesano le rendite di gas e petrolio sul PIL della Norvegia?"
+        ]
+      },
       "caveats": [
         "The World Bank last updated these estimates with data to 2021: later years are not published yet.",
         "Shares of GDP estimated by the World Bank, not national statistics."
@@ -402,6 +440,15 @@
         "description": "Oil rents are the difference between the value of crude oil production at regional prices and total costs of production.",
         "unit": "% of GDP",
         "statistic": "annual_value",
+        "aliases": {
+          "en": [
+            "oil rents"
+          ],
+          "it": [
+            "rendita petrolifera",
+            "rendite del petrolio"
+          ]
+        },
         "code": "NY.GDP.PETR.RT.ZS"
       },
       {
@@ -410,6 +457,11 @@
         "description": "Natural gas rents are the difference between the value of natural gas production at regional prices and total costs of production.",
         "unit": "% of GDP",
         "statistic": "annual_value",
+        "aliases": {
+          "it": [
+            "rendite del gas"
+          ]
+        },
         "code": "NY.GDP.NGAS.RT.ZS"
       },
       {
@@ -418,6 +470,11 @@
         "description": "Coal rents are the difference between the value of both hard and soft coal production at world prices and their total costs of production.",
         "unit": "% of GDP",
         "statistic": "annual_value",
+        "aliases": {
+          "it": [
+            "rendite del carbone"
+          ]
+        },
         "code": "NY.GDP.COAL.RT.ZS"
       },
       {
@@ -473,20 +530,31 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "povertà a 8,30 dollari",
-        "poverty at $8.30 a day",
-        "prosperity gap",
-        "povertà multidimensionale"
-      ],
+      "aliases": {
+        "en": [
+          "poverty at $8.30 a day",
+          "prosperity gap",
+          "multidimensional poverty"
+        ],
+        "it": [
+          "povertà a 8,30 dollari",
+          "povertà multidimensionale",
+          "divario di prosperità"
+        ]
+      },
       "topics": [
         "society",
         "poverty",
         "inequality"
       ],
-      "example_questions": [
-        "Quali paesi dei Balcani hanno più persone sotto 8,30 dollari al giorno?"
-      ],
+      "example_questions": {
+        "en": [
+          "Which Balkan countries have the most people below $8.30 a day?"
+        ],
+        "it": [
+          "Quali paesi dei Balcani hanno più persone sotto 8,30 dollari al giorno?"
+        ]
+      },
       "caveats": [
         "Lines in 2021 purchasing power parity dollars, set for upper-middle-income countries: they are not Eurostat's at-risk-of-poverty rate, which is relative to each country's median income.",
         "Only the higher international line is published here: at $3.00 and $4.20 a day nearly every European value is below 1%.",
@@ -578,19 +646,30 @@
     ],
     "temporal_frequency": "annual",
     "semantic_hints": {
-      "aliases": [
-        "nuove imprese registrate",
-        "new business density",
-        "registrazioni di società"
-      ],
+      "aliases": {
+        "en": [
+          "new business density",
+          "company registrations"
+        ],
+        "it": [
+          "nuove imprese registrate",
+          "registrazioni di società",
+          "nuove società"
+        ]
+      },
       "topics": [
         "economy",
         "business",
         "entrepreneurship"
       ],
-      "example_questions": [
-        "In quale paese europeo si registrano più nuove società per abitante?"
-      ],
+      "example_questions": {
+        "en": [
+          "Which European country registers the most new companies per inhabitant?"
+        ],
+        "it": [
+          "In quale paese europeo si registrano più nuove società per abitante?"
+        ]
+      },
       "caveats": [
         "Registrations of limited liability companies only: not Eurostat's enterprise births, which count every new enterprise, sole proprietors included. In 2015-2023 the World Bank's count is about 40% of Eurostat's births in the median country; for enterprise demography use Eurostat's tables."
       ]
@@ -616,6 +695,12 @@
         "description": "The number of newly registered firms with limited liability per 1,000 working-age people (ages 15-64) per calendar year.",
         "unit": "per 1,000 people aged 15-64",
         "statistic": "annual_value",
+        "aliases": {
+          "it": [
+            "nuove imprese per abitante",
+            "densità di nuove imprese"
+          ]
+        },
         "code": "IC.BUS.NDNS.ZS",
         "primary": true
       },

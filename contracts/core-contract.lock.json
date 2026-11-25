@@ -4,7 +4,7 @@
   "dataset_contract": {
     "path": "contracts/dataset.schema.json",
     "upstream_path": "data/schema/dataset.schema.json",
-    "sha256": "b0fe33bb957e15ce61381ea24098d0e4355de185c2a305624722a97edf08a3e3"
+    "sha256": "a4b7bea75bfe9b8f2d7344b2f556c5fb73e929473e2842414501853aee18a348"
   },
   "geography_contract": {
     "scheme": "NUTS",
@@ -26,7 +26,7 @@
   "eurostat_config_contract": {
     "path": "contracts/eurostat-datasets.json",
     "upstream_path": "data/provider-contracts/eurostat.json",
-    "sha256": "0efc60ff7aebd1481fb2cea2ae0b4ebe2c0f8e7e1b0762027131a07f0e3abdb2"
+    "sha256": "fa6215192aa670004c9261a8e08241e4e070b2addfc2a7bc3cd00c9d6f4cc21f"
   },
   "jrc_provenance_contract": {
     "path": "contracts/jrc-provenance.schema.json",
@@ -36,7 +36,7 @@
   "jrc_config_contract": {
     "path": "contracts/jrc-datasets.json",
     "upstream_path": "data/provider-contracts/jrc.json",
-    "sha256": "891a89a0f7f44206f83fc4ddb3ec482d1fbee1adeb6f15f377d2bc02a13fa75d"
+    "sha256": "03ead0c90b59eba09d5dbefe41d284f1e916103939b0210d087809d462db91ae"
   },
   "ecb_provenance_contract": {
     "path": "contracts/ecb-provenance.schema.json",
@@ -46,7 +46,7 @@
   "ecb_config_contract": {
     "path": "contracts/ecb-datasets.json",
     "upstream_path": "data/provider-contracts/ecb.json",
-    "sha256": "b31b15f0e100e7796afc47f665417478ffb6084f555fea0df2c49b89b89b64df"
+    "sha256": "34914636659f6a79af00ccc0dc2edf3a2d3411e8d4e652a999b08b8945ff3ab5"
   },
   "worldbank_provenance_contract": {
     "path": "contracts/worldbank-provenance.schema.json",
@@ -56,6 +56,6 @@
   "worldbank_config_contract": {
     "path": "contracts/worldbank-datasets.json",
     "upstream_path": "data/provider-contracts/worldbank.json",
-    "sha256": "5e02bebae1e842a6dbfbacfab5a9d8025a0521701c2aacb9f6a49155dd3d93e8"
+    "sha256": "39ef3412997746536781158f812d865d95b633fae4e54b6e1b82c2878493a2f7"
   }
 }
