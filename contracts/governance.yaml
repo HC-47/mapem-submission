@@ -33,6 +33,9 @@ managed_batches:
     ECB:
       config: ecb-datasets.json
       provenance_schema: ecb-provenance.schema.json
+    WorldBank:
+      config: worldbank-datasets.json
+      provenance_schema: worldbank-provenance.schema.json
   channel: managed_public
   maximum_datasets: 20
   # Per release. The 250,000 under `limits` is the community lane's: two dozen

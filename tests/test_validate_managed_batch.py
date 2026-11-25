@@ -327,6 +327,78 @@ class ManagedBatchContractTests(unittest.TestCase):
         }
         manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False), encoding="utf-8")
 
+    def _as_worldbank(self, licence: str = "CC BY-4.0") -> None:
+        """Turn the fixture into a World Bank batch: same rows, the World Bank's contracts."""
+        dataset_id = "wb-new-businesses"
+        release = self.batch / "datasets" / dataset_id / self.version
+        release.parent.mkdir(parents=True)
+        self.release.rename(release)
+        shutil.rmtree(self.batch / "datasets" / self.dataset_id)
+        self.dataset_id, self.release = dataset_id, release
+        metadata = yaml.safe_load((release / "dataset.yaml").read_text(encoding="utf-8"))
+        metadata.update(id=dataset_id, publisher="World Bank")
+        metadata["upstream"] = {
+            "provider": "WorldBank",
+            "dataset_code": "WDI",
+            "api_base_url": "https://api.worldbank.org/v2/",
+            "reference_url": "https://www.worldbank.org/en/programs/entrepreneurship",
+        }
+        (release / "dataset.yaml").write_text(
+            yaml.safe_dump(metadata, sort_keys=False, allow_unicode=True), encoding="utf-8"
+        )
+        observations = (release / "observations.csv").read_text(encoding="utf-8")
+        (release / "observations.csv").write_text(
+            observations.replace("eurostat-population-density", dataset_id), encoding="utf-8"
+        )
+        base = "https://api.worldbank.org/v2/"
+        provenance = {
+            "provider": "WorldBank",
+            "dataset_code": "WDI",
+            "licence_uri": "https://datacatalog.worldbank.org/public-licenses#cc-by",
+            "source_url": base,
+            "source_sha256": "0" * 64,
+            "config_sha256": "0" * 64,
+            "imported_at": "2099-01-01T00:00:00Z",
+            "observations_sha256": validator.sha256_file(release / "observations.csv"),
+            "series": [
+                {
+                    "code": "IC.BUS.NDNS.ZS",
+                    "data_url": f"{base}country/all/indicator/IC.BUS.NDNS.ZS?source=2",
+                    "data_sha256": "1" * 64,
+                    "metadata_url": f"{base}sources/2/series/IC.BUS.NDNS.ZS/metadata?format=json",
+                    "metadata_sha256": "2" * 64,
+                    "licence": licence,
+                    "source": "Entrepreneurship Database, World Bank (WB)",
+                    "last_updated": "2026-11-11",
+                }
+            ],
+            "geography_levels": {"declared": [0], "available_upstream": [0]},
+            "excluded_codes": {"count": 0, "in_contract_countries": []},
+            "normalisation": {
+                "geography": "ISO alpha-3 codes converted to NUTS, aggregates left out.",
+                "missing_values": "Years without a value remain absent.",
+                "flags": "No status on any configured series; none added.",
+                "units": "Values copied as published, in the unit of the series.",
+            },
+        }
+        (release / "provenance.json").write_text(
+            json.dumps(provenance, indent=2) + "\n", encoding="utf-8"
+        )
+        manifest_path = self.batch / "batch.yaml"
+        manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
+        manifest["provider"] = "WorldBank"
+        manifest["source_config_sha256"] = validator.sha256_file(
+            ROOT / "contracts" / "worldbank-datasets.json"
+        )
+        entry = manifest["datasets"][0]
+        entry["dataset_id"] = dataset_id
+        entry["path"] = f"managed-batches/{self.batch_id}/datasets/{dataset_id}/{self.version}"
+        entry["artifact_sha256"] = {
+            name: validator.sha256_file(release / name)
+            for name in sorted(validator.REQUIRED_FILES)
+        }
+        manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False), encoding="utf-8")
+
     def _edit_manifest(self, **changes: object) -> None:
         manifest_path = self.batch / "batch.yaml"
         manifest = yaml.safe_load(manifest_path.read_text(encoding="utf-8"))
@@ -436,6 +508,16 @@ class ManagedBatchContractTests(unittest.TestCase):
             "beyond_horizon": 0,
         }
         self._rewrite_ecb_provenance(observation_statuses={"F": 1}, projection=projection)
+        report = self._validate()
+        self.assertFalse(report.valid)
+
+    def test_a_world_bank_batch_passes_with_the_world_bank_contracts(self) -> None:
+        self._as_worldbank()
+        report = self._validate()
+        self.assertTrue(report.valid, report.errors)
+
+    def test_a_world_bank_series_under_another_licence_is_refused(self) -> None:
+        self._as_worldbank(licence="CC BY-NC 4.0")
         report = self._validate()
         self.assertFalse(report.valid)
 
