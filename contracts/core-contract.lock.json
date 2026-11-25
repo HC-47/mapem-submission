@@ -56,6 +56,6 @@
   "worldbank_config_contract": {
     "path": "contracts/worldbank-datasets.json",
     "upstream_path": "data/provider-contracts/worldbank.json",
-    "sha256": "5e02bebae1e842a6dbfbacfab5a9d8025a0521701c2aacb9f6a49155dd3d93e8"
+    "sha256": "39ef3412997746536781158f812d865d95b633fae4e54b6e1b82c2878493a2f7"
   }
 }
