@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://opengeomap.example/schema/worldbank-provenance-1.0.json",
+  "title": "Open Geo Data Map World Bank provenance",
+  "description": "Where one release of a World Bank dataset was read from: for every series the Indicators API requests and the checksums of their answers, the licence and source read from the series metadata at that run, the configuration that read them and the codes left out.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "provider",
+    "dataset_code",
+    "licence_uri",
+    "source_url",
+    "source_sha256",
+    "config_sha256",
+    "imported_at",
+    "observations_sha256",
+    "series",
+    "geography_levels",
+    "excluded_codes",
+    "normalisation"
+  ],
+  "properties": {
+    "provider": { "const": "WorldBank" },
+    "dataset_code": { "const": "WDI" },
+    "licence_uri": { "const": "https://datacatalog.worldbank.org/public-licenses#cc-by" },
+    "source_url": { "const": "https://api.worldbank.org/v2/" },
+    "source_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "config_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "imported_at": { "type": "string", "format": "date-time" },
+    "observations_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "series": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "data_url",
+          "data_sha256",
+          "metadata_url",
+          "metadata_sha256",
+          "licence",
+          "source",
+          "last_updated"
+        ],
+        "properties": {
+          "code": { "type": "string", "pattern": "^[A-Z][A-Z0-9.]{2,40}$" },
+          "data_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://api\\.worldbank\\.org/v2/country/all/indicator/"
+          },
+          "data_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "metadata_url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://api\\.worldbank\\.org/v2/sources/"
+          },
+          "metadata_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+          "licence": { "const": "CC BY-4.0" },
+          "source": { "type": "string", "pattern": "World Bank" },
+          "last_updated": { "type": "string" }
+        }
+      }
+    },
+    "geography_levels": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["declared", "available_upstream"],
+      "properties": {
+        "declared": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 0, "maximum": 15 }
+        },
+        "available_upstream": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 0, "maximum": 15 }
+        }
+      }
+    },
+    "excluded_codes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["count", "in_contract_countries"],
+      "properties": {
+        "count": { "type": "integer", "minimum": 0 },
+        "in_contract_countries": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 2 }
+        }
+      }
+    },
+    "normalisation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["geography", "missing_values", "flags", "units"],
+      "properties": {
+        "geography": { "type": "string", "minLength": 10 },
+        "missing_values": { "type": "string", "minLength": 10 },
+        "flags": { "type": "string", "minLength": 10 },
+        "units": { "type": "string", "minLength": 10 }
+      }
+    }
+  }
+}

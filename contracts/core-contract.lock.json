@@ -16,7 +16,7 @@
   "managed_batch_contract": {
     "path": "contracts/managed-batch.schema.json",
     "upstream_path": "data/schema/managed-batch.schema.json",
-    "sha256": "ea4efa2d2626d2147abb569d0a79c8ce47f900927be1f48e02a002ca6248164a"
+    "sha256": "2b8e6ec942fdd5e5497738a91ba5874dadfecc0f25391f3e599be0edf58228ae"
   },
   "eurostat_provenance_contract": {
     "path": "contracts/eurostat-provenance.schema.json",
@@ -47,5 +47,15 @@
     "path": "contracts/ecb-datasets.json",
     "upstream_path": "data/provider-contracts/ecb.json",
     "sha256": "b31b15f0e100e7796afc47f665417478ffb6084f555fea0df2c49b89b89b64df"
+  },
+  "worldbank_provenance_contract": {
+    "path": "contracts/worldbank-provenance.schema.json",
+    "upstream_path": "data/schema/worldbank-provenance.schema.json",
+    "sha256": "41c3b9f72f1ff11183a7650f445843d263378fa8ba21cf21beb468c0967cf8cc"
+  },
+  "worldbank_config_contract": {
+    "path": "contracts/worldbank-datasets.json",
+    "upstream_path": "data/provider-contracts/worldbank.json",
+    "sha256": "5e02bebae1e842a6dbfbacfab5a9d8025a0521701c2aacb9f6a49155dd3d93e8"
   }
 }
