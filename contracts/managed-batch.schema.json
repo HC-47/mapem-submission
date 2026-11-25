@@ -23,7 +23,7 @@
       "maxLength": 160
     },
     "channel": { "const": "managed_public" },
-    "provider": { "enum": ["Eurostat", "JRC", "ECB"] },
+    "provider": { "enum": ["Eurostat", "JRC", "ECB", "WorldBank"] },
     "generated_at": { "type": "string", "format": "date-time" },
     "geography": {
       "type": "object",

@@ -38,7 +38,7 @@ versions are immutable.
 Full contributor and governance documentation is in
 [`docs/CONTRIBUTING_DATA.md`](docs/CONTRIBUTING_DATA.md).
 
-## Managed intake (Eurostat, JRC, ECB)
+## Managed intake (Eurostat, JRC, ECB, World Bank)
 
 Managed refresh PRs add `managed-batches/<batch-id>/batch.yaml` plus the standard three-file release for
 every changed dataset — including the first release of a dataset newly registered in the core, which can

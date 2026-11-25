@@ -1,0 +1,632 @@
+[
+  {
+    "id": "wb-adjusted-savings",
+    "dataset_code": "WDI",
+    "title": "Adjusted net savings",
+    "description": "Net national savings adjusted for education spending, depletion of energy, minerals and forests, and damage from carbon dioxide and particulate emissions, by country, from the World Bank.",
+    "subject": "Adjusted net savings",
+    "category": "Economy",
+    "publisher": "World Bank",
+    "source": "World Bank, Changing Wealth of Nations (World Development Indicators)",
+    "source_url": "https://www.worldbank.org/en/publication/changing-wealth-of-nations",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: World Bank, Changing Wealth of Nations (World Development Indicators)"
+    },
+    "methodology": "Read from the World Bank Indicators API (source 2, World Development Indicators), one request per series, annual values from 2015 for the 40 countries of the geography contract. Only series the World Bank produces itself are configured, and each run reads the series metadata and stops unless its licence is CC BY 4.0. Values are copied as published; country codes are converted from ISO 3166 alpha-3 to the NUTS codes (GRC to EL, GBR to UK, XKX to XK, the others to their alpha-2 code), and aggregates and countries outside the contract are left out. The estimates are the World Bank's own, from its Changing Wealth of Nations programme: they combine national accounts with resource prices, production and emission damage valued by the World Bank.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "Europe (40 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "risparmio netto corretto",
+        "adjusted net savings",
+        "genuine savings",
+        "esaurimento delle risorse"
+      ],
+      "topics": [
+        "economy",
+        "environment",
+        "sustainability"
+      ],
+      "example_questions": [
+        "Quali paesi europei consumano più ricchezza naturale di quanta ne risparmiano?"
+      ],
+      "caveats": [
+        "The World Bank last updated these estimates with data to 2021: later years are not published yet.",
+        "Values in current US$ are levels; the % of GNI values are shares of gross national income.",
+        "Estimates of the World Bank, not national statistics: they are not the savings of national accounts."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "worldbank": {
+      "source": "2"
+    },
+    "indicators": [
+      {
+        "id": "adjusted-net-savings-gni",
+        "name": "Adjusted net savings, including particulate emission damage (% of GNI)",
+        "description": "Adjusted net savings are equal to net national savings plus education expenditure and minus energy depletion, mineral depletion, net forest depletion, and carbon dioxide and particulate emissions damage. This indicator is expressed as a percentage of Gross National Income (GNI) which is the total income earned by all residents within an economic territory during an accounting period.",
+        "unit": "% of GNI",
+        "statistic": "annual_value",
+        "code": "NY.ADJ.SVNG.GN.ZS",
+        "primary": true
+      },
+      {
+        "id": "adjusted-net-savings-usd",
+        "name": "Adjusted net savings, including particulate emission damage (current US$)",
+        "description": "Adjusted net savings are equal to net national savings plus education expenditure and minus energy depletion, mineral depletion, net forest depletion, and carbon dioxide and particulate emissions damage. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time.",
+        "unit": "current US$",
+        "statistic": "annual_total",
+        "code": "NY.ADJ.SVNG.CD"
+      },
+      {
+        "id": "adjusted-net-savings-ex-pm-gni",
+        "name": "Adjusted net savings, excluding particulate emission damage (% of GNI)",
+        "description": "Adjusted net savings are equal to net national savings plus education expenditure and minus energy depletion, mineral depletion, net forest depletion, and carbon dioxide. This series excludes particulate emissions damage.",
+        "unit": "% of GNI",
+        "statistic": "annual_value",
+        "code": "NY.ADJ.SVNX.GN.ZS"
+      },
+      {
+        "id": "adjusted-net-savings-ex-pm-usd",
+        "name": "Adjusted net savings, excluding particulate emission damage (current US$)",
+        "description": "Adjusted net savings are equal to net national savings plus education expenditure and minus energy depletion, mineral depletion, net forest depletion, and carbon dioxide. This series excludes particulate emissions damage.",
+        "unit": "current US$",
+        "statistic": "annual_total",
+        "code": "NY.ADJ.SVNX.CD"
+      },
+      {
+        "id": "net-national-savings-gni",
+        "name": "Adjusted savings, net national savings (% of GNI)",
+        "description": "Net national savings are equal to gross national savings less the value of consumption of fixed capital. This indicator is expressed as a percentage of Gross National Income (GNI) which is the total income earned by all residents within an economic territory during an accounting period.",
+        "unit": "% of GNI",
+        "statistic": "annual_value",
+        "code": "NY.ADJ.NNAT.GN.ZS"
+      },
+      {
+        "id": "net-national-savings-usd",
+        "name": "Adjusted savings, net national savings (current US$)",
+        "description": "Net national savings are equal to gross national savings less the value of consumption of fixed capital. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time.",
+        "unit": "current US$",
+        "statistic": "annual_total",
+        "code": "NY.ADJ.NNAT.CD"
+      },
+      {
+        "id": "fixed-capital-consumption-usd",
+        "name": "Adjusted savings, consumption of fixed capital (current US$)",
+        "description": "Consumption of fixed capital represents the replacement value of capital used up in the process of production. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time.",
+        "unit": "current US$",
+        "statistic": "annual_total",
+        "code": "NY.ADJ.DKAP.CD"
+      },
+      {
+        "id": "natural-resources-depletion-gni",
+        "name": "Adjusted savings, natural resources depletion (% of GNI)",
+        "description": "Natural resource depletion is the sum of net forest depletion, energy depletion, and mineral depletion. Net forest depletion is unit resource rents times the excess of roundwood harvest over natural growth.",
+        "unit": "% of GNI",
+        "statistic": "annual_value",
+        "code": "NY.ADJ.DRES.GN.ZS"
+      },
+      {
+        "id": "energy-depletion-gni",
+        "name": "Adjusted savings, energy depletion (% of GNI)",
+        "description": "Energy depletion is the ratio of the value of the stock of energy resources to the remaining reserve lifetime (capped at 25 years). It covers coal, crude oil, and natural gas.",
+        "unit": "% of GNI",
+        "statistic": "annual_value",
+        "code": "NY.ADJ.DNGY.GN.ZS"
+      },
+      {
+        "id": "energy-depletion-usd",
+        "name": "Adjusted savings, energy depletion (current US$)",
+        "description": "Energy depletion is the ratio of the value of the stock of energy resources to the remaining reserve lifetime (capped at 25 years). It covers coal, crude oil, and natural gas.",
+        "unit": "current US$",
+        "statistic": "annual_total",
+        "code": "NY.ADJ.DNGY.CD"
+      },
+      {
+        "id": "mineral-depletion-gni",
+        "name": "Adjusted savings, mineral depletion (% of GNI)",
+        "description": "Mineral depletion is the ratio of the value of the stock of mineral resources to the remaining reserve lifetime (capped at 25 years). It covers tin, gold, lead, zinc, iron, copper, nickel, silver, bauxite, and phosphate.",
+        "unit": "% of GNI",
+        "statistic": "annual_value",
+        "code": "NY.ADJ.DMIN.GN.ZS"
+      },
+      {
+        "id": "mineral-depletion-usd",
+        "name": "Adjusted savings, mineral depletion (current US$)",
+        "description": "Mineral depletion is the ratio of the value of the stock of mineral resources to the remaining reserve lifetime (capped at 25 years). It covers tin, gold, lead, zinc, iron, copper, nickel, silver, bauxite, and phosphate.",
+        "unit": "current US$",
+        "statistic": "annual_total",
+        "code": "NY.ADJ.DMIN.CD"
+      },
+      {
+        "id": "forest-depletion-gni",
+        "name": "Adjusted savings, net forest depletion (% of GNI)",
+        "description": "Net forest depletion is calculated as the product of unit resource rents and the excess of roundwood harvest over natural growth. This indicator is expressed as a percentage of Gross National Income (GNI) which is the total income earned by all residents within an economic territory during an accounting period.",
+        "unit": "% of GNI",
+        "statistic": "annual_value",
+        "code": "NY.ADJ.DFOR.GN.ZS"
+      },
+      {
+        "id": "forest-depletion-usd",
+        "name": "Adjusted savings, net forest depletion (current US$)",
+        "description": "Net forest depletion is calculated as the product of unit resource rents and the excess of roundwood harvest over natural growth. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time.",
+        "unit": "current US$",
+        "statistic": "annual_total",
+        "code": "NY.ADJ.DFOR.CD"
+      },
+      {
+        "id": "co2-damage-gni",
+        "name": "Adjusted savings, carbon dioxide damage (% of GNI)",
+        "description": "Cost of damage due to carbon dioxide emissions from fossil fuel use and the manufacture of cement, estimated to be US$40 per ton of CO2 (the unit damage in 2017 US dollars for CO2 emitted in 2020) times the number of tons of CO2 emitted. This indicator is expressed as a percentage of Gross National Income (GNI) which is the total income earned by all residents within an economic territory during an accounting period.",
+        "unit": "% of GNI",
+        "statistic": "annual_value",
+        "code": "NY.ADJ.DCO2.GN.ZS"
+      },
+      {
+        "id": "co2-damage-usd",
+        "name": "Adjusted savings, carbon dioxide damage (current US$)",
+        "description": "Cost of damage due to carbon dioxide emissions from fossil fuel use and the manufacture of cement, estimated to be US$40 per ton of CO2 (the unit damage in 2017 US dollars for CO2 emitted in 2020) times the number of tons of CO2 emitted. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time.",
+        "unit": "current US$",
+        "statistic": "annual_total",
+        "code": "NY.ADJ.DCO2.CD"
+      }
+    ]
+  },
+  {
+    "id": "wb-adjusted-net-national-income",
+    "dataset_code": "WDI",
+    "title": "Adjusted net national income",
+    "description": "Gross national income less consumption of fixed capital and depletion of natural resources, total and per capita, by country, from the World Bank.",
+    "subject": "Adjusted net national income",
+    "category": "Economy",
+    "publisher": "World Bank",
+    "source": "World Bank, Changing Wealth of Nations (World Development Indicators)",
+    "source_url": "https://www.worldbank.org/en/publication/changing-wealth-of-nations",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: World Bank, Changing Wealth of Nations (World Development Indicators)"
+    },
+    "methodology": "Read from the World Bank Indicators API (source 2, World Development Indicators), one request per series, annual values from 2015 for the 40 countries of the geography contract. Only series the World Bank produces itself are configured, and each run reads the series metadata and stops unless its licence is CC BY 4.0. Values are copied as published; country codes are converted from ISO 3166 alpha-3 to the NUTS codes (GRC to EL, GBR to UK, XKX to XK, the others to their alpha-2 code), and aggregates and countries outside the contract are left out. The estimates are the World Bank's own, from its Changing Wealth of Nations programme: they combine national accounts with resource prices, production and emission damage valued by the World Bank.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "Europe (40 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "reddito nazionale netto corretto",
+        "adjusted net national income",
+        "ANNI"
+      ],
+      "topics": [
+        "economy",
+        "environment",
+        "sustainability"
+      ],
+      "example_questions": [
+        "Quanto vale il reddito nazionale corretto per abitante in Polonia rispetto alla Germania?"
+      ],
+      "caveats": [
+        "The World Bank last updated these estimates with data to 2021: later years are not published yet.",
+        "Estimates of the World Bank: they are not the net national income of national accounts."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "worldbank": {
+      "source": "2"
+    },
+    "indicators": [
+      {
+        "id": "per-capita-usd",
+        "name": "Adjusted net national income per capita (current US$)",
+        "description": "Adjusted net national income is GNI minus consumption of fixed capital and natural resources depletion. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time.",
+        "unit": "current US$",
+        "statistic": "annual_value",
+        "code": "NY.ADJ.NNTY.PC.CD",
+        "primary": true
+      },
+      {
+        "id": "per-capita-constant-usd",
+        "name": "Adjusted net national income per capita (constant 2015 US$)",
+        "description": "Adjusted net national income is GNI minus consumption of fixed capital and natural resources depletion. The core indicator has been divided by the general population to achieve a per capita estimate.",
+        "unit": "constant 2015 US$",
+        "statistic": "annual_value",
+        "code": "NY.ADJ.NNTY.PC.KD"
+      },
+      {
+        "id": "per-capita-growth",
+        "name": "Adjusted net national income per capita (annual % growth)",
+        "description": "Adjusted net national income is GNI minus consumption of fixed capital and natural resources depletion. The core indicator has been divided by the general population to achieve a per capita estimate.",
+        "unit": "% change on previous year",
+        "statistic": "annual_value",
+        "code": "NY.ADJ.NNTY.PC.KD.ZG"
+      },
+      {
+        "id": "total-usd",
+        "name": "Adjusted net national income (current US$)",
+        "description": "Adjusted net national income is GNI minus consumption of fixed capital and natural resources depletion. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time.",
+        "unit": "current US$",
+        "statistic": "annual_total",
+        "code": "NY.ADJ.NNTY.CD"
+      },
+      {
+        "id": "total-constant-usd",
+        "name": "Adjusted net national income (constant 2015 US$)",
+        "description": "Adjusted net national income is GNI minus consumption of fixed capital and natural resources depletion. This indicator is expressed in constant prices, meaning the series has been adjusted to account for price changes over time.",
+        "unit": "constant 2015 US$",
+        "statistic": "annual_total",
+        "code": "NY.ADJ.NNTY.KD"
+      },
+      {
+        "id": "total-growth",
+        "name": "Adjusted net national income (annual % growth)",
+        "description": "Adjusted net national income is GNI minus consumption of fixed capital and natural resources depletion. This indicator denotes the percentage change over each previous year of the constant price (base year 2015) series in United States dollars.",
+        "unit": "% change on previous year",
+        "statistic": "annual_value",
+        "code": "NY.ADJ.NNTY.KD.ZG"
+      }
+    ]
+  },
+  {
+    "id": "wb-natural-resource-rents",
+    "dataset_code": "WDI",
+    "title": "Natural resource rents",
+    "description": "Rents from oil, natural gas, coal, minerals and forests as a share of GDP, by country, from the World Bank.",
+    "subject": "Natural resource rents",
+    "category": "Environment",
+    "publisher": "World Bank",
+    "source": "World Bank, Changing Wealth of Nations (World Development Indicators)",
+    "source_url": "https://www.worldbank.org/en/publication/changing-wealth-of-nations",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: World Bank, Changing Wealth of Nations (World Development Indicators)"
+    },
+    "methodology": "Read from the World Bank Indicators API (source 2, World Development Indicators), one request per series, annual values from 2015 for the 40 countries of the geography contract. Only series the World Bank produces itself are configured, and each run reads the series metadata and stops unless its licence is CC BY 4.0. Values are copied as published; country codes are converted from ISO 3166 alpha-3 to the NUTS codes (GRC to EL, GBR to UK, XKX to XK, the others to their alpha-2 code), and aggregates and countries outside the contract are left out. The estimates are the World Bank's own, from its Changing Wealth of Nations programme: they combine national accounts with resource prices, production and emission damage valued by the World Bank. A rent is the value of production at world prices less its cost.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "Europe (40 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "rendite delle risorse naturali",
+        "natural resource rents",
+        "rendita petrolifera"
+      ],
+      "topics": [
+        "environment",
+        "economy",
+        "energy"
+      ],
+      "example_questions": [
+        "Quanto pesano le rendite di gas e petrolio sul PIL della Norvegia?"
+      ],
+      "caveats": [
+        "The World Bank last updated these estimates with data to 2021: later years are not published yet.",
+        "Shares of GDP estimated by the World Bank, not national statistics."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "worldbank": {
+      "source": "2"
+    },
+    "indicators": [
+      {
+        "id": "total",
+        "name": "Total natural resources rents (% of GDP)",
+        "description": "Total natural resources rents are the sum of oil rents, natural gas rents, coal rents (hard and soft), mineral rents, and forest rents.",
+        "unit": "% of GDP",
+        "statistic": "annual_value",
+        "code": "NY.GDP.TOTL.RT.ZS",
+        "primary": true
+      },
+      {
+        "id": "oil",
+        "name": "Oil rents (% of GDP)",
+        "description": "Oil rents are the difference between the value of crude oil production at regional prices and total costs of production.",
+        "unit": "% of GDP",
+        "statistic": "annual_value",
+        "code": "NY.GDP.PETR.RT.ZS"
+      },
+      {
+        "id": "natural-gas",
+        "name": "Natural gas rents (% of GDP)",
+        "description": "Natural gas rents are the difference between the value of natural gas production at regional prices and total costs of production.",
+        "unit": "% of GDP",
+        "statistic": "annual_value",
+        "code": "NY.GDP.NGAS.RT.ZS"
+      },
+      {
+        "id": "coal",
+        "name": "Coal rents (% of GDP)",
+        "description": "Coal rents are the difference between the value of both hard and soft coal production at world prices and their total costs of production.",
+        "unit": "% of GDP",
+        "statistic": "annual_value",
+        "code": "NY.GDP.COAL.RT.ZS"
+      },
+      {
+        "id": "minerals",
+        "name": "Mineral rents (% of GDP)",
+        "description": "Mineral rents are the difference between the value of production for a stock of minerals at world prices and their total costs of production. Minerals included in the calculation are tin, gold, lead, zinc, iron, copper, nickel, silver, bauxite, and phosphate.",
+        "unit": "% of GDP",
+        "statistic": "annual_value",
+        "code": "NY.GDP.MINR.RT.ZS"
+      },
+      {
+        "id": "forest",
+        "name": "Forest rents (% of GDP)",
+        "description": "Forest rents are roundwood harvest times the product of regional prices and a regional rental rate.",
+        "unit": "% of GDP",
+        "statistic": "annual_value",
+        "code": "NY.GDP.FRST.RT.ZS"
+      }
+    ]
+  },
+  {
+    "id": "wb-poverty-international",
+    "dataset_code": "WDI",
+    "title": "Poverty at international lines",
+    "description": "Poverty headcount and gap at $8.30 a day, the prosperity gap and multidimensional poverty, by country, from the World Bank's Poverty and Inequality Platform.",
+    "subject": "Poverty at international lines",
+    "category": "Society",
+    "publisher": "World Bank",
+    "source": "World Bank, Poverty and Inequality Platform (World Development Indicators)",
+    "source_url": "https://pip.worldbank.org/",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: World Bank, Poverty and Inequality Platform (World Development Indicators)"
+    },
+    "methodology": "Read from the World Bank Indicators API (source 2, World Development Indicators), one request per series, annual values from 2015 for the 40 countries of the geography contract. Only series the World Bank produces itself are configured, and each run reads the series metadata and stops unless its licence is CC BY 4.0. Values are copied as published; country codes are converted from ISO 3166 alpha-3 to the NUTS codes (GRC to EL, GBR to UK, XKX to XK, the others to their alpha-2 code), and aggregates and countries outside the contract are left out. The World Bank computes these measures from household survey microdata; for the EU countries the survey is EU-SILC. The year is the year of income of the survey, the one before the survey year.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "Europe (40 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "povertà a 8,30 dollari",
+        "poverty at $8.30 a day",
+        "prosperity gap",
+        "povertà multidimensionale"
+      ],
+      "topics": [
+        "society",
+        "poverty",
+        "inequality"
+      ],
+      "example_questions": [
+        "Quali paesi dei Balcani hanno più persone sotto 8,30 dollari al giorno?"
+      ],
+      "caveats": [
+        "Lines in 2021 purchasing power parity dollars, set for upper-middle-income countries: they are not Eurostat's at-risk-of-poverty rate, which is relative to each country's median income.",
+        "Only the higher international line is published here: at $3.00 and $4.20 a day nearly every European value is below 1%.",
+        "The year is the income year of the survey."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "worldbank": {
+      "source": "2"
+    },
+    "indicators": [
+      {
+        "id": "poverty-830",
+        "name": "Poverty headcount ratio at $8.30 a day (2021 PPP) (% of population)",
+        "description": "Poverty headcount ratio at $8.30 a day is the percentage of the population living on less than $8.30 a day at 2021 international prices.",
+        "unit": "% of population",
+        "statistic": "annual_value",
+        "code": "SI.POV.UMIC",
+        "primary": true
+      },
+      {
+        "id": "poverty-gap-830",
+        "name": "Poverty gap at $8.30 a day (2021 PPP) (%)",
+        "description": "Poverty gap at $8.30 a day (2021 PPP) is the mean shortfall in income or consumption from the poverty line $8.30 a day (counting the nonpoor as having zero shortfall), expressed as a percentage of the poverty line. This measure reflects the depth of poverty as well as its incidence.",
+        "unit": "%",
+        "statistic": "annual_value",
+        "code": "SI.POV.UMIC.GP"
+      },
+      {
+        "id": "prosperity-gap",
+        "name": "Prosperity gap (average shortfall from a prosperity standard of $28/day)",
+        "description": "The average shortfall from a prosperity standard of $28 per day (adjusted for differences in purchasing power parity across countries). It is measured as the average factor by which incomes fall short of $28.",
+        "unit": "factor",
+        "statistic": "annual_value",
+        "code": "SI.SPR.PGAP"
+      },
+      {
+        "id": "multidimensional-poverty",
+        "name": "Multidimensional poverty headcount ratio (World Bank) (% of population)",
+        "description": "The multidimensional poverty headcount ratio (World Bank) is the percentage of a population living in poverty according to the World Bank's Multidimensional Poverty Measure. The Multidimensional Poverty Measure includes three dimensions – monetary poverty, education, and basic infrastructure services – to capture a more complete picture of poverty.",
+        "unit": "% of population",
+        "statistic": "annual_value",
+        "code": "SI.POV.MPWB"
+      }
+    ]
+  },
+  {
+    "id": "wb-new-businesses",
+    "dataset_code": "WDI",
+    "title": "New businesses registered",
+    "description": "New limited liability companies registered in the year, in number and per 1,000 people aged 15-64, by country, from the World Bank's Entrepreneurship Database.",
+    "subject": "New businesses registered",
+    "category": "Economy",
+    "publisher": "World Bank",
+    "source": "World Bank, Entrepreneurship Database (World Development Indicators)",
+    "source_url": "https://www.worldbank.org/en/programs/entrepreneurship",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "CC-BY-4.0",
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true,
+      "attribution": "Source: World Bank, Entrepreneurship Database (World Development Indicators)"
+    },
+    "methodology": "Read from the World Bank Indicators API (source 2, World Development Indicators), one request per series, annual values from 2015 for the 40 countries of the geography contract. Only series the World Bank produces itself are configured, and each run reads the series metadata and stops unless its licence is CC BY 4.0. Values are copied as published; country codes are converted from ISO 3166 alpha-3 to the NUTS codes (GRC to EL, GBR to UK, XKX to XK, the others to their alpha-2 code), and aggregates and countries outside the contract are left out. The World Bank collects the counts from the national business registries.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [
+        0
+      ]
+    },
+    "geographic_coverage": [
+      "Europe (40 countries)"
+    ],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [
+        "nuove imprese registrate",
+        "new business density",
+        "registrazioni di società"
+      ],
+      "topics": [
+        "economy",
+        "business",
+        "entrepreneurship"
+      ],
+      "example_questions": [
+        "In quale paese europeo si registrano più nuove società per abitante?"
+      ],
+      "caveats": [
+        "Registrations of limited liability companies only: not Eurostat's enterprise births, which count every new enterprise, sole proprietors included. In 2015-2023 the World Bank's count is about 40% of Eurostat's births in the median country; for enterprise demography use Eurostat's tables."
+      ]
+    },
+    "created_at": "2026-11-24",
+    "quality": {
+      "score": 90,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "worldbank": {
+      "source": "2"
+    },
+    "indicators": [
+      {
+        "id": "density",
+        "name": "New business density (new registrations per 1,000 people ages 15-64)",
+        "description": "The number of newly registered firms with limited liability per 1,000 working-age people (ages 15-64) per calendar year.",
+        "unit": "per 1,000 people aged 15-64",
+        "statistic": "annual_value",
+        "code": "IC.BUS.NDNS.ZS",
+        "primary": true
+      },
+      {
+        "id": "number",
+        "name": "New businesses registered (number)",
+        "description": "New businesses registered are the number of new limited liability corporations (or its equivalent) registered in the calendar year.",
+        "unit": "number",
+        "statistic": "annual_total",
+        "code": "IC.BUS.NREG"
+      }
+    ]
+  }
+]

@@ -1,7 +1,7 @@
 # Managed batches
 
 This repository has two independent intake lanes. Community contributors add one proposed dataset under
-`submissions/` and use review/voting. The Open Geo Data Map intake bot adds one atomic batch from one provider, Eurostat, the JRC or the ECB, under
+`submissions/` and use review/voting. The Open Geo Data Map intake bot adds one atomic batch from one provider, Eurostat, the JRC, the ECB or the World Bank, under
 `managed-batches/` and uses protected automated validation. Both lanes produce the same three-file open
 release format; neither can publish directly to the core or PostgreSQL.
 
@@ -39,10 +39,10 @@ archives, symlinks and executable content are rejected.
 
 The manifest validates against `contracts/managed-batch.schema.json` and declares:
 
-- stable `batch_id`, `provider` (`Eurostat`, `JRC` or `ECB`, one per batch) and `channel: managed_public`;
+- stable `batch_id`, `provider` (`Eurostat`, `JRC`, `ECB` or `WorldBank`, one per batch) and `channel: managed_public`;
 - generation timestamp and geography contract `NUTS/2024`;
 - SHA-256 of the provider's pinned configuration, `contracts/eurostat-datasets.json`,
-  `contracts/jrc-datasets.json` or `contracts/ecb-datasets.json`;
+  `contracts/jrc-datasets.json`, `contracts/ecb-datasets.json` or `contracts/worldbank-datasets.json`;
 - every changed dataset, candidate and previous version, exact directory and row count;
 - SHA-256 of `dataset.yaml`, `observations.csv` and `provenance.json`;
 - regression counts, coverage loss, removal fraction and an empty failure list;
@@ -93,6 +93,10 @@ the licence (the ESCB statistics reuse policy, nothing else), the count of obser
 `E` and, for a projection, `F` only) and the codes left out. A projection (`MPD`, the staff macroeconomic
 projections) also records the exercise read (`G26` is June 2026), the year it starts from and how many
 observed or too distant years it left out: only the projected years of the latest exercise are published.
+The World Bank's (`contracts/worldbank-provenance.schema.json`) records, for every series, the two Indicators
+API requests (metadata and values) and the SHA-256 of their answers, the licence read from the series
+metadata at that run (`CC BY-4.0`, nothing else) and its source, which must name the World Bank: only series
+the Bank produces itself are configured.
 
 ## Trusted contract copies
 
@@ -101,8 +105,8 @@ observed or too distant years it left out: only the projected years of the lates
 - the dataset JSON Schema;
 - the NUTS 2024 unit lookup;
 - the managed batch JSON Schema;
-- the Eurostat, JRC and ECB provenance JSON Schemas;
-- the Eurostat, JRC and ECB importer configurations.
+- the Eurostat, JRC, ECB and World Bank provenance JSON Schemas;
+- the Eurostat, JRC, ECB and World Bank importer configurations.
 
 The accepted providers and the contract files of each are listed in `contracts/governance.yaml`
 (`managed_batches.providers`).
