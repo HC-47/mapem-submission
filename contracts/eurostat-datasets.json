@@ -16568,6 +16568,8 @@
         "primary": true
       }
     ],
+    "headline": "rcv-e",
+    "headline_note": "Defaults on energy recovery: capacity is published only for incineration and energy recovery, which do not add up to a total.",
     "opening_variant": "FAC"
   },
   {
@@ -16678,6 +16680,7 @@
         "primary": true
       }
     ],
+    "headline": "dsp-l",
     "opening_variant": "FAC"
   },
   {
@@ -23016,7 +23019,8 @@
         "short_name": "All guests"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opens_subject": true
   },
   {
     "id": "eurostat-tour-ce-oaw",
@@ -70012,7 +70016,7 @@
         "primary": true
       }
     ],
-    "headline": "b1g",
+    "headline": "b1gq",
     "opening_variant": "PCH_PRE"
   },
   {
@@ -70099,7 +70103,7 @@
         "primary": true
       }
     ],
-    "headline": "b1g",
+    "headline": "b1gq",
     "opening_variant": "PCH_PRE"
   },
   {
