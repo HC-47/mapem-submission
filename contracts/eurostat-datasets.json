@@ -86261,5 +86261,3738 @@
       }
     ],
     "headline": "d1-sal-per"
+  },
+  {
+    "id": "eurostat-nama-10r-3gva",
+    "title": "Gross value added at basic prices",
+    "description": "Gross value added at basic prices, across European regions, from Eurostat table nama_10r_3gva.",
+    "subject": "Gross value added at basic prices",
+    "category": "Economy",
+    "publisher": "Eurostat",
+    "source": "Eurostat nama_10r_3gva",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10r_3gva/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (nama_10r_3gva)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat nama_10r_3gva. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 1, 2, 3]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["economy"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "nama_10r_3gva",
+    "filters": {
+      "freq": "A",
+      "unit": "CP_MEUR"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "indicator_dimension": "nace_r2",
+    "variant": {
+      "dimension": "unit",
+      "code": "CP_MEUR",
+      "label": "Current prices",
+      "unit": "million €"
+    },
+    "indicators": [
+      {
+        "id": "total",
+        "name": "Total - all NACE activities",
+        "description": "Gross value added at basic prices — Total - all NACE activities (TOTAL).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "TOTAL"
+        },
+        "code": "TOTAL",
+        "primary": true
+      },
+      {
+        "id": "a",
+        "name": "Agriculture, forestry and fishing",
+        "description": "Gross value added at basic prices — Agriculture, forestry and fishing (A).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "A"
+        },
+        "code": "A"
+      },
+      {
+        "id": "b-e",
+        "name": "Industry (except construction)",
+        "description": "Gross value added at basic prices — Industry (except construction) (B-E).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "B-E"
+        },
+        "code": "B-E"
+      },
+      {
+        "id": "c",
+        "name": "Manufacturing",
+        "description": "Gross value added at basic prices — Manufacturing (C).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "C"
+        },
+        "code": "C"
+      },
+      {
+        "id": "f",
+        "name": "Construction",
+        "description": "Gross value added at basic prices — Construction (F).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "F"
+        },
+        "code": "F"
+      },
+      {
+        "id": "g-j",
+        "name": "Wholesale and retail trade; transport; accommodation and food service activities; information and communication",
+        "description": "Gross value added at basic prices — Wholesale and retail trade; transport; accommodation and food service activities; information and communication (G-J).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "G-J"
+        },
+        "code": "G-J"
+      },
+      {
+        "id": "g-i",
+        "name": "Wholesale and retail trade, transport, accommodation and food service activities",
+        "description": "Gross value added at basic prices — Wholesale and retail trade, transport, accommodation and food service activities (G-I).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "G-I"
+        },
+        "code": "G-I"
+      },
+      {
+        "id": "j",
+        "name": "Information and communication",
+        "description": "Gross value added at basic prices — Information and communication (J).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "J"
+        },
+        "code": "J"
+      },
+      {
+        "id": "k-n",
+        "name": "Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities",
+        "description": "Gross value added at basic prices — Financial and insurance activities; real estate activities; professional, scientific and technical activities; administrative and support service activities (K-N).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "K-N"
+        },
+        "code": "K-N"
+      },
+      {
+        "id": "k",
+        "name": "Financial and insurance activities",
+        "description": "Gross value added at basic prices — Financial and insurance activities (K).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "K"
+        },
+        "code": "K"
+      },
+      {
+        "id": "l",
+        "name": "Real estate activities",
+        "description": "Gross value added at basic prices — Real estate activities (L).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "L"
+        },
+        "code": "L"
+      },
+      {
+        "id": "m-n",
+        "name": "Professional, scientific and technical activities; administrative and support service activities",
+        "description": "Gross value added at basic prices — Professional, scientific and technical activities; administrative and support service activities (M_N).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "M_N"
+        },
+        "code": "M_N"
+      },
+      {
+        "id": "o-u",
+        "name": "Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services",
+        "description": "Gross value added at basic prices — Public administration and defence; compulsory social security; education; human health and social work activities; arts, entertainment and recreation, repair of household goods and other services (O-U).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "O-U"
+        },
+        "code": "O-U"
+      },
+      {
+        "id": "o-q",
+        "name": "Public administration, defence, education, human health and social work activities",
+        "description": "Gross value added at basic prices — Public administration, defence, education, human health and social work activities (O-Q).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "O-Q"
+        },
+        "code": "O-Q"
+      },
+      {
+        "id": "r-u",
+        "name": "Arts, entertainment and recreation; other service activities; activities of household and extra-territorial organizations and bodies",
+        "description": "Gross value added at basic prices — Arts, entertainment and recreation; other service activities; activities of household and extra-territorial organizations and bodies (R-U).",
+        "unit": "million €",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "R-U"
+        },
+        "code": "R-U"
+      }
+    ],
+    "headline": "total"
+  },
+  {
+    "id": "eurostat-nama-10r-3gva-pyp-meur",
+    "title": "Gross value added at basic prices · Previous year's prices",
+    "description": "Gross value added at basic prices, across European regions, from Eurostat table nama_10r_3gva.",
+    "subject": "Gross value added at basic prices",
+    "category": "Economy",
+    "publisher": "Eurostat",
+    "source": "Eurostat nama_10r_3gva",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10r_3gva/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (nama_10r_3gva)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat nama_10r_3gva. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 1, 2, 3]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["economy"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "nama_10r_3gva",
+    "filters": {
+      "freq": "A",
+      "unit": "PYP_MEUR"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "indicator_dimension": "nace_r2",
+    "variant": {
+      "dimension": "unit",
+      "code": "PYP_MEUR",
+      "label": "Previous year's prices",
+      "unit": "million € (previous year's prices)"
+    },
+    "indicators": [
+      {
+        "id": "total",
+        "name": "Total - all NACE activities",
+        "description": "Gross value added at basic prices — Total - all NACE activities (TOTAL).",
+        "unit": "million € (previous year's prices)",
+        "statistic": "annual_value",
+        "definition": {
+          "nace_r2": "TOTAL"
+        },
+        "code": "TOTAL",
+        "primary": true
+      }
+    ],
+    "headline": "total"
+  },
+  {
+    "id": "eurostat-lfst-r-lfu2ltu",
+    "title": "Persons in long-term unemployment (12 months or more)",
+    "description": "Persons in long-term unemployment (12 months or more), across European regions, from Eurostat table lfst_r_lfu2ltu.",
+    "subject": "Persons in long-term unemployment (12 months or more)",
+    "breakdown": "educational attainment level",
+    "category": "Labour market",
+    "publisher": "Eurostat",
+    "source": "Eurostat lfst_r_lfu2ltu",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/lfst_r_lfu2ltu/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (lfst_r_lfu2ltu)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat lfst_r_lfu2ltu. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 1, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["labour market"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "lfst_r_lfu2ltu",
+    "filters": {
+      "freq": "A",
+      "isced11": "TOTAL",
+      "sex": "T",
+      "unit": "PC_ACT"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "indicator_dimension": "age",
+    "variant": {
+      "dimension": "unit",
+      "code": "PC_ACT",
+      "label": "Percentage of population in the labour force",
+      "unit": "Percentage of population in the labour force"
+    },
+    "indicators": [
+      {
+        "id": "y15-64",
+        "name": "From 15 to 64 years",
+        "description": "Persons in long-term unemployment (12 months or more) — From 15 to 64 years (Y15-64).",
+        "unit": "Percentage of population in the labour force",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y15-64"
+        },
+        "code": "Y15-64",
+        "primary": true
+      },
+      {
+        "id": "y15-74",
+        "name": "From 15 to 74 years",
+        "description": "Persons in long-term unemployment (12 months or more) — From 15 to 74 years (Y15-74).",
+        "unit": "Percentage of population in the labour force",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y15-74"
+        },
+        "code": "Y15-74",
+        "primary": true
+      },
+      {
+        "id": "y-ge15",
+        "name": "15 years or over",
+        "description": "Persons in long-term unemployment (12 months or more) — 15 years or over (Y_GE15).",
+        "unit": "Percentage of population in the labour force",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y_GE15"
+        },
+        "code": "Y_GE15",
+        "primary": true
+      },
+      {
+        "id": "y20-64",
+        "name": "From 20 to 64 years",
+        "description": "Persons in long-term unemployment (12 months or more) — From 20 to 64 years (Y20-64).",
+        "unit": "Percentage of population in the labour force",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y20-64"
+        },
+        "code": "Y20-64",
+        "primary": true
+      },
+      {
+        "id": "y25-64",
+        "name": "From 25 to 64 years",
+        "description": "Persons in long-term unemployment (12 months or more) — From 25 to 64 years (Y25-64).",
+        "unit": "Percentage of population in the labour force",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y25-64"
+        },
+        "code": "Y25-64",
+        "primary": true
+      },
+      {
+        "id": "y-ge25",
+        "name": "25 years or over",
+        "description": "Persons in long-term unemployment (12 months or more) — 25 years or over (Y_GE25).",
+        "unit": "Percentage of population in the labour force",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y_GE25"
+        },
+        "code": "Y_GE25",
+        "primary": true
+      }
+    ],
+    "headline": "y15-74"
+  },
+  {
+    "id": "eurostat-lfst-r-lfu2ltu-pc-une",
+    "title": "Persons in long-term unemployment (12 months or more) · Percentage of unemployment",
+    "description": "Persons in long-term unemployment (12 months or more), across European regions, from Eurostat table lfst_r_lfu2ltu.",
+    "subject": "Persons in long-term unemployment (12 months or more)",
+    "breakdown": "educational attainment level",
+    "category": "Labour market",
+    "publisher": "Eurostat",
+    "source": "Eurostat lfst_r_lfu2ltu",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/lfst_r_lfu2ltu/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (lfst_r_lfu2ltu)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat lfst_r_lfu2ltu. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 1, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["labour market"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "lfst_r_lfu2ltu",
+    "filters": {
+      "freq": "A",
+      "isced11": "TOTAL",
+      "sex": "T",
+      "unit": "PC_UNE"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "indicator_dimension": "age",
+    "variant": {
+      "dimension": "unit",
+      "code": "PC_UNE",
+      "label": "Percentage of unemployment",
+      "unit": "Percentage of unemployment"
+    },
+    "indicators": [
+      {
+        "id": "y15-64",
+        "name": "From 15 to 64 years",
+        "description": "Persons in long-term unemployment (12 months or more) — From 15 to 64 years (Y15-64).",
+        "unit": "Percentage of unemployment",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y15-64"
+        },
+        "code": "Y15-64",
+        "primary": true
+      },
+      {
+        "id": "y15-74",
+        "name": "From 15 to 74 years",
+        "description": "Persons in long-term unemployment (12 months or more) — From 15 to 74 years (Y15-74).",
+        "unit": "Percentage of unemployment",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y15-74"
+        },
+        "code": "Y15-74",
+        "primary": true
+      },
+      {
+        "id": "y-ge15",
+        "name": "15 years or over",
+        "description": "Persons in long-term unemployment (12 months or more) — 15 years or over (Y_GE15).",
+        "unit": "Percentage of unemployment",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y_GE15"
+        },
+        "code": "Y_GE15",
+        "primary": true
+      },
+      {
+        "id": "y20-64",
+        "name": "From 20 to 64 years",
+        "description": "Persons in long-term unemployment (12 months or more) — From 20 to 64 years (Y20-64).",
+        "unit": "Percentage of unemployment",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y20-64"
+        },
+        "code": "Y20-64",
+        "primary": true
+      },
+      {
+        "id": "y25-64",
+        "name": "From 25 to 64 years",
+        "description": "Persons in long-term unemployment (12 months or more) — From 25 to 64 years (Y25-64).",
+        "unit": "Percentage of unemployment",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y25-64"
+        },
+        "code": "Y25-64",
+        "primary": true
+      },
+      {
+        "id": "y-ge25",
+        "name": "25 years or over",
+        "description": "Persons in long-term unemployment (12 months or more) — 25 years or over (Y_GE25).",
+        "unit": "Percentage of unemployment",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y_GE25"
+        },
+        "code": "Y_GE25",
+        "primary": true
+      }
+    ],
+    "headline": "y15-74"
+  },
+  {
+    "id": "eurostat-lfst-r-lfu2ltu-ths-per",
+    "title": "Persons in long-term unemployment (12 months or more) · Thousand persons",
+    "description": "Persons in long-term unemployment (12 months or more), across European regions, from Eurostat table lfst_r_lfu2ltu.",
+    "subject": "Persons in long-term unemployment (12 months or more)",
+    "breakdown": "educational attainment level",
+    "category": "Labour market",
+    "publisher": "Eurostat",
+    "source": "Eurostat lfst_r_lfu2ltu",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/lfst_r_lfu2ltu/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (lfst_r_lfu2ltu)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat lfst_r_lfu2ltu. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 1, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["labour market"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "lfst_r_lfu2ltu",
+    "filters": {
+      "freq": "A",
+      "isced11": "TOTAL",
+      "sex": "T",
+      "unit": "THS_PER"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "indicator_dimension": "age",
+    "variant": {
+      "dimension": "unit",
+      "code": "THS_PER",
+      "label": "Thousand persons",
+      "unit": "Thousand persons"
+    },
+    "indicators": [
+      {
+        "id": "y15-64",
+        "name": "From 15 to 64 years",
+        "description": "Persons in long-term unemployment (12 months or more) — From 15 to 64 years (Y15-64).",
+        "unit": "Thousand persons",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y15-64"
+        },
+        "code": "Y15-64",
+        "primary": true
+      },
+      {
+        "id": "y15-74",
+        "name": "From 15 to 74 years",
+        "description": "Persons in long-term unemployment (12 months or more) — From 15 to 74 years (Y15-74).",
+        "unit": "Thousand persons",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y15-74"
+        },
+        "code": "Y15-74",
+        "primary": true
+      },
+      {
+        "id": "y-ge15",
+        "name": "15 years or over",
+        "description": "Persons in long-term unemployment (12 months or more) — 15 years or over (Y_GE15).",
+        "unit": "Thousand persons",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y_GE15"
+        },
+        "code": "Y_GE15",
+        "primary": true
+      },
+      {
+        "id": "y20-64",
+        "name": "From 20 to 64 years",
+        "description": "Persons in long-term unemployment (12 months or more) — From 20 to 64 years (Y20-64).",
+        "unit": "Thousand persons",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y20-64"
+        },
+        "code": "Y20-64",
+        "primary": true
+      },
+      {
+        "id": "y25-64",
+        "name": "From 25 to 64 years",
+        "description": "Persons in long-term unemployment (12 months or more) — From 25 to 64 years (Y25-64).",
+        "unit": "Thousand persons",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y25-64"
+        },
+        "code": "Y25-64",
+        "primary": true
+      },
+      {
+        "id": "y-ge25",
+        "name": "25 years or over",
+        "description": "Persons in long-term unemployment (12 months or more) — 25 years or over (Y_GE25).",
+        "unit": "Thousand persons",
+        "statistic": "annual_value",
+        "definition": {
+          "age": "Y_GE25"
+        },
+        "code": "Y_GE25",
+        "primary": true
+      }
+    ],
+    "headline": "y15-74"
+  },
+  {
+    "id": "eurostat-ef-lsk-pigs",
+    "title": "Pigs",
+    "description": "Pigs, across European regions, from Eurostat table ef_lsk_pigs.",
+    "subject": "Pigs",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_lsk_pigs",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_lsk_pigs/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_lsk_pigs)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_lsk_pigs. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_lsk_pigs",
+    "filters": {
+      "freq": "A",
+      "statinfo": "TOTAL",
+      "lsu": "TOTAL",
+      "uaarea": "TOTAL",
+      "unit": "HD"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "animals",
+    "variant": {
+      "dimension": "unit",
+      "code": "HD",
+      "label": "Head (animal)",
+      "unit": "Head (animal)"
+    },
+    "indicators": [
+      {
+        "id": "a3100",
+        "name": "Live swine, domestic species",
+        "description": "Pigs — Live swine, domestic species (A3100).",
+        "unit": "Head (animal)",
+        "statistic": "annual_value",
+        "definition": {
+          "animals": "A3100"
+        },
+        "code": "A3100",
+        "primary": true
+      },
+      {
+        "id": "a3110",
+        "name": "Piglets, live weight of under 20 kg",
+        "description": "Pigs — Piglets, live weight of under 20 kg (A3110).",
+        "unit": "Head (animal)",
+        "statistic": "annual_value",
+        "definition": {
+          "animals": "A3110"
+        },
+        "code": "A3110",
+        "primary": true
+      },
+      {
+        "id": "a3120",
+        "name": "Breeding sows, live weight 50 kg or over",
+        "description": "Pigs — Breeding sows, live weight 50 kg or over (A3120).",
+        "unit": "Head (animal)",
+        "statistic": "annual_value",
+        "definition": {
+          "animals": "A3120"
+        },
+        "code": "A3120",
+        "primary": true
+      },
+      {
+        "id": "a3130",
+        "name": "Other pigs",
+        "description": "Pigs — Other pigs (A3130).",
+        "unit": "Head (animal)",
+        "statistic": "annual_value",
+        "definition": {
+          "animals": "A3130"
+        },
+        "code": "A3130",
+        "primary": true
+      }
+    ],
+    "headline": "a3100"
+  },
+  {
+    "id": "eurostat-ef-lsk-pigs-hld",
+    "title": "Pigs · Holding",
+    "description": "Pigs, across European regions, from Eurostat table ef_lsk_pigs.",
+    "subject": "Pigs",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_lsk_pigs",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_lsk_pigs/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_lsk_pigs)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_lsk_pigs. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_lsk_pigs",
+    "filters": {
+      "freq": "A",
+      "statinfo": "TOTAL",
+      "lsu": "TOTAL",
+      "uaarea": "TOTAL",
+      "unit": "HLD"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "animals",
+    "variant": {
+      "dimension": "unit",
+      "code": "HLD",
+      "label": "Holding",
+      "unit": "Holding"
+    },
+    "indicators": [
+      {
+        "id": "a3100",
+        "name": "Live swine, domestic species",
+        "description": "Pigs — Live swine, domestic species (A3100).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "animals": "A3100"
+        },
+        "code": "A3100",
+        "primary": true
+      },
+      {
+        "id": "a3110",
+        "name": "Piglets, live weight of under 20 kg",
+        "description": "Pigs — Piglets, live weight of under 20 kg (A3110).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "animals": "A3110"
+        },
+        "code": "A3110",
+        "primary": true
+      },
+      {
+        "id": "a3120",
+        "name": "Breeding sows, live weight 50 kg or over",
+        "description": "Pigs — Breeding sows, live weight 50 kg or over (A3120).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "animals": "A3120"
+        },
+        "code": "A3120",
+        "primary": true
+      },
+      {
+        "id": "a3130",
+        "name": "Other pigs",
+        "description": "Pigs — Other pigs (A3130).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "animals": "A3130"
+        },
+        "code": "A3130",
+        "primary": true
+      }
+    ],
+    "headline": "a3100"
+  },
+  {
+    "id": "eurostat-ef-lsk-pigs-lsu",
+    "title": "Pigs · Livestock unit (LSU)",
+    "description": "Pigs, across European regions, from Eurostat table ef_lsk_pigs.",
+    "subject": "Pigs",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_lsk_pigs",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_lsk_pigs/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_lsk_pigs)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_lsk_pigs. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_lsk_pigs",
+    "filters": {
+      "freq": "A",
+      "statinfo": "TOTAL",
+      "lsu": "TOTAL",
+      "uaarea": "TOTAL",
+      "unit": "LSU"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "animals",
+    "variant": {
+      "dimension": "unit",
+      "code": "LSU",
+      "label": "Livestock unit (LSU)",
+      "unit": "Livestock unit (LSU)"
+    },
+    "indicators": [
+      {
+        "id": "a3100",
+        "name": "Live swine, domestic species",
+        "description": "Pigs — Live swine, domestic species (A3100).",
+        "unit": "Livestock unit (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "animals": "A3100"
+        },
+        "code": "A3100",
+        "primary": true
+      },
+      {
+        "id": "a3110",
+        "name": "Piglets, live weight of under 20 kg",
+        "description": "Pigs — Piglets, live weight of under 20 kg (A3110).",
+        "unit": "Livestock unit (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "animals": "A3110"
+        },
+        "code": "A3110",
+        "primary": true
+      },
+      {
+        "id": "a3120",
+        "name": "Breeding sows, live weight 50 kg or over",
+        "description": "Pigs — Breeding sows, live weight 50 kg or over (A3120).",
+        "unit": "Livestock unit (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "animals": "A3120"
+        },
+        "code": "A3120",
+        "primary": true
+      },
+      {
+        "id": "a3130",
+        "name": "Other pigs",
+        "description": "Pigs — Other pigs (A3130).",
+        "unit": "Livestock unit (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "animals": "A3130"
+        },
+        "code": "A3130",
+        "primary": true
+      }
+    ],
+    "headline": "a3100"
+  },
+  {
+    "id": "eurostat-ef-mp-digicr",
+    "title": "Precision farming",
+    "description": "Precision farming, across European regions, from Eurostat table ef_mp_digicr.",
+    "subject": "Precision farming",
+    "breakdown": "age, training of manager, size of farm",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_mp_digicr",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_mp_digicr/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_mp_digicr)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_mp_digicr. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_mp_digicr",
+    "filters": {
+      "freq": "A",
+      "age": "TOTAL",
+      "uaarea": "TOTAL",
+      "training": "TOTAL",
+      "statinfo": "TOTAL",
+      "unit": "EUR"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "agr_inp",
+    "variant": {
+      "dimension": "unit",
+      "code": "EUR",
+      "label": "Euro",
+      "unit": "€"
+    },
+    "indicators": [
+      {
+        "id": "mac-pfrm",
+        "name": "Precision farming",
+        "description": "Precision farming — Precision farming (MAC_PFRM).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_PFRM"
+        },
+        "code": "MAC_PFRM",
+        "primary": true
+      },
+      {
+        "id": "mac-rob-ppp",
+        "name": "Robotics for plant protection products",
+        "description": "Precision farming — Robotics for plant protection products (MAC_ROB_PPP).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_ROB_PPP"
+        },
+        "code": "MAC_ROB_PPP",
+        "primary": true
+      },
+      {
+        "id": "mac-bds-ppp",
+        "name": "Band spraying of plant protection products",
+        "description": "Precision farming — Band spraying of plant protection products (MAC_BDS_PPP).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_BDS_PPP"
+        },
+        "code": "MAC_BDS_PPP",
+        "primary": true
+      },
+      {
+        "id": "mac-vrt",
+        "name": "Variable rate techniques",
+        "description": "Precision farming — Variable rate techniques (MAC_VRT).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_VRT"
+        },
+        "code": "MAC_VRT",
+        "primary": true
+      },
+      {
+        "id": "mac-pmon-cr",
+        "name": "Precision monitoring of crops",
+        "description": "Precision farming — Precision monitoring of crops (MAC_PMON_CR).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_PMON_CR"
+        },
+        "code": "MAC_PMON_CR",
+        "primary": true
+      },
+      {
+        "id": "mac-asoil",
+        "name": "Soil analysis",
+        "description": "Precision farming — Soil analysis (MAC_ASOIL).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_ASOIL"
+        },
+        "code": "MAC_ASOIL",
+        "primary": true
+      },
+      {
+        "id": "nmac-pfrm",
+        "name": "No precision farming",
+        "description": "Precision farming — No precision farming (NMAC_PFRM).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "NMAC_PFRM"
+        },
+        "code": "NMAC_PFRM",
+        "primary": true
+      }
+    ],
+    "headline": "mac-pfrm"
+  },
+  {
+    "id": "eurostat-ef-mp-digicr-ha",
+    "title": "Precision farming · Hectare",
+    "description": "Precision farming, across European regions, from Eurostat table ef_mp_digicr.",
+    "subject": "Precision farming",
+    "breakdown": "age, training of manager, size of farm",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_mp_digicr",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_mp_digicr/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_mp_digicr)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_mp_digicr. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_mp_digicr",
+    "filters": {
+      "freq": "A",
+      "age": "TOTAL",
+      "uaarea": "TOTAL",
+      "training": "TOTAL",
+      "statinfo": "TOTAL",
+      "unit": "HA"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "agr_inp",
+    "variant": {
+      "dimension": "unit",
+      "code": "HA",
+      "label": "Hectare",
+      "unit": "hectares"
+    },
+    "indicators": [
+      {
+        "id": "mac-pfrm",
+        "name": "Precision farming",
+        "description": "Precision farming — Precision farming (MAC_PFRM).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_PFRM"
+        },
+        "code": "MAC_PFRM",
+        "primary": true
+      },
+      {
+        "id": "mac-rob-ppp",
+        "name": "Robotics for plant protection products",
+        "description": "Precision farming — Robotics for plant protection products (MAC_ROB_PPP).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_ROB_PPP"
+        },
+        "code": "MAC_ROB_PPP",
+        "primary": true
+      },
+      {
+        "id": "mac-bds-ppp",
+        "name": "Band spraying of plant protection products",
+        "description": "Precision farming — Band spraying of plant protection products (MAC_BDS_PPP).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_BDS_PPP"
+        },
+        "code": "MAC_BDS_PPP",
+        "primary": true
+      },
+      {
+        "id": "mac-vrt",
+        "name": "Variable rate techniques",
+        "description": "Precision farming — Variable rate techniques (MAC_VRT).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_VRT"
+        },
+        "code": "MAC_VRT",
+        "primary": true
+      },
+      {
+        "id": "mac-pmon-cr",
+        "name": "Precision monitoring of crops",
+        "description": "Precision farming — Precision monitoring of crops (MAC_PMON_CR).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_PMON_CR"
+        },
+        "code": "MAC_PMON_CR",
+        "primary": true
+      },
+      {
+        "id": "mac-asoil",
+        "name": "Soil analysis",
+        "description": "Precision farming — Soil analysis (MAC_ASOIL).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_ASOIL"
+        },
+        "code": "MAC_ASOIL",
+        "primary": true
+      },
+      {
+        "id": "nmac-pfrm",
+        "name": "No precision farming",
+        "description": "Precision farming — No precision farming (NMAC_PFRM).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "NMAC_PFRM"
+        },
+        "code": "NMAC_PFRM",
+        "primary": true
+      }
+    ],
+    "headline": "mac-pfrm"
+  },
+  {
+    "id": "eurostat-ef-mp-digicr-hld",
+    "title": "Precision farming · Holding",
+    "description": "Precision farming, across European regions, from Eurostat table ef_mp_digicr.",
+    "subject": "Precision farming",
+    "breakdown": "age, training of manager, size of farm",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_mp_digicr",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_mp_digicr/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_mp_digicr)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_mp_digicr. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_mp_digicr",
+    "filters": {
+      "freq": "A",
+      "age": "TOTAL",
+      "uaarea": "TOTAL",
+      "training": "TOTAL",
+      "statinfo": "TOTAL",
+      "unit": "HLD"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "agr_inp",
+    "variant": {
+      "dimension": "unit",
+      "code": "HLD",
+      "label": "Holding",
+      "unit": "Holding"
+    },
+    "indicators": [
+      {
+        "id": "mac-pfrm",
+        "name": "Precision farming",
+        "description": "Precision farming — Precision farming (MAC_PFRM).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_PFRM"
+        },
+        "code": "MAC_PFRM",
+        "primary": true
+      },
+      {
+        "id": "mac-rob-ppp",
+        "name": "Robotics for plant protection products",
+        "description": "Precision farming — Robotics for plant protection products (MAC_ROB_PPP).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_ROB_PPP"
+        },
+        "code": "MAC_ROB_PPP",
+        "primary": true
+      },
+      {
+        "id": "mac-bds-ppp",
+        "name": "Band spraying of plant protection products",
+        "description": "Precision farming — Band spraying of plant protection products (MAC_BDS_PPP).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_BDS_PPP"
+        },
+        "code": "MAC_BDS_PPP",
+        "primary": true
+      },
+      {
+        "id": "mac-vrt",
+        "name": "Variable rate techniques",
+        "description": "Precision farming — Variable rate techniques (MAC_VRT).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_VRT"
+        },
+        "code": "MAC_VRT",
+        "primary": true
+      },
+      {
+        "id": "mac-pmon-cr",
+        "name": "Precision monitoring of crops",
+        "description": "Precision farming — Precision monitoring of crops (MAC_PMON_CR).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_PMON_CR"
+        },
+        "code": "MAC_PMON_CR",
+        "primary": true
+      },
+      {
+        "id": "mac-asoil",
+        "name": "Soil analysis",
+        "description": "Precision farming — Soil analysis (MAC_ASOIL).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_ASOIL"
+        },
+        "code": "MAC_ASOIL",
+        "primary": true
+      },
+      {
+        "id": "nmac-pfrm",
+        "name": "No precision farming",
+        "description": "Precision farming — No precision farming (NMAC_PFRM).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "NMAC_PFRM"
+        },
+        "code": "NMAC_PFRM",
+        "primary": true
+      }
+    ],
+    "headline": "mac-pfrm"
+  },
+  {
+    "id": "eurostat-ef-mp-digilsk",
+    "title": "Machinery for livestock management",
+    "description": "Machinery for livestock management, across European regions, from Eurostat table ef_mp_digilsk.",
+    "subject": "Machinery for livestock management",
+    "breakdown": "age, training of manager, size classes of livestock",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_mp_digilsk",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_mp_digilsk/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_mp_digilsk)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_mp_digilsk. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_mp_digilsk",
+    "filters": {
+      "freq": "A",
+      "age": "TOTAL",
+      "lsu": "TOTAL",
+      "training": "TOTAL",
+      "statinfo": "TOTAL",
+      "unit": "EUR"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "agr_inp",
+    "variant": {
+      "dimension": "unit",
+      "code": "EUR",
+      "label": "Euro",
+      "unit": "€"
+    },
+    "indicators": [
+      {
+        "id": "mac-lsm",
+        "name": "Machinery for livestock management",
+        "description": "Machinery for livestock management — Machinery for livestock management (MAC_LSM).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_LSM"
+        },
+        "code": "MAC_LSM",
+        "primary": true
+      },
+      {
+        "id": "mac-whmon",
+        "name": "Welfare and health monitoring of animals",
+        "description": "Machinery for livestock management — Welfare and health monitoring of animals (MAC_WHMON).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_WHMON"
+        },
+        "code": "MAC_WHMON",
+        "primary": true
+      },
+      {
+        "id": "mac-gm-afd",
+        "name": "Grinder mixer for animal feeding",
+        "description": "Machinery for livestock management — Grinder mixer for animal feeding (MAC_GM_AFD).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_GM_AFD"
+        },
+        "code": "MAC_GM_AFD",
+        "primary": true
+      },
+      {
+        "id": "mac-afds",
+        "name": "Automatic feeding systems",
+        "description": "Machinery for livestock management — Automatic feeding systems (MAC_AFDS).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_AFDS"
+        },
+        "code": "MAC_AFDS",
+        "primary": true
+      },
+      {
+        "id": "mac-areg",
+        "name": "Automatic regulation of barn climate",
+        "description": "Machinery for livestock management — Automatic regulation of barn climate (MAC_AREG).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_AREG"
+        },
+        "code": "MAC_AREG",
+        "primary": true
+      },
+      {
+        "id": "nmac-lsm",
+        "name": "No machinery for livestock management",
+        "description": "Machinery for livestock management — No machinery for livestock management (NMAC_LSM).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "NMAC_LSM"
+        },
+        "code": "NMAC_LSM",
+        "primary": true
+      }
+    ],
+    "headline": "mac-lsm"
+  },
+  {
+    "id": "eurostat-ef-mp-digilsk-hld",
+    "title": "Machinery for livestock management · Holding",
+    "description": "Machinery for livestock management, across European regions, from Eurostat table ef_mp_digilsk.",
+    "subject": "Machinery for livestock management",
+    "breakdown": "age, training of manager, size classes of livestock",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_mp_digilsk",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_mp_digilsk/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_mp_digilsk)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_mp_digilsk. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_mp_digilsk",
+    "filters": {
+      "freq": "A",
+      "age": "TOTAL",
+      "lsu": "TOTAL",
+      "training": "TOTAL",
+      "statinfo": "TOTAL",
+      "unit": "HLD"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "agr_inp",
+    "variant": {
+      "dimension": "unit",
+      "code": "HLD",
+      "label": "Holding",
+      "unit": "Holding"
+    },
+    "indicators": [
+      {
+        "id": "mac-lsm",
+        "name": "Machinery for livestock management",
+        "description": "Machinery for livestock management — Machinery for livestock management (MAC_LSM).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_LSM"
+        },
+        "code": "MAC_LSM",
+        "primary": true
+      },
+      {
+        "id": "mac-whmon",
+        "name": "Welfare and health monitoring of animals",
+        "description": "Machinery for livestock management — Welfare and health monitoring of animals (MAC_WHMON).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_WHMON"
+        },
+        "code": "MAC_WHMON",
+        "primary": true
+      },
+      {
+        "id": "mac-gm-afd",
+        "name": "Grinder mixer for animal feeding",
+        "description": "Machinery for livestock management — Grinder mixer for animal feeding (MAC_GM_AFD).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_GM_AFD"
+        },
+        "code": "MAC_GM_AFD",
+        "primary": true
+      },
+      {
+        "id": "mac-afds",
+        "name": "Automatic feeding systems",
+        "description": "Machinery for livestock management — Automatic feeding systems (MAC_AFDS).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_AFDS"
+        },
+        "code": "MAC_AFDS",
+        "primary": true
+      },
+      {
+        "id": "mac-areg",
+        "name": "Automatic regulation of barn climate",
+        "description": "Machinery for livestock management — Automatic regulation of barn climate (MAC_AREG).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_AREG"
+        },
+        "code": "MAC_AREG",
+        "primary": true
+      },
+      {
+        "id": "mac-mlk-rob",
+        "name": "Milking robots",
+        "description": "Machinery for livestock management — Milking robots (MAC_MLK_ROB).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_MLK_ROB"
+        },
+        "code": "MAC_MLK_ROB",
+        "primary": true
+      },
+      {
+        "id": "nmac-lsm",
+        "name": "No machinery for livestock management",
+        "description": "Machinery for livestock management — No machinery for livestock management (NMAC_LSM).",
+        "unit": "Holding",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "NMAC_LSM"
+        },
+        "code": "NMAC_LSM",
+        "primary": true
+      }
+    ],
+    "headline": "mac-lsm"
+  },
+  {
+    "id": "eurostat-ef-mp-digilsk-lsu",
+    "title": "Machinery for livestock management · Livestock unit (LSU)",
+    "description": "Machinery for livestock management, across European regions, from Eurostat table ef_mp_digilsk.",
+    "subject": "Machinery for livestock management",
+    "breakdown": "age, training of manager, size classes of livestock",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_mp_digilsk",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_mp_digilsk/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_mp_digilsk)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_mp_digilsk. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_mp_digilsk",
+    "filters": {
+      "freq": "A",
+      "age": "TOTAL",
+      "lsu": "TOTAL",
+      "training": "TOTAL",
+      "statinfo": "TOTAL",
+      "unit": "LSU"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "agr_inp",
+    "variant": {
+      "dimension": "unit",
+      "code": "LSU",
+      "label": "Livestock unit (LSU)",
+      "unit": "Livestock unit (LSU)"
+    },
+    "indicators": [
+      {
+        "id": "mac-lsm",
+        "name": "Machinery for livestock management",
+        "description": "Machinery for livestock management — Machinery for livestock management (MAC_LSM).",
+        "unit": "Livestock unit (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_LSM"
+        },
+        "code": "MAC_LSM",
+        "primary": true
+      },
+      {
+        "id": "mac-whmon",
+        "name": "Welfare and health monitoring of animals",
+        "description": "Machinery for livestock management — Welfare and health monitoring of animals (MAC_WHMON).",
+        "unit": "Livestock unit (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_WHMON"
+        },
+        "code": "MAC_WHMON",
+        "primary": true
+      },
+      {
+        "id": "mac-gm-afd",
+        "name": "Grinder mixer for animal feeding",
+        "description": "Machinery for livestock management — Grinder mixer for animal feeding (MAC_GM_AFD).",
+        "unit": "Livestock unit (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_GM_AFD"
+        },
+        "code": "MAC_GM_AFD",
+        "primary": true
+      },
+      {
+        "id": "mac-afds",
+        "name": "Automatic feeding systems",
+        "description": "Machinery for livestock management — Automatic feeding systems (MAC_AFDS).",
+        "unit": "Livestock unit (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_AFDS"
+        },
+        "code": "MAC_AFDS",
+        "primary": true
+      },
+      {
+        "id": "mac-areg",
+        "name": "Automatic regulation of barn climate",
+        "description": "Machinery for livestock management — Automatic regulation of barn climate (MAC_AREG).",
+        "unit": "Livestock unit (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_AREG"
+        },
+        "code": "MAC_AREG",
+        "primary": true
+      },
+      {
+        "id": "nmac-lsm",
+        "name": "No machinery for livestock management",
+        "description": "Machinery for livestock management — No machinery for livestock management (NMAC_LSM).",
+        "unit": "Livestock unit (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "NMAC_LSM"
+        },
+        "code": "NMAC_LSM",
+        "primary": true
+      }
+    ],
+    "headline": "mac-lsm"
+  },
+  {
+    "id": "eurostat-hlth-rs-physreg",
+    "title": "Physicians",
+    "description": "Physicians, across European regions, from Eurostat table hlth_rs_physreg.",
+    "subject": "Physicians",
+    "category": "Health",
+    "publisher": "Eurostat",
+    "source": "Eurostat hlth_rs_physreg",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/hlth_rs_physreg/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (hlth_rs_physreg)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat hlth_rs_physreg. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["health"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "hlth_rs_physreg",
+    "filters": {
+      "freq": "A",
+      "unit": "HAB_P"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "variant": {
+      "dimension": "unit",
+      "code": "HAB_P",
+      "label": "Inhabitants per physician",
+      "unit": "inhabitants per physician"
+    },
+    "indicator": {
+      "id": "hlth-rs-physreg",
+      "name": "Physicians",
+      "description": "Physicians, across European regions, from Eurostat table hlth_rs_physreg.",
+      "unit": "inhabitants per physician",
+      "statistic": "annual_value",
+      "definition": {}
+    }
+  },
+  {
+    "id": "eurostat-hlth-rs-physreg-nr",
+    "title": "Physicians · Physicians",
+    "description": "Physicians, across European regions, from Eurostat table hlth_rs_physreg.",
+    "subject": "Physicians",
+    "category": "Health",
+    "publisher": "Eurostat",
+    "source": "Eurostat hlth_rs_physreg",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/hlth_rs_physreg/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (hlth_rs_physreg)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat hlth_rs_physreg. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["health"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "hlth_rs_physreg",
+    "filters": {
+      "freq": "A",
+      "unit": "NR"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "variant": {
+      "dimension": "unit",
+      "code": "NR",
+      "label": "Physicians",
+      "unit": "number"
+    },
+    "indicator": {
+      "id": "hlth-rs-physreg",
+      "name": "Physicians",
+      "description": "Physicians, across European regions, from Eurostat table hlth_rs_physreg.",
+      "unit": "number",
+      "statistic": "annual_value",
+      "definition": {}
+    }
+  },
+  {
+    "id": "eurostat-hlth-rs-physreg-p-hthab",
+    "title": "Physicians · Per hundred thousand inhabitants",
+    "description": "Physicians, across European regions, from Eurostat table hlth_rs_physreg.",
+    "subject": "Physicians",
+    "category": "Health",
+    "publisher": "Eurostat",
+    "source": "Eurostat hlth_rs_physreg",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/hlth_rs_physreg/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (hlth_rs_physreg)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat hlth_rs_physreg. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["health"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "hlth_rs_physreg",
+    "filters": {
+      "freq": "A",
+      "unit": "P_HTHAB"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "variant": {
+      "dimension": "unit",
+      "code": "P_HTHAB",
+      "label": "Per hundred thousand inhabitants",
+      "unit": "per 100,000 inhabitants"
+    },
+    "indicator": {
+      "id": "hlth-rs-physreg",
+      "name": "Physicians",
+      "description": "Physicians, across European regions, from Eurostat table hlth_rs_physreg.",
+      "unit": "per 100,000 inhabitants",
+      "statistic": "annual_value",
+      "definition": {}
+    }
+  },
+  {
+    "id": "eurostat-isoc-r-broad-h",
+    "title": "Households with broadband access",
+    "description": "Households with broadband access, across European regions, from Eurostat table isoc_r_broad_h.",
+    "subject": "Households with broadband access",
+    "category": "Digital society",
+    "publisher": "Eurostat",
+    "source": "Eurostat isoc_r_broad_h",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/isoc_r_broad_h/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (isoc_r_broad_h)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat isoc_r_broad_h. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 1, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["digital society"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "isoc_r_broad_h",
+    "filters": {
+      "freq": "A",
+      "unit": "PC_HH"
+    },
+    "period_start": "2012",
+    "period_end": "latest",
+    "variant": {
+      "dimension": "unit",
+      "code": "PC_HH",
+      "label": "Share of households",
+      "unit": "% of households"
+    },
+    "indicator": {
+      "id": "isoc-r-broad-h",
+      "name": "Households with broadband access",
+      "description": "Households with broadband access, across European regions, from Eurostat table isoc_r_broad_h.",
+      "unit": "% of households",
+      "statistic": "annual_value",
+      "definition": {}
+    }
+  },
+  {
+    "id": "eurostat-isoc-r-broad-h-pc-hh-iacc",
+    "title": "Households with broadband access · Share of households with internet access",
+    "description": "Households with broadband access, across European regions, from Eurostat table isoc_r_broad_h.",
+    "subject": "Households with broadband access",
+    "category": "Digital society",
+    "publisher": "Eurostat",
+    "source": "Eurostat isoc_r_broad_h",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/isoc_r_broad_h/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (isoc_r_broad_h)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat isoc_r_broad_h. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 1, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["digital society"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "isoc_r_broad_h",
+    "filters": {
+      "freq": "A",
+      "unit": "PC_HH_IACC"
+    },
+    "period_start": "2012",
+    "period_end": "latest",
+    "variant": {
+      "dimension": "unit",
+      "code": "PC_HH_IACC",
+      "label": "Share of households with internet access",
+      "unit": "% of households with internet access at home"
+    },
+    "indicator": {
+      "id": "isoc-r-broad-h",
+      "name": "Households with broadband access",
+      "description": "Households with broadband access, across European regions, from Eurostat table isoc_r_broad_h.",
+      "unit": "% of households with internet access at home",
+      "statistic": "annual_value",
+      "definition": {}
+    }
+  },
+  {
+    "id": "eurostat-ef-lsk-bees",
+    "title": "Beehives on farms",
+    "description": "Beehives on farms, across European regions, from Eurostat table ef_lsk_bees.",
+    "subject": "Beehives on farms",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_lsk_bees",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_lsk_bees/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_lsk_bees)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_lsk_bees. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_lsk_bees",
+    "filters": {
+      "freq": "A",
+      "statinfo": "TOTAL",
+      "so_eur": "TOTAL",
+      "uaarea": "TOTAL",
+      "animals": "A6710R",
+      "unit": "HIVE"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "variant": {
+      "dimension": "unit",
+      "code": "HIVE",
+      "label": "Beehives",
+      "unit": "beehives"
+    },
+    "indicator": {
+      "id": "ef-lsk-bees",
+      "name": "Beehives on farms",
+      "description": "Beehives on farms, across European regions, from Eurostat table ef_lsk_bees.",
+      "unit": "beehives",
+      "statistic": "annual_value",
+      "definition": {}
+    }
+  },
+  {
+    "id": "eurostat-ef-lsk-bees-hld",
+    "title": "Beehives on farms · Holdings",
+    "description": "Beehives on farms, across European regions, from Eurostat table ef_lsk_bees.",
+    "subject": "Beehives on farms",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_lsk_bees",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_lsk_bees/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_lsk_bees)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_lsk_bees. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_lsk_bees",
+    "filters": {
+      "freq": "A",
+      "statinfo": "TOTAL",
+      "so_eur": "TOTAL",
+      "uaarea": "TOTAL",
+      "animals": "A6710R",
+      "unit": "HLD"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "variant": {
+      "dimension": "unit",
+      "code": "HLD",
+      "label": "Holdings",
+      "unit": "holdings"
+    },
+    "indicator": {
+      "id": "ef-lsk-bees",
+      "name": "Beehives on farms",
+      "description": "Beehives on farms, across European regions, from Eurostat table ef_lsk_bees.",
+      "unit": "holdings",
+      "statistic": "annual_value",
+      "definition": {}
+    }
+  },
+  {
+    "id": "eurostat-rd-p-persreg",
+    "title": "R&D personnel and researchers",
+    "description": "R&D personnel and researchers, across European regions, from Eurostat table rd_p_persreg.",
+    "subject": "R&D personnel and researchers",
+    "breakdown": "sector of performance, sex",
+    "category": "Science and technology",
+    "publisher": "Eurostat",
+    "source": "Eurostat rd_p_persreg",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/rd_p_persreg/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (rd_p_persreg)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat rd_p_persreg. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 1, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["science and technology"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "rd_p_persreg",
+    "filters": {
+      "freq": "A",
+      "prof_pos": "TOTAL",
+      "sex": "T",
+      "sectperf": "TOTAL",
+      "unit": "FTE"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "variant": {
+      "dimension": "unit",
+      "code": "FTE",
+      "label": "Full-time equivalent",
+      "unit": "full-time equivalent (FTE)"
+    },
+    "indicator": {
+      "id": "rd-p-persreg",
+      "name": "R&D personnel and researchers",
+      "description": "R&D personnel and researchers, across European regions, from Eurostat table rd_p_persreg.",
+      "unit": "full-time equivalent (FTE)",
+      "statistic": "annual_value",
+      "definition": {}
+    }
+  },
+  {
+    "id": "eurostat-rd-p-persreg-hc",
+    "title": "R&D personnel and researchers · Head count",
+    "description": "R&D personnel and researchers, across European regions, from Eurostat table rd_p_persreg.",
+    "subject": "R&D personnel and researchers",
+    "breakdown": "sector of performance, sex",
+    "category": "Science and technology",
+    "publisher": "Eurostat",
+    "source": "Eurostat rd_p_persreg",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/rd_p_persreg/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (rd_p_persreg)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat rd_p_persreg. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 1, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["science and technology"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "rd_p_persreg",
+    "filters": {
+      "freq": "A",
+      "prof_pos": "TOTAL",
+      "sex": "T",
+      "sectperf": "TOTAL",
+      "unit": "HC"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "variant": {
+      "dimension": "unit",
+      "code": "HC",
+      "label": "Head count",
+      "unit": "persons"
+    },
+    "indicator": {
+      "id": "rd-p-persreg",
+      "name": "R&D personnel and researchers",
+      "description": "R&D personnel and researchers, across European regions, from Eurostat table rd_p_persreg.",
+      "unit": "persons",
+      "statistic": "annual_value",
+      "definition": {}
+    }
+  },
+  {
+    "id": "eurostat-rd-p-persreg-pc-act-fte",
+    "title": "R&D personnel and researchers · Share of the labour force, full-time equivalent",
+    "description": "R&D personnel and researchers, across European regions, from Eurostat table rd_p_persreg.",
+    "subject": "R&D personnel and researchers",
+    "breakdown": "sector of performance, sex",
+    "category": "Science and technology",
+    "publisher": "Eurostat",
+    "source": "Eurostat rd_p_persreg",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/rd_p_persreg/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (rd_p_persreg)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat rd_p_persreg. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 1, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["science and technology"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "rd_p_persreg",
+    "filters": {
+      "freq": "A",
+      "prof_pos": "TOTAL",
+      "sex": "T",
+      "sectperf": "TOTAL",
+      "unit": "PC_ACT_FTE"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "variant": {
+      "dimension": "unit",
+      "code": "PC_ACT_FTE",
+      "label": "Share of the labour force, full-time equivalent",
+      "unit": "% of labour force (FTE)"
+    },
+    "indicator": {
+      "id": "rd-p-persreg",
+      "name": "R&D personnel and researchers",
+      "description": "R&D personnel and researchers, across European regions, from Eurostat table rd_p_persreg.",
+      "unit": "% of labour force (FTE)",
+      "statistic": "annual_value",
+      "definition": {}
+    }
+  },
+  {
+    "id": "eurostat-rd-p-persreg-pc-act-hc",
+    "title": "R&D personnel and researchers · Share of the labour force, head count",
+    "description": "R&D personnel and researchers, across European regions, from Eurostat table rd_p_persreg.",
+    "subject": "R&D personnel and researchers",
+    "breakdown": "sector of performance, sex",
+    "category": "Science and technology",
+    "publisher": "Eurostat",
+    "source": "Eurostat rd_p_persreg",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/rd_p_persreg/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (rd_p_persreg)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat rd_p_persreg. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 1, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["science and technology"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "rd_p_persreg",
+    "filters": {
+      "freq": "A",
+      "prof_pos": "TOTAL",
+      "sex": "T",
+      "sectperf": "TOTAL",
+      "unit": "PC_ACT_HC"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "variant": {
+      "dimension": "unit",
+      "code": "PC_ACT_HC",
+      "label": "Share of the labour force, head count",
+      "unit": "% of labour force (head count)"
+    },
+    "indicator": {
+      "id": "rd-p-persreg",
+      "name": "R&D personnel and researchers",
+      "description": "R&D personnel and researchers, across European regions, from Eurostat table rd_p_persreg.",
+      "unit": "% of labour force (head count)",
+      "statistic": "annual_value",
+      "definition": {}
+    }
+  },
+  {
+    "id": "eurostat-rd-p-persreg-pc-emp-fte",
+    "title": "R&D personnel and researchers · Share of employment, full-time equivalent",
+    "description": "R&D personnel and researchers, across European regions, from Eurostat table rd_p_persreg.",
+    "subject": "R&D personnel and researchers",
+    "breakdown": "sector of performance, sex",
+    "category": "Science and technology",
+    "publisher": "Eurostat",
+    "source": "Eurostat rd_p_persreg",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/rd_p_persreg/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (rd_p_persreg)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat rd_p_persreg. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 1, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["science and technology"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "rd_p_persreg",
+    "filters": {
+      "freq": "A",
+      "prof_pos": "TOTAL",
+      "sex": "T",
+      "sectperf": "TOTAL",
+      "unit": "PC_EMP_FTE"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "variant": {
+      "dimension": "unit",
+      "code": "PC_EMP_FTE",
+      "label": "Share of employment, full-time equivalent",
+      "unit": "% of total employment (FTE)"
+    },
+    "indicator": {
+      "id": "rd-p-persreg",
+      "name": "R&D personnel and researchers",
+      "description": "R&D personnel and researchers, across European regions, from Eurostat table rd_p_persreg.",
+      "unit": "% of total employment (FTE)",
+      "statistic": "annual_value",
+      "definition": {}
+    }
+  },
+  {
+    "id": "eurostat-rd-p-persreg-pc-emp-hc",
+    "title": "R&D personnel and researchers · Share of employment, head count",
+    "description": "R&D personnel and researchers, across European regions, from Eurostat table rd_p_persreg.",
+    "subject": "R&D personnel and researchers",
+    "breakdown": "sector of performance, sex",
+    "category": "Science and technology",
+    "publisher": "Eurostat",
+    "source": "Eurostat rd_p_persreg",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/rd_p_persreg/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (rd_p_persreg)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat rd_p_persreg. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 1, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["science and technology"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "rd_p_persreg",
+    "filters": {
+      "freq": "A",
+      "prof_pos": "TOTAL",
+      "sex": "T",
+      "sectperf": "TOTAL",
+      "unit": "PC_EMP_HC"
+    },
+    "period_start": "2015",
+    "period_end": "latest",
+    "variant": {
+      "dimension": "unit",
+      "code": "PC_EMP_HC",
+      "label": "Share of employment, head count",
+      "unit": "% of total employment (head count)"
+    },
+    "indicator": {
+      "id": "rd-p-persreg",
+      "name": "R&D personnel and researchers",
+      "description": "R&D personnel and researchers, across European regions, from Eurostat table rd_p_persreg.",
+      "unit": "% of total employment (head count)",
+      "statistic": "annual_value",
+      "definition": {}
+    }
+  },
+  {
+    "id": "eurostat-ef-ah-poult",
+    "title": "Outdoor access of poultry",
+    "description": "Outdoor access of poultry, across European regions, from Eurostat table ef_ah_poult.",
+    "subject": "Outdoor access of poultry",
+    "breakdown": "type of animal housing, size classes of livestock units, farm type",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_ah_poult",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_ah_poult/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_ah_poult)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_ah_poult. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_ah_poult",
+    "filters": {
+      "freq": "A",
+      "statinfo": "TOTAL",
+      "farmtype": "TOTAL",
+      "lsu": "TOTAL",
+      "animals": "A5110O",
+      "hous_ani": "TOT_INDR",
+      "unit": "HD"
+    },
+    "period_start": "2011",
+    "period_end": "latest",
+    "indicator_dimension": "yn_acs",
+    "variant": {
+      "dimension": "unit",
+      "code": "HD",
+      "label": "Heads",
+      "unit": "heads"
+    },
+    "indicators": [
+      {
+        "id": "total",
+        "name": "Total",
+        "description": "Outdoor access of poultry — Total (TOTAL).",
+        "unit": "heads",
+        "statistic": "annual_value",
+        "definition": {
+          "yn_acs": "TOTAL"
+        },
+        "code": "TOTAL",
+        "primary": true
+      },
+      {
+        "id": "yes-outacs",
+        "name": "Outdoor access",
+        "description": "Outdoor access of poultry — Outdoor access (YES_OUTACS).",
+        "unit": "heads",
+        "statistic": "annual_value",
+        "definition": {
+          "yn_acs": "YES_OUTACS"
+        },
+        "code": "YES_OUTACS",
+        "primary": true
+      },
+      {
+        "id": "no-outacs",
+        "name": "No outdoor access",
+        "description": "Outdoor access of poultry — No outdoor access (NO_OUTACS).",
+        "unit": "heads",
+        "statistic": "annual_value",
+        "definition": {
+          "yn_acs": "NO_OUTACS"
+        },
+        "code": "NO_OUTACS"
+      }
+    ],
+    "headline": "yes-outacs"
+  },
+  {
+    "id": "eurostat-ef-ah-poult-hld",
+    "title": "Outdoor access of poultry · Holdings",
+    "description": "Outdoor access of poultry, across European regions, from Eurostat table ef_ah_poult.",
+    "subject": "Outdoor access of poultry",
+    "breakdown": "type of animal housing, size classes of livestock units, farm type",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_ah_poult",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_ah_poult/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_ah_poult)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_ah_poult. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_ah_poult",
+    "filters": {
+      "freq": "A",
+      "statinfo": "TOTAL",
+      "farmtype": "TOTAL",
+      "lsu": "TOTAL",
+      "animals": "A5110O",
+      "hous_ani": "TOT_INDR",
+      "unit": "HLD"
+    },
+    "period_start": "2011",
+    "period_end": "latest",
+    "indicator_dimension": "yn_acs",
+    "variant": {
+      "dimension": "unit",
+      "code": "HLD",
+      "label": "Holdings",
+      "unit": "holdings"
+    },
+    "indicators": [
+      {
+        "id": "total",
+        "name": "Total",
+        "description": "Outdoor access of poultry — Total (TOTAL).",
+        "unit": "holdings",
+        "statistic": "annual_value",
+        "definition": {
+          "yn_acs": "TOTAL"
+        },
+        "code": "TOTAL",
+        "primary": true
+      },
+      {
+        "id": "yes-outacs",
+        "name": "Outdoor access",
+        "description": "Outdoor access of poultry — Outdoor access (YES_OUTACS).",
+        "unit": "holdings",
+        "statistic": "annual_value",
+        "definition": {
+          "yn_acs": "YES_OUTACS"
+        },
+        "code": "YES_OUTACS",
+        "primary": true
+      },
+      {
+        "id": "no-outacs",
+        "name": "No outdoor access",
+        "description": "Outdoor access of poultry — No outdoor access (NO_OUTACS).",
+        "unit": "holdings",
+        "statistic": "annual_value",
+        "definition": {
+          "yn_acs": "NO_OUTACS"
+        },
+        "code": "NO_OUTACS"
+      }
+    ],
+    "headline": "yes-outacs"
+  },
+  {
+    "id": "eurostat-ef-mp-efa",
+    "title": "Ecological focus areas in agricultural holdings",
+    "description": "Ecological focus areas in agricultural holdings, across European regions, from Eurostat table ef_mp_efa.",
+    "subject": "Ecological focus areas in agricultural holdings",
+    "breakdown": "utilised agricultural area, farm type",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_mp_efa",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_mp_efa/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_mp_efa)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_mp_efa. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_mp_efa",
+    "filters": {
+      "freq": "A",
+      "farmtype": "TOTAL",
+      "statinfo": "TOTAL",
+      "uaarea": "TOTAL",
+      "unit": "HA"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "efa",
+    "variant": {
+      "dimension": "unit",
+      "code": "HA",
+      "label": "Area",
+      "unit": "hectares"
+    },
+    "indicators": [
+      {
+        "id": "total",
+        "name": "Total",
+        "description": "Ecological focus areas in agricultural holdings — Total (TOTAL).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "efa": "TOTAL"
+        },
+        "code": "TOTAL",
+        "primary": true
+      }
+    ],
+    "headline": "total"
+  },
+  {
+    "id": "eurostat-ef-mp-efa-hld",
+    "title": "Ecological focus areas in agricultural holdings · Holdings",
+    "description": "Ecological focus areas in agricultural holdings, across European regions, from Eurostat table ef_mp_efa.",
+    "subject": "Ecological focus areas in agricultural holdings",
+    "breakdown": "utilised agricultural area, farm type",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_mp_efa",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_mp_efa/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_mp_efa)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_mp_efa. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_mp_efa",
+    "filters": {
+      "freq": "A",
+      "farmtype": "TOTAL",
+      "statinfo": "TOTAL",
+      "uaarea": "TOTAL",
+      "unit": "HLD"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "efa",
+    "variant": {
+      "dimension": "unit",
+      "code": "HLD",
+      "label": "Holdings",
+      "unit": "holdings"
+    },
+    "indicators": [
+      {
+        "id": "total",
+        "name": "Total",
+        "description": "Ecological focus areas in agricultural holdings — Total (TOTAL).",
+        "unit": "holdings",
+        "statistic": "annual_value",
+        "definition": {
+          "efa": "TOTAL"
+        },
+        "code": "TOTAL",
+        "primary": true
+      },
+      {
+        "id": "le-fm-bs",
+        "name": "Linear elements - field margins or buffer strips",
+        "description": "Ecological focus areas in agricultural holdings — Linear elements - field margins or buffer strips (LE_FM_BS).",
+        "unit": "holdings",
+        "statistic": "annual_value",
+        "definition": {
+          "efa": "LE_FM_BS"
+        },
+        "code": "LE_FM_BS"
+      }
+    ],
+    "headline": "total"
+  },
+  {
+    "id": "eurostat-ef-mp-digi",
+    "title": "Internet facilities, robotics, precision farming and machinery for livestock management in farms",
+    "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms, across European regions, from Eurostat table ef_mp_digi.",
+    "subject": "Internet facilities, robotics, precision farming and machinery for livestock management in farms",
+    "breakdown": "economic size of farm, farm type",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_mp_digi",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_mp_digi/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_mp_digi)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_mp_digi. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_mp_digi",
+    "filters": {
+      "freq": "A",
+      "farmtype": "TOTAL",
+      "so_eur": "TOTAL",
+      "statinfo": "TOTAL",
+      "unit": "EUR"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "agr_inp",
+    "variant": {
+      "dimension": "unit",
+      "code": "EUR",
+      "label": "Euro",
+      "unit": "€"
+    },
+    "indicators": [
+      {
+        "id": "total",
+        "name": "Total",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Total (TOTAL).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "TOTAL"
+        },
+        "code": "TOTAL",
+        "primary": true
+      },
+      {
+        "id": "mac-pfrm",
+        "name": "Precision farming",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Precision farming (MAC_PFRM).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_PFRM"
+        },
+        "code": "MAC_PFRM"
+      },
+      {
+        "id": "mac-rob",
+        "name": "Robotics",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Robotics (MAC_ROB).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_ROB"
+        },
+        "code": "MAC_ROB"
+      },
+      {
+        "id": "mac-lsm",
+        "name": "Machinery for livestock management",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Machinery for livestock management (MAC_LSM).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_LSM"
+        },
+        "code": "MAC_LSM"
+      },
+      {
+        "id": "acs-inet",
+        "name": "Access to the Internet",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Access to the Internet (ACS_INET).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "ACS_INET"
+        },
+        "code": "ACS_INET",
+        "primary": true
+      },
+      {
+        "id": "mis-use",
+        "name": "Use of management information systems",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Use of management information systems (MIS_USE).",
+        "unit": "€",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MIS_USE"
+        },
+        "code": "MIS_USE"
+      }
+    ],
+    "headline": "acs-inet"
+  },
+  {
+    "id": "eurostat-ef-mp-digi-ha",
+    "title": "Internet facilities, robotics, precision farming and machinery for livestock management in farms · Area",
+    "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms, across European regions, from Eurostat table ef_mp_digi.",
+    "subject": "Internet facilities, robotics, precision farming and machinery for livestock management in farms",
+    "breakdown": "economic size of farm, farm type",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_mp_digi",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_mp_digi/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_mp_digi)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_mp_digi. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_mp_digi",
+    "filters": {
+      "freq": "A",
+      "farmtype": "TOTAL",
+      "so_eur": "TOTAL",
+      "statinfo": "TOTAL",
+      "unit": "HA"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "agr_inp",
+    "variant": {
+      "dimension": "unit",
+      "code": "HA",
+      "label": "Area",
+      "unit": "hectares"
+    },
+    "indicators": [
+      {
+        "id": "total",
+        "name": "Total",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Total (TOTAL).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "TOTAL"
+        },
+        "code": "TOTAL",
+        "primary": true
+      },
+      {
+        "id": "mac-pfrm",
+        "name": "Precision farming",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Precision farming (MAC_PFRM).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_PFRM"
+        },
+        "code": "MAC_PFRM"
+      },
+      {
+        "id": "mac-rob",
+        "name": "Robotics",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Robotics (MAC_ROB).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_ROB"
+        },
+        "code": "MAC_ROB"
+      },
+      {
+        "id": "mac-lsm",
+        "name": "Machinery for livestock management",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Machinery for livestock management (MAC_LSM).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_LSM"
+        },
+        "code": "MAC_LSM"
+      },
+      {
+        "id": "acs-inet",
+        "name": "Access to the Internet",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Access to the Internet (ACS_INET).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "ACS_INET"
+        },
+        "code": "ACS_INET",
+        "primary": true
+      },
+      {
+        "id": "mis-use",
+        "name": "Use of management information systems",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Use of management information systems (MIS_USE).",
+        "unit": "hectares",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MIS_USE"
+        },
+        "code": "MIS_USE"
+      }
+    ],
+    "headline": "acs-inet"
+  },
+  {
+    "id": "eurostat-ef-mp-digi-hld",
+    "title": "Internet facilities, robotics, precision farming and machinery for livestock management in farms · Holdings",
+    "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms, across European regions, from Eurostat table ef_mp_digi.",
+    "subject": "Internet facilities, robotics, precision farming and machinery for livestock management in farms",
+    "breakdown": "economic size of farm, farm type",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_mp_digi",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_mp_digi/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_mp_digi)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_mp_digi. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_mp_digi",
+    "filters": {
+      "freq": "A",
+      "farmtype": "TOTAL",
+      "so_eur": "TOTAL",
+      "statinfo": "TOTAL",
+      "unit": "HLD"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "agr_inp",
+    "variant": {
+      "dimension": "unit",
+      "code": "HLD",
+      "label": "Holdings",
+      "unit": "holdings"
+    },
+    "indicators": [
+      {
+        "id": "total",
+        "name": "Total",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Total (TOTAL).",
+        "unit": "holdings",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "TOTAL"
+        },
+        "code": "TOTAL",
+        "primary": true
+      },
+      {
+        "id": "mac-pfrm",
+        "name": "Precision farming",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Precision farming (MAC_PFRM).",
+        "unit": "holdings",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_PFRM"
+        },
+        "code": "MAC_PFRM"
+      },
+      {
+        "id": "mac-rob",
+        "name": "Robotics",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Robotics (MAC_ROB).",
+        "unit": "holdings",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_ROB"
+        },
+        "code": "MAC_ROB"
+      },
+      {
+        "id": "mac-lsm",
+        "name": "Machinery for livestock management",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Machinery for livestock management (MAC_LSM).",
+        "unit": "holdings",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_LSM"
+        },
+        "code": "MAC_LSM"
+      },
+      {
+        "id": "acs-inet",
+        "name": "Access to the Internet",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Access to the Internet (ACS_INET).",
+        "unit": "holdings",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "ACS_INET"
+        },
+        "code": "ACS_INET",
+        "primary": true
+      },
+      {
+        "id": "mis-use",
+        "name": "Use of management information systems",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Use of management information systems (MIS_USE).",
+        "unit": "holdings",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MIS_USE"
+        },
+        "code": "MIS_USE"
+      }
+    ],
+    "headline": "acs-inet"
+  },
+  {
+    "id": "eurostat-ef-mp-digi-lsu",
+    "title": "Internet facilities, robotics, precision farming and machinery for livestock management in farms · Livestock",
+    "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms, across European regions, from Eurostat table ef_mp_digi.",
+    "subject": "Internet facilities, robotics, precision farming and machinery for livestock management in farms",
+    "breakdown": "economic size of farm, farm type",
+    "category": "Agriculture",
+    "publisher": "Eurostat",
+    "source": "Eurostat ef_mp_digi",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_mp_digi/default/table",
+    "source_type": "official",
+    "status": "official_source",
+    "licence": {
+      "id": "EC-REUSE-2011-833",
+      "name": "European Commission reuse policy (Decision 2011/833/EU)",
+      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+      "attribution": "Source: Eurostat (ef_mp_digi)",
+      "commercial_use": true,
+      "attribution_required": true,
+      "share_alike": false,
+      "redistribution": true
+    },
+    "methodology": "Direct extract from Eurostat ef_mp_digi. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
+    "geography": {
+      "scheme": "NUTS",
+      "version": "2024",
+      "levels": [0, 2]
+    },
+    "geographic_coverage": ["Europe (NUTS 2024)"],
+    "temporal_frequency": "annual",
+    "semantic_hints": {
+      "aliases": [],
+      "topics": ["agriculture"],
+      "example_questions": [],
+      "caveats": []
+    },
+    "created_at": "2026-11-28",
+    "quality": {
+      "score": 95,
+      "methodology_documented": true,
+      "source_documented": true,
+      "reproducible": true,
+      "peer_reviews": 0,
+      "community_votes": 0
+    },
+    "dataset_code": "ef_mp_digi",
+    "filters": {
+      "freq": "A",
+      "farmtype": "TOTAL",
+      "so_eur": "TOTAL",
+      "statinfo": "TOTAL",
+      "unit": "LSU"
+    },
+    "period_start": "2014",
+    "period_end": "latest",
+    "indicator_dimension": "agr_inp",
+    "variant": {
+      "dimension": "unit",
+      "code": "LSU",
+      "label": "Livestock",
+      "unit": "livestock units (LSU)"
+    },
+    "indicators": [
+      {
+        "id": "total",
+        "name": "Total",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Total (TOTAL).",
+        "unit": "livestock units (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "TOTAL"
+        },
+        "code": "TOTAL",
+        "primary": true
+      },
+      {
+        "id": "mac-pfrm",
+        "name": "Precision farming",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Precision farming (MAC_PFRM).",
+        "unit": "livestock units (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_PFRM"
+        },
+        "code": "MAC_PFRM"
+      },
+      {
+        "id": "mac-rob",
+        "name": "Robotics",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Robotics (MAC_ROB).",
+        "unit": "livestock units (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_ROB"
+        },
+        "code": "MAC_ROB"
+      },
+      {
+        "id": "mac-lsm",
+        "name": "Machinery for livestock management",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Machinery for livestock management (MAC_LSM).",
+        "unit": "livestock units (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MAC_LSM"
+        },
+        "code": "MAC_LSM"
+      },
+      {
+        "id": "acs-inet",
+        "name": "Access to the Internet",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Access to the Internet (ACS_INET).",
+        "unit": "livestock units (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "ACS_INET"
+        },
+        "code": "ACS_INET",
+        "primary": true
+      },
+      {
+        "id": "mis-use",
+        "name": "Use of management information systems",
+        "description": "Internet facilities, robotics, precision farming and machinery for livestock management in farms — Use of management information systems (MIS_USE).",
+        "unit": "livestock units (LSU)",
+        "statistic": "annual_value",
+        "definition": {
+          "agr_inp": "MIS_USE"
+        },
+        "code": "MIS_USE"
+      }
+    ],
+    "headline": "acs-inet"
   }
 ]
