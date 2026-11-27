@@ -155,7 +155,6 @@
         "parent": "total"
       }
     ],
-    "headline": "total",
     "jrc": {
       "catalogue": {
         "record": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658"
@@ -175,6 +174,10 @@
         "sectors": "TOTALS by NUTS2 and Sector"
       },
       "compound": "GWP_100_AR5_GHG"
+    },
+    "headline": "total",
+    "dimension_labels": {
+      "gas": "Gas"
     }
   },
   {
@@ -315,7 +318,6 @@
         "primary": true
       }
     ],
-    "headline": false,
     "jrc": {
       "catalogue": {
         "record": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658"
@@ -334,6 +336,11 @@
         "sectors": "Fossil CO2"
       },
       "compound": "CO2"
+    },
+    "headline": "energy",
+    "headline_note": "Defaults on power generation: EDGAR publishes fossil CO2 by sector, with no total for the gas.",
+    "dimension_labels": {
+      "gas": "Gas"
     }
   },
   {
@@ -468,7 +475,6 @@
         "primary": true
       }
     ],
-    "headline": false,
     "jrc": {
       "catalogue": {
         "record": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658"
@@ -487,6 +493,11 @@
         "sectors": "CH4 AR5"
       },
       "compound": "GWP_100_AR5_CH4"
+    },
+    "headline": "agriculture",
+    "headline_note": "Defaults on agriculture, the largest source of methane: EDGAR publishes it by sector, with no total for the gas.",
+    "dimension_labels": {
+      "gas": "Gas"
     }
   },
   {
@@ -629,7 +640,6 @@
         "primary": true
       }
     ],
-    "headline": false,
     "jrc": {
       "catalogue": {
         "record": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658"
@@ -648,6 +658,11 @@
         "sectors": "N2O AR5"
       },
       "compound": "GWP_100_AR5_N2O"
+    },
+    "headline": "agriculture",
+    "headline_note": "Defaults on agriculture, the largest source of nitrous oxide: EDGAR publishes it by sector, with no total for the gas.",
+    "dimension_labels": {
+      "gas": "Gas"
     }
   },
   {
@@ -735,7 +750,6 @@
         "code": "Industry"
       }
     ],
-    "headline": false,
     "jrc": {
       "catalogue": {
         "record": "http://data.europa.eu/89h/d67eeda8-c03e-4421-95d0-0adc460b9658"
@@ -754,6 +768,10 @@
         "sectors": "F-gases AR5"
       },
       "compound": "GWP_100_AR5_F-gases"
+    },
+    "headline": false,
+    "dimension_labels": {
+      "gas": "Gas"
     }
   },
   {

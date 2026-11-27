@@ -282,7 +282,12 @@
         "statistic": "annual_total",
         "code": "W1.TOTL.1._Z.N.EUR"
       }
-    ]
+    ],
+    "headline": "all-number",
+    "dimension_labels": {
+      "institution": "Type of institution"
+    },
+    "opens_subject": true
   },
   {
     "id": "ecb-payments-credit-institutions",
@@ -417,7 +422,13 @@
         "statistic": "annual_total",
         "code": "W0._Z.MREM.1._T.S122C.N.EUR"
       }
-    ]
+    ],
+    "headline": "credit-transfers-number",
+    "headline_note": "Defaults on credit transfers: this table has no total of payments for this kind of institution.",
+    "dimension_labels": {
+      "institution": "Type of institution"
+    },
+    "opens_subject": true
   },
   {
     "id": "ecb-payments-payment-institutions",
@@ -552,7 +563,13 @@
         "statistic": "annual_total",
         "code": "W0._Z.MREM.1._T.S126C.N.EUR"
       }
-    ]
+    ],
+    "headline": "credit-transfers-number",
+    "headline_note": "Defaults on credit transfers: this table has no total of payments for this kind of institution.",
+    "dimension_labels": {
+      "institution": "Type of institution"
+    },
+    "opens_subject": true
   },
   {
     "id": "ecb-payments-e-money-institutions",
@@ -687,7 +704,13 @@
         "statistic": "annual_total",
         "code": "W0._Z.MREM.1._T.S12E.N.EUR"
       }
-    ]
+    ],
+    "headline": "credit-transfers-number",
+    "headline_note": "Defaults on credit transfers: this table has no total of payments for this kind of institution.",
+    "dimension_labels": {
+      "institution": "Type of institution"
+    },
+    "opens_subject": true
   },
   {
     "id": "ecb-payments-central-banks-government",
@@ -822,7 +845,13 @@
         "statistic": "annual_total",
         "code": "W0._Z.MREM.1._T.S1KK.N.EUR"
       }
-    ]
+    ],
+    "headline": "credit-transfers-number",
+    "headline_note": "Defaults on credit transfers: this table has no total of payments for this kind of institution.",
+    "dimension_labels": {
+      "institution": "Type of institution"
+    },
+    "opens_subject": true
   },
   {
     "id": "ecb-credit-transfers",
@@ -1033,7 +1062,8 @@
         "statistic": "annual_total",
         "code": "W1.1._T._T.CTS_ALL._X._Z.N.EUR"
       }
-    ]
+    ],
+    "headline": "total-number"
   },
   {
     "id": "ecb-direct-debits",
@@ -1164,7 +1194,8 @@
         "statistic": "annual_total",
         "code": "W1.1._T.DDS_ALL._T._Z.N.EUR"
       }
-    ]
+    ],
+    "headline": "total-number"
   },
   {
     "id": "ecb-card-payments",
@@ -1310,7 +1341,8 @@
         "statistic": "annual_total",
         "code": "W1.W0.CP0.1._T._T.PCS_ALL._Z._X._Z.N.EUR"
       }
-    ]
+    ],
+    "headline": "total-number"
   },
   {
     "id": "ecb-e-money-payments",
@@ -1472,7 +1504,8 @@
         "statistic": "annual_total",
         "code": "W1.EMP0.1._T._T._X._Z.N.EUR"
       }
-    ]
+    ],
+    "headline": "total-number"
   },
   {
     "id": "ecb-terminal-transactions",
@@ -1587,7 +1620,9 @@
         "statistic": "annual_total",
         "code": "W1.W0._T.2.2220.N.EUR"
       }
-    ]
+    ],
+    "headline": "domestic-cards-number",
+    "headline_note": "Defaults on cards issued in the country: transactions with cards issued abroad are a separate figure, not part of this one."
   },
   {
     "id": "ecb-payment-terminals",
@@ -1784,7 +1819,12 @@
         "statistic": "annual_value",
         "code": "W1.2224._T.PN"
       }
-    ]
+    ],
+    "headline": "atms",
+    "headline_note": "Defaults on ATMs: the four kinds of terminal are counted separately and do not add up to a total.",
+    "dimension_labels": {
+      "function": "Terminal function"
+    }
   },
   {
     "id": "ecb-payment-terminals-cash-withdrawal",
@@ -1886,7 +1926,10 @@
         "code": "W0.2221.1.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Terminal function"
+    }
   },
   {
     "id": "ecb-payment-terminals-credit-transfer",
@@ -1988,7 +2031,10 @@
         "code": "W0.2221.2.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Terminal function"
+    }
   },
   {
     "id": "ecb-payment-terminals-contactless",
@@ -2098,7 +2144,12 @@
         "statistic": "annual_value",
         "code": "W0.2223.3.PN"
       }
-    ]
+    ],
+    "headline": "eftpos-terminals",
+    "headline_note": "Defaults on EFTPOS terminals, where contactless payments are made; contactless ATMs are a separate figure.",
+    "dimension_labels": {
+      "function": "Terminal function"
+    }
   },
   {
     "id": "ecb-payment-terminals-e-money",
@@ -2199,7 +2250,12 @@
         "statistic": "annual_value",
         "code": "W0.2224.4.PN"
       }
-    ]
+    ],
+    "headline": "eftpos-terminals",
+    "headline_note": "Defaults on EFTPOS terminals, where e-money cards are used to pay; e-money card terminals are a separate figure.",
+    "dimension_labels": {
+      "function": "Terminal function"
+    }
   },
   {
     "id": "ecb-payment-terminals-card-loading",
@@ -2292,7 +2348,10 @@
         "code": "W0.2224.5.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Terminal function"
+    }
   },
   {
     "id": "ecb-payment-cards",
@@ -2390,7 +2449,10 @@
         "code": "PCS_ALL._T.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-payment",
@@ -2483,7 +2545,10 @@
         "code": "PCS_ALL.1.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-debit",
@@ -2576,7 +2641,10 @@
         "code": "PCS_ALL.11.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-delayed-debit",
@@ -2669,7 +2737,10 @@
         "code": "PCS_ALL.12.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-credit",
@@ -2762,7 +2833,10 @@
         "code": "PCS_ALL.13.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-combined",
@@ -2855,7 +2929,10 @@
         "code": "PCS_ALL.2.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-cash",
@@ -2948,7 +3025,10 @@
         "code": "PCS_ALL.3.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-cards-contactless",
@@ -3041,7 +3121,10 @@
         "code": "PCS_ALL.5.PN",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "function": "Card function"
+    }
   },
   {
     "id": "ecb-payment-service-providers",
@@ -3137,7 +3220,10 @@
         "code": "120B.N50.1.Z5.Z0Z.Z",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "provider": "Type of provider"
+    }
   },
   {
     "id": "ecb-payment-service-providers-credit-institutions",
@@ -3282,7 +3368,11 @@
         "statistic": "annual_value",
         "code": "122C.L26.1.Z5.Z0Z.Z"
       }
-    ]
+    ],
+    "headline": "clients",
+    "dimension_labels": {
+      "provider": "Type of provider"
+    }
   },
   {
     "id": "ecb-payment-service-providers-payment-institutions",
@@ -3387,7 +3477,11 @@
         "statistic": "annual_value",
         "code": "1241.L26.1.Z5.Z0Z.Z"
       }
-    ]
+    ],
+    "headline": "institutions",
+    "dimension_labels": {
+      "provider": "Type of provider"
+    }
   },
   {
     "id": "ecb-payment-service-providers-central-bank",
@@ -3484,7 +3578,10 @@
         "code": "1210.L21.1.Z5.Z0Z.Z",
         "primary": true
       }
-    ]
+    ],
+    "dimension_labels": {
+      "provider": "Type of provider"
+    }
   },
   {
     "id": "ecb-macroeconomic-projections",
@@ -3602,6 +3699,7 @@
         "statistic": "annual_value",
         "code": "URX.F"
       }
-    ]
+    ],
+    "headline": "real-gdp-growth"
   }
 ]

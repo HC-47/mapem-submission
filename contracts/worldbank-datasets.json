@@ -86,7 +86,8 @@
         "unit": "% of GNI",
         "statistic": "annual_value",
         "code": "NY.ADJ.SVNG.GN.ZS",
-        "primary": true
+        "primary": true,
+        "short_name": "Adjusted net savings (% of GNI)"
       },
       {
         "id": "adjusted-net-savings-usd",
@@ -94,7 +95,8 @@
         "description": "Adjusted net savings are equal to net national savings plus education expenditure and minus energy depletion, mineral depletion, net forest depletion, and carbon dioxide and particulate emissions damage. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time.",
         "unit": "current US$",
         "statistic": "annual_total",
-        "code": "NY.ADJ.SVNG.CD"
+        "code": "NY.ADJ.SVNG.CD",
+        "short_name": "Adjusted net savings (current US$)"
       },
       {
         "id": "adjusted-net-savings-ex-pm-gni",
@@ -102,7 +104,8 @@
         "description": "Adjusted net savings are equal to net national savings plus education expenditure and minus energy depletion, mineral depletion, net forest depletion, and carbon dioxide. This series excludes particulate emissions damage.",
         "unit": "% of GNI",
         "statistic": "annual_value",
-        "code": "NY.ADJ.SVNX.GN.ZS"
+        "code": "NY.ADJ.SVNX.GN.ZS",
+        "short_name": "Adjusted net savings, excl. particulates (% of GNI)"
       },
       {
         "id": "adjusted-net-savings-ex-pm-usd",
@@ -110,7 +113,8 @@
         "description": "Adjusted net savings are equal to net national savings plus education expenditure and minus energy depletion, mineral depletion, net forest depletion, and carbon dioxide. This series excludes particulate emissions damage.",
         "unit": "current US$",
         "statistic": "annual_total",
-        "code": "NY.ADJ.SVNX.CD"
+        "code": "NY.ADJ.SVNX.CD",
+        "short_name": "Adjusted net savings, excl. particulates (US$)"
       },
       {
         "id": "net-national-savings-gni",
@@ -216,7 +220,8 @@
         "statistic": "annual_total",
         "code": "NY.ADJ.DCO2.CD"
       }
-    ]
+    ],
+    "headline": "adjusted-net-savings-gni"
   },
   {
     "id": "wb-adjusted-net-national-income",
@@ -345,7 +350,8 @@
         "statistic": "annual_value",
         "code": "NY.ADJ.NNTY.KD.ZG"
       }
-    ]
+    ],
+    "headline": "per-capita-usd"
   },
   {
     "id": "wb-natural-resource-rents",
@@ -493,7 +499,8 @@
         "statistic": "annual_value",
         "code": "NY.GDP.FRST.RT.ZS"
       }
-    ]
+    ],
+    "headline": "total"
   },
   {
     "id": "wb-poverty-international",
@@ -583,7 +590,8 @@
         "unit": "% of population",
         "statistic": "annual_value",
         "code": "SI.POV.UMIC",
-        "primary": true
+        "primary": true,
+        "short_name": "Poverty at $8.30 a day (% of population)"
       },
       {
         "id": "poverty-gap-830",
@@ -607,9 +615,12 @@
         "description": "The multidimensional poverty headcount ratio (World Bank) is the percentage of a population living in poverty according to the World Bank's Multidimensional Poverty Measure. The Multidimensional Poverty Measure includes three dimensions – monetary poverty, education, and basic infrastructure services – to capture a more complete picture of poverty.",
         "unit": "% of population",
         "statistic": "annual_value",
-        "code": "SI.POV.MPWB"
+        "code": "SI.POV.MPWB",
+        "short_name": "Multidimensional poverty (% of population)"
       }
-    ]
+    ],
+    "headline": "poverty-830",
+    "headline_note": "Defaults on the $8.30-a-day line, the World Bank's line for upper-middle-income countries; the $3.00 and $4.20 lines are near zero in Europe."
   },
   {
     "id": "wb-new-businesses",
@@ -702,7 +713,8 @@
           ]
         },
         "code": "IC.BUS.NDNS.ZS",
-        "primary": true
+        "primary": true,
+        "short_name": "New business density (per 1,000 aged 15–64)"
       },
       {
         "id": "number",
@@ -712,6 +724,7 @@
         "statistic": "annual_total",
         "code": "IC.BUS.NREG"
       }
-    ]
+    ],
+    "headline": "density"
   }
 ]
