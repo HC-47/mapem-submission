@@ -1565,7 +1565,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-y-lt65-t",
@@ -3133,7 +3138,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-y-ge65-t",
@@ -4701,7 +4711,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-total-m",
@@ -6269,7 +6284,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-y-lt65-m",
@@ -7837,7 +7857,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-y-ge65-m",
@@ -9405,7 +9430,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-total-f",
@@ -10973,7 +11003,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-y-lt65-f",
@@ -12541,7 +12576,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-causes-of-death-y-ge65-f",
@@ -14109,7 +14149,12 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-population-density",
@@ -14883,7 +14928,8 @@
         "code": "YOUNGDEP4"
       }
     ],
-    "headline": "medagepop"
+    "headline": "medagepop",
+    "opens_subject": true
   },
   {
     "id": "eurostat-regional-gdp",
@@ -15171,7 +15217,12 @@
         "parent": "i552-i553"
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-dom-pch-pre",
@@ -15318,7 +15369,12 @@
         "parent": "i552-i553"
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-dom-pc-tot",
@@ -15413,7 +15469,12 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-for",
@@ -15560,7 +15621,12 @@
         "parent": "i552-i553"
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-for-pch-pre",
@@ -15707,7 +15773,12 @@
         "parent": "i552-i553"
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-for-pc-tot",
@@ -15802,7 +15873,12 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights",
@@ -15949,7 +16025,12 @@
         "parent": "i552-i553"
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-pch-pre",
@@ -16096,7 +16177,12 @@
         "parent": "i552-i553"
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-pc-tot",
@@ -16191,7 +16277,12 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-p-km2",
@@ -16286,7 +16377,12 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-tourism-nights-p-thab",
@@ -16381,7 +16477,12 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "dimension_labels": {
+      "c_resid": "Country of residence"
+    },
+    "opens_subject": true,
+    "opening_variant": "P_THAB"
   },
   {
     "id": "eurostat-env-wasfac",
@@ -16466,7 +16567,10 @@
         "code": "RCV_E",
         "primary": true
       }
-    ]
+    ],
+    "headline": "rcv-e",
+    "headline_note": "Defaults on energy recovery: capacity is published only for incineration and energy recovery, which do not add up to a total.",
+    "opening_variant": "FAC"
   },
   {
     "id": "eurostat-env-wasfac-cap-rst",
@@ -16575,7 +16679,9 @@
         "code": "DSP_LIN",
         "primary": true
       }
-    ]
+    ],
+    "headline": "dsp-l",
+    "opening_variant": "FAC"
   },
   {
     "id": "eurostat-env-wasfac-fac",
@@ -16745,7 +16851,8 @@
         "primary": true
       }
     ],
-    "headline": "rcv-r"
+    "headline": "rcv-r",
+    "opening_variant": "FAC"
   },
   {
     "id": "eurostat-env-wasfac-fac-cl",
@@ -16842,7 +16949,8 @@
         "code": "DSP_LIN",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "FAC"
   },
   {
     "id": "eurostat-aact-ali01-r",
@@ -16905,7 +17013,8 @@
       "definition": {
         "upstream_unit": "THS_AWU"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-aact-ali02-r",
@@ -17275,7 +17384,8 @@
         "primary": true
       }
     ],
-    "headline": "dw"
+    "headline": "dw",
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21dwob-r3-building",
@@ -17352,7 +17462,8 @@
           "building": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All types of building"
       },
       {
         "id": "res",
@@ -17439,7 +17550,11 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21dwob-r3-building-dw-oc",
@@ -17516,7 +17631,8 @@
           "building": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All types of building"
       },
       {
         "id": "res",
@@ -17603,7 +17719,11 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21dwob-r3-building-dw-noc",
@@ -17680,7 +17800,8 @@
           "building": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All types of building"
       },
       {
         "id": "res",
@@ -17767,7 +17888,11 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21dwob-r3-building-unk",
@@ -17844,7 +17969,8 @@
           "building": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All types of building"
       },
       {
         "id": "res",
@@ -17931,7 +18057,11 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21dwop-r3",
@@ -18118,7 +18248,8 @@
           "y_const": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All construction periods"
       },
       {
         "id": "y-lt1919",
@@ -18247,7 +18378,10 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    }
   },
   {
     "id": "eurostat-cens-21dwop-r3-y-const-dw-oc",
@@ -18324,7 +18458,8 @@
           "y_const": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All construction periods"
       },
       {
         "id": "y-lt1919",
@@ -18453,7 +18588,10 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    }
   },
   {
     "id": "eurostat-cens-21dwop-r3-y-const-dw-noc",
@@ -18530,7 +18668,8 @@
           "y_const": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All construction periods"
       },
       {
         "id": "y-lt1919",
@@ -18659,7 +18798,10 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    }
   },
   {
     "id": "eurostat-cens-21dwop-r3-y-const-unk",
@@ -18736,7 +18878,8 @@
           "y_const": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All construction periods"
       },
       {
         "id": "y-lt1919",
@@ -18865,7 +19008,10 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "dimension_labels": {
+      "housing": "Occupancy"
+    }
   },
   {
     "id": "eurostat-demo-r-find2",
@@ -19049,7 +19195,8 @@
         "primary": true
       }
     ],
-    "headline": "totferrt"
+    "headline": "totferrt",
+    "opens_subject": true
   },
   {
     "id": "eurostat-demo-r-minf",
@@ -19240,7 +19387,8 @@
           "sex": "T"
         },
         "code": "T",
-        "primary": true
+        "primary": true,
+        "short_name": "Both sexes"
       },
       {
         "id": "m",
@@ -20495,7 +20643,8 @@
       "definition": {
         "upstream_unit": "PC"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-ilc-lvho04n",
@@ -21177,7 +21326,8 @@
       "definition": {
         "upstream_unit": "PC"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-inn-cis13-bas-ip-r",
@@ -22226,7 +22376,8 @@
           "deg_urb": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All households"
       },
       {
         "id": "deg1",
@@ -22265,7 +22416,8 @@
         "code": "DEG3"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opens_subject": true
   },
   {
     "id": "eurostat-nama-10r-3popgdp",
@@ -22646,7 +22798,8 @@
         "code": "L0008"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opens_subject": true
   },
   {
     "id": "eurostat-tepsr-lm220",
@@ -22862,10 +23015,12 @@
           "c_resid": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All guests"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opens_subject": true
   },
   {
     "id": "eurostat-tour-ce-oaw",
@@ -23016,7 +23171,8 @@
           "c_resid": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All world regions"
       },
       {
         "id": "wrl-nal",
@@ -23644,7 +23800,8 @@
           "sex": "T"
         },
         "code": "T",
-        "primary": true
+        "primary": true,
+        "short_name": "Both sexes"
       },
       {
         "id": "m",
@@ -23801,7 +23958,8 @@
         "code": "RL_TGE2"
       }
     ],
-    "headline": "rl"
+    "headline": "rl",
+    "opening_variant": "KM_TKM2"
   },
   {
     "id": "eurostat-tran-r-net-km-tkm2",
@@ -23887,7 +24045,8 @@
         "primary": true
       }
     ],
-    "headline": "rl"
+    "headline": "rl",
+    "opening_variant": "KM_TKM2"
   },
   {
     "id": "eurostat-cult-emp-reg",
@@ -23953,7 +24112,8 @@
       "unit": "% of total employment",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC_EMP"
   },
   {
     "id": "eurostat-cult-emp-reg-ths-per",
@@ -24019,7 +24179,8 @@
       "unit": "thousand persons",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC_EMP"
   },
   {
     "id": "eurostat-ef-lf-fam-sh",
@@ -24087,7 +24248,8 @@
       "unit": "holdings",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-lf-fam-sh-pc",
@@ -24155,7 +24317,8 @@
       "unit": "%",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ilc-lvhl21",
@@ -24221,7 +24384,8 @@
       "unit": "%",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-tran-sf-roadnu",
@@ -24287,7 +24451,8 @@
       "unit": "number",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-tran-sf-roadnu-p-mhab",
@@ -24353,7 +24518,8 @@
       "unit": "per 1,000,000 inhabitants",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-aei-fm-usefert",
@@ -25974,7 +26140,8 @@
           "age": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All ages of the mother"
       },
       {
         "id": "y10-14",
@@ -26524,7 +26691,8 @@
           "age": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All ages of the mother"
       },
       {
         "id": "y10-14",
@@ -26671,7 +26839,8 @@
         "code": "UNK"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opens_subject": true
   },
   {
     "id": "eurostat-demo-r-frate2",
@@ -26738,7 +26907,8 @@
           "age": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All ages of the mother"
       },
       {
         "id": "y10-14",
@@ -27380,7 +27550,8 @@
       "definition": {
         "upstream_unit": "NR"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-demo-r-mlifexp",
@@ -28792,7 +28963,10 @@
         "primary": true
       }
     ],
-    "headline": "y-lt1"
+    "headline": "y-lt1",
+    "dimension_labels": {
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-demo-r-mlifexp-m",
@@ -30204,7 +30378,10 @@
         "primary": true
       }
     ],
-    "headline": "y-lt1"
+    "headline": "y-lt1",
+    "dimension_labels": {
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-demo-r-mlifexp-f",
@@ -31616,7 +31793,10 @@
         "primary": true
       }
     ],
-    "headline": "y-lt1"
+    "headline": "y-lt1",
+    "dimension_labels": {
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-demo-r-pjanaggr3",
@@ -31681,7 +31861,8 @@
       "definition": {
         "upstream_unit": "NR"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-demo-r-pjangroup",
@@ -32692,7 +32873,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-29"
+    "headline": "y15-29",
+    "opens_subject": true
   },
   {
     "id": "eurostat-edat-lfse-33",
@@ -32904,7 +33086,7 @@
         "primary": true
       }
     ],
-    "headline": "y15-34"
+    "headline": "y15-29"
   },
   {
     "id": "eurostat-edat-lfse-38",
@@ -33017,7 +33199,7 @@
         "primary": true
       }
     ],
-    "headline": "y15-34"
+    "headline": "y15-29"
   },
   {
     "id": "eurostat-educ-uoe-enra11",
@@ -33237,7 +33419,11 @@
         "primary": true
       }
     ],
-    "headline": "ed0-8"
+    "headline": "ed0-8",
+    "dimension_labels": {
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-educ-uoe-enra11-m",
@@ -33457,7 +33643,11 @@
         "primary": true
       }
     ],
-    "headline": "ed0-8"
+    "headline": "ed0-8",
+    "dimension_labels": {
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-educ-uoe-enra11-f",
@@ -33677,7 +33867,11 @@
         "primary": true
       }
     ],
-    "headline": "ed0-8"
+    "headline": "ed0-8",
+    "dimension_labels": {
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-educ-uoe-enra12",
@@ -34718,7 +34912,8 @@
     },
     "spliced_filters": {
       "icd10": ["A-R_V-Y"]
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-hlth-cd-ycdr2",
@@ -36756,7 +36951,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-y-lt65-t",
@@ -38324,7 +38523,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-y-ge65-t",
@@ -39892,7 +40095,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-total-m",
@@ -41460,7 +41667,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-y-lt65-m",
@@ -43028,7 +43239,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-y-ge65-m",
@@ -44596,7 +44811,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-total-f",
@@ -46164,7 +46383,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-y-lt65-f",
@@ -47732,7 +47955,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-causes-of-death-3y-y-ge65-f",
@@ -49300,7 +49527,11 @@
         "code": "V01-Y89_OTH"
       }
     ],
-    "headline": "a-r-v-y"
+    "headline": "a-r-v-y",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-hlth-silc-08b-r",
@@ -50176,7 +50407,7 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y20-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2emprt",
@@ -50415,7 +50646,11 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y20-64",
+    "dimension_labels": {
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfe2emprt-m",
@@ -50654,7 +50889,11 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y20-64",
+    "dimension_labels": {
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfe2emprt-f",
@@ -50893,7 +51132,11 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y20-64",
+    "dimension_labels": {
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfe2emprtn",
@@ -51005,7 +51248,7 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y20-64"
   },
   {
     "id": "eurostat-lfst-r-lfe2en2",
@@ -51142,7 +51385,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfp2acedu",
@@ -51453,7 +51697,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfp2actrc",
@@ -51765,7 +52010,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfp2actrtn",
@@ -52092,7 +52338,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu2gac",
@@ -52529,7 +52776,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt",
@@ -52758,7 +53006,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed0-2-t",
@@ -52987,7 +53240,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed3-4-t",
@@ -53216,7 +53474,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed5-8-t",
@@ -53445,7 +53708,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-total-m",
@@ -53674,7 +53942,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed0-2-m",
@@ -53903,7 +54176,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed3-4-m",
@@ -54132,7 +54410,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed5-8-m",
@@ -54327,7 +54610,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-total-f",
@@ -54556,7 +54844,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed0-2-f",
@@ -54785,7 +55078,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed3-4-f",
@@ -55014,7 +55312,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfu3rt-ed5-8-f",
@@ -55228,7 +55531,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "dimension_labels": {
+      "isced11": "Education level",
+      "sex": "Sex"
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-lfur2gac",
@@ -56281,7 +56589,8 @@
         "code": "GT19"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opens_subject": true
   },
   {
     "id": "eurostat-road-go-na-ru3g",
@@ -57122,7 +57431,7 @@
         "primary": true
       }
     ],
-    "headline": "y15-29"
+    "headline": "y15-24"
   },
   {
     "id": "eurostat-yth-empl-140",
@@ -57529,7 +57838,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-total-sal",
@@ -57801,7 +58115,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-total-nsal",
@@ -58073,7 +58392,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-pt-emp",
@@ -58345,7 +58669,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-pt-sal",
@@ -58617,7 +58946,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-pt-nsal",
@@ -58889,7 +59223,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-ft-emp",
@@ -59161,7 +59500,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-ft-sal",
@@ -59433,7 +59777,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-t-ft-nsal",
@@ -59705,7 +60054,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-total-emp",
@@ -59977,7 +60331,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-total-sal",
@@ -60249,7 +60608,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-total-nsal",
@@ -60521,7 +60885,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-pt-emp",
@@ -60793,7 +61162,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-pt-sal",
@@ -61065,7 +61439,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-pt-nsal",
@@ -61337,7 +61716,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-ft-emp",
@@ -61609,7 +61993,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-ft-sal",
@@ -61881,7 +62270,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-m-ft-nsal",
@@ -62153,7 +62547,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-total-emp",
@@ -62425,7 +62824,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-total-sal",
@@ -62697,7 +63101,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-total-nsal",
@@ -62969,7 +63378,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-pt-emp",
@@ -63241,7 +63655,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-pt-sal",
@@ -63513,7 +63932,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-pt-nsal",
@@ -63769,7 +64193,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-ft-emp",
@@ -64041,7 +64470,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-ft-sal",
@@ -64313,7 +64747,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-lfst-r-lfe2eftpt-f-ft-nsal",
@@ -64569,7 +65008,12 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "dimension_labels": {
+      "sex": "Sex",
+      "worktime": "Working time",
+      "wstatus": "Employment status"
+    }
   },
   {
     "id": "eurostat-hrst-st-rcat",
@@ -64692,7 +65136,8 @@
         "primary": true
       }
     ],
-    "headline": "hrst"
+    "headline": "hrst",
+    "opening_variant": "PC_ACT"
   },
   {
     "id": "eurostat-hrst-st-rcat-pc-pop",
@@ -64815,7 +65260,8 @@
         "primary": true
       }
     ],
-    "headline": "hrst"
+    "headline": "hrst",
+    "opening_variant": "PC_ACT"
   },
   {
     "id": "eurostat-hrst-st-rcat-ths-per",
@@ -64938,7 +65384,8 @@
         "primary": true
       }
     ],
-    "headline": "hrst"
+    "headline": "hrst",
+    "opening_variant": "PC_ACT"
   },
   {
     "id": "eurostat-isoc-r-blt12-i",
@@ -65060,7 +65507,8 @@
         "primary": true
       }
     ],
-    "headline": "i-blt12"
+    "headline": "i-blt12",
+    "opening_variant": "PC_IND"
   },
   {
     "id": "eurostat-isoc-r-blt12-i-pc-ind-ilt12",
@@ -65182,7 +65630,8 @@
         "primary": true
       }
     ],
-    "headline": "i-blt12"
+    "headline": "i-blt12",
+    "opening_variant": "PC_IND"
   },
   {
     "id": "eurostat-isoc-r-blt12-i-pc-ind-iu3",
@@ -65255,7 +65704,8 @@
         "code": "I_BUY3",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "PC_IND"
   },
   {
     "id": "eurostat-edat-lfse-04-y20-24-t",
@@ -65418,7 +65868,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y25-34-t",
@@ -65581,7 +66035,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04",
@@ -65744,7 +66202,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y30-34-t",
@@ -65907,7 +66369,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y20-24-m",
@@ -66070,7 +66536,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y25-34-m",
@@ -66233,7 +66703,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y25-64-m",
@@ -66396,7 +66870,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y30-34-m",
@@ -66559,7 +67037,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y20-24-f",
@@ -66722,7 +67204,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y25-34-f",
@@ -66885,7 +67371,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y25-64-f",
@@ -67048,7 +67538,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-edat-lfse-04-y30-34-f",
@@ -67211,7 +67705,11 @@
         "primary": true
       }
     ],
-    "headline": "ed5-8"
+    "headline": "ed5-8",
+    "dimension_labels": {
+      "age": "Age group",
+      "sex": "Sex"
+    }
   },
   {
     "id": "eurostat-ef-m-sex-sh",
@@ -67283,7 +67781,8 @@
           "sex": "T"
         },
         "code": "T",
-        "primary": true
+        "primary": true,
+        "short_name": "Both sexes"
       },
       {
         "id": "m",
@@ -67308,7 +67807,8 @@
         "code": "F"
       }
     ],
-    "headline": "t"
+    "headline": "t",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-m-sex-sh-pc",
@@ -67380,7 +67880,8 @@
           "sex": "T"
         },
         "code": "T",
-        "primary": true
+        "primary": true,
+        "short_name": "Both sexes"
       },
       {
         "id": "m",
@@ -67405,7 +67906,9 @@
         "code": "F"
       }
     ],
-    "headline": "t"
+    "headline": "f",
+    "headline_note": "Defaults on women managers: the total is 100% by construction.",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-m-so-sh",
@@ -67477,7 +67980,8 @@
           "so_eur": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All economic sizes"
       },
       {
         "id": "ke-lt8",
@@ -67502,7 +68006,8 @@
         "code": "KE_GE8"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-m-so-sh-pc",
@@ -67574,7 +68079,8 @@
           "so_eur": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All economic sizes"
       },
       {
         "id": "ke-lt8",
@@ -67599,7 +68105,9 @@
         "code": "KE_GE8"
       }
     ],
-    "headline": "total"
+    "headline": "ke-lt8",
+    "headline_note": "Defaults on holdings under 8,000 euros of standard output, the small farms: the total is 100% by construction.",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-mp-training-sh",
@@ -67671,7 +68179,8 @@
           "training": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All levels of training"
       },
       {
         "id": "basic",
@@ -67707,7 +68216,8 @@
         "code": "FULL"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-mp-training-sh-pc",
@@ -67779,7 +68289,8 @@
           "training": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All levels of training"
       },
       {
         "id": "basic",
@@ -67815,7 +68326,9 @@
         "code": "FULL"
       }
     ],
-    "headline": "total"
+    "headline": "full",
+    "headline_note": "Defaults on managers with full agricultural training: the total is 100% by construction.",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-m-age-sh",
@@ -67887,7 +68400,8 @@
           "age": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All ages of the manager"
       },
       {
         "id": "y-lt35",
@@ -67923,7 +68437,9 @@
         "code": "Y_GE55"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opens_subject": true,
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-m-age-sh-pc",
@@ -67995,7 +68511,8 @@
           "age": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All ages of the manager"
       },
       {
         "id": "y-lt35",
@@ -68031,7 +68548,10 @@
         "code": "Y_GE55"
       }
     ],
-    "headline": "total"
+    "headline": "y-lt35",
+    "headline_note": "Defaults on managers under 35, the share the EU follows for generational renewal; the total is 100% by construction.",
+    "opens_subject": true,
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-isoc-r-cux-i",
@@ -68192,7 +68712,8 @@
         "primary": true
       }
     ],
-    "headline": "car"
+    "headline": "car",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-tran-r-elvehst-pc",
@@ -68291,7 +68812,8 @@
         "primary": true
       }
     ],
-    "headline": "car"
+    "headline": "car",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-apri-lrnt",
@@ -68364,7 +68886,8 @@
         "code": "ARA_J0000",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-apri-lrnt-nac-ha",
@@ -68437,7 +68960,8 @@
         "code": "ARA_J0000",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-tour-occ-anor2",
@@ -68592,7 +69116,8 @@
         "code": "I_IUGOV1",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "PC_IND"
   },
   {
     "id": "eurostat-isoc-r-gov-i-pc-ind-ilt12",
@@ -68665,7 +69190,8 @@
         "code": "I_IUGOV1",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "PC_IND"
   },
   {
     "id": "eurostat-apri-lprc",
@@ -68751,7 +69277,8 @@
         "primary": true
       }
     ],
-    "headline": "ara"
+    "headline": "ara",
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-apri-lprc-nac-ha",
@@ -68837,7 +69364,8 @@
         "primary": true
       }
     ],
-    "headline": "ara"
+    "headline": "ara",
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-ef-lu-ofirrig",
@@ -68934,7 +69462,8 @@
         "code": "I03B"
       }
     ],
-    "headline": "i03a"
+    "headline": "i03a",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-ef-lu-ofirrig-hld",
@@ -69042,7 +69571,8 @@
         "code": "I03B"
       }
     ],
-    "headline": "i03a"
+    "headline": "i03a",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-lan-lcv-fao",
@@ -69149,7 +69679,8 @@
         "code": "OWL_NFAO"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-lan-lcv-fao-pc",
@@ -69256,7 +69787,8 @@
         "code": "OWL_NFAO"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-nama-10r-2rlp",
@@ -69329,7 +69861,8 @@
         "code": "RLPR_PER",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "PCH_PRE"
   },
   {
     "id": "eurostat-nama-10r-2rlp-pch-pre",
@@ -69402,7 +69935,8 @@
         "code": "RLPR_PER",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "PCH_PRE"
   },
   {
     "id": "eurostat-nama-10r-2gvagr",
@@ -69488,7 +70022,8 @@
         "primary": true
       }
     ],
-    "headline": "b1g"
+    "headline": "b1gq",
+    "opening_variant": "PCH_PRE"
   },
   {
     "id": "eurostat-nama-10r-2gvagr-pch-pre",
@@ -69574,7 +70109,8 @@
         "primary": true
       }
     ],
-    "headline": "b1g"
+    "headline": "b1gq",
+    "opening_variant": "PCH_PRE"
   },
   {
     "id": "eurostat-tran-r-acci",
@@ -69660,7 +70196,8 @@
         "primary": true
       }
     ],
-    "headline": "kil"
+    "headline": "kil",
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-tran-r-acci-p-mhab",
@@ -69746,7 +70283,8 @@
         "primary": true
       }
     ],
-    "headline": "kil"
+    "headline": "kil",
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-aei-ps-inp",
@@ -69845,7 +70383,8 @@
         "primary": true
       }
     ],
-    "headline": "high-inp"
+    "headline": "high-inp",
+    "opening_variant": "PC_AREA"
   },
   {
     "id": "eurostat-aei-ps-inp-pc-area",
@@ -69944,7 +70483,8 @@
         "primary": true
       }
     ],
-    "headline": "high-inp"
+    "headline": "high-inp",
+    "opening_variant": "PC_AREA"
   },
   {
     "id": "eurostat-nama-10r-2nlp",
@@ -70017,7 +70557,8 @@
         "code": "NLPR_PER",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-nama-10r-2nlp-nac",
@@ -70090,7 +70631,8 @@
         "code": "NLPR_PER",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-nama-10r-2nlp-pc-eu27-2020-meur-cp",
@@ -70163,7 +70705,8 @@
         "code": "NLPR_PER",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-demo-r-d3area",
@@ -70402,7 +70945,8 @@
         "primary": true
       }
     ],
-    "headline": "i07a-eq-y"
+    "headline": "i07a-eq-y",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-aei-fm-ms-pc",
@@ -70560,7 +71104,8 @@
         "primary": true
       }
     ],
-    "headline": "i07a-eq-y"
+    "headline": "i07a-eq-y",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-educ-regind",
@@ -71623,7 +72168,8 @@
         "code": "U400"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-lan-use-ovw-pc",
@@ -71884,7 +72430,8 @@
         "code": "U400"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-ef-so-mptenure",
@@ -71996,7 +72543,8 @@
         "primary": true
       }
     ],
-    "headline": "agrarea"
+    "headline": "agrarea",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-ef-so-mptenure-hld",
@@ -72108,7 +72656,8 @@
         "primary": true
       }
     ],
-    "headline": "agrarea"
+    "headline": "agrarea",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-rd-e-gerdreg",
@@ -72227,7 +72776,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-rd-e-gerdreg-mio-eur",
@@ -72346,7 +72896,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-rd-e-gerdreg-mio-nac",
@@ -72465,7 +73016,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-rd-e-gerdreg-mio-pps",
@@ -72584,7 +73136,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-rd-e-gerdreg-mio-pps-kp05",
@@ -72703,7 +73256,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-rd-e-gerdreg-pc-gdp",
@@ -72822,7 +73376,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-rd-e-gerdreg-pps-hab-kp05",
@@ -72941,7 +73496,8 @@
         "code": "PNP"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC_GDP"
   },
   {
     "id": "eurostat-cens-11hou-r2",
@@ -73130,7 +73686,8 @@
         "primary": true
       }
     ],
-    "headline": "ht"
+    "headline": "ht",
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-pat-ep-rtec-nr",
@@ -73265,7 +73822,8 @@
         "primary": true
       }
     ],
-    "headline": "ht"
+    "headline": "ht",
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-pat-ep-rtec-p-mact",
@@ -73400,7 +73958,8 @@
         "primary": true
       }
     ],
-    "headline": "ht"
+    "headline": "ht",
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-pat-ep-rtec-p-mhab",
@@ -73535,7 +74094,8 @@
         "primary": true
       }
     ],
-    "headline": "ht"
+    "headline": "ht",
+    "opening_variant": "P_MHAB"
   },
   {
     "id": "eurostat-tour-occ-arn2",
@@ -73658,7 +74218,9 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "headline_note": "Defaults on total counts, not rates: larger regions show more arrivals.",
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-tour-occ-arn2-pch-pre",
@@ -73781,7 +74343,8 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-ef-so-mporg",
@@ -74006,7 +74569,8 @@
       "definition": {
         "upstream_unit": "NR"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-lfst-r-sla-ga",
@@ -74118,7 +74682,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "opening_variant": "PC_ELF"
   },
   {
     "id": "eurostat-lfst-r-sla-ga-ths-per",
@@ -74230,7 +74795,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-64"
+    "headline": "y15-64",
+    "opening_variant": "PC_ELF"
   },
   {
     "id": "eurostat-ef-ov-kvftreg",
@@ -74449,136 +75015,6 @@
         "upstream_unit": "NR"
       }
     }
-  },
-  {
-    "id": "eurostat-ef-ov-kvaa",
-    "title": "Key variables",
-    "description": "Key variables, across European regions, from Eurostat table ef_ov_kvaa.",
-    "subject": "Key variables",
-    "breakdown": "legal status of holding, size of farm (UAA)",
-    "category": "Agriculture",
-    "publisher": "Eurostat",
-    "source": "Eurostat ef_ov_kvaa",
-    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_ov_kvaa/default/table",
-    "source_type": "official",
-    "status": "official_source",
-    "licence": {
-      "id": "EC-REUSE-2011-833",
-      "name": "European Commission reuse policy (Decision 2011/833/EU)",
-      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
-      "attribution": "Source: Eurostat (ef_ov_kvaa)",
-      "commercial_use": true,
-      "attribution_required": true,
-      "share_alike": false,
-      "redistribution": true
-    },
-    "methodology": "Direct extract from Eurostat ef_ov_kvaa. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
-    "geography": {
-      "scheme": "NUTS",
-      "version": "2024",
-      "levels": [0, 1, 2]
-    },
-    "geographic_coverage": ["Europe (NUTS 2024)"],
-    "temporal_frequency": "annual",
-    "semantic_hints": {
-      "aliases": [],
-      "topics": ["agriculture"],
-      "example_questions": [],
-      "caveats": []
-    },
-    "created_at": "2026-09-24",
-    "quality": {
-      "score": 95,
-      "methodology_documented": true,
-      "source_documented": true,
-      "reproducible": true,
-      "peer_reviews": 0,
-      "community_votes": 0
-    },
-    "dataset_code": "ef_ov_kvaa",
-    "filters": {
-      "freq": "A",
-      "agrarea": "TOTAL",
-      "snglhldr": "TOTAL"
-    },
-    "period_start": "1998",
-    "period_end": "latest",
-    "indicator_dimension": "variable",
-    "indicators": [
-      {
-        "id": "agrarea-ha",
-        "name": "Utilised agricultural area (ha)",
-        "description": "Key variables — Utilised agricultural area (ha) (AGRAREA_HA).",
-        "unit": "",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "AGRAREA_HA"
-        },
-        "code": "AGRAREA_HA",
-        "primary": true
-      },
-      {
-        "id": "lfd-awu",
-        "name": "AWU: Labour force - directly employed by the holding",
-        "description": "Key variables — AWU: Labour force - directly employed by the holding (LFD_AWU).",
-        "unit": "",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "LFD_AWU"
-        },
-        "code": "LFD_AWU",
-        "primary": true
-      },
-      {
-        "id": "hold-hold",
-        "name": "hold: No. of holdings",
-        "description": "Key variables — hold: No. of holdings (HOLD_HOLD).",
-        "unit": "",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "HOLD_HOLD"
-        },
-        "code": "HOLD_HOLD",
-        "primary": true
-      },
-      {
-        "id": "sgm-esu",
-        "name": "ESU: SGM of the holding",
-        "description": "Key variables — ESU: SGM of the holding (SGM_ESU).",
-        "unit": "",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "SGM_ESU"
-        },
-        "code": "SGM_ESU",
-        "primary": true
-      },
-      {
-        "id": "totarea-ha",
-        "name": "ha: Total area",
-        "description": "Key variables — ha: Total area (TOTAREA_HA).",
-        "unit": "",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "TOTAREA_HA"
-        },
-        "code": "TOTAREA_HA",
-        "primary": true
-      },
-      {
-        "id": "j-lsu",
-        "name": "LSU: Livestock",
-        "description": "Key variables — LSU: Livestock (J_LSU).",
-        "unit": "",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J_LSU"
-        },
-        "code": "J_LSU",
-        "primary": true
-      }
-    ],
-    "headline": "agrarea-ha"
   },
   {
     "id": "eurostat-lan-lcv-ovw",
@@ -75455,7 +75891,8 @@
         "code": "H20"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-lan-lcv-ovw-pc",
@@ -76332,7 +76769,8 @@
         "code": "H20"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "PC"
   },
   {
     "id": "eurostat-cens-21dwbno-r3",
@@ -76397,7 +76835,8 @@
       "definition": {
         "upstream_unit": "NR"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-crim-gen-reg",
@@ -76543,7 +76982,8 @@
         "primary": true
       }
     ],
-    "headline": "iccs0101"
+    "headline": "iccs0101",
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-crim-gen-reg-p-hthab",
@@ -76689,7 +77129,8 @@
         "primary": true
       }
     ],
-    "headline": "iccs0101"
+    "headline": "iccs0101",
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-tour-occ-nin2dc",
@@ -76814,7 +77255,9 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "headline_note": "Defaults on total counts, not rates: larger regions show more nights.",
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-tour-occ-nin2dc-pch-pre",
@@ -76939,7 +77382,8 @@
         "primary": true
       }
     ],
-    "headline": "i551-i553"
+    "headline": "i551-i553",
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-ef-poirrig",
@@ -77116,7 +77560,8 @@
         "primary": true
       }
     ],
-    "headline": "hold-hold"
+    "headline": "hold-hold",
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21m-r3",
@@ -80105,7 +80550,8 @@
         "primary": true
       }
     ],
-    "headline": false
+    "headline": false,
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-ef-aux-soc-eur-hd",
@@ -80395,7 +80841,8 @@
         "primary": true
       }
     ],
-    "headline": false
+    "headline": false,
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-ef-aux-soc-eur-hhd",
@@ -80553,7 +81000,8 @@
         "primary": true
       }
     ],
-    "headline": false
+    "headline": false,
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-ef-aux-soc-eur-hive",
@@ -80627,7 +81075,8 @@
         "primary": true
       }
     ],
-    "headline": false
+    "headline": false,
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-ef-aux-soc-eur-hm2",
@@ -80701,7 +81150,8 @@
         "primary": true
       }
     ],
-    "headline": false
+    "headline": false,
+    "opening_variant": "EUR_HA"
   },
   {
     "id": "eurostat-cens-21ara-r2",
@@ -81177,7 +81627,8 @@
         "primary": true
       }
     ],
-    "headline": "agrarea"
+    "headline": "agrarea",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-ef-lu-pcreg-hld",
@@ -81457,7 +81908,8 @@
         "primary": true
       }
     ],
-    "headline": "agrarea"
+    "headline": "agrarea",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-ef-mporganic",
@@ -82033,148 +82485,6 @@
     "headline": "hold-hold"
   },
   {
-    "id": "eurostat-ef-kvecsleg",
-    "title": "Key variables: area, livestock (LSU), labour force and standard output (SO)",
-    "description": "Key variables: area, livestock (LSU), labour force and standard output (SO), across European regions, from Eurostat table ef_kvecsleg.",
-    "subject": "Key variables: area, livestock (LSU), labour force and standard output (SO)",
-    "breakdown": "economic size of farm (SO in Euro), legal status of holding",
-    "category": "Agriculture",
-    "publisher": "Eurostat",
-    "source": "Eurostat ef_kvecsleg",
-    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_kvecsleg/default/table",
-    "source_type": "official",
-    "status": "official_source",
-    "licence": {
-      "id": "EC-REUSE-2011-833",
-      "name": "European Commission reuse policy (Decision 2011/833/EU)",
-      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
-      "attribution": "Source: Eurostat (ef_kvecsleg)",
-      "commercial_use": true,
-      "attribution_required": true,
-      "share_alike": false,
-      "redistribution": true
-    },
-    "methodology": "Direct extract from Eurostat ef_kvecsleg. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
-    "geography": {
-      "scheme": "NUTS",
-      "version": "2024",
-      "levels": [0, 2]
-    },
-    "geographic_coverage": ["Europe (NUTS 2024)"],
-    "temporal_frequency": "annual",
-    "semantic_hints": {
-      "aliases": [],
-      "topics": ["agriculture"],
-      "example_questions": [],
-      "caveats": []
-    },
-    "created_at": "2026-09-24",
-    "quality": {
-      "score": 95,
-      "methodology_documented": true,
-      "source_documented": true,
-      "reproducible": true,
-      "peer_reviews": 0,
-      "community_votes": 0
-    },
-    "dataset_code": "ef_kvecsleg",
-    "filters": {
-      "freq": "A",
-      "legtype": "TOTAL",
-      "so_eur": "TOTAL"
-    },
-    "period_start": "2004",
-    "period_end": "latest",
-    "indicator_dimension": "indic_ef",
-    "indicators": [
-      {
-        "id": "hold-hold",
-        "name": "hold: Total number of holdings",
-        "description": "Key variables: area, livestock (LSU), labour force and standard output (SO) — hold: Total number of holdings (HOLD_HOLD).",
-        "unit": "",
-        "statistic": "annual_value",
-        "definition": {
-          "indic_ef": "HOLD_HOLD"
-        },
-        "code": "HOLD_HOLD",
-        "primary": true
-      },
-      {
-        "id": "agrarea-ha",
-        "name": "ha: Utilised agricultural area",
-        "description": "Key variables: area, livestock (LSU), labour force and standard output (SO) — ha: Utilised agricultural area (AGRAREA_HA).",
-        "unit": "",
-        "statistic": "annual_value",
-        "definition": {
-          "indic_ef": "AGRAREA_HA"
-        },
-        "code": "AGRAREA_HA",
-        "primary": true
-      },
-      {
-        "id": "c-livestock-lsu",
-        "name": "LSU of the holdings with livestock",
-        "description": "Key variables: area, livestock (LSU), labour force and standard output (SO) — LSU of the holdings with livestock (C_LIVESTOCK_LSU).",
-        "unit": "",
-        "statistic": "annual_value",
-        "definition": {
-          "indic_ef": "C_LIVESTOCK_LSU"
-        },
-        "code": "C_LIVESTOCK_LSU",
-        "primary": true
-      },
-      {
-        "id": "lfd-awu",
-        "name": "AWU: Total: Labour force directly employed by the holding",
-        "description": "Key variables: area, livestock (LSU), labour force and standard output (SO) — AWU: Total: Labour force directly employed by the holding (LFD_AWU).",
-        "unit": "",
-        "statistic": "annual_value",
-        "definition": {
-          "indic_ef": "LFD_AWU"
-        },
-        "code": "LFD_AWU",
-        "primary": true
-      },
-      {
-        "id": "so-euro",
-        "name": "Euro: Standard output (SO)",
-        "description": "Key variables: area, livestock (LSU), labour force and standard output (SO) — Euro: Standard output (SO) (SO_EURO).",
-        "unit": "",
-        "statistic": "annual_value",
-        "definition": {
-          "indic_ef": "SO_EURO"
-        },
-        "code": "SO_EURO",
-        "primary": true
-      },
-      {
-        "id": "totarea-ha",
-        "name": "ha: Total area",
-        "description": "Key variables: area, livestock (LSU), labour force and standard output (SO) — ha: Total area (TOTAREA_HA).",
-        "unit": "",
-        "statistic": "annual_value",
-        "definition": {
-          "indic_ef": "TOTAREA_HA"
-        },
-        "code": "TOTAREA_HA",
-        "primary": true
-      },
-      {
-        "id": "a-3-3-1-eq-y-hold",
-        "name": "hold: More than 50% of producion self-consumed by the holder",
-        "description": "Key variables: area, livestock (LSU), labour force and standard output (SO) — hold: More than 50% of producion self-consumed by the holder (A_3_3_1_EQ_Y_HOLD).",
-        "unit": "",
-        "statistic": "annual_value",
-        "definition": {
-          "indic_ef": "A_3_3_1_EQ_Y_HOLD"
-        },
-        "code": "A_3_3_1_EQ_Y_HOLD",
-        "primary": true
-      }
-    ],
-    "headline": "hold-hold"
-  },
-  {
     "id": "eurostat-cens-21fhcs-r3",
     "title": "Families",
     "description": "Families, across European regions, from Eurostat table cens_21fhcs_r3.",
@@ -82387,7 +82697,8 @@
         "primary": true
       }
     ],
-    "headline": "ren"
+    "headline": "ren",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-ef-mp-renerg-hld",
@@ -82549,1557 +82860,8 @@
         "primary": true
       }
     ],
-    "headline": "ren"
-  },
-  {
-    "id": "eurostat-ef-ls-ovesu",
-    "title": "Livestock: number of farms and heads",
-    "description": "Livestock: number of farms and heads, across European regions, from Eurostat table ef_ls_ovesu.",
-    "subject": "Livestock: number of farms and heads",
-    "breakdown": "economic size of farm (ESU)",
-    "category": "Agriculture",
-    "publisher": "Eurostat",
-    "source": "Eurostat ef_ls_ovesu",
-    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_ls_ovesu/default/table",
-    "source_type": "official",
-    "status": "official_source",
-    "licence": {
-      "id": "EC-REUSE-2011-833",
-      "name": "European Commission reuse policy (Decision 2011/833/EU)",
-      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
-      "attribution": "Source: Eurostat (ef_ls_ovesu)",
-      "commercial_use": true,
-      "attribution_required": true,
-      "share_alike": false,
-      "redistribution": true
-    },
-    "methodology": "Direct extract from Eurostat ef_ls_ovesu. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
-    "geography": {
-      "scheme": "NUTS",
-      "version": "2024",
-      "levels": [0, 1, 2]
-    },
-    "geographic_coverage": ["Europe (NUTS 2024)"],
-    "temporal_frequency": "annual",
-    "semantic_hints": {
-      "aliases": [],
-      "topics": ["agriculture"],
-      "example_questions": [],
-      "caveats": []
-    },
-    "created_at": "2026-09-24",
-    "quality": {
-      "score": 95,
-      "methodology_documented": true,
-      "source_documented": true,
-      "reproducible": true,
-      "peer_reviews": 0,
-      "community_votes": 0
-    },
-    "dataset_code": "ef_ls_ovesu",
-    "filters": {
-      "freq": "A",
-      "esu": "TOTAL",
-      "unit": "HLD"
-    },
-    "period_start": "1998",
-    "period_end": "latest",
-    "indicator_dimension": "variable",
-    "variant": {
-      "dimension": "unit",
-      "code": "HLD",
-      "label": "Holding",
-      "unit": "Holding"
-    },
-    "indicators": [
-      {
-        "id": "hold",
-        "name": "No. of holdings",
-        "description": "Livestock: number of farms and heads — No. of holdings (HOLD).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "HOLD"
-        },
-        "code": "HOLD",
-        "primary": true
-      },
-      {
-        "id": "j",
-        "name": "Livestock",
-        "description": "Livestock: number of farms and heads — Livestock (J).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J"
-        },
-        "code": "J",
-        "primary": true
-      },
-      {
-        "id": "j01",
-        "name": "Equidae",
-        "description": "Livestock: number of farms and heads — Equidae (J01).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J01"
-        },
-        "code": "J01",
-        "primary": true
-      },
-      {
-        "id": "j02-08",
-        "name": "Cattle",
-        "description": "Livestock: number of farms and heads — Cattle (J02_08).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J02_08"
-        },
-        "code": "J02_08",
-        "primary": true
-      },
-      {
-        "id": "j02",
-        "name": "Bovine <1 year old - total",
-        "description": "Livestock: number of farms and heads — Bovine <1 year old - total (J02).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J02"
-        },
-        "code": "J02",
-        "primary": true
-      },
-      {
-        "id": "j03",
-        "name": "Bovine 1-<2 years - males",
-        "description": "Livestock: number of farms and heads — Bovine 1-<2 years - males (J03).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J03"
-        },
-        "code": "J03",
-        "primary": true
-      },
-      {
-        "id": "j04",
-        "name": "Bovine 1-<2 years - females",
-        "description": "Livestock: number of farms and heads — Bovine 1-<2 years - females (J04).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J04"
-        },
-        "code": "J04",
-        "primary": true
-      },
-      {
-        "id": "j05",
-        "name": "Bovine 2 years and older - males",
-        "description": "Livestock: number of farms and heads — Bovine 2 years and older - males (J05).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J05"
-        },
-        "code": "J05",
-        "primary": true
-      },
-      {
-        "id": "j06",
-        "name": "Heifers, 2 years and older",
-        "description": "Livestock: number of farms and heads — Heifers, 2 years and older (J06).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J06"
-        },
-        "code": "J06",
-        "primary": true
-      },
-      {
-        "id": "j07",
-        "name": "Dairy cows",
-        "description": "Livestock: number of farms and heads — Dairy cows (J07).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J07"
-        },
-        "code": "J07",
-        "primary": true
-      },
-      {
-        "id": "j08",
-        "name": "Other cows, bovine 2 years old and over",
-        "description": "Livestock: number of farms and heads — Other cows, bovine 2 years old and over (J08).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J08"
-        },
-        "code": "J08",
-        "primary": true
-      },
-      {
-        "id": "j09",
-        "name": "Sheep",
-        "description": "Livestock: number of farms and heads — Sheep (J09).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J09"
-        },
-        "code": "J09",
-        "primary": true
-      },
-      {
-        "id": "j09a",
-        "name": "Sheep - breeding ewes",
-        "description": "Livestock: number of farms and heads — Sheep - breeding ewes (J09A).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J09A"
-        },
-        "code": "J09A",
-        "primary": true
-      },
-      {
-        "id": "j09b",
-        "name": "Sheep - others",
-        "description": "Livestock: number of farms and heads — Sheep - others (J09B).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J09B"
-        },
-        "code": "J09B",
-        "primary": true
-      },
-      {
-        "id": "j10",
-        "name": "Goats",
-        "description": "Livestock: number of farms and heads — Goats (J10).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J10"
-        },
-        "code": "J10",
-        "primary": true
-      },
-      {
-        "id": "j10a",
-        "name": "Goats - breeding females",
-        "description": "Livestock: number of farms and heads — Goats - breeding females (J10A).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J10A"
-        },
-        "code": "J10A",
-        "primary": true
-      },
-      {
-        "id": "j10b",
-        "name": "Goats - others",
-        "description": "Livestock: number of farms and heads — Goats - others (J10B).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J10B"
-        },
-        "code": "J10B",
-        "primary": true
-      },
-      {
-        "id": "j11-13",
-        "name": "Pigs",
-        "description": "Livestock: number of farms and heads — Pigs (J11_13).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J11_13"
-        },
-        "code": "J11_13",
-        "primary": true
-      },
-      {
-        "id": "j11",
-        "name": "Pigs - piglets under 20 kg",
-        "description": "Livestock: number of farms and heads — Pigs - piglets under 20 kg (J11).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J11"
-        },
-        "code": "J11",
-        "primary": true
-      },
-      {
-        "id": "j12",
-        "name": "Pigs - breeding sows over 50 kg",
-        "description": "Livestock: number of farms and heads — Pigs - breeding sows over 50 kg (J12).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J12"
-        },
-        "code": "J12",
-        "primary": true
-      },
-      {
-        "id": "j13",
-        "name": "Pigs - others",
-        "description": "Livestock: number of farms and heads — Pigs - others (J13).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J13"
-        },
-        "code": "J13",
-        "primary": true
-      },
-      {
-        "id": "j14-16",
-        "name": "Poultry (1000 heads)",
-        "description": "Livestock: number of farms and heads — Poultry (1000 heads) (J14_16).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J14_16"
-        },
-        "code": "J14_16",
-        "primary": true
-      },
-      {
-        "id": "j14",
-        "name": "Poultry - broilers (1000 heads)",
-        "description": "Livestock: number of farms and heads — Poultry - broilers (1000 heads) (J14).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J14"
-        },
-        "code": "J14",
-        "primary": true
-      },
-      {
-        "id": "j15",
-        "name": "Laying hens (1000 heads)",
-        "description": "Livestock: number of farms and heads — Laying hens (1000 heads) (J15).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J15"
-        },
-        "code": "J15",
-        "primary": true
-      },
-      {
-        "id": "j16",
-        "name": "Poultry - others (1000 heads)",
-        "description": "Livestock: number of farms and heads — Poultry - others (1000 heads) (J16).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J16"
-        },
-        "code": "J16",
-        "primary": true
-      },
-      {
-        "id": "j17",
-        "name": "Rabbits (breeding females)",
-        "description": "Livestock: number of farms and heads — Rabbits (breeding females) (J17).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J17"
-        },
-        "code": "J17",
-        "primary": true
-      },
-      {
-        "id": "j18",
-        "name": "Beehives",
-        "description": "Livestock: number of farms and heads — Beehives (J18).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J18"
-        },
-        "code": "J18",
-        "primary": true
-      },
-      {
-        "id": "j19-eq-y",
-        "name": "Other livestock",
-        "description": "Livestock: number of farms and heads — Other livestock (J19_EQ_Y).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J19_EQ_Y"
-        },
-        "code": "J19_EQ_Y",
-        "primary": true
-      }
-    ],
-    "headline": "hold"
-  },
-  {
-    "id": "eurostat-ef-ls-ovesu-nr",
-    "title": "Livestock: number of farms and heads · Number",
-    "description": "Livestock: number of farms and heads, across European regions, from Eurostat table ef_ls_ovesu.",
-    "subject": "Livestock: number of farms and heads",
-    "breakdown": "economic size of farm (ESU)",
-    "category": "Agriculture",
-    "publisher": "Eurostat",
-    "source": "Eurostat ef_ls_ovesu",
-    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_ls_ovesu/default/table",
-    "source_type": "official",
-    "status": "official_source",
-    "licence": {
-      "id": "EC-REUSE-2011-833",
-      "name": "European Commission reuse policy (Decision 2011/833/EU)",
-      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
-      "attribution": "Source: Eurostat (ef_ls_ovesu)",
-      "commercial_use": true,
-      "attribution_required": true,
-      "share_alike": false,
-      "redistribution": true
-    },
-    "methodology": "Direct extract from Eurostat ef_ls_ovesu. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
-    "geography": {
-      "scheme": "NUTS",
-      "version": "2024",
-      "levels": [0, 1, 2]
-    },
-    "geographic_coverage": ["Europe (NUTS 2024)"],
-    "temporal_frequency": "annual",
-    "semantic_hints": {
-      "aliases": [],
-      "topics": ["agriculture"],
-      "example_questions": [],
-      "caveats": []
-    },
-    "created_at": "2026-09-24",
-    "quality": {
-      "score": 95,
-      "methodology_documented": true,
-      "source_documented": true,
-      "reproducible": true,
-      "peer_reviews": 0,
-      "community_votes": 0
-    },
-    "dataset_code": "ef_ls_ovesu",
-    "filters": {
-      "freq": "A",
-      "esu": "TOTAL",
-      "unit": "NR"
-    },
-    "period_start": "1998",
-    "period_end": "latest",
-    "indicator_dimension": "variable",
-    "variant": {
-      "dimension": "unit",
-      "code": "NR",
-      "label": "Number",
-      "unit": "number"
-    },
-    "indicators": [
-      {
-        "id": "j-lsu",
-        "name": "LSU: Livestock",
-        "description": "Livestock: number of farms and heads — LSU: Livestock (J_LSU).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J_LSU"
-        },
-        "code": "J_LSU",
-        "primary": true
-      },
-      {
-        "id": "j01",
-        "name": "Equidae",
-        "description": "Livestock: number of farms and heads — Equidae (J01).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J01"
-        },
-        "code": "J01",
-        "primary": true
-      },
-      {
-        "id": "j02-08",
-        "name": "Cattle",
-        "description": "Livestock: number of farms and heads — Cattle (J02_08).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J02_08"
-        },
-        "code": "J02_08",
-        "primary": true
-      },
-      {
-        "id": "j02",
-        "name": "Bovine <1 year old - total",
-        "description": "Livestock: number of farms and heads — Bovine <1 year old - total (J02).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J02"
-        },
-        "code": "J02",
-        "primary": true
-      },
-      {
-        "id": "j03",
-        "name": "Bovine 1-<2 years - males",
-        "description": "Livestock: number of farms and heads — Bovine 1-<2 years - males (J03).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J03"
-        },
-        "code": "J03",
-        "primary": true
-      },
-      {
-        "id": "j04",
-        "name": "Bovine 1-<2 years - females",
-        "description": "Livestock: number of farms and heads — Bovine 1-<2 years - females (J04).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J04"
-        },
-        "code": "J04",
-        "primary": true
-      },
-      {
-        "id": "j05",
-        "name": "Bovine 2 years and older - males",
-        "description": "Livestock: number of farms and heads — Bovine 2 years and older - males (J05).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J05"
-        },
-        "code": "J05",
-        "primary": true
-      },
-      {
-        "id": "j06",
-        "name": "Heifers, 2 years and older",
-        "description": "Livestock: number of farms and heads — Heifers, 2 years and older (J06).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J06"
-        },
-        "code": "J06",
-        "primary": true
-      },
-      {
-        "id": "j07",
-        "name": "Dairy cows",
-        "description": "Livestock: number of farms and heads — Dairy cows (J07).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J07"
-        },
-        "code": "J07",
-        "primary": true
-      },
-      {
-        "id": "j08",
-        "name": "Other cows, bovine 2 years old and over",
-        "description": "Livestock: number of farms and heads — Other cows, bovine 2 years old and over (J08).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J08"
-        },
-        "code": "J08",
-        "primary": true
-      },
-      {
-        "id": "j09",
-        "name": "Sheep",
-        "description": "Livestock: number of farms and heads — Sheep (J09).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J09"
-        },
-        "code": "J09",
-        "primary": true
-      },
-      {
-        "id": "j09a",
-        "name": "Sheep - breeding ewes",
-        "description": "Livestock: number of farms and heads — Sheep - breeding ewes (J09A).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J09A"
-        },
-        "code": "J09A",
-        "primary": true
-      },
-      {
-        "id": "j09b",
-        "name": "Sheep - others",
-        "description": "Livestock: number of farms and heads — Sheep - others (J09B).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J09B"
-        },
-        "code": "J09B",
-        "primary": true
-      },
-      {
-        "id": "j10",
-        "name": "Goats",
-        "description": "Livestock: number of farms and heads — Goats (J10).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J10"
-        },
-        "code": "J10",
-        "primary": true
-      },
-      {
-        "id": "j10a",
-        "name": "Goats - breeding females",
-        "description": "Livestock: number of farms and heads — Goats - breeding females (J10A).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J10A"
-        },
-        "code": "J10A",
-        "primary": true
-      },
-      {
-        "id": "j10b",
-        "name": "Goats - others",
-        "description": "Livestock: number of farms and heads — Goats - others (J10B).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J10B"
-        },
-        "code": "J10B",
-        "primary": true
-      },
-      {
-        "id": "j11-13",
-        "name": "Pigs",
-        "description": "Livestock: number of farms and heads — Pigs (J11_13).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J11_13"
-        },
-        "code": "J11_13",
-        "primary": true
-      },
-      {
-        "id": "j11",
-        "name": "Pigs - piglets under 20 kg",
-        "description": "Livestock: number of farms and heads — Pigs - piglets under 20 kg (J11).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J11"
-        },
-        "code": "J11",
-        "primary": true
-      },
-      {
-        "id": "j12",
-        "name": "Pigs - breeding sows over 50 kg",
-        "description": "Livestock: number of farms and heads — Pigs - breeding sows over 50 kg (J12).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J12"
-        },
-        "code": "J12",
-        "primary": true
-      },
-      {
-        "id": "j13",
-        "name": "Pigs - others",
-        "description": "Livestock: number of farms and heads — Pigs - others (J13).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J13"
-        },
-        "code": "J13",
-        "primary": true
-      },
-      {
-        "id": "j14-16",
-        "name": "Poultry (1000 heads)",
-        "description": "Livestock: number of farms and heads — Poultry (1000 heads) (J14_16).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J14_16"
-        },
-        "code": "J14_16",
-        "primary": true
-      },
-      {
-        "id": "j14",
-        "name": "Poultry - broilers (1000 heads)",
-        "description": "Livestock: number of farms and heads — Poultry - broilers (1000 heads) (J14).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J14"
-        },
-        "code": "J14",
-        "primary": true
-      },
-      {
-        "id": "j15",
-        "name": "Laying hens (1000 heads)",
-        "description": "Livestock: number of farms and heads — Laying hens (1000 heads) (J15).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J15"
-        },
-        "code": "J15",
-        "primary": true
-      },
-      {
-        "id": "j16",
-        "name": "Poultry - others (1000 heads)",
-        "description": "Livestock: number of farms and heads — Poultry - others (1000 heads) (J16).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J16"
-        },
-        "code": "J16",
-        "primary": true
-      },
-      {
-        "id": "j17",
-        "name": "Rabbits (breeding females)",
-        "description": "Livestock: number of farms and heads — Rabbits (breeding females) (J17).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J17"
-        },
-        "code": "J17",
-        "primary": true
-      },
-      {
-        "id": "j18",
-        "name": "Beehives",
-        "description": "Livestock: number of farms and heads — Beehives (J18).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J18"
-        },
-        "code": "J18",
-        "primary": true
-      }
-    ]
-  },
-  {
-    "id": "eurostat-ef-ls-ovlsureg",
-    "title": "Livestock: number of farms and heads",
-    "description": "Livestock: number of farms and heads, across European regions, from Eurostat table ef_ls_ovlsureg.",
-    "subject": "Livestock: number of farms and heads",
-    "breakdown": "livestock units (LSU) of farm",
-    "category": "Agriculture",
-    "publisher": "Eurostat",
-    "source": "Eurostat ef_ls_ovlsureg",
-    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_ls_ovlsureg/default/table",
-    "source_type": "official",
-    "status": "official_source",
-    "licence": {
-      "id": "EC-REUSE-2011-833",
-      "name": "European Commission reuse policy (Decision 2011/833/EU)",
-      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
-      "attribution": "Source: Eurostat (ef_ls_ovlsureg)",
-      "commercial_use": true,
-      "attribution_required": true,
-      "share_alike": false,
-      "redistribution": true
-    },
-    "methodology": "Direct extract from Eurostat ef_ls_ovlsureg. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
-    "geography": {
-      "scheme": "NUTS",
-      "version": "2024",
-      "levels": [0, 1, 2]
-    },
-    "geographic_coverage": ["Europe (NUTS 2024)"],
-    "temporal_frequency": "annual",
-    "semantic_hints": {
-      "aliases": [],
-      "topics": ["agriculture"],
-      "example_questions": [],
-      "caveats": []
-    },
-    "created_at": "2026-09-24",
-    "quality": {
-      "score": 95,
-      "methodology_documented": true,
-      "source_documented": true,
-      "reproducible": true,
-      "peer_reviews": 0,
-      "community_votes": 0
-    },
-    "dataset_code": "ef_ls_ovlsureg",
-    "filters": {
-      "freq": "A",
-      "lsu": "TOTAL",
-      "unit": "HLD"
-    },
-    "period_start": "1998",
-    "period_end": "latest",
-    "indicator_dimension": "variable",
-    "variant": {
-      "dimension": "unit",
-      "code": "HLD",
-      "label": "Holding",
-      "unit": "Holding"
-    },
-    "indicators": [
-      {
-        "id": "hold",
-        "name": "No. of holdings",
-        "description": "Livestock: number of farms and heads — No. of holdings (HOLD).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "HOLD"
-        },
-        "code": "HOLD",
-        "primary": true
-      },
-      {
-        "id": "j",
-        "name": "Livestock",
-        "description": "Livestock: number of farms and heads — Livestock (J).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J"
-        },
-        "code": "J",
-        "primary": true
-      },
-      {
-        "id": "j01",
-        "name": "Equidae",
-        "description": "Livestock: number of farms and heads — Equidae (J01).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J01"
-        },
-        "code": "J01",
-        "primary": true
-      },
-      {
-        "id": "j02-08",
-        "name": "Cattle",
-        "description": "Livestock: number of farms and heads — Cattle (J02_08).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J02_08"
-        },
-        "code": "J02_08",
-        "primary": true
-      },
-      {
-        "id": "j02",
-        "name": "Bovine <1 year old - total",
-        "description": "Livestock: number of farms and heads — Bovine <1 year old - total (J02).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J02"
-        },
-        "code": "J02",
-        "primary": true
-      },
-      {
-        "id": "j03",
-        "name": "Bovine 1-<2 years - males",
-        "description": "Livestock: number of farms and heads — Bovine 1-<2 years - males (J03).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J03"
-        },
-        "code": "J03",
-        "primary": true
-      },
-      {
-        "id": "j04",
-        "name": "Bovine 1-<2 years - females",
-        "description": "Livestock: number of farms and heads — Bovine 1-<2 years - females (J04).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J04"
-        },
-        "code": "J04",
-        "primary": true
-      },
-      {
-        "id": "j05",
-        "name": "Bovine 2 years and older - males",
-        "description": "Livestock: number of farms and heads — Bovine 2 years and older - males (J05).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J05"
-        },
-        "code": "J05",
-        "primary": true
-      },
-      {
-        "id": "j06",
-        "name": "Heifers, 2 years and older",
-        "description": "Livestock: number of farms and heads — Heifers, 2 years and older (J06).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J06"
-        },
-        "code": "J06",
-        "primary": true
-      },
-      {
-        "id": "j07",
-        "name": "Dairy cows",
-        "description": "Livestock: number of farms and heads — Dairy cows (J07).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J07"
-        },
-        "code": "J07",
-        "primary": true
-      },
-      {
-        "id": "j08",
-        "name": "Other cows, bovine 2 years old and over",
-        "description": "Livestock: number of farms and heads — Other cows, bovine 2 years old and over (J08).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J08"
-        },
-        "code": "J08",
-        "primary": true
-      },
-      {
-        "id": "j09",
-        "name": "Sheep",
-        "description": "Livestock: number of farms and heads — Sheep (J09).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J09"
-        },
-        "code": "J09",
-        "primary": true
-      },
-      {
-        "id": "j09a",
-        "name": "Sheep - breeding ewes",
-        "description": "Livestock: number of farms and heads — Sheep - breeding ewes (J09A).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J09A"
-        },
-        "code": "J09A",
-        "primary": true
-      },
-      {
-        "id": "j09b",
-        "name": "Sheep - others",
-        "description": "Livestock: number of farms and heads — Sheep - others (J09B).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J09B"
-        },
-        "code": "J09B",
-        "primary": true
-      },
-      {
-        "id": "j10",
-        "name": "Goats",
-        "description": "Livestock: number of farms and heads — Goats (J10).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J10"
-        },
-        "code": "J10",
-        "primary": true
-      },
-      {
-        "id": "j10a",
-        "name": "Goats - breeding females",
-        "description": "Livestock: number of farms and heads — Goats - breeding females (J10A).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J10A"
-        },
-        "code": "J10A",
-        "primary": true
-      },
-      {
-        "id": "j10b",
-        "name": "Goats - others",
-        "description": "Livestock: number of farms and heads — Goats - others (J10B).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J10B"
-        },
-        "code": "J10B",
-        "primary": true
-      },
-      {
-        "id": "j11-13",
-        "name": "Pigs",
-        "description": "Livestock: number of farms and heads — Pigs (J11_13).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J11_13"
-        },
-        "code": "J11_13",
-        "primary": true
-      },
-      {
-        "id": "j11",
-        "name": "Pigs - piglets under 20 kg",
-        "description": "Livestock: number of farms and heads — Pigs - piglets under 20 kg (J11).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J11"
-        },
-        "code": "J11",
-        "primary": true
-      },
-      {
-        "id": "j12",
-        "name": "Pigs - breeding sows over 50 kg",
-        "description": "Livestock: number of farms and heads — Pigs - breeding sows over 50 kg (J12).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J12"
-        },
-        "code": "J12",
-        "primary": true
-      },
-      {
-        "id": "j13",
-        "name": "Pigs - others",
-        "description": "Livestock: number of farms and heads — Pigs - others (J13).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J13"
-        },
-        "code": "J13",
-        "primary": true
-      },
-      {
-        "id": "j14-16",
-        "name": "Poultry (1000 heads)",
-        "description": "Livestock: number of farms and heads — Poultry (1000 heads) (J14_16).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J14_16"
-        },
-        "code": "J14_16",
-        "primary": true
-      },
-      {
-        "id": "j14",
-        "name": "Poultry - broilers (1000 heads)",
-        "description": "Livestock: number of farms and heads — Poultry - broilers (1000 heads) (J14).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J14"
-        },
-        "code": "J14",
-        "primary": true
-      },
-      {
-        "id": "j15",
-        "name": "Laying hens (1000 heads)",
-        "description": "Livestock: number of farms and heads — Laying hens (1000 heads) (J15).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J15"
-        },
-        "code": "J15",
-        "primary": true
-      },
-      {
-        "id": "j16",
-        "name": "Poultry - others (1000 heads)",
-        "description": "Livestock: number of farms and heads — Poultry - others (1000 heads) (J16).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J16"
-        },
-        "code": "J16",
-        "primary": true
-      },
-      {
-        "id": "j17",
-        "name": "Rabbits (breeding females)",
-        "description": "Livestock: number of farms and heads — Rabbits (breeding females) (J17).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J17"
-        },
-        "code": "J17",
-        "primary": true
-      },
-      {
-        "id": "j18",
-        "name": "Beehives",
-        "description": "Livestock: number of farms and heads — Beehives (J18).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J18"
-        },
-        "code": "J18",
-        "primary": true
-      },
-      {
-        "id": "j19-eq-y",
-        "name": "Other livestock",
-        "description": "Livestock: number of farms and heads — Other livestock (J19_EQ_Y).",
-        "unit": "Holding",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J19_EQ_Y"
-        },
-        "code": "J19_EQ_Y",
-        "primary": true
-      }
-    ],
-    "headline": "hold"
-  },
-  {
-    "id": "eurostat-ef-ls-ovlsureg-nr",
-    "title": "Livestock: number of farms and heads · Number",
-    "description": "Livestock: number of farms and heads, across European regions, from Eurostat table ef_ls_ovlsureg.",
-    "subject": "Livestock: number of farms and heads",
-    "breakdown": "livestock units (LSU) of farm",
-    "category": "Agriculture",
-    "publisher": "Eurostat",
-    "source": "Eurostat ef_ls_ovlsureg",
-    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/ef_ls_ovlsureg/default/table",
-    "source_type": "official",
-    "status": "official_source",
-    "licence": {
-      "id": "EC-REUSE-2011-833",
-      "name": "European Commission reuse policy (Decision 2011/833/EU)",
-      "url": "https://ec.europa.eu/eurostat/help/copyright-notice",
-      "attribution": "Source: Eurostat (ef_ls_ovlsureg)",
-      "commercial_use": true,
-      "attribution_required": true,
-      "share_alike": false,
-      "redistribution": true
-    },
-    "methodology": "Direct extract from Eurostat ef_ls_ovlsureg. The slice this dataset publishes is fixed by its filters; what varies inside it becomes the indicators, discovered from the source rather than chosen. Coverage follows the NUTS 2024 geography contract and upstream availability, not a fixed country list.",
-    "geography": {
-      "scheme": "NUTS",
-      "version": "2024",
-      "levels": [0, 1, 2]
-    },
-    "geographic_coverage": ["Europe (NUTS 2024)"],
-    "temporal_frequency": "annual",
-    "semantic_hints": {
-      "aliases": [],
-      "topics": ["agriculture"],
-      "example_questions": [],
-      "caveats": []
-    },
-    "created_at": "2026-09-24",
-    "quality": {
-      "score": 95,
-      "methodology_documented": true,
-      "source_documented": true,
-      "reproducible": true,
-      "peer_reviews": 0,
-      "community_votes": 0
-    },
-    "dataset_code": "ef_ls_ovlsureg",
-    "filters": {
-      "freq": "A",
-      "lsu": "TOTAL",
-      "unit": "NR"
-    },
-    "period_start": "1998",
-    "period_end": "latest",
-    "indicator_dimension": "variable",
-    "variant": {
-      "dimension": "unit",
-      "code": "NR",
-      "label": "Number",
-      "unit": "number"
-    },
-    "indicators": [
-      {
-        "id": "j-lsu",
-        "name": "LSU: Livestock",
-        "description": "Livestock: number of farms and heads — LSU: Livestock (J_LSU).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J_LSU"
-        },
-        "code": "J_LSU",
-        "primary": true
-      },
-      {
-        "id": "j01",
-        "name": "Equidae",
-        "description": "Livestock: number of farms and heads — Equidae (J01).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J01"
-        },
-        "code": "J01",
-        "primary": true
-      },
-      {
-        "id": "j02-08",
-        "name": "Cattle",
-        "description": "Livestock: number of farms and heads — Cattle (J02_08).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J02_08"
-        },
-        "code": "J02_08",
-        "primary": true
-      },
-      {
-        "id": "j02",
-        "name": "Bovine <1 year old - total",
-        "description": "Livestock: number of farms and heads — Bovine <1 year old - total (J02).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J02"
-        },
-        "code": "J02",
-        "primary": true
-      },
-      {
-        "id": "j03",
-        "name": "Bovine 1-<2 years - males",
-        "description": "Livestock: number of farms and heads — Bovine 1-<2 years - males (J03).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J03"
-        },
-        "code": "J03",
-        "primary": true
-      },
-      {
-        "id": "j04",
-        "name": "Bovine 1-<2 years - females",
-        "description": "Livestock: number of farms and heads — Bovine 1-<2 years - females (J04).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J04"
-        },
-        "code": "J04",
-        "primary": true
-      },
-      {
-        "id": "j05",
-        "name": "Bovine 2 years and older - males",
-        "description": "Livestock: number of farms and heads — Bovine 2 years and older - males (J05).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J05"
-        },
-        "code": "J05",
-        "primary": true
-      },
-      {
-        "id": "j06",
-        "name": "Heifers, 2 years and older",
-        "description": "Livestock: number of farms and heads — Heifers, 2 years and older (J06).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J06"
-        },
-        "code": "J06",
-        "primary": true
-      },
-      {
-        "id": "j07",
-        "name": "Dairy cows",
-        "description": "Livestock: number of farms and heads — Dairy cows (J07).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J07"
-        },
-        "code": "J07",
-        "primary": true
-      },
-      {
-        "id": "j08",
-        "name": "Other cows, bovine 2 years old and over",
-        "description": "Livestock: number of farms and heads — Other cows, bovine 2 years old and over (J08).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J08"
-        },
-        "code": "J08",
-        "primary": true
-      },
-      {
-        "id": "j09",
-        "name": "Sheep",
-        "description": "Livestock: number of farms and heads — Sheep (J09).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J09"
-        },
-        "code": "J09",
-        "primary": true
-      },
-      {
-        "id": "j09a",
-        "name": "Sheep - breeding ewes",
-        "description": "Livestock: number of farms and heads — Sheep - breeding ewes (J09A).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J09A"
-        },
-        "code": "J09A",
-        "primary": true
-      },
-      {
-        "id": "j09b",
-        "name": "Sheep - others",
-        "description": "Livestock: number of farms and heads — Sheep - others (J09B).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J09B"
-        },
-        "code": "J09B",
-        "primary": true
-      },
-      {
-        "id": "j10",
-        "name": "Goats",
-        "description": "Livestock: number of farms and heads — Goats (J10).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J10"
-        },
-        "code": "J10",
-        "primary": true
-      },
-      {
-        "id": "j10a",
-        "name": "Goats - breeding females",
-        "description": "Livestock: number of farms and heads — Goats - breeding females (J10A).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J10A"
-        },
-        "code": "J10A",
-        "primary": true
-      },
-      {
-        "id": "j10b",
-        "name": "Goats - others",
-        "description": "Livestock: number of farms and heads — Goats - others (J10B).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J10B"
-        },
-        "code": "J10B",
-        "primary": true
-      },
-      {
-        "id": "j11-13",
-        "name": "Pigs",
-        "description": "Livestock: number of farms and heads — Pigs (J11_13).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J11_13"
-        },
-        "code": "J11_13",
-        "primary": true
-      },
-      {
-        "id": "j11",
-        "name": "Pigs - piglets under 20 kg",
-        "description": "Livestock: number of farms and heads — Pigs - piglets under 20 kg (J11).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J11"
-        },
-        "code": "J11",
-        "primary": true
-      },
-      {
-        "id": "j12",
-        "name": "Pigs - breeding sows over 50 kg",
-        "description": "Livestock: number of farms and heads — Pigs - breeding sows over 50 kg (J12).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J12"
-        },
-        "code": "J12",
-        "primary": true
-      },
-      {
-        "id": "j13",
-        "name": "Pigs - others",
-        "description": "Livestock: number of farms and heads — Pigs - others (J13).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J13"
-        },
-        "code": "J13",
-        "primary": true
-      },
-      {
-        "id": "j14-16",
-        "name": "Poultry (1000 heads)",
-        "description": "Livestock: number of farms and heads — Poultry (1000 heads) (J14_16).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J14_16"
-        },
-        "code": "J14_16",
-        "primary": true
-      },
-      {
-        "id": "j14",
-        "name": "Poultry - broilers (1000 heads)",
-        "description": "Livestock: number of farms and heads — Poultry - broilers (1000 heads) (J14).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J14"
-        },
-        "code": "J14",
-        "primary": true
-      },
-      {
-        "id": "j15",
-        "name": "Laying hens (1000 heads)",
-        "description": "Livestock: number of farms and heads — Laying hens (1000 heads) (J15).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J15"
-        },
-        "code": "J15",
-        "primary": true
-      },
-      {
-        "id": "j16",
-        "name": "Poultry - others (1000 heads)",
-        "description": "Livestock: number of farms and heads — Poultry - others (1000 heads) (J16).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J16"
-        },
-        "code": "J16",
-        "primary": true
-      },
-      {
-        "id": "j17",
-        "name": "Rabbits (breeding females)",
-        "description": "Livestock: number of farms and heads — Rabbits (breeding females) (J17).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J17"
-        },
-        "code": "J17",
-        "primary": true
-      },
-      {
-        "id": "j18",
-        "name": "Beehives",
-        "description": "Livestock: number of farms and heads — Beehives (J18).",
-        "unit": "number",
-        "statistic": "annual_value",
-        "definition": {
-          "variable": "J18"
-        },
-        "code": "J18",
-        "primary": true
-      }
-    ]
+    "headline": "ren",
+    "opening_variant": "HA"
   },
   {
     "id": "eurostat-ef-ls-ovaareg",
@@ -84499,7 +83261,8 @@
         "primary": true
       }
     ],
-    "headline": "hold"
+    "headline": "j",
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-ef-ls-ovaareg-nr",
@@ -84572,7 +83335,8 @@
           "variable": "J_LSU"
         },
         "code": "J_LSU",
-        "primary": true
+        "primary": true,
+        "short_name": "Livestock (LSU)"
       },
       {
         "id": "j01",
@@ -84874,7 +83638,10 @@
         "code": "J18",
         "primary": true
       }
-    ]
+    ],
+    "headline": "j-lsu",
+    "headline_note": "Defaults on livestock units (LSU): animals of every kind converted to one scale, so they can be added up.",
+    "opening_variant": "NR"
   },
   {
     "id": "eurostat-cens-11coba-r2",
@@ -85078,7 +83845,8 @@
       "definition": {
         "upstream_unit": "NR"
       }
-    }
+    },
+    "opens_subject": true
   },
   {
     "id": "eurostat-cens-21lha-r3",
@@ -85217,7 +83985,8 @@
         "code": "OC221",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-hlth-rs-prsrg-nr",
@@ -85290,7 +84059,8 @@
         "code": "OC221",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-hlth-rs-prsrg-p-hthab",
@@ -85363,7 +84133,8 @@
         "code": "OC221",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-hlth-rs-bdsrg",
@@ -85438,7 +84209,8 @@
         "code": "HBEDT",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-hlth-rs-bdsrg-nr",
@@ -85513,7 +84285,8 @@
         "code": "HBEDT",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-hlth-rs-bdsrg-p-hthab",
@@ -85588,7 +84361,8 @@
         "code": "HBEDT",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "P_HTHAB"
   },
   {
     "id": "eurostat-nama-10r-2coe",
@@ -85934,7 +84708,8 @@
         "primary": true
       }
     ],
-    "headline": "d1-sal-per"
+    "headline": "d1-sal-per",
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-nama-10r-2lp10-hw",
@@ -86009,7 +84784,8 @@
         "code": "HW_EMP",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-nama-10r-2lp10-nac",
@@ -86097,7 +84873,8 @@
         "primary": true
       }
     ],
-    "headline": "d1-sal-per"
+    "headline": "d1-sal-per",
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-nama-10r-2lp10-pch-pre",
@@ -86172,7 +84949,8 @@
         "code": "HW_EMP",
         "primary": true
       }
-    ]
+    ],
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-nama-10r-2lp10-pc-eu27-2020-meur-cp",
@@ -86260,7 +85038,8 @@
         "primary": true
       }
     ],
-    "headline": "d1-sal-per"
+    "headline": "d1-sal-per",
+    "opening_variant": "EUR"
   },
   {
     "id": "eurostat-nama-10r-3gva",
@@ -86488,7 +85267,8 @@
         "code": "R-U"
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "CP_MEUR"
   },
   {
     "id": "eurostat-nama-10r-3gva-pyp-meur",
@@ -86562,7 +85342,8 @@
         "primary": true
       }
     ],
-    "headline": "total"
+    "headline": "total",
+    "opening_variant": "CP_MEUR"
   },
   {
     "id": "eurostat-lfst-r-lfu2ltu",
@@ -86699,7 +85480,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "opening_variant": "PC_ACT"
   },
   {
     "id": "eurostat-lfst-r-lfu2ltu-pc-une",
@@ -86836,7 +85618,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "opening_variant": "PC_ACT"
   },
   {
     "id": "eurostat-lfst-r-lfu2ltu-ths-per",
@@ -86973,7 +85756,8 @@
         "primary": true
       }
     ],
-    "headline": "y15-74"
+    "headline": "y15-74",
+    "opening_variant": "PC_ACT"
   },
   {
     "id": "eurostat-ef-lsk-pigs",
@@ -87086,7 +85870,8 @@
         "primary": true
       }
     ],
-    "headline": "a3100"
+    "headline": "a3100",
+    "opening_variant": "HD"
   },
   {
     "id": "eurostat-ef-lsk-pigs-hld",
@@ -87199,7 +85984,8 @@
         "primary": true
       }
     ],
-    "headline": "a3100"
+    "headline": "a3100",
+    "opening_variant": "HD"
   },
   {
     "id": "eurostat-ef-lsk-pigs-lsu",
@@ -87312,7 +86098,8 @@
         "primary": true
       }
     ],
-    "headline": "a3100"
+    "headline": "a3100",
+    "opening_variant": "HD"
   },
   {
     "id": "eurostat-ef-mp-digicr",
@@ -88458,7 +87245,8 @@
       "unit": "% of households",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC_HH"
   },
   {
     "id": "eurostat-isoc-r-broad-h-pc-hh-iacc",
@@ -88524,7 +87312,8 @@
       "unit": "% of households with internet access at home",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC_HH"
   },
   {
     "id": "eurostat-ef-lsk-bees",
@@ -88594,7 +87383,8 @@
       "unit": "beehives",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "HIVE"
   },
   {
     "id": "eurostat-ef-lsk-bees-hld",
@@ -88664,7 +87454,8 @@
       "unit": "holdings",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "HIVE"
   },
   {
     "id": "eurostat-rd-p-persreg",
@@ -88734,7 +87525,8 @@
       "unit": "full-time equivalent (FTE)",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC_ACT_FTE"
   },
   {
     "id": "eurostat-rd-p-persreg-hc",
@@ -88804,7 +87596,8 @@
       "unit": "persons",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC_ACT_FTE"
   },
   {
     "id": "eurostat-rd-p-persreg-pc-act-fte",
@@ -88874,7 +87667,8 @@
       "unit": "% of labour force (FTE)",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC_ACT_FTE"
   },
   {
     "id": "eurostat-rd-p-persreg-pc-act-hc",
@@ -88944,7 +87738,8 @@
       "unit": "% of labour force (head count)",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC_ACT_FTE"
   },
   {
     "id": "eurostat-rd-p-persreg-pc-emp-fte",
@@ -89014,7 +87809,8 @@
       "unit": "% of total employment (FTE)",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC_ACT_FTE"
   },
   {
     "id": "eurostat-rd-p-persreg-pc-emp-hc",
@@ -89084,7 +87880,8 @@
       "unit": "% of total employment (head count)",
       "statistic": "annual_value",
       "definition": {}
-    }
+    },
+    "opening_variant": "PC_ACT_FTE"
   },
   {
     "id": "eurostat-ef-ah-poult",
@@ -89161,7 +87958,8 @@
           "yn_acs": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All poultry, with or without outdoor access"
       },
       {
         "id": "yes-outacs",
@@ -89187,7 +87985,8 @@
         "code": "NO_OUTACS"
       }
     ],
-    "headline": "yes-outacs"
+    "headline": "yes-outacs",
+    "opening_variant": "HD"
   },
   {
     "id": "eurostat-ef-ah-poult-hld",
@@ -89264,7 +88063,8 @@
           "yn_acs": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All poultry, with or without outdoor access"
       },
       {
         "id": "yes-outacs",
@@ -89290,7 +88090,8 @@
         "code": "NO_OUTACS"
       }
     ],
-    "headline": "yes-outacs"
+    "headline": "yes-outacs",
+    "opening_variant": "HD"
   },
   {
     "id": "eurostat-ef-mp-efa",
@@ -89365,7 +88166,8 @@
           "efa": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All ecological focus areas"
       }
     ],
     "headline": "total"
@@ -89443,7 +88245,8 @@
           "efa": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All ecological focus areas"
       },
       {
         "id": "le-fm-bs",
@@ -89532,7 +88335,8 @@
           "agr_inp": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All farms, with or without digital tools"
       },
       {
         "id": "mac-pfrm",
@@ -89666,7 +88470,8 @@
           "agr_inp": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All farms, with or without digital tools"
       },
       {
         "id": "mac-pfrm",
@@ -89800,7 +88605,8 @@
           "agr_inp": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All farms, with or without digital tools"
       },
       {
         "id": "mac-pfrm",
@@ -89934,7 +88740,8 @@
           "agr_inp": "TOTAL"
         },
         "code": "TOTAL",
-        "primary": true
+        "primary": true,
+        "short_name": "All farms, with or without digital tools"
       },
       {
         "id": "mac-pfrm",
